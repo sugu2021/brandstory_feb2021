@@ -1,0 +1,1398 @@
+<div class="background-pattern mobile"></div>
+<div class="container">
+  <div class="banner-space-init"></div>
+  <div class="row banner-left-outerwrap">
+    <div class="col-sm-7 banner-left-innerwrap">
+      <h1 class="seo-banner-head">
+        SEO Company in Hyderabad
+      </h1>
+      <br>
+      <h5 class="seo-banner-subtxt">
+        Hyderabad is home to several start-ups and global MNCs and we are one such <strong>SEO agency in
+          Hyderabad</strong> that
+        helps enterprises big and small to stay at the top of the race using various SEO tips and tricks. We are
+        considered nationwide among the top <strong>SEO agencies in Hyderabad India</strong>. We are an award-winning
+        SEO
+        company in Hyderabad.
+      </h5>
+      <h5 class="seo-banner-subtxt">
+        As an <strong>SEO services company in Hyderabad</strong>, our team is dedicated to keeping your company's
+        website at
+        the top of the Google search results. In today's digital world, you do not only need a properly designed website
+        but you also need to have a good SEO strategy in place to beat out your rivals. Small small firms to large
+        firms, every single one of them have a competent SEO team that is working behind closed doors day and night. We
+        are here to do exactly that.
+      </h5>
+      <h5 class="seo-banner-subtxt">
+        Our SEO strategies have a 100 percent success rate which makes us the best <strong>SEO company in
+          Hyderabad</strong>.
+        Our team consists of experienced SEO strategists who have gained their knowledge after working in different
+        industries. Our strategies will give you results immediately as you will see a jump in your traffic rate as soon
+        as you start working with us.
+      </h5>
+      <h5 class="seo-banner-subtxt">
+        Whether you are a new company that needs to create an online presence or need help with your existing SEO
+        strategy, we are always here to help.
+      </h5>
+      <br>
+      <a (click)="openModal(template)" class="banner-request-btn ">KNOW MORE HERE</a>
+      <br><br>
+    </div>
+
+
+    <div class="col-sm-5 banner-right-outerwrap">
+      <div class="banner-form-innerwrap">
+        <h4 class="banner-form-headtxt">GET IN TOUCH WITH US</h4>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmits()" novalidate>
+          <div class="form-group">
+            <input type="text" formControlName="firstName" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" placeholder="Name" />
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+              <div *ngIf="f.firstName.errors.required" class="px-3">Name is required</div>
+              <div *ngIf="f.firstName.errors.pattern" class="px-3">Only characters allowed</div>
+              <div *ngIf="f.firstName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="email" formControlName="email" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required" class="px-3">Email is required</div>
+              <div *ngIf="f.email.errors.email" class="px-3">Email must be a valid email address</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" formControlName="lastName" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" placeholder="Mobile Number" />
+            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+              <div *ngIf="f.lastName.errors.required" class="px-3">Mobile Number is required</div>
+              <div *ngIf="f.lastName.errors.pattern" class="px-3">Only Numbers is required</div>
+              <div *ngIf="f.lastName.errors.minLength" class="px-3">Mobile Number format is required</div>
+              <div *ngIf="f.lastName.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="organisation" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Organization Name" />
+            <div *ngIf="submitted && f.organisation.errors" class="invalid-feedback">
+              <div *ngIf="f.organisation.errors.required" class="px-3">Organization Name is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="url" formControlName="website" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Website Link" />
+            <div *ngIf="submitted && f.website.errors" class="invalid-feedback">
+              <div *ngIf="f.website.errors.required" class="px-3">Website Link is required</div>
+              <div *ngIf="f.website.errors.pattern" class="px-3">Website Link is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea formControlName="password" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Message" rows="2"
+              style="height:auto !important;"></textarea>
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required" class="px-3">Message is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="get-quote-btn btn-block btn btn-primary text-center bg-red border-0">SEND</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- who we are 1 -->
+
+<div class="container-fluid p-0">
+  <div class="row">
+    <div class="col-sm-6 px-5 bg-red">
+      <div class="py-2 sticky-top flex-grow-1">
+        <div class="nav flex-sm-column">
+          <div class="title-container mx-auto my-3 py-5">
+
+            <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+              <span class="uvc-headings-line"
+                style="border-style: solid; border-bottom-width: 2px; border-color: #ffffff; width: 30px; margin: 0px auto;"></span>
+            </div>
+            <h3 class="seo-whybrandstory-shadow-txt">WHO WE ARE</h3>
+            <h3 class="seoblr-choosing-rear-txt">ABOUT BRANDSTORY</h3>
+          </div>
+          <P class="choosing-ul-p">
+            As the best SEO company in Hyderabad, we are following white hat SEO techniques to our clients.
+          </P>
+          <P class="choosing-ul-p">
+            Black hat seo techniques sometimes will give better ranking but it is not a long term result, It may lead to
+            search engine penalty.
+          </P>
+          <P class="choosing-ul-p">
+            So we are adopting only white hat seo marketing strategy to get better website ranking in google or bing
+            organic results.
+          </P>
+          <br><br><br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" id="main">
+      <div class="col-md-12">
+        <div class="row seo-card-block">
+
+          <div class="title-container mx-auto">
+            <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+              <span class="uvc-headings-line"
+                style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+            </div>
+            <h3 class="casestudies-rear-txt">SEO SERVICES</h3>
+            <h3 class="casestudies-shadow-txt">SEO SERVICES</h3>
+          </div>
+          <br>
+
+          <div class="banner-space-init"></div>
+          <div class="banner-space-init"></div>
+          <div class="banner-space-init"></div>
+
+
+          <div class="col-md-6 ">
+            <div class="card-deck">
+              <div class="card services-card-shadow">
+                <div class="card-body">
+                  <p class="card-text seoservice-h">Keyword ideas and difficulty</p>
+                  <p class="card-text seoservice-p">Competitive & frequently searched keywords are more expensive and
+                    take a longer time to reflect back.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <br><br>
+            <div class="card-deck">
+              <div class="card services-card-shadow">
+                <div class="card-body">
+                  <p class="card-text seoservice-h">On-Page Optimization</p>
+                  <p class="card-text seoservice-p"> Search engines constantly update their algorithms. Content build
+                    for users, Click Through Rates, Usability,Keywords Strategy, Interlinking
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 ">
+            <div class="card-deck">
+              <div class="card services-card-shadow">
+                <div class="card-body">
+                  <p class="card-text seoservice-h">Technical</p>
+                  <p class="card-text seoservice-p">Web pages load speed, crawlability, URLs structure, website code
+                    quality, website security.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <br><br>
+            <div class="card-deck">
+              <div class="card services-card-shadow">
+                <div class="card-body">
+                  <p class="card-text seoservice-h">Off-Page Optimization</p>
+                  <p class="card-text seoservice-p">Building high-quality and relevant back link that drive heavy
+                    traffic is the final step to ensure you are well reached out than your competitors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- our seo process -->
+
+<div class="container">
+  <div class="row">
+
+    <div class="col" id="main">
+
+      <div class="services-card ">
+
+
+        <div class="title-container mx-auto mx-auto mt-sm-5 mb-5 ">
+          <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+          </div>
+          <h2 class="need-shadow-txt seo">Our SEO Process</h2>
+        </div>
+        <br><br>
+
+
+        <div class="card-deck">
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Understanding Your Business
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Finding Valuable Keyword Research For Your Business
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Optimizing Website For Target Audience
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="services-card py-4 py-sm-4">
+
+        <div class="card-deck">
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+
+
+              <button type="button" class="btn btn-primary ngbs-dropdown container  "
+                (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+                aria-controls="collapseBasic">Technical Optimization
+                <i class="fa fa-angle-down pl-3"></i></button>
+
+              <div id="collapseBasic" [collapse]="isCollapsed" class="ngbs-dropdown container pl-5">
+                <div class="well well-lg card card-block card-header ngbs-dropdown  ngbs-list">Some content</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">User interface
+                  optimization and user experience optimization for various devices like mobile, tablet and desktops
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+
+              <button type="button" class="btn btn-primary ngbs-dropdown container  "
+                (click)="isCollapsed2 = !isCollapsed2" [attr.aria-expanded]="!isCollapsed2"
+                aria-controls="collapseBasic">On Page Optimization
+                <i class="fa fa-angle-down pl-3"></i></button>
+
+              <div id="collapseBasic" [collapse]="isCollapsed2" class="ngbs-dropdown container pl-5">
+                <div class="well well-lg card card-block card-header ngbs-dropdown  ngbs-list">Title tag optimization
+                </div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Meta description
+                  optimization</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Robots file</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Sitemap update</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Clean URL optimization
+                </div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Canonical tag</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Robots tag</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Duplicate content checking
+                </div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Quality content creation
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <button type="button" class="btn btn-primary ngbs-dropdown container  "
+                (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed3"
+                aria-controls="collapseBasic">Off Page Optimization
+                <i class="fa fa-angle-down pl-3"></i></button>
+
+              <div id="collapseBasic" [collapse]="isCollapsed3" class="ngbs-dropdown container pl-5">
+                <div class="well well-lg card card-block card-header ngbs-dropdown  ngbs-list">Quality link building
+                </div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Building links through
+                  content marketing</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="services-card  py-sm-4">
+
+        <div class="card-deck">
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Local SEO Optimization
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Structured Data Implementation
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Amp Implementation
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <img style="width:100%;" src="assets/images/wp-content/uploads/2019/our-seo-process.jpg" alt="Our SEO Process"
+            title="Our SEO Process">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <p class="card-text seoservice-p my-3">
+            which will lead to generating more conversions or leads to your business.
+          </p>
+          <p class="card-text seoservice-p py-2">
+            We are not only rank your website for the targeted keyword on the 1st page of major search engines like
+            Google, Bing and other search engines search results but also we generate leads and conversions.
+          </p>
+          <p class="card-text seoservice-p">
+            Reach out to <a href="mailto:info@brandstory.in" class="txt-red">info@brandstory.in</a> the best SEO
+            services company in Hyderabad to gain the top position for your business.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- <br><br> -->
+
+<!-- SEO Service Bangalore -->
+<div class="container py-5">
+  <!-- <div class="title-container mx-auto need-for-seo">
+    <h1 class="need-shadow-txt seo-services-blr">SEO Services in Hyderabad</h1>
+  </div> -->
+
+  <h1 class="col-md-8 text-center mx-auto roi_head">SEO services in Hyderabad – Witness the boom in business!</h1>
+
+  <div class="row mt-5">
+
+    <div class="col-md-6 col-sm-12">
+      <p>‘The more the traffic, the more business it leads!’</p>
+
+      <p class="roi_para_text">A business grows how you operate the SEO techniques. Growing a company from the ashes is
+        not only about the product. In recent times, a lot depends on how you market the brand and its services. The
+        <b>SEO services in Hyderabad</b> are popular for SEO Strategy that partner to your company for a boost in sales.
+      </p>
+
+      <h4 class="roi_h4_head">Smart SEO services in Hyderabad with Organic Search Results</h4>
+
+      <p class="roi_para_text">Search results are very crucial when we talk about business and reach. The customer
+        enters
+        the keywords of their choice. But whether your search engine will show your company to the desired customer
+        depends on the algorithm. The professional SEO strategist can sort out the process where the visibility will be
+        in
+        your favor. </p>
+
+      <p class="roi_para_text">To get a clear view of the <b>SEO services in Hyderabad</b>, let’s take a closer look in
+        detail.</p>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="card card_h_51">
+        <div class="card-body">
+          <h4 class="roi_h4_head text-center">Other SEO Service's Location</h4>
+
+          <ul class="card_ul01">
+            <li class="list_seo_text"> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              <a routerLink="/seo-company-in-delhi/" alt="seo-company-in-delhi" class="a_seo_text"> SEO Services
+                in
+                Delhi</a>
+            </li>
+            <li class="list_seo_text">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              <a routerLink="/seo-company-in-hyderabad/" alt="seo-company-in-hyderabad" class="a_seo_text"> SEO
+                Services in Hyderabad</a>
+            </li>
+            <li class="list_seo_text">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              <a routerLink="/seo-company-in-kochi/" alt="seo-company-in-kochi" class="a_seo_text"> SEO Services
+                in Kochi</a>
+            </li>
+            <li class="list_seo_text">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              <a routerLink="/seo-company-in-kolkata/" alt="seo-company-in-kolkata" class="a_seo_text"> SEO
+                Services in Kolkata</a>
+            </li>
+            <li class="list_seo_text">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              <a routerLink="/seo-company-in-coimbatore/" alt="seo-company-in-coimbatore" class="a_seo_text">
+                SEO Services in Coimbatore</a>
+            </li>
+            <li class="list_seo_text">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              <a routerLink="/seo-company-in-pune/" alt="seo-company-in-pune" class="a_seo_text"> SEO Services
+                in Pune</a>
+            </li>
+            <li class="list_seo_text">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              <a routerLink="/seo-company-in-chennai/" alt="seo-company-in-chennai" class="a_seo_text"> SEO
+                Services in Chennai</a>
+            </li>
+
+            <li class="list_seo_text">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              <a routerLink="/seo-company-in-bangalore/" alt="seo-company-in-bangalore" class="a_seo_text">  SEO Services in Bangalore</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-12 mx-auto mt-5">
+
+    <h4 class="roi_h4_head">What is SEO?</h4>
+
+    <p class="roi_para_text">Search Engines are common to everyone – it is used worldwide to access the internet on
+      various topics. Therefore, it can be stated as a tool used to design or optimize content so that it becomes
+      visible as one of the topmost search results for all places and regions in the world. In simpler words, the tool
+      that restricts or broadens the visibility of content, professionally on the internet, is due to the SEO.</p>
+
+    <p class="roi_para_text">But, overall, one must understand the need for a professional SEO service above all:</p>
+
+    <ul>
+      <li class="list_normal">A well-optimized page is never overlooked. About 3 out of 4 users tend to skip web pages
+        that aren’t
+        optimized by professionals. </li>
+
+      <li class="list_normal">85% of the companies in the world have sworn by the miracle responses of SEO.</li>
+      <li class="list_normal">90% of the customers search reviews, details, and services of a product or a company
+        before spending money
+        on it.</li>
+
+      <li class="list_normal">Without the help of SEO strategy, a search engine will not show the desired top class
+        results for any
+        keyword you type. Therefore, to increase visibility, choosing the best <b>SEO companies in Hyderabad</b> is a
+        wise decision!</li>
+    </ul>
+
+
+  </div>
+
+
+  <div class="col-md-12 mx-auto mt-5">
+    <h4 class="roi_h4_head">What are the best services from the SEO company in Hyderabad? </h4>
+
+    <p class="roi_para_text">Premier companies have their unique ability to understand a business separately to apply
+      effective SEO Strategies for the web pages. When a new brand is studied closely, adapting to the new plans
+      becomes
+      much easier. A professional in SEO marketing knows how to take care of the little details of your company. So,
+      no
+      single thing is missed, anyway!</p>
+
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class=" card card_hydrabad">
+          <div class="card-body">
+            <p class="para_h6_bold">Site Audit</p>
+            <p class="roi_para_text">Site auditing is the approach to start a full campaign before starting with the
+              project.
+              Here, all the technical aspects of the website are understood and off-page and on-page solutions are
+              examined.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class=" card card_hydrabad">
+          <div class="card-body">
+            <p class="para_h6_bold">Strategy</p>
+            <p class="roi_para_text">The SEO specialist benchmarks the site according to the competitors for better
+              market
+              identification. If the differences are too high with your competitor websites, it is mended. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class=" card card_hydrabad">
+          <div class="card-body">
+            <p class="para_h6_bold">Implementation</p>
+            <p class="roi_para_text">The top <b>SEO agencies in Hyderabad</b> ensure industry-leading SEO approaches.
+              The
+              implementation is done once the problem is identified during site Auditing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class=" card card_hydrabad">
+          <div class="card-body">
+            <p class="para_h6_bold">Fine Tuning </p>
+            <p class="roi_para_text">SERP Analysis helps in placing a website on trending. The <b>SEO in Hyderabad</b>
+              can
+              finely tune a website in ways so that it dominates the industry in very little time. It is mainly done
+              by
+              technically approaching the algorithm of the search engine with new technologies and updates. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="col-md-12 mx-auto mt-5">
+    <h2 class="roi_h4_head">Benefits of hiring a service from an SEO services company in Hyderabad</h2>
+
+    <p class="roi_para_text">If your mission is to create personalized solutions to lead the market, consulting the
+      SEO
+      companies in Hyderabad will deliver the desired results. The Local and Organic SEO providers can turn a brick
+      and
+      mortar business into a completely online-based network using superior techniques of the specific industry. </p>
+
+    <p class="roi_para_text">Besides that, SEO will help you in tracking your business leads in the following ways:
+    </p>
+
+    <ul>
+
+      <li class="list_normal">Traffic overview – it usually includes organic and paid search along with direct traffic
+        linking and
+        referrals. </li>
+
+      <li class="list_normal">Keyword Rankings – keyword ranks tell about which keywords are better for content.</li>
+
+      <li class="list_normal">Ranking History – data shows how the website is ranked for using specific keywords in
+        the present and past.
+      </li>
+
+      <li class="list_normal">Click through rate – what determines the Click-through rate of a website is the number
+        of times the website is
+        clicked for each keyword. </li>
+
+    </ul>
+
+    <p class="roi_para_text">Nothing plays a major role in increasing website credentials than the <b>SEO agency in
+        Hyderabad</b>. There are the best packages you can avail of based on the criteria of your business. All you
+      must do is to seek the consultancy desk and get an appointment to fix the glitches in online marketing! </p>
+
+  </div>
+
+</div>
+
+
+
+<!-- <div class="container mt-2">
+  <div class="row">
+
+
+    <div class="col" id="main">
+
+
+      <div class="services-card ">
+
+        <div class="title-container mx-auto need-for-seo">
+          <h1 class="need-shadow-txt seo-services-blr">SEO Services in Hyderabad</h1>
+        </div>
+
+        <div class="row py-5">
+
+          <div class="col-md-6 col-sm-12">
+            <div class="card card_h_50 ">
+              <div class="card-body">
+                <div class="col-md-12 mx-auto">
+                  <h4 class="roi_h4_head text-center">For us, content is the KEY</h4>
+
+                  <p class="roi_para_text">With our experience in digital marketing and SEO, we know what is the key to
+                    driving
+                    a huge
+                    amount of traffic to
+                    your website. We do not waste your time or your money on useless strategies that will not bring
+                    results.
+                  </p>
+
+                  <p class="roi_para_text"><b>SEO company in Hyderabad,</b> the strategy includes an emphasis on creating
+                    high-quality
+                    content. As you already
+                    know
+                    content is king, and the better the content is, the better the engagement level is. The more readers
+                    you can
+                    engage, you will the graph on the monthly analysis of your website go up.</p>
+
+                  <p class="roi_para_text">Placing high on the SERPs takes time and a lot of effort and we do all the
+                    work. Our
+                    team
+                    takes care of the
+                    production of a bulk load of content from creating articles, blog posts, to social media content. We
+                    have
+                    excellent content writers on our team who are capable of writing on any topic.</p>
+
+                  <p class="roi_para_text">We conduct research on the keywords that most Google users are using to find
+                    services
+                    similar to yours and
+                    include them in the content we create for you so that your website is the first thing that pops up
+                    when they
+                    specifically search with that keyword.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="card  card_h_50">
+              <div class="card-body">
+                <div class="col-md-12 mx-auto">
+                  <h4 class="roi_h4_head text-center">We deliver what we promise</h4>
+
+                  <p class="roi_para_text">Unlike other <b>SEO companies in Hyderabad</b> that promise big things only to
+                    fulfill
+                    probably
+                    just 10 percent of it, we do not ever mean to break our client's trust. We want you to have faith in
+                    our
+                    team and
+                    allow us to be your digital partner to bring credibility to your brand. </p>
+
+                  <p class="roi_para_text">We deliver more than what you expect us to and that gives us an edge over our
+                    competitors.
+                    We do not make false promises. We take you to the no 1 position through our organic methods.</p>
+
+                  <p class="roi_para_text">We do not just offer our services in Hyderabad, but we offer SEO services in pan
+                    India. We
+                    have
+                    clients all over the subcontinent. If you are still not quite convinced about what changes we can
+                    bring to
+                    your
+                    digital presence, check out our case studies and client testimonials. </p>
+
+                  <p class="roi_para_text">We offer several SEO packages. Go through our various packages to see what
+                    works for
+                    you
+                    and then give us a call! If you have any questions you can submit the contact us form with your
+                    questions
+                    and we
+                    will get back to you as quickly as possible. </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="card card_h_51">
+              <div class="card-body">
+                <div class="col-md-12 mx-auto">
+                  <h4 class="roi_h4_head text-center">We help build your brand</h4>
+
+                  <p class="roi_para_text">Brand image is more than important in this digital world, where one social
+                    media post
+                    or
+                    comment can create a
+                    whole scandal and drag your company's name through the mud. We help you to build your brand and also
+                    maintain the
+                    brand image through our SEO strategies which also include clever digital marketing.</p>
+
+                  <p class="roi_para_text"><b>SEO services in Hyderabad</b> work on your on-page SEO and off-page SEO. We
+                    make
+                    changes to
+                    make sure that your
+                    website does not slide off to second place on the Google SERPs. Since SEO strategies keep changing
+                    every
+                    once in a
+                    while, you need a team that stays updated with all the recent guidelines to be able to create
+                    changes in the
+                    strategy. </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="card card_h_51">
+              <div class="card-body">
+                <div class="col-md-12 mx-auto">
+                  <h4 class="roi_h4_head text-center">Other SEO Service's Location</h4>
+
+                  <ul class="card_ul01">
+                    <li class="list_seo_text"> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-delhi/" alt="seo-company-in-delhi" class="a_seo_text"> SEO Services in
+                        Delhi</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-hyderabad/" alt="seo-company-in-hyderabad" class="a_seo_text"> SEO
+                        Services in Hyderabad</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-kochi/" alt="seo-company-in-kochi" class="a_seo_text"> SEO Services
+                        in Kochi</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-kolkata/" alt="seo-company-in-kolkata" class="a_seo_text"> SEO
+                        Services in Kolkata</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-coimbatore/" alt="seo-company-in-coimbatore" class="a_seo_text">
+                        SEO Services in Coimbatore</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-pune/" alt="seo-company-in-pune" class="a_seo_text"> SEO Services
+                        in Pune</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-chennai/" alt="seo-company-in-chennai" class="a_seo_text"> SEO
+                        Services in Chennai</a>
+                    </li>
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div> -->
+
+<br>
+<br>
+<!-- SEO Service Bangalore Continuity-->
+
+<div class="container-fluid p-0">
+  <div class="row">
+    <div class="col-sm-6 px-5 bg-red">
+      <div class="py-2 sticky-top flex-grow-1">
+        <div class="nav flex-sm-column">
+          <div class="title-container mx-auto my-3 py-3">
+          </div>
+          <P class="choosing-ul-p">
+            Search Engine Optimization is all about how interactive your website is, how much time user spending on
+            the
+            website, CTR of a website with respect to the search engines results.
+          </P>
+          <P class="choosing-ul-p">
+            SEO is all about finding your web page on the search engines results with the business-oriented search
+            query
+            or keywords.
+          </P>
+          <P class="choosing-ul-p">
+            Our team of SEO Analysts devises an organized plan of action by researching, analyzing and evaluating your
+            Search engine listing position as per the latest search engine algorithm or Google algorithm updates.
+          </P>
+          <P class="choosing-ul-p">
+            Then, the benchmark against the existing top ranker and execute the plan to enhance the visibility of a
+            website and reach the top in the search engine results.
+          </P>
+          <P class="choosing-ul-p">
+            We are named as one of the top 10 SEO company in Hyderabad.
+          </P>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" id="main">
+      <div class="col-md-12">
+        <div class="row seo-card-block">
+
+          <div class="title-container mx-auto">
+          </div>
+          <br>
+
+          <div class="banner-space-init"></div>
+          <div class="banner-space-init"></div>
+          <div class="banner-space-init"></div>
+
+
+          <div class="col-md-12 ">
+            <div class="card-deck">
+              <div class="card services-card-shadow mx-2 px-4 py-5 my-auto">
+                <div class="card-body">
+                  <p class="card-text seoservice-p">Our SEO services company in Hyderabad can do more than just optimize
+                    your business website.
+                  </p>
+                  <p class="card-text seoservice-p">Some of our seo campaigns will drive immediate traffic to your
+                    website.
+                  </p>
+                  <p class="card-text seoservice-p"> The best SEO service providers in Hyderabad, we will do SEO, search
+                    engine penalty recovery services, <a
+                      href="https://brandstory.in/email-marketing-services-in-bangalore/">email marketing</a>,
+                    influencer marketing, SMS marketing, <a
+                      href="https://brandstory.in/pay-per-click-ppc-services-in-bangalore/">paid advertising</a>, web
+                    analytics, <a href="https://brandstory.in/website-development-company-in-bangalore/">web
+                      design</a>,
+                    website redesign etc.
+                  </p>
+                  <p class="card-text seoservice-p"> We are also expert in search engines marketing advertising
+                    services
+                    like search advertising, display advertising, mobile app advertising, shopping advertising and
+                    video
+                    advertising
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- SEO Packages and Reporting -->
+
+<div class="container my-3">
+  <div class="row">
+
+
+    <div class="col" id="main">
+
+
+      <div class="services-card ">
+
+        <div class="title-container mx-auto need-for-seo">
+          <h3 class="need-shadow-txt">SEO Packages and Reporting</h3>
+        </div>
+
+        <div class="banner-space-init"></div>
+
+        <div class="card-deck py-1">
+          <div class="card border-0  mx-2  my-auto">
+            <div class="card-body ">
+              <p class="card-text need-para">
+                Brandstory is the top-rated SEO services company in Hyderabad or SEO consultant Hyderabad.
+              </p>
+              <p class="card-text need-para">
+                As a top <a href="https://brandstory.in/">digital marketing agency</a>, We offer the best SEO services
+                in Hyderabad to all kind of business peoples like the small-scale business, medium scale business and
+                large-scale business organization.
+              </p>
+              <p class="card-text need-para">
+                Our SEO campaigns has to be executed with different SEO Strategy with different SEO Packages. We also
+                have Customized SEO solutions that suit your budget and requirement.
+              </p>
+
+              <p class="card-text need-para">
+                Some of our SEO package plans
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- our seo process -->
+
+<div class="container">
+  <div class="row">
+
+    <div class="col" id="main">
+
+      <div class="services-card ">
+
+
+        <div class="card-deck">
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Basic SEO Plans
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Local SEO Plan
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                National & International SEO Plan
+              </p>
+
+            </div>
+          </div>
+          <p class="card-text seoservice-p mt-3 mx-3">
+            Apart from this, we will provide monthly site audit report, monthly keywords ranking report, monthly
+            conversion tracking report and event tracking reports.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<br><br>
+
+<!-- ROI Strip-->
+
+<div class="container-fluid bg-red p-0">
+  <div class="row">
+    <div class="row">
+
+      <div class="col-sm-1 my-auto google-container-image p-0">
+        <img src="assets/images/wp-content/uploads/2019/icons/seo/gold-medal.png" alt="SEO Services Bangalore" />
+      </div>
+
+      <div class="col-sm-11 pl-5">
+
+        <div class="google-container">
+          <h2 class="mt-5 branding-get-quote-text roi text-white ">ROI Lead Best SEO Company/Agency in Hyderabad India
+          </h2>
+          <p class="text-white branding-cont">We are group of passionate digital marketing experts; industry thought
+            leaders and creative designers coming together to produce stunning ROI lead digital marketing campaigns
+            for
+            brands. We are a social media marketing agency based in Hyderabad, India providing digital marketing
+            campaign management support to brands across the globe.</p><br><br>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col" id="main">
+
+      <div class="services-card ">
+
+
+        <div class="title-container mx-auto my-3">
+          <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+            <span class="uvc-headings-line"
+              style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+          </div>
+          <h3 class="casestudies-rear-txt">SERVICES</h3>
+          <h3 class="need-shadow-txt seo-services">SERVICES</h3>
+        </div>
+        <br><br>
+
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/ui-design-company-bangalore/">UI UX Designing</a></h6>
+              <p class="card-text need-para">
+                As an user-centric design agency in Hyderabad, India, we create functionally beautiful digital
+                experiences that highly engage with your target audience. We tend to create meaningful relationships
+                amidst brands and their consumers through inspiring design…
+              </p>
+              <a href="https://brandstory.in/ui-design-company-bangalore/" class="txt-red">READ MORE</a>
+
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/website-development-company-in-bangalore/">Website Development</a></h6>
+              <p class="card-text need-para">
+                Making sure that your website is universally compatible and user friendly, an exclusive expert team of
+                designers and developers are you assigned to to ensure that not only the plan goes according to a
+                timeline but also that your approval is taken…
+              </p>
+              <a href="https://brandstory.in/website-development-company-in-bangalore/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/content-marketing/">Content
+                  Marketing</a></h6>
+              <p class="card-text need-para">
+                Simple.We create digital content. It’s the element that helps us to be the company we are and our ever
+                growing client list is an proof to that. Brandstory is one of the leading content marketing
+                communications company in Hyderabad, India provides…
+              </p>
+              <a href="https://brandstory.in/content-marketing/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="services-card mt-3">
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/seo-company-bangalore/">Search
+                  Engine Optimisation</a></h6>
+              <p class="card-text need-para">
+                Search Engine Optimization (SEO) program increases overall visibility of your business across all
+                search
+                engine platform. It provides an opportunities for brands to create acquisitions (sales, leads,
+                inquiries
+                etc.), and help consumers to …
+              </p>
+              <a href="https://brandstory.in/seo-company-bangalore/" class="txt-red">READ MORE</a>
+
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/pay-per-click-ppc-services-in-bangalore/">Pay Per Click (PPC)</a></h6>
+              <p class="card-text need-para">
+                We increase your digital footprint with Pay Per Click campaigns or Google Adwords and Bing Adwords. A
+                plan is sketched out and implemented accordingly, with this your campaign has begun. The plan includes
+                specific important keywords …
+              </p>
+              <a href="https://brandstory.in/pay-per-click-ppc-services-in-bangalore/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/services/social-media-marketing-agency-bangalore/">Social Media
+                  Marketing</a></h6>
+              <p class="card-text need-para">
+                We provide expertise in design implementation providing a full range of social media marketing
+                services(SMM) bounding in popular social media platforms, content generation, creatives ideation,
+                social
+                branding techniques. Holding it all together …
+              </p>
+              <a href="https://brandstory.in/services/social-media-marketing-agency-bangalore/" class="txt-red">READ
+                MORE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="services-card mt-3">
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/email-marketing-services-in-bangalore/">Email Marketing</a></h6>
+              <p class="card-text need-para">
+                Email Marketing It’s not as easy as it may sound. It’s not just composing an email draft, copying a
+                list
+                of contacts, and clicking the “send” button. Invariably, you will face struggles ranging from privacy
+                issues, permission boundaries, technical glitches …
+              </p>
+              <a href="https://brandstory.in/email-marketing-services-in-bangalore/" class="txt-red">READ MORE</a>
+
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/orm-company-bangalore-india/">Online Reputation Management</a></h6>
+              <p class="card-text need-para">
+                Online reputation management includes managing your business and its brand value across every review
+                and
+                rating forum to every social media platform. It is ideally required for 3 major purposes adding to the
+                growth of your business…
+              </p>
+              <a href="https://brandstory.in/orm-company-bangalore-india/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/analytics-and-reporting/">Analytics and Reporting</a></h6>
+              <p class="card-text need-para">
+                A gripping content, catchy headline, constant updates will mean nothing if you can’t see the returns
+                on
+                it. So after all the hard work is done, we send you a detailed report and statistics on how well you
+                are
+                doing on digital…
+              </p>
+              <a href="https://brandstory.in/analytics-and-reporting/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<br><br>
+
+
+<!-- ROI SEO state -->
+
+
+
+<div class="clients text-center">
+  <div class="uvc-heading-spacer line_only" style="margin-bottom: 12px; height: 2px;"><span class="uvc-headings-line"
+      style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+  </div>
+  <h3 class="clients-heading-clone">SEO FAQs </h3>
+  <h3 class="clients-heading">QUESTIONS</h3>
+  <br>
+  <br>
+</div>
+
+<div class="container">
+  <div class="col-md-12 mx-auto">
+    <div class="row" *ngFor="let item of faq_array; let i=index;">
+      <p class="float-left w_95">
+        {{item.title}}
+      </p>
+
+      <span class="float-right" (click)="faq_click(i);">
+        <i class="fa " aria-hidden="true" [ngClass]="{' fa-plus': !item.checked,' fa-minus': item.checked}"></i>
+      </span>
+
+      <div class="col-12 mb-3" *ngIf="item.checked">
+
+        <p *ngIf="item.sub_text" class="sub_text">
+          {{item.sub_text}}
+        </p>
+
+        <p *ngIf="item.sub_text1" class="sub_text">
+          {{item.sub_text1}}
+        </p>
+
+        <ul class="desc_width90" *ngIf="item.message_list.length>0">
+          <li class="list_h30" *ngFor="let list of item.message_list;">
+            <div class="fa_hand_p10">
+              <i class="fa fa-share" aria-hidden="true"></i>
+            </div>
+            <div class="text_w90">
+              <span class=""> {{list}} </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- ROI SEO state -->
+<br><br>
+
+<!-- Google Partner -->
+<div class="container-fluid bg-red p-0">
+  <div class="row">
+    <div class="row">
+
+      <div class="col-sm-1 my-auto google-container-image p-0">
+        <img src="assets/images/wp-content/uploads/2019/icons/seo/trophy.png" alt="SEO Company in Bangalore" />
+      </div>
+
+      <div class="col-sm-7">
+
+        <div class="google-container">
+          <h2 class="mt-5 branding-get-quote-text text-white ">Official Google Partner</h2>
+          <p class="text-white branding-cont">We are official partners with Google, so you know that you are in the
+            hands of a trusted and promising company.</p><br><br>
+        </div>
+
+      </div>
+      <div class="col-sm-4 my-auto google-container-image">
+        <a href="https://www.google.com/partners/agency?id=1975289574" target="_blank"><img
+            src="assets/images/wp-content/uploads/2019/icons/seo/gpartner.png" alt="Official Google Partner" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<div class="container">
+
+  <div class="col-sm-8">
+    <ng-template #template>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Request SEO Free Audit</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form [formGroup]="bannerModalForm" (ngSubmit)="onSubmitBannerModal()" novalidate>
+          <div class="form-group">
+            <input type="text" formControlName="fName" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fbannermodal.fName.errors }" placeholder="Enter Name" />
+            <div *ngIf="submitted && fbannermodal.fName.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fName.errors.required" class="px-3">Name is required</div>
+              <div *ngIf="fbannermodal.fName.errors.pattern" class="px-3">Only characters and Minimun 3 characters
+                allowed</div>
+              <div *ngIf="fbannermodal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" formControlName="fEmail" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fbannermodal.fEmail.errors }" placeholder="Enter Email">
+            <div *ngIf="submitted && fbannermodal.fEmail.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fEmail.errors.required" class="px-3">Email is required</div>
+              <div *ngIf="fbannermodal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+
+            <input type="tel" formControlName="fPhone" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fbannermodal.fPhone.errors }" placeholder="Mobile Number" />
+            <div *ngIf="submitted && fbannermodal.fPhone.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+              <div *ngIf="fbannermodal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+              <div *ngIf="fbannermodal.fPhone.errors.minLength" class="px-3">Mobile Number format is required</div>
+              <div *ngIf="fbannermodal.fPhone.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+
+            <input type="url" formControlName="fService" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fbannermodal.fService.errors }" placeholder="Website Link" />
+            <div *ngIf="submitted && fbannermodal.fService.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fService.errors.required" class="px-3">Website Link is required</div>
+              <div *ngIf="fbannermodal.fService.errors.pattern" class="px-3">Website Link is required</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+
+            <textarea formControlName="fMessage" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fbannermodal.fMessage.errors }" placeholder="Message" rows="2"
+              style="height:auto !important;"></textarea>
+            <div *ngIf="submitted && fbannermodal.fMessage.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fMessage.errors.required" class="px-3">Message is required</div>
+            </div>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+        </form>
+        <br><br>
+      </div>
+    </ng-template>
+  </div>
+</div>
+
+<script type='application/ld+json'>
+  {
+   "@context": "http://www.schema.org",
+   "@type": "ProfessionalService",
+   "name": "seo company in Hyderabad | seo services in Hyderabad",
+   "url": "https://brandstory.in/seo-company-in-Hyderabad/",
+   "logo": "https://brandstory.in/assets/images/wp-content/uploads/2017/10/logo.png",
+   "image": "https://brandstory.in/assets/images/wp-content/uploads/2017/10/logo.png",
+   "description": "Best seo companies in Hyderabad, India. Hire Brandstory seo agency in Hyderabad to increase your website visibility in search engines. Enhance your website ranking in google and other search engines with brandstory seo services in Hyderabad",
+                "telephone": "+919008504821",
+                "pricerange":"Contact: +919008504821 | Email : info@brandstory.in",
+    "aggregateRating": {
+  "@type": "AggregateRating",
+   "ratingValue": "[4.0]",
+   "reviewCount": 39
+  },
+   "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "No 5, 1st Cross, 3rd floor, Krishna Reddy Colony, Domlur Layout, Hyderabad, Karnataka 560071",
+  "addressLocality": "Hyderabad",
+  "addressRegion": "Karnataka",
+  "postalCode": "560071",
+  "addressCountry": "India"
+   },
+   "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": "12.9561124",
+  "longitude": "77.637451"
+   },
+  "sameAs" : [ "https://www.facebook.com/brandstory.in/",
+  "https://www.linkedin.com/company/brandstory-in/",
+         "https://twitter.com/BrandStory_in/"],
+         "openingHours": "Mo, Tu, We, Th, Fr 10:00-19:00",
+         "contactPoint": {
+  "@type": "ContactPoint",
+  "telephone": "+919008504821",
+  "contactType": "customer support"
+   }
+}
+
+
+</script>

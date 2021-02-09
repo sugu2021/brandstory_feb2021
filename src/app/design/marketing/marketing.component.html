@@ -1,0 +1,374 @@
+<div class="background-pattern"></div>
+<div class="container">
+<div class="banner-space-init"></div>
+<div class="welcome-text text-left mt-5">
+    <div class="banner-layer1-txt">
+  <h5 class="smallheadng mt-5 ">marketing<br> matters</h5>
+  </div>
+  <div class="float-right latestproj">
+      <a routerLink="/our-portfolio">
+          <div class="aio-icon advanced ">
+              <i class="fa fa-defaults-play ml-3 playbtn"></i>
+            </div>
+        <h3 class="aio-icon-title ult-responsive">SEE OUR LATEST PROJECT</h3>
+      </a>
+    </div>
+  <div class="banner-layer2-txt">
+        <img class="banner-backdrop imageup" src="assets/images/wp-content/uploads/2018/04/macromm-ban2.png" alt="Marketing Collaterals"/>
+  <h1 class="mt-3 bigheading">Materialise </h1>
+  <h1 class="bigheading">better</h1>
+  <a (click)="scrollToElement(target)"  class="btn btn-primary rdbtn mt-3 px-4 py-2">KNOW MORE</a>
+  </div>
+  <div class="float-left">
+      <a id="getmyform" class="getprotouch robfont pum-trigger" (click)="openModal(template)"  >Have a project? Get in touch</a>
+     </div>
+    <div class="float-right">
+       <a class="scrollbtn" (click)="scrollToElement(target)">
+          <span class="icon-arrow"></span> <span class="text">SCROLL</span></a>
+
+      </div>
+</div>
+</div>
+
+
+<div class="container-fluid bg-red mg-adjust">
+
+      <div class="container">
+      <div class="row">
+      <br><br><br>
+      <div class="col-sm-8">
+      <h2 class="mx-5 my-5 branding-get-quote-text txt-white">Looking at a creative Retainer Package?
+      </h2>
+      </div>
+      <div class="col-sm-4">
+      <a class="btn btn-lg mt-3 mx-5 my-5 enquiry-btn enquiry-btn-a" routerLink="/contact-us" role="button"> Get Quote</a>
+      </div>
+      <br><br><br><br>
+      </div>
+  </div>
+</div>
+
+
+<div class="container" #target>
+    <div class="row">
+        <div class="col-sm-6">
+          <h2 class="design-brand-title">Decks and Presentations</h2>
+          <p class="design-brand-sub">Your presentations should end with lasting impressions. We help your chances by making PPTs that matter. Let us handle everything for you.</p>
+          <p class="design-brand-sub">You get:</p>
+          <ul class="design-brand-sub">
+            <li>Design thinking sprint for your deck and concept based design for every important slide</li>
+            <li>Set of icons and fonts relevant to your business</li>
+            <li>Style guides, Pro-tips and powerpoint theme</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 px-5">
+            <!-- <owl-carousel-o [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'sliding']" >
+                <div class="item" *ngFor="let image of mySlideImages1;">
+                 <div>
+                   <img [src]="image" alt="Top and Best Branding Company in Bangalore"/>
+                 </div>
+                </div>
+            </owl-carousel-o> -->
+
+            <div class="wrapper">
+              <owl-carousel-o [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+
+                <ng-container *ngFor="let image of mySlideImages1;">
+                  <ng-template class="slide" carouselSlide>
+                    <img [src]="image" alt="Marketing Collaterals" >
+                  </ng-template>
+                </ng-container>
+
+              </owl-carousel-o>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<br>
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+          <h2 class="design-brand-title">Case Studies and Whitepapers</h2>
+          <p class="design-brand-sub">Present your findings well. Present your research or case studies with professional help at our studio.</p>
+          <p class="design-brand-sub">With us get:</p>
+          <ul class="design-brand-sub">
+            <li>Discovery and Trend analysis session</li>
+            <li>Customized and branded templates and design layouts</li>
+            <li>Exclusively designed charts, graphics, and infographics to support your content visually</li>
+            <li>Optimized e-Versions for Web, Email, and Slideshare</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 px-5">
+            <!-- <owl-carousel [options]="mySlideOptions"   [carouselClasses]="['owl-theme', 'sliding']" >
+                <div class="item" *ngFor="let image of mySlideImages2;let i = index">
+                 <div>
+                   <img src={{image}} alt="Digital Marketing Agency in Bangalore"/>
+                 </div>
+                </div>
+            </owl-carousel> -->
+            <div class="wrapper">
+              <owl-carousel-o [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+
+                <ng-container *ngFor="let image of mySlideImages2;">
+                  <ng-template class="slide" carouselSlide>
+                    <img [src]="image" alt="Marketing Collaterals" >
+                  </ng-template>
+                </ng-container>
+
+              </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+          <h2 class="design-brand-title">Graphics and Images</h2>
+          <p class="design-brand-sub">Say it loud with visuals. Grab impressions with impressive graphics.</p>
+          <p class="design-brand-sub">With us gain;</p>
+          <ul class="design-brand-sub">
+            <li>Social Media branded design posters optimized for copy-writing and great images</li>
+            <li>Customized sizes for applications on Facebook, Instagram, Twitter, Linkedin, Pinterest and Google+</li>
+            <li>Graphics abiding specifics for advertisement across Social Media, Web, and Mobile Ads</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 px-5">
+            <!-- <owl-carousel [options]="mySlideOptions"   [carouselClasses]="['owl-theme', 'sliding']" >
+                <div class="item" *ngFor="let image of mySlideImages3;let i = index">
+                 <div>
+                   <img src={{image}} alt="Web Design Company in Bangalore"/>
+                 </div>
+                </div>
+            </owl-carousel> -->
+            <div class="wrapper">
+              <owl-carousel-o [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+
+                <ng-container *ngFor="let image of mySlideImages3;">
+                  <ng-template class="slide" carouselSlide>
+                    <img [src]="image" alt="Marketing Collaterals" >
+                  </ng-template>
+                </ng-container>
+
+              </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+          <h2 class="design-brand-title">Videos</h2>
+          <p class="design-brand-sub">IVisuals win. A mode of powerful communication, this method of content presentation is hot right now.</p>
+          <p class="design-brand-sub">Enquire about:</p>
+          <ul class="design-brand-sub">
+            <li>Product explainer videos</li>
+            <li>Animated videos</li>
+            <li>Investor – Pitch videos</li>
+            <li>Social Media content videos</li>
+            <li>Infographic videos</li>
+            <li>Voiceovers and Music on request</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 px-5">
+            <!-- <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'sliding']" >
+                <div class="item" *ngFor="let image of mySlideImages4;let i = index">
+                 <div>
+                   <img src={{image}} alt="Online Marketing Company in Bangalore"/>
+                 </div>
+                </div>
+            </owl-carousel> -->
+
+            <div class="wrapper">
+              <owl-carousel-o [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+
+                <ng-container *ngFor="let image of mySlideImages4;">
+                  <ng-template class="slide" carouselSlide>
+                    <img [src]="image" alt="Marketing Collaterals" >
+                  </ng-template>
+                </ng-container>
+
+              </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br><br><br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+          <h2 class="design-brand-title">Brochures and Posters</h2>
+          <p class="design-brand-sub">Thoughtful layouts, impactful color combinations, all suited and designed well to suit the purpose.</p>
+          <p class="design-brand-sub">We design:</p>
+          <ul class="design-brand-sub">
+            <li>Custom-made brochures and posters of all kinds</li>
+            <li>E-version and Print version</li>
+            <li>Assistance in copy-writing and printing</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 px-5">
+            <!-- <owl-carousel [options]="mySlideOptions"   [carouselClasses]="['owl-theme', 'sliding']" >
+                <div class="item" *ngFor="let image of mySlideImages5;let i = index">
+                 <div>
+                   <img src={{image}} alt="SEO Agency in Bangalore"/>
+                 </div>
+                </div>
+            </owl-carousel> -->
+
+            <div class="wrapper">
+              <owl-carousel-o [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+
+                <ng-container *ngFor="let image of mySlideImages5;">
+                  <ng-template class="slide" carouselSlide>
+                    <img [src]="image" alt="Marketing Collaterals" >
+                  </ng-template>
+                </ng-container>
+
+              </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br><br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+          <h2 class="design-brand-title">Landing Pages</h2>
+          <p class="design-brand-sub">In need of destinations that help you convert or exhibit prowess of your product or service?</p>
+          <p class="design-brand-sub">Landing pages it is:</p>
+          <ul class="design-brand-sub">
+            <li class="design-brand-sub">Responsive, great looking web and mobile ready designs</li>
+            <li class="design-brand-sub">Development offered across, HTML, Bootstrap, WordPress, Joomla, Magento and Prestashop available</li>
+            <li class="design-brand-sub">Experience conversion focused, engagement first approach</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 px-5">
+            <!-- <owl-carousel [options]="mySlideOptions"   [carouselClasses]="['owl-theme', 'sliding']" >
+                <div class="item" *ngFor="let image of mySlideImages6;let i = index">
+                 <div>
+                   <img src={{image}} alt="Top and Best Branding Company in Bangalore"/>
+                 </div>
+                </div>
+            </owl-carousel> -->
+
+            <div class="wrapper">
+              <owl-carousel-o [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+
+                <ng-container *ngFor="let image of mySlideImages6;">
+                  <ng-template class="slide" carouselSlide>
+                    <img [src]="image" alt="Marketing Collaterals" >
+                  </ng-template>
+                </ng-container>
+
+              </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br><br>
+
+<br><br>
+<div class="container">
+<div class="enquire">
+    <div class="jumbotron text-center bg-red p-4">
+        <h1 class="display-4 text-white">Get started with us</h1>
+          <a class="btn btn-lg mt-3 enquiry-btn"  (click)="openModal(template)"  role="button"> Enquire</a><br><br>
+          <a class="btn btn-link text-white"  routerLink="/contact-us" role="button">Or Contact Us</a>
+    </div>
+</div>
+</div>
+
+<div class="col-sm-8">
+        <ng-template #template >
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">Get Quote</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="enquiryModal" (ngSubmit)="onSubmitEnquiryModal()"   novalidate>
+              <div class="form-group">
+                  <input type="text" formControlName="fName" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fName.errors }" placeholder="Enter Name"/>
+                <div *ngIf="submitted && fenquiryModal.fName.errors" class="invalid-feedback">
+                    <div *ngIf="fenquiryModal.fName.errors.required" class="px-3">Name is required</div>
+                    <div *ngIf="fenquiryModal.fName.errors.pattern" class="px-3">Only character and Minimun 3 characters allowed</div>
+                    <div *ngIf="fenquiryModal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+                </div>
+                </div>
+              <div class="form-group">
+                  <input type="email" formControlName="fEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fEmail.errors }"  placeholder="Enter Email">
+                  <div *ngIf="submitted && fenquiryModal.fEmail.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fEmail.errors.required" class="px-3">Email is required</div>
+                  <div *ngIf="fenquiryModal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <input type="tel" formControlName="fPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fPhone.errors }"  placeholder="Mobile Number"/>
+                  <div *ngIf="submitted && fenquiryModal.fPhone.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+                      <div *ngIf="fenquiryModal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+                      <div *ngIf="fenquiryModal.fPhone.errors.minLength" class="px-3">Mobile Number minimum digits is required</div>
+                      <div *ngIf="fenquiryModal.fPhone.errors.maxLeanth" class="px-3">Mobile Number maximum digits is required</div>
+                  </div>
+              </div>
+              <div class="form-group">
+                <input type="text" formControlName="organisation" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.organisation.errors }" placeholder="Organization Name"/>
+                <div *ngIf="submitted && fenquiryModal.organisation.errors" class="invalid-feedback">
+                    <div *ngIf="fenquiryModal.organisation.errors.required" class="px-3">Organization Name is required</div>
+                </div>
+            </div>
+
+              <div class="form-group">
+                  <select formControlName="fService" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fService.errors }">
+                      <option disabled selected>Select a service</option>
+                      <option>Design</option>
+                      <option>UI/UX</option>
+                      <option>Development</option>
+                      <option>Digital</option>
+                  </select>
+                  <div *ngIf="submitted && fenquiryModal.fService.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fService.errors.required" class="px-3">Select  service is required</div>
+                  </div>
+                </div>
+
+              <div class="form-group">
+                  <textarea formControlName="fMessage" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fMessage.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+                  <div *ngIf="submitted && fenquiryModal.fMessage.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fMessage.errors.required" class="px-3">Message is required</div>
+                  </div>
+                </div>
+                <br>
+              <button  type="submit"  class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+            </form>
+
+              <br><br>
+          </div>
+        </ng-template>
+      </div>

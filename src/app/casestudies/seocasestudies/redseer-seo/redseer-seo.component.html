@@ -1,0 +1,646 @@
+<div class="topbanner welcome-text text-left">
+  <div class="row">
+    <div class="bannercolor col-md-12">
+      <div class="Bannertxt">
+        BrandStory’s SEO strategy makes lead generation increase by 15% for a management consulting firm
+
+      </div>
+      <div class="bannersubtitle">
+        <span>Case Study</span> <span>SEO</span> <span>B2B</span> <span>Management Consulting Firm</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container">
+
+  <!-- Services -->
+
+
+  <div class="row">
+    <div class=" col-md-8">
+
+      <div class="casecontent">
+        <p>Our client is one among the largest management consulting companies in India. But, until they met us, they
+          didn’t have a very well established online presence. With our expert SEO services, they were finally able to
+          achieve their digital targets!
+
+        </p>
+        <h2>Challenges</h2>
+        <p>The management consulting industry is one of the largest growing industries with a variety of keywords to
+          target! There are a lot of keywords that you can target and rank for, but, the most important are the relevant
+          ones. Ranking for irrelevant keywords won’t help in generating quality leads.
+
+        </p>
+
+        <p><b>The company was also struggling with the following problems:</b></p>
+        <p style="color:#DE5F46;">
+          - Current rankings were for irrelevant keywords of low-competition longtail keywords in nature
+          <br>
+        </p>
+        <h2>Solution</h2>
+        <p>Our very first approach was to find out why they were struggling to rank for the relevant keywords. We did a
+          site audit and analyzed the last one year data from Google Analytics, and we found out that a lot of keywords
+          they were targeting were not quite competitive. </p>
+        <p>And for the rest of sparingly related keywords did not have a convincing conversion rate.</p>
+        <p>Here are the things we did to combat the challenges:</p>
+        <ul class="casepoints-normal">
+          <li>- We worked on the Domain and Page Authority of the site, so it could easily rank for the competitive
+            keywords they were targeting</li>
+
+          <li>- With an efficient link building strategy, we were able to get quality backlinks from authoritative sites
+          </li>
+
+          <li>- Created some quality content and targeted few keywords with low-competition at first</li>
+
+          <li>- With the help of our UI/UX team, we created a scalable UX with some changes in design to increase the
+            client lead generation from the keywords they were already ranking for</li>
+
+          <li>- We created an efficient on-page and technical-SEO strategy and followed it throughout our campaign</li>
+        </ul>
+        <h2>Results</h2>
+        <p>Within few months, we helped the client’s website to rank on Google for some of the highly-competitive
+          keywords. We were able to increase their Domain and Page Authority with our SEO strategy.</p>
+        <p>Currently, our client is ranking on the first page of Google for more than 100 keywords.</p>
+        <h3>Lead generation increased by 15%. Surge of 40% noticed in monthly traffic to the website. </h3>
+        <h2>Impact</h2>
+        <p>Our SEO campaign led to significant growth in organic traffic and SERPs ranking. We were able to impact the
+          client's business in the following ways:
+        </p>
+
+        <ul class="casepoints">
+          <li>- The site ranks on the first page of Google Search Engine for more than 100+ keywords</li>
+
+          <li>- Organic traffic hits lifetime highest record of 3000 visitors month on month to website</li>
+
+          <li>- More than 300+ keywords are tracked on Google search results every month in terms of promotion and
+            tracking out of which 100 keywords rank on page 1
+
+          </li>
+        </ul>
+      </div>
+      <!-- Services  Ends -->
+
+    </div>
+
+    <div class="col-md-3 land-getquote">
+      <div class="border-red  p-4">
+        <div class="getQuotetitle">
+          BrandStory is an Integrated Digital & Marketing Solution Agency in Bangalore, India.
+        </div>
+        <h4>Get Quote</h4>
+        <form [formGroup]="enquiryModal1" (ngSubmit)="onSubmitEnquiryModal1()" novalidate>
+          <div class="form-group">
+            <input type="text" formControlName="fName" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fenquiryModal1.fName.errors }" placeholder="Enter Name" />
+            <div *ngIf="submitted && fenquiryModal1.fName.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal1.fName.errors.required" class="px-3">Name is required</div>
+              <div *ngIf="fenquiryModal1.fName.errors.pattern" class="px-3">Only characters allowed</div>
+              <div *ngIf="fenquiryModal1.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" formControlName="fEmail" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fenquiryModal1.fEmail.errors }" placeholder="Enter Email">
+            <div *ngIf="submitted && fenquiryModal1.fEmail.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal1.fEmail.errors.required" class="px-3">Email is required</div>
+
+              <div *ngIf="fenquiryModal1.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" formControlName="fPhone" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fenquiryModal1.fPhone.errors }" minLength="10" maxLength="11"
+              placeholder="Mobile Number" />
+            <div *ngIf="submitted && fenquiryModal1.fPhone.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal1.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+              <div *ngIf="fenquiryModal1.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+              <div *ngIf="fenquiryModal1.fPhone.errors.minLength" class="px-3">Mobile Number format is required</div>
+              <div *ngIf="fenquiryModal1.fPhone.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="organisation" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && fenquiryModal1.organisation.errors }"
+              placeholder="Organization Name" />
+            <div *ngIf="submitted && fenquiryModal1.organisation.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal1.organisation.errors.required" class="px-3">Organization Name is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <select formControlName="fService" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fenquiryModal1.fService.errors }">
+              <option disabled selected>Select a service</option>
+              <option>Design</option>
+              <option>UI/UX</option>
+              <option>Development</option>
+              <option>Digital</option>
+            </select>
+            <div *ngIf="submitted && fenquiryModal1.fService.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal1.fService.errors.required" class="px-3">Select service is required</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <textarea formControlName="fMessage" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fenquiryModal1.fMessage.errors }" placeholder="Message" rows="2"
+              style="height:auto !important;"></textarea>
+            <div *ngIf="submitted && fenquiryModal1.fMessage.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal1.fMessage.errors.required" class="px-3">Message is required</div>
+            </div>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+        </form>
+
+        <h5 class="quote-text py-3">
+          We are a Design and Digital Marketing Agency in India providing design, development and digital solutions for
+          over 400+ clients across the globe.
+        </h5>
+      </div>
+      <div class="tags">
+        <h5>Tags</h5>
+        <div class="row">
+          <div class="col-md-6"><span>Management Consulting</span></div>
+          <div class="col-md-3"><span>B2B</span></div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <br><br>
+
+  <div class="services text-center" #target>
+
+    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+      <span class="uvc-headings-line"
+        style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+    </div>
+
+    <h3 class="service-heading-clone">TURBULENT TIMES CALL FOR QUICK WINS</h3>
+
+
+
+  </div>
+  <br><br>
+  <div class="quickwin row">
+    <div class="col-md-6"><img src="assets/images/wp-content/uploads/2020/accountbase.png" class="img-fluid">
+      <div class="quick-content">
+        <h4>Account Based Marketing</h4>
+        You know who your customers
+        are. Identify customer profiles, build assets, engage and convert. Activate cross-channel touchpoints,
+        multi-threaded campaigns and ace outreach instantly.<br>
+        <a (click)="openModal(template)" role="button" class="knowmore">Get Quote</a>
+      </div>
+    </div>
+    <div class="col-md-6"><img src="assets/images/wp-content/uploads/2020/campaignoptimization.png" class="img-fluid">
+      <div class="quick-content">
+        <h4>Campaign Optimization</h4>
+        Don’t chase your tail. Leverage our AI enabled tools and vast experience of campaign execution across B2B and
+        B2C verticals to drive optimized results.<br>
+        <a (click)="openModal(template)" role="button" class="knowmore">Get Quote</a>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+</div>
+<div id="casestudies" class="{{tabclass}}">
+  <div class="clients text-center">
+    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+      <span class="uvc-headings-line"
+        style="border-style: solid; border-bottom-width: 2px; border-color:#fff; width: 30px; margin: 0px auto;"></span>
+    </div>
+    <h3 class="clients-heading-clone">CASE STUDIES</h3>
+    <h3 class="clients-heading">RECENT WINS</h3>
+    <br>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row casetab">
+        <div class="col-md-6"><a class="tableft" href="javascript:void(0);" (click)="opentab('search')">Search Engine
+            Optimization</a></div>
+        <div class="col-md-6"><a class="tabright" href="javascript:void(0);" (click)="opentab('camp')">Campaign
+            Management</a></div>
+      </div>
+      <div id="searchengine" class="row casestudies-row content-active">
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="assets/images/icons/01.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">We increased lead conversion by 300% and organic traffic to a website by 150%
+                for an Interior Design firm</h4>
+              <p>SEO Competitor Analysis</p>
+              <a class="read-more" href="/resources/casestudies/seocasestudies/interior-design-company/">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="assets/images/icons/02.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">BrandStory’s SEO strategy increases organic traffic by 300% in less than 7
+                months for Pharma Company</h4>
+              <p>SEO Competitor Analysis</p>
+              <a class="read-more" href="/resources/casestudies/seocasestudies/lifesciences-pharma-company/">Read
+                More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="assets/images/icons/03.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Lead generation increased by 15% for a management consulting firm by BrandStory
+              </h4>
+              <p>SEO Competitor Analysis</p>
+              <a class="read-more" href="/resources/casestudies/seocasestudies/management-consulting-firm/">Read
+                More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="assets/images/icons/04.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">BrandStory increases lead conversion by 300% and organic traffic by 350%</h4>
+              <p>SEO Competitor Analysis</p>
+              <a class="read-more" href="/resources/casestudies/seocasestudies/interior-design-company-seo/">Read
+                More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="assets/images/icons/05.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">BrandStory’s SEO strategy saves a real-estate giant INR 15,00,000 per annum and
+                organically gains 100+ qualified leads
+              </h4>
+              <p>SEO Competitor Analysis</p>
+              <a class="read-more" href="/resources/casestudies/seocasestudies/real-estate-company/">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="assets/images/icons/06.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">By ranking 80+ primary keywords on Page 1 of Google, BrandStory increases web
+                traffic by 50% for a Tech Enterprise </h4>
+              <p>SEO Competitor Analysis</p>
+              <a class="read-more" href="/resources/casestudies/seocasestudies/technology-company/">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="campaignmanagement" class="row casestudies-row">
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="assets/images/icons/01.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">BrandStory increases Marketing Qualified Leads by 30% from 10% for a Real Estate
+                Giant</h4>
+              <p>SEO Competitor Analysis</p>
+              <a class="read-more" href="/resources/casestudies/campaignmanagement/real-estate-company/">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="assets/images/icons/02.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">BrandStory increases traffic to a website by 75% month on month for an Interior
+                Design Firm</h4>
+              <p>SEO Competitor Analysis</p>
+              <a class="read-more" href="/resources/casestudies/campaignmanagement/interior-design-company/">Read
+                More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="assets/images/icons/03.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">From INR 11 to 90 Paise, BrandStory optimizes Cost per click for a Pharma
+                Company</h4>
+              <p>SEO Competitor Analysis</p>
+              <a class="read-more" href="/resources/casestudies/campaignmanagement/lifesciences-pharma-company/">Read
+                More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="assets/images/icons/04.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">BrandStory increases sales conversion by 30% in 3 months for an Accounting Firm
+              </h4>
+              <p>SEO Competitor Analysis</p>
+              <a class="read-more" href="/resources/casestudies/campaignmanagement/b2b-campaign/">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="assets/images/icons/05.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">BrandStory increases conversion ratio for MQL increased from 15% to 40% for an
+                autonomous university during peak admission season
+
+              </h4>
+              <p>SEO Competitor Analysis</p>
+              <a class="read-more" href="/resources/casestudies/campaignmanagement/university/">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <br>
+  <br>
+
+</div>
+<div class="container">
+  <br><br><br><br>
+  <!-- Clients -->
+  <div class="clients text-center">
+    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+      <span class="uvc-headings-line"
+        style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+    </div>
+    <h3 class="clients-heading-clone">CLIENTS</h3>
+    <h3 class="clients-heading">THE GREATEST</h3>
+    <br><br> <br><br>
+  </div>
+
+
+  <div class="row">
+    <div class=" col-md-12">
+      <div class="client-img-list">
+
+        <img src="assets/images/wp-content/uploads/2018/10/sg_logo1.png" class="vc_gitem-zone-img"
+          alt="Digital Marketing Companies in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2018/07/flipkart180x90.png" class="vc_gitem-zone-img"
+          alt="Digital Marketing agency in bangalore">
+
+
+        <img src="assets/images/wp-content/uploads/2018/07/decathlon180x90.png" class="vc_gitem-zone-img"
+          alt="Best digital marketing company in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2017/12/49-1.png" class="vc_gitem-zone-img"
+          alt="digital marketing service providers in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2017/12/70.png" class="vc_gitem-zone-img"
+          alt="digital marketing bangalore">
+
+        <img src="assets/images/wp-content/uploads/2017/12/13.png" class="vc_gitem-zone-img"
+          alt="seo services in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2018/09/adarsh-devlogo.png" class="vc_gitem-zone-img"
+          alt="Best digital marketing company in bangalore India">
+
+        <img src="assets/images/wp-content/uploads/2018/09/jd-logo.png" class="vc_gitem-zone-img"
+          alt="SEO services in Bangalore">
+
+        <img src="assets/images/wp-content/uploads/2018/09/skylark-logo.png" class="vc_gitem-zone-img"
+          alt="Digital marketing companies in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2018/03/62.png" class="vc_gitem-zone-img"
+          alt="top digital marketing companies in india">
+
+        <img src="assets/images/wp-content/uploads/2018/03/65.png" class="vc_gitem-zone-img"
+          alt="real estate digital marketing company in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2017/12/54.png" class="vc_gitem-zone-img"
+          alt="best seo services company in bangalore">
+
+        <img width="180" height="90" src="assets/images/wp-content/uploads/2017/12/180-50.png" class="vc_gitem-zone-img"
+          alt="online marketing company in bangalore" sizes="100vw">
+
+        <img width="180" height="90" src="assets/images/wp-content/uploads/2017/12/37.png" class="vc_gitem-zone-img"
+          alt="internet marketing company in bangalore" sizes="100vw">
+
+        <img width="180" height="90" src="assets/images/wp-content/uploads/2017/12/44.png" class="vc_gitem-zone-img"
+          alt="top digital marketing companies in bangalore" sizes="100vw">
+
+        <img width="180" height="90" src="assets/images/wp-content/uploads/2017/12/27.png" class="vc_gitem-zone-img"
+          alt="best digital marketing company bangalore" sizes="100vw">
+
+        <img width="250" height="57" src="assets/images/wp-content/uploads/2018/11/innoviti-logo.png"
+          class="vc_gitem-zone-img" alt="Brandstory digital marketing company" sizes="100vw">
+
+        <div class="vc_gitem-zone-img client-lastbox">+349 More</div>
+
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="services-card">
+    <div class="card-deck">
+      <div class="card card-box-shadow">
+        <div class="card-body">
+          <div class="text-center m-3">
+            <i class="fa fa-quote-left "></i>
+          </div>
+          <p class="card-text text-center">
+            The experience of working with BrandStory, was a wonderful one. They have a passionate, responsible and
+            competent team, very thoughtful and hardworking, and always reliable in delivering the results. We treat
+            each other as business partners, rather than just clients.
+          </p>
+          <div class="text-center">
+            <img width="180" height="90" src="assets/images/wp-content/uploads/2018/04/48.png"
+              class="vc_single_image-img attachment-medium" alt="seo in bangalore" sizes="100vw">
+          </div>
+          <p class="card-text text-center">
+            <small>
+              Jia Zhang<br>
+              Country Manager(China)<br>
+              Astreem Consulting Pte Ltd
+            </small>
+          </p>
+        </div>
+      </div>
+      <div class="card card-box-shadow">
+        <div class="card-body">
+          <div class="text-center m-3">
+            <i class="fa fa-quote-left "></i>
+          </div>
+          <p class="card-text text-center">
+            BrandStory has been a very trusted and reliable partner for Vymo. It is very tough to fully absorb a
+            client’s design preferences, tune your style to it and consistently deliver expectations. BrandStory has
+            managed to do it for Vymo for over an year now. Their work ethos and enthusiasm for Vymo’s success make us
+            feel like they are part of our own team. Thank you BrandStory!
+          </p>
+          <div class="text-center">
+            <img width="180" height="90" src="assets/images/wp-content/uploads/2017/12/54.png"
+              class="vc_single_image-img attachment-medium" alt="seo in bangalore" sizes="100vw">
+          </div>
+          <p class="card-text text-center">
+            <small>
+              Yamini Bhat<br>
+              CEO<br>
+              Vymo
+            </small>
+          </p>
+        </div>
+      </div>
+      <div class="card card-box-shadow">
+        <div class="card-body">
+          <div class="text-center m-3">
+            <i class="fa fa-quote-left "></i>
+          </div>
+          <p class="card-text text-center">
+            The team at BrandStory is extremely understanding of customer requirements, accepting of changes that are
+            asked. It is difficult to find a mature organisation that has all of these together and I am happy to have
+            found BrandStory. Their social media marketing plan was expansive and had great target ideas and well
+            executed. Overall, I would highly recommend the team at BrandStory.
+          </p>
+          <div class="text-center">
+            <img width="180" height="90" src="assets/images/wp-content/uploads/2018/04/58.png "
+              class="vc_single_image-img attachment-medium" alt="seo service providers in bangalore" sizes="100vw">
+          </div>
+          <p class="card-text text-center">
+            <small>
+              Ramya Rajendiran<br>
+              Curriculum Director<br>
+              Springdays (CBSE) International School
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Services Ends -->
+
+
+
+  <br><br>
+
+
+  <!-- Enquire Ends-->
+</div><!-- /.container -->
+
+<div class="col-sm-8">
+  <ng-template #template>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Get started with us</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+
+      <form [formGroup]="enquiryModal" (ngSubmit)="onSubmitEnquiryModal()" novalidate>
+        <div class="form-group">
+          <input type="text" formControlName="fName" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fName.errors }" placeholder="Enter Name" />
+          <div *ngIf="submitted && fenquiryModal.fName.errors" class="invalid-feedback">
+            <div *ngIf="fenquiryModal.fName.errors.required" class="px-3">Name is required</div>
+            <div *ngIf="fenquiryModal.fName.errors.pattern" class="px-3">Only character and Minimun 3 characters allowed
+            </div>
+            <div *ngIf="fenquiryModal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" formControlName="fEmail" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fEmail.errors }" placeholder="Enter Email">
+          <div *ngIf="submitted && fenquiryModal.fEmail.errors" class="invalid-feedback">
+            <div *ngIf="fenquiryModal.fEmail.errors.required" class="px-3">Email is required</div>
+            <div *ngIf="fenquiryModal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="tel" formControlName="fPhone" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fPhone.errors }" placeholder="Mobile Number" />
+          <div *ngIf="submitted && fenquiryModal.fPhone.errors" class="invalid-feedback">
+            <div *ngIf="fenquiryModal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+            <div *ngIf="fenquiryModal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+            <div *ngIf="fenquiryModal.fPhone.errors.minLength" class="px-3">Mobile Number minimum digits is required
+            </div>
+            <div *ngIf="fenquiryModal.fPhone.errors.maxLeanth" class="px-3">Mobile Number maximum digits is required
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" formControlName="organisation" class="form-control banner-form-field"
+            [ngClass]="{ 'is-invalid': submitted && fenquiryModal.organisation.errors }"
+            placeholder="Organization Name" />
+          <div *ngIf="submitted && fenquiryModal.organisation.errors" class="invalid-feedback">
+            <div *ngIf="fenquiryModal.organisation.errors.required" class="px-3">Organization Name is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <select formControlName="fService" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fService.errors }">
+            <option disabled selected>Select a service</option>
+            <option>Design</option>
+            <option>UI/UX</option>
+            <option>Development</option>
+            <option>Digital</option>
+          </select>
+          <div *ngIf="submitted && fenquiryModal.fService.errors" class="invalid-feedback">
+            <div *ngIf="fenquiryModal.fService.errors.required" class="px-3">Select service is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <textarea formControlName="fMessage" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fMessage.errors }" placeholder="Message" rows="2"
+            style="height:auto !important;"></textarea>
+          <div *ngIf="submitted && fenquiryModal.fMessage.errors" class="invalid-feedback">
+            <div *ngIf="fenquiryModal.fMessage.errors.required" class="px-3">Message is required</div>
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+      </form>
+
+
+      <br>
+    </div>
+  </ng-template>
+</div>

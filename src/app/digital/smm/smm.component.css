@@ -1,0 +1,139 @@
+.branding-get-quote-text{    
+    color: #ffffff;
+    text-align: justify;
+    font-size: 34px !important;
+    line-height: 44px !important;
+}
+
+.design-brand-title{
+    font-weight: normal;
+    margin-bottom: 25px; 
+}
+
+.design-brand-sub{ 
+    line-height: 26px !important;
+    color: #676766;
+    font-size: 18px !important;
+}
+
+.smallheading2{
+    font-size: 40px !important;
+    line-height: 50px !important;
+    color: #1e1e1e !important;
+    font-weight: 300 !important;
+    margin: 0% 0% 0% 4% !important;
+}
+
+.banner-layer1-txt{
+    margin:0% 0% 0% 14% !important;
+  }
+
+.banner-layer2-txt{
+      margin:0% 0% 0% 35% !important;
+}
+
+.banner-backdrop{
+    width: 155px;
+    position: absolute;
+    z-index: -888;
+    margin: 0;
+    top: 25%;
+    left: 45%;
+    padding: 0 !important;
+}
+
+.smallheadng,.bigheading,.banner-knwomore{
+    animation-name: topFadeOut;
+    animation-duration: 5s;
+}
+ 
+@keyframes topFadeOut {
+    0% { 
+        bottom: 10rem;
+        opacity: 0;
+      }
+    
+      75% { 
+        bottom: 10%;
+        opacity: 1;
+      }           
+      
+  }
+  
+  .services-card-shadow{
+    box-shadow: 0px 5px 13px 4px rgba(239, 239, 239, 0.8);
+    transform: translate3d(0,-2px,0);
+    border: none;
+  }
+
+  .card-box-shadow{
+    box-shadow: -4px 5px 25px -5px rgba(113, 109, 109, 0.8);
+    transform: translate3d(0,-2px,0);
+    border: none;
+  }
+  .smm-backdrop-img{
+    position: absolute;
+    right: -42%;
+  }
+
+  .imageup {
+    -webkit-animation: floatBubble 2s   normal ;
+    animation: floatBubble 2s   normal ;
+}
+
+@-webkit-keyframes floatBubble {
+    0% {
+        top: 50%; 
+    }
+    100% {
+        top: 25%;
+    }
+}
+@keyframes floatBubble {
+    0% {
+        top: 50%; 
+    }
+    100% {
+        top: 25%;
+    }
+}
+
+.smm-left-txt{
+    padding:50px 10px ; 
+    font-size: 25px;
+}
+
+.smm-card-block{
+    padding: 30px 0px;
+    
+}
+
+@media (min-width: 768px)
+{
+    .cus-bgimg {
+        left: 5%;
+        bottom: 0;
+        margin-top: 12.5%;
+    }
+    .cus_boxshadow_center {
+        margin-top: 5% !important;
+        left: -4%;
+        padding: 40px 45px;
+    }
+}
+
+.cus_boxshadow_center {
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.1);
+}
+.smmulli{display:inline-block; padding-top:15% !important;}
+
+.playbtn{
+    margin-left: .8rem!important;
+}
+
+
+.mg-adjust{
+    margin: 180px 0px 0px 0px;
+}

@@ -1,0 +1,3041 @@
+<section class="firstsec">
+  <div class="container ">
+    <div class="banner-space-init"></div>
+    <div class="row banner-left-outerwrap py-3">
+      <div class="col-sm-7 banner-left-innerwrap">
+        <h1 class="seo-banner-head"> Digital Marketing by Brandstory </h1>
+        <br>
+        <p>
+          We are Design & Digital Marketing Consultants
+        </p>
+        <p>
+          Our Digital Marketing experts provide only quality results to our clients. Brandstory is the top and best seo
+          companies in bangalore, having google certified seo experts.
+        </p>
+        <div class="row py-5">
+          <div class="col-md-6">
+            <a href="https://www.google.com/partners/agency?id=1975289574" target="_blank"><img class="bannerpartner"
+                alt="Official Google Partner" src="assets/images/wp-content/uploads/2019/icons/seo/gpartner.png"></a>
+          </div>
+          <div class="col-md-6 seo-banner-tar">
+            <a (click)="scrollToElement(target)" class="banner-knwomore  mt-3 px-4 py-2"><img
+                src="assets/images/dmb/arrow-down.png" alt="seo companies in bangalore"> Scroll down to explore</a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="col-sm-5 banner-right-outerwrap py-5">
+        <div class="">
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmits()">
+            <div class="form-group">
+              <label>Nature Of Your Business</label>
+              <select formControlName="fnature" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.fnature.errors }">
+                <option>B2B</option>
+                <option>B2C</option>
+                <option>Others</option>
+              </select>
+              <div *ngIf="submitted && f.fnature.errors" class="invalid-feedback">
+                <div *ngIf="f.fnature.errors.required" class="px-3">Select Nature Of Your Business</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Services You Are Looking For</label>
+              <select formControlName="fService" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.fService.errors }">
+                <option>Digital Marketing</option>
+                <option>SMM</option>
+                <option>SEO</option>
+                <option>Branding / Design</option>
+                <option>Web/App Development</option>
+                <option>Email Marketing</option>
+                <option>Video</option>
+                <option>Others</option>
+              </select>
+              <div *ngIf="submitted && f.fService.errors" class="invalid-feedback">
+                <div *ngIf="f.fService.errors.required" class="px-3">Select Services You Are Looking For</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 px-0">
+                <label>About You</label>
+              </div>
+              <div class="col-md-6 px-0">
+                <div class="form-group">
+                  <input type="text" formControlName="firstName" class="form-control banner-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" placeholder="Name" />
+                  <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                    <div *ngIf="f.firstName.errors.required" class="px-3">Name is required</div>
+                    <div *ngIf="f.firstName.errors.pattern" class="px-3">Only characters and Minimun 3 characters
+                      allowed</div>
+                    <div *ngIf="f.firstName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 px-0">
+                <div class="form-group">
+                  <input type="email" formControlName="email" class="form-control banner-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email" />
+                  <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required" class="px-3">Email is required</div>
+                    <div *ngIf="f.email.errors.pattern" class="px-3">Email must be a valid email address</div>
+                    <div *ngIf="f.email.errors.email" class="px-3">Email must be a valid email address</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 px-0">
+                <div class="form-group">
+                  <input type="tel" formControlName="lastName" class="form-control banner-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" placeholder="Mobile Number" />
+                  <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                    <div *ngIf="f.lastName.errors.required" class="px-3">Mobile Number is required</div>
+                    <div *ngIf="f.lastName.errors.pattern" class="px-3">Only Numbers is required</div>
+                    <div *ngIf="f.lastName.errors.minLength" class="px-3">Mobile Number format is required</div>
+                    <div *ngIf="f.lastName.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 px-0">
+                <div class="form-group">
+                  <input type="text" formControlName="organisation" class="form-control banner-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Company Name" />
+                  <div *ngIf="submitted && f.organisation.errors" class="invalid-feedback">
+                    <div *ngIf="f.organisation.errors.required" class="px-3">Company Name is required</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea formControlName="password" class="form-control banner-form-field"
+                [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Leave us a Message" rows="2"
+                style="height:auto !important;"></textarea>
+              <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                <div *ngIf="f.password.errors.required" class="px-3">Message is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <button class="get-quote-btn btn-block btn btn-primary text-center bg-red border-0">Make on Enquiry
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secondsec">
+  <div class="container py-5">
+    <div class="row" #target>
+      <div class="col-sm-6 px-5">
+        <div class="py-2 flex-grow-1">
+          <div class="nav flex-sm-column">
+            <div class="title-container ">
+
+              <h3 class="seoblr textleft">What is digital marketing?</h3>
+            </div>
+            <P class="choosing-ul-p">
+              In today’s modern age, digital marketing is the way to go. The techniques employed to connect with your
+              target audience at the right place and time is simply marketing. This means you are most likely to meet
+              them where they are spending most of their time. In the modern age, the answer is obvious -The internet!
+              This is where digital marketing comes in. Digital promotion encompasses all promoting efforts that use an
+              associated device or the net. Businesses leverage digital channels like search engines, social media,
+              email, and different websites to reach our current and prospective customers. </P>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12 newlistform">
+              <div class="card-deck">
+                <div class="card services-card-shadow ">
+                  <div class="card-body">
+                    <h3 class="py-2">Brandstory</h3>
+                    <p class="card-text seoservice-p">We help brands to get their visibility through digital marketing.
+                      The multiple functions we do are SEO, SMM, SEM, Content Management, Email Marketing, Website
+                      design.</p>
+                    <p class="card-text seoservice-p">We are located at</p>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6 py-2"><img src="assets/images/dmb/location1.png"
+                          alt="BrandStory Located"> Chennai</div>
+                      <div class="col-sm-12 col-md-6 py-2"><img src="assets/images/dmb/location2.png"
+                          alt="BrandStory Located"> Manchester</div>
+                      <div class="col-sm-12 col-md-6 py-2"><img src="assets/images/dmb/location3.png"
+                          alt="BrandStory Located"> Bangalore</div>
+                      <div class="col-sm-12 col-md-6 py-2"><img src="assets/images/dmb/location4.png"
+                          alt="BrandStory Located"> Melbourne</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="thirdsec">
+  <div class="container py-5">
+    <div class="row">
+
+      <div class="col-md-6">
+
+        <div class="services-card ">
+          <div class="card-deck py-1">
+            <div class="">
+              <div class="card-body ">
+                <h2>How important is digital marketing</h2>
+                <p class="card-text need-para">
+                  Let’s examine some details according to a report published by a research firm that is top.</p>
+                <p class="card-text need-para">
+                  Seventy-two per cent of entrepreneurs also think a Digital advertising strategy and advertising may
+                  construct their business revenue -and that advertising and marketing promotions are efficient and be
+                  multiplied by at least at the start of 2019.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+        <div class="services-card ">
+          <div class="card-deck">
+
+            <div class="card border-0 px-3 ">
+              <div class="card-body ">
+                <img class="smmimg" src="assets/images/dmb/how-important-is-digital-marketing.png"
+                  alt="Email Marketing Services In Bangalore" />
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- <div class="row secrow">
+<div class="col-sm-12 col-md-4 offset-md-1">
+  <div  class="services-card mx-auto">
+  <div  class="card-deck ">
+    <div  class="card border-0 ">
+      <div  class="card-body firstbox">
+        <h3  class="font-weight-bold py-2 need-head">Let Clients be aware of your presence</h3>
+        <p  class="card-text ">As to make yourself available to the people you are trying to prospect in order to provide services and your product, think... </p>
+      </div></div>
+    </div>
+</div>
+</div>
+<div class="col-sm-12 col-md-4 offset-md-2">
+  <div  class="services-card mx-auto">
+    <div  class="card-deck ">
+      <div  class="card border-0 ">
+        <div  class="card-body secondtbox">
+          <h3  class="font-weight-bold py-2 need-head">Your competitors will be online</h3>
+          <p  class="card-text ">For the business to attain success, you have to pay attention to your competitors as well.If your prospects start to look for a business....</p>
+        </div></div>
+      </div>
+  </div>
+</div>
+<div class="col-sm-12 col-md-4 offset-md-2">
+  <div  class="services-card mx-auto">
+    <div  class="card-deck ">
+      <div  class="card border-0 ">
+        <div  class="card-body thirdbox">
+          <h3  class="font-weight-bold py-2 need-head">Your customers are online</h3>
+          <p  class="card-text ">When someone has a liking or an interest to your business, services or products, be it your specialty or if they are generally interested in your brand... </p>
+        </div></div>
+      </div>
+  </div>
+</div>
+<div class="col-sm-12 col-md-4 offset-md-2">
+  <div  class="services-card mx-auto">
+    <div  class="card-deck ">
+      <div  class="card border-0 ">
+        <div  class="card-body fourthbox">
+          <h3  class="font-weight-bold py-2 need-head">Be available <span class="boxwordbr"><br></span>to your<span class="boxwordbr"><br></span> clients</h3>
+          <p  class="card-text ">In the modern digital world, the consumer look for what they need online. Whatever service or product they are looking for, they will begin their search...</p>
+        </div></div>
+      </div>
+  </div>
+</div>
+</div> -->
+
+    <div class="wrapper">
+      <owl-carousel-o [options]="mysecond" [carouselClasses]="['owl-theme', 'sliding']"  id="slider1">
+
+        <ng-container *ngFor="let item of brandpositionimages_old">
+          <ng-template class="slide" carouselSlide>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img [src]="item.url" alt="{{item.alt}}">
+              </div>
+              <div class="col-sm-12 col-md-6 icadmcontent">
+                <h3>{{item.heading}}</h3>
+                <p>{{item.Text}}</p>
+                <p>{{item.Text1}}</p>
+                <p>{{item.Text2}}</p>
+
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+
+      </owl-carousel-o>
+    </div>
+
+
+
+    <!-- <owl-carousel [options]="mysecond" [carouselClasses]="['owl-theme', 'webdesigninner', 'sliding']">
+      <div class=" item my-3">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img src="assets/images/dmb/mysecond-image1.png" alt="Let Clients be aware of your presence">
+          </div>
+          <div class="col-sm-12 col-md-6 icadmcontent">
+            <h3>Let Clients be aware of your presence</h3>
+            <p> As to make yourself available to the people you are trying to prospect in order to provide services and
+              your product, think of advertising. The range of your business can spread outside your boundaries. By
+              embracing prospects that are native, you're prepared to entice audience than you may. Your business is
+              open for business even if it is closed, by creating an atmosphere where your clients can come at any time
+              of the day or night.</p>
+            <p>Digital Marketing lets you socialize together with your prospects. You can get to know them and what
+              they're hoping to locate on networking, or you will start a voice communicating. Run a questionnaire or
+              attempt to get to grasp them. Pay attention to their answers or opinions.</p>
+            <p>You may begin to understand what they're searching for by interacting with individuals digitally. Where's
+              the business pain point? What's keeping them up at night? What alternatives can you provide to them?
+              Rather than trying to guess marketing enables you to utilize strategies and resources for finding your
+              customers that are desirable out.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class=" item my-3">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img src="assets/images/dmb/mysecond-image2.png" alt="Your competitors will be online">
+          </div>
+          <div class="col-sm-12 col-md-6 icadmcontent">
+            <h3>Your competitors will be online</h3>
+            <p>For the business to attain success, you have to pay attention to your competitors as well. If your
+              prospects start to look for a business like yours and can discover your competitors’ site but not your
+              business, you are not in the race. If they do not understand about you, your prospects can not pick you.
+              Your opponents have won no matter if they have a productive site or a message that was crystal clear. </p>
+          </div>
+        </div>
+      </div>
+      <div class="item my-3">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img src="assets/images/dmb/mysecond-image3.png" alt="Be available to your clients">
+          </div>
+          <div class="col-sm-12 col-md-6 icadmcontent">
+            <h3>Be available to your clients</h3>
+            <p>In the modern digital world, the consumer look for what they need online. Whatever service or product
+              they are looking for, they will begin their search. You will not be discovered if you don’t have an
+              internet presence in any way, you can not compete. Simple queries your prospects may want answers to ought
+              such as you are put to be determinable online, what your working hours are and where your main focus is.
+              By detecting your internet site along with your competitors’ websites facet, your prospects need to be in
+              a position to compare special offers, costs, hours and much more.</p>
+          </div>
+        </div>
+      </div>
+      <div class=" item my-3">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img src="assets/images/dmb/mysecond-image4.png" alt="Your customers will be online">
+          </div>
+          <div class="col-sm-12 col-md-6 icadmcontent">
+            <h3>Your customers will be online</h3>
+            <p>When someone has a liking or an interest to your business, services or products, be it your specialty or
+              if they are generally interested in your brand, the very first thing they will do is study online and find
+              out what they can figure out about you. If a customer can not find you on the internet, they might
+              conclude that your business does not seem to be valid. A likelihood is that lots of these potential
+              clients could choose not to take your business seriously and choose to go to different resources and they
+              won’t return to your own site or other assets you’ve built online.</p>
+          </div>
+        </div>
+      </div>
+
+    </owl-carousel> -->
+
+  </div>
+</section>
+
+<section class="fourthsec">
+  <div class="container py-5">
+
+    <div class="row fourthtext">
+      <div class="col-sm-12 col-md-12">
+        <h2>Types of Digital Marketing</h2>
+
+      </div>
+    </div>
+    <div class="row boxfourth py-3 px-3 my-3">
+      <div class="sem col-sm-12 col-md-3">
+        <h3>Search Engine Marketing (SEM)</h3>
+      </div>
+      <div class="col-sm-12 col-md-9 typescontent">
+
+        <p class="branding-cont">Search Engine marketing might be described as the practice of gaining traffic by ads on
+          search engines. Tools like Google Adwords are used to run SEM. A few of the phrases are,</p>
+
+
+      </div>
+    </div>
+    <div class="row boxfourth py-3 px-3 my-3">
+      <div class="seo col-sm-12 col-md-3">
+        <h3>Search Engine Optimization (SEO)</h3>
+      </div>
+      <div class="col-sm-12 col-md-9 typescontent">
+
+        <p class="branding-cont">SEO stands for Search Engine Optimization. It is a science or an art that may be
+          implemented to what folks are looking for online, to coordinate with your site, service or product. An SEO is
+          an instrument that has a vital role in raising the rank of a specific site in a particular search engine like
+          Google, Bing etc.. Search engine optimization is utilized to cater to the customer's needs instead of
+          bombarding them. An SEO can be natural or can be paid and will rank on a search engine.</p>
+
+
+      </div>
+    </div>
+    <div class="row boxfourth py-3 px-3 my-3">
+      <div class="cm col-sm-12 col-md-3">
+        <h3>Content Advertising</h3>
+      </div>
+      <div class="col-sm-12 col-md-9 typescontent">
+
+        <p class="branding-cont">The advertising that requires the creation and sharing of internet content (like
+          videos, blogs and social networking articles) that can creatively excite the attention of a customer in a
+          service or product. It's a technique of promotion. It's exceedingly critical after the client visits a media
+          or a site.</p>
+
+
+      </div>
+    </div>
+    <div class="row boxfourth py-3 px-3 my-3">
+      <div class="ppc col-sm-12 col-md-3">
+        <h3>Pay Per Click Marketing (PPC)</h3>
+      </div>
+      <div class="col-sm-12 col-md-9 typescontent">
+
+        <p class="branding-cont">When an Ad is posted by an advertiser in a search engine, it can be clicked on. Then
+          the advertiser has to pay a fee each time the ad is being clicked. In a way, it is equivalent to buying visits
+          on to a particular site rather than earning those visits in an organic manner. One of the most prevalent
+          commonly used PPC’s in the world currently is GoogleAds (previously known as Google Adwords). This platform
+          provided by Google allows companies to place ads on the Google search engine, which is the most widely used
+          search engine in the world.</p>
+
+
+      </div>
+    </div>
+    <div class="row boxfourth py-3 px-3 my-3">
+      <div class="smm col-sm-12 col-md-3">
+        <h3>Social Media Marketing (SMM))</h3>
+      </div>
+      <div class="col-sm-12 col-md-9 typescontent">
+
+        <p class="branding-cont">The use of various social media websites and platforms as a tool for marketing is known
+          as Social Media Marketing. The goal is to supply content that users can share on their social network to
+          assist a company providing a product or service, increase brand exposure and broaden customer reach. SMM has
+          become more efficient and popular due to the increased usage of social media websites such as Twitter,
+          Facebook, Myspace, Linkedin, and YouTube.</p>
+
+      </div>
+    </div>
+    <div class="row boxfourth py-3 px-3 my-3">
+      <div class="am col-sm-12 col-md-3">
+        <h3>Affiliate Marketing</h3>
+      </div>
+      <div class="col-sm-12 col-md-9 typescontent">
+
+        <p class="branding-cont">Affiliate advertising marketing, where a business rewards one or affiliates for a
+          client or every single visitor possesses marketing campaigns. To put it differently, visibility or the
+          marketing of a service or product depends on that of the other item or service. For example:- a soccer pump's
+          earnings is related to that of soccer.</p>
+
+      </div>
+    </div>
+    <div class="row boxfourth py-3 px-3 my-3">
+      <div class="em col-sm-12 col-md-3">
+        <h3>Email Marketing</h3>
+      </div>
+      <div class="col-sm-12 col-md-9 typescontent">
+
+        <p class="branding-cont">Advertising is the practice of sending a variety of sorts of articles. This content may
+          function to create traffic, leads, or merchandise signups for a business. It is significant that the
+          recipients of an email campaign have opted in to get this information, which each newsletter features them
+          something of value. Despite assumptions of the email being outdated in the marketing world, emails deliver a
+          good return on investment (ROI) to marketers. The secret of email marketing is to create a crisp, sharp and
+          well-suited email for your target audience and avoid unnecessary jargon at all cost.</p>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="fifthsec">
+  <div class="container py-5">
+    <div class="row">
+
+      <div class="col-md-12">
+        <h2>What does a digital marketing agency do?</h2>
+        <p class="card-text need-para">The ROI (Return of Investment) of a marketing campaign can be skyrocketed without
+          having to invest heavily in both time and money with the help of a digital marketing agency. When the
+          responsibility of marketing is handed to an external digital marketing agency, then the company can focus all
+          their time and effort as well as resources on running the business. A digital marketing agency may do the
+          following:</p>
+
+      </div>
+    </div>
+    <div class="row odottedbg py-3 my-2">
+      <div class="col-md-12 dmado">
+
+        <div class="wrapper">
+          <owl-carousel-o [options]="mysecond1" [carouselClasses]="['owl-theme', 'sliding']" id="slider1">
+
+            <ng-container *ngFor="let item of slider_2;">
+              <ng-template class="slide" carouselSlide>
+                <div class="" [attr.class]="item.color" [ngClass]="{'box mx-3 px-2 py-2': true}">
+                  <div class="imageboxcurosol">
+                    <img class="rightimg" [src]="item.img_url"
+                      alt="{{item.alt}}">
+
+                  </div>
+                  <div class="curosalhed">
+                    <h4>{{item.heading}}</h4>
+                  </div>
+                  <p>{{item.text}}</p>
+
+                </div>
+              </ng-template>
+            </ng-container>
+
+          </owl-carousel-o>
+        </div>
+
+
+        <!-- <owl-carousel [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+          <div class=" item mx-3">
+            <div class="box firstbox px-2 py-2">
+              <div class="imageboxcurosol">
+                <img class="rightimg" src="assets/images/dmb/digitalinfra-structure.png"
+                  alt="Digital Infrastructure analysis">
+
+              </div>
+              <div class="curosalhed">
+                <h4>Digital Infrastructure analysis</h4>
+              </div>
+              <p>The infrastructure of a website provides information to search engines about what we are looking for
+                when crawling a site.</p>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box secondtbox px-2 py-2">
+              <div class="imageboxcurosol">
+                <img class="rightimg" src="assets/images/dmb/link-profile-audit.png" alt="Link profile audit">
+
+              </div>
+              <div class="curosalhed">
+                <h4>Link profile audit</h4>
+              </div>
+              <p>SEO audits help you understand the source of your backlinks and the type of sites that are closely
+                related to your content.</p>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box thirdbox px-2 py-2">
+              <div class="imageboxcurosol">
+                <img class="rightimg" src="assets/images/dmb/link-profile-audit.png" alt="UX evaluation">
+
+              </div>
+              <div class="curosalhed">
+                <h4>UX evaluation</h4>
+              </div>
+              <p>A key factor that is overlooked surprisingly is that of the UX Design. To prioritize rankings, search
+                engines have recently been giving importance to site user experience.</p>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box fourthbox px-2 py-2">
+              <div class="imageboxcurosol">
+                <img class="rightimg" src="assets/images/dmb/infographics.png" alt="UX evaluation">
+
+              </div>
+              <div class="curosalhed">
+                <h4>Infographics</h4>
+              </div>
+              <p>Infographics are the key to skyrocket the number of shares you get on your content if done correctly.
+                On average, infographics get the highest number of shares.</p>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box fifthbox px-2 py-2">
+              <div class="imageboxcurosol">
+                <img class="rightimg" src="assets/images/dmb/pageviews.png" alt="Pageviews">
+
+              </div>
+              <div class="curosalhed">
+                <h4>Pageviews</h4>
+              </div>
+              <p>The top of the funnel metrics like page views can make a noticeable difference to your bottom line if
+                the rest of the funnel is in place.</p>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box sixthbox px-2 py-2">
+              <div class="imageboxcurosol">
+                <img class="rightimg" src="assets/images/dmb/searches.png" alt="Searches">
+              </div>
+              <div class="curosalhed">
+                <h4>Searches</h4>
+              </div>
+              <p>The number of visitors on your website or your infographic may be kept track of using Google Analytics.
+              </p>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box sevenbox px-2 py-2">
+              <div class="imageboxcurosol">
+                <img class="rightimg" src="assets/images/dmb/average-time-on-page.png" alt="Average time on page">
+              </div>
+              <div class="curosalhed">
+                <h4>Average time on page</h4>
+              </div>
+              <p>Again, using Google Analytics, we may get appropriate statistics on the average time a user spends on a
+                particular page. If there is any boost in the engagement, then it may be measured using Google
+                Analytics.</p>
+
+            </div>
+          </div>
+        </owl-carousel> -->
+      </div>
+    </div>
+    <!--third row-->
+    <div class="row">
+
+      <div class="col-md-12">
+        <h2>Why is digital marketing important for startups</h2>
+        <p class="card-text need-para"> All of this is taken care of under a single roof, and this proves to be optimal
+          as any problem can be easily rectified and at the same time enhancement in any of the domains may be done
+          seamlessly and efficiently. It is recommended for companies and startups which require more elaborate and
+          detailed services for various online forums and platforms. A full-service digital marketing agency caters to
+          all your online needs and requirements. The rate of interest will multiply significantly if a full-service
+          digital marketing agency is used.</p>
+        <p class="card-text need-para">Today, digital marketing is the most important marketing plan for any business
+          irrespective of its size. Not having a proper digital marketing plan is the most common reasons for the
+          failure of startups. The following are the reasons as to how digital marketing is important for startup
+          growth:</p>
+
+      </div>
+    </div>
+
+    <div class="row boxfourth my-3 startup">
+      <div class="col-sm-12 col-md-4 box1 px-3 py-3">
+        <img src="assets/images/dmb/involves-true-engagement.png" alt="Involves True Engagement">
+      </div>
+      <div class="col-sm-12 col-md-8 py-3 px-3 boxcontent">
+        <h4>Involves True Engagement</h4>
+        <p class="branding-cont">In today’s world, it is possible to transform products and processes using digital
+          marketing. With the help of social media, it is possible to take a startup closer to its target customers.
+          Thus, providing an edge on its competitors in the same industry irrespective of the size of the competitor.
+        </p>
+
+
+      </div>
+    </div>
+    <div class="row boxfourth my-3 startup">
+      <div class="col-sm-12 col-md-4 box2 px-3 py-3">
+        <img src="assets/images/dmb/increises-your-visibility.png" alt="Increases Your Visibility">
+      </div>
+      <div class="col-sm-12 col-md-8 py-3 px-3 boxcontent">
+        <h4>Increases Your Visibility</h4>
+        <p class="branding-cont">Digital marketing brings in new customers and also increases your visibility on the
+          web. The greater the visibility, the greater the number of leads generated, and so on. It is directly
+          proportional to one another and is what the success of a company is based on.</p>
+
+
+      </div>
+    </div>
+    <div class="row boxfourth my-3 startup">
+      <div class="col-sm-12 col-md-4 box3 px-3 py-3">
+        <img src="assets/images/dmb/cost-effective.png" alt="Cost-effective">
+      </div>
+      <div class="col-sm-12 col-md-8 py-3 px-3 boxcontent">
+        <h4>Cost-effective</h4>
+        <p class="branding-cont">Digital marketing brings in new customers and also increases the visibility on the web.
+          It is possible to get better results at a cheaper rate using digital marketing rather than traditional
+          marketing.</p>
+
+
+      </div>
+    </div>
+    <div class="row boxfourth my-3 startup">
+      <div class="col-sm-12 col-md-4 box4 px-3 py-3">
+        <img src="assets/images/dmb/created-brand-awareness.png" alt="Created Brand Awareness">
+      </div>
+      <div class="col-sm-12 col-md-8 py-3 px-3 boxcontent">
+        <h4>Created Brand Awareness</h4>
+        <p class="branding-cont"> Brand Awareness is arguably one of the biggest influencing factors in a startup. Thus,
+          with the help of digital marketing, it is possible to grow in size and also in terms of brand awareness.
+          Social media plays a vital role in this.</p>
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="sixthsec">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>What are the challenges of digital marketing</h2>
+        <p class="alignnum"><span><img alt="4 major digital marketing challenges" src="assets/images/dmb/4.png"><span>
+              major digital marketing challenges that we face:</span> </span> </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="eigthsec">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 px-3 py-5">
+        <h3>Click To Conversion Rate</h3>
+        <P>It is extremely frustrating to see (and spend the money for) many clicks, but no equivalent lift in sales.
+          This is the most common digital marketing challenges that a business faces.</P>
+      </div>
+      <div class="col-sm-12 col-md-6 px-3 py-5">
+        <h3>A Small Budget</h3>
+        <P>Without a large budget, is it possible to stand against larger brands? This most common feeling is that
+          Google’s search algorithm is slightly biased towards brands. Even though Google says this isn’t the case, we
+          are still dubious. Apart from this, we do know that larger competitors can feel like they have an unfair
+          advantage.</P>
+      </div>
+      <div class="col-sm-12 col-md-6 px-3 py-5">
+        <h3>Tough Ranking Competition</h3>
+        <P>It is extremely frustrating to see (and spend the money for) many clicks, but no equivalent lift in sales.
+          This is the most common digital marketing challenges that a business faces.</P>
+      </div>
+      <div class="col-sm-12 col-md-6 px-3 py-5">
+        <h3>Social Media is Flourishing</h3>
+        <P>It is extremely frustrating to see (and spend the money for) many clicks, but no equivalent lift in sales.
+          This is the most common digital marketing challenges that a business faces.</P>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="ninethsec">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>What is a full-service digital marketing agency?</h2>
+        <P>The online presence which entails the online reputation and functionality of a company is taken care of by a
+          full-service marketing agency. A full-service digital marketing agency has different departments, with each
+          department focusing on different areas like design, website development, content writing, social media
+          management, SEO and SEM. A full-service digital marketing agency can be used to design and implement various
+          strategies such as: </P>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 fsdma">
+
+        <div class="wrapper">
+          <owl-carousel-o [options]="myfsdma" [carouselClasses]="['owl-theme', 'sliding']" id="slider1">
+
+            <ng-container *ngFor="let item of slider_3;">
+              <ng-template class="slide" carouselSlide>
+                <div class="box mx-3 px-2 py-2">
+                  <div class="imageboxcurosol mx-auto py-5 px-5">
+                    <img class="slideimg mx-auto" [src]="item.img_url" alt="{{item.alt}}">
+                    <h4>{{item.heading}}</h4>
+                  </div>
+
+                </div>
+              </ng-template>
+            </ng-container>
+
+          </owl-carousel-o>
+        </div>
+
+        <!-- <owl-carousel [options]="myfsdma" [carouselClasses]="['owl-theme', 'sliding']">
+          <div class=" item mx-3">
+            <div class="box  px-2 py-2">
+              <div class="imageboxcurosol mx-auto py-5 px-5">
+                <img class="slideimg mx-auto" src="assets/images/dmb/ux-and-design.png" alt="UX and design strategy">
+                <h4>UX and design strategy</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box  px-2 py-2">
+              <div class="imageboxcurosol mx-auto py-5 px-5">
+                <img class="slideimg mx-auto" src="assets/images/dmb/content-strategy.png" alt="Content strategy">
+                <h4>Content strategy</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box  px-2 py-2">
+              <div class="imageboxcurosol mx-auto py-5 px-5">
+                <img class="slideimg mx-auto" src="assets/images/dmb/psa.png" alt="Paid search ads">
+                <h4>Paid search ads</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box  px-2 py-2">
+              <div class="imageboxcurosol mx-auto py-5 px-5">
+                <img class="slideimg mx-auto" src="assets/images/dmb/ppc-ads.png" alt="PPC Advertising">
+                <h4>PPC Advertising</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box  px-2 py-2">
+              <div class="imageboxcurosol mx-auto py-5 px-5">
+                <img class="slideimg mx-auto" src="assets/images/dmb/web-design.png" alt="Web design">
+                <h4>Web design</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box  px-2 py-2">
+              <div class="imageboxcurosol mx-auto py-5 px-5">
+                <img class="slideimg mx-auto" src="assets/images/dmb/re-targeting.png" alt="Re-targeting">
+                <h4>Re-targeting</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box  px-2 py-2">
+              <div class="imageboxcurosol mx-auto py-5 px-5">
+                <img class="slideimg mx-auto" src="assets/images/dmb/marketing-analysis.png" alt="Marketing Analytics">
+                <h4>Marketing Analytics</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box  px-2 py-2">
+              <div class="imageboxcurosol mx-auto py-5 px-5">
+                <img class="slideimg mx-auto" src="assets/images/dmb/web-technology.png" alt="Web technology">
+                <h4>Web technology</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box  px-2 py-2">
+              <div class="imageboxcurosol mx-auto py-5 px-5">
+                <img class="slideimg mx-auto" src="assets/images/dmb/sem-strategy.png" alt="SEM strategy">
+                <h4>SEM strategy</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box  px-2 py-2">
+              <div class="imageboxcurosol mx-auto py-5 px-5">
+                <img class="slideimg mx-auto" src="assets/images/dmb/social-media-strategy.png"
+                  alt="Social media strategy">
+                <h4>Social media strategy</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="box  px-2 py-2">
+              <div class="imageboxcurosol mx-auto py-5 px-5">
+                <img class="slideimg mx-auto" src="assets/images/dmb/seo-strategy.png" alt="SEO strategy">
+                <h4>SEO strategy</h4>
+              </div>
+
+            </div>
+          </div>
+        </owl-carousel> -->
+      </div>
+
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12 col-md-8">
+        <h3>The smart choice to smart SEO</h3>
+        <P>A results driven digital marketing agency that thrives itself on getting the best results.</P>
+      </div>
+      <div class="col-sm-12 col-md-4 text-center"><a href="https://brandstory.in/contact-us/"
+          class="btn btn-primary rdbtn mt-3 px-4 py-2">Get Started</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="tenthsec">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>Why is digital marketing better than traditional marketing?</h2>
+      </div>
+    </div>
+
+    <div class="row py-3">
+      <div class="col-sm-12 col-md-4">
+        <img class="image1" src="assets/images/dmb/dm-better-than-tm.png"
+          alt="digital marketing better than traditional marketing">
+      </div>
+      <div class="col-sm-12 col-md-8">
+        <h4>Digital marketing</h4>
+        <div class="row">
+          <div class="col-md-12 newlistform">
+
+            <div class="row card services-card-shadow py-3 my-2">
+              <div class="col-md-12">
+                <p class="card-text seoservice-p"> <img class="image12 px-2" src="assets/images/dmb/local-audience.png"
+                    alt="local audience ">
+                  You can target a local audience but also a global one.</p>
+              </div>
+
+            </div>
+            <div class="row card services-card-shadow py-3 my-2">
+              <div class="col-md-12">
+                <p class="card-text seoservice-p"> <img class="image12 px-2" src="assets/images/dmb/your-audience.png"
+                    alt="Your audience">
+                  Your audience can choose how they want to receive your content. </p>
+              </div>
+
+            </div>
+            <div class="row card services-card-shadow py-3 my-2">
+              <div class="col-md-12">
+                <p class="card-text seoservice-p"> <img class="image12 px-2" src="assets/images/dmb/interaction.png"
+                    alt="Your audience">
+                  Interaction with your audience is easy, possible and encouraged</p>
+              </div>
+
+            </div>
+            <div class="row card services-card-shadow py-3 my-2">
+              <div class="col-md-12">
+                <p class="card-text seoservice-p"> <img class="image12 px-2"
+                    src="assets/images/dmb/data-and-results.png" alt="Your audience">
+                  Data and results are easily recorded. </p>
+              </div>
+
+            </div>
+            <div class="row card services-card-shadow py-3 my-2">
+              <div class="col-md-12">
+                <p class="card-text seoservice-p"> <img class="image12 px-2" src="assets/images/dmb/real-time.png"
+                    alt="Your audience">
+                  Real-time results and Brand development </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12 py-3">
+        <h2>How can a business grow through digital marketing?</h2>
+      </div>
+    </div>
+
+    <div class="row whiterow py-3 px-2">
+      <div class="col-sm-12 col-md-12">
+        <div class="row whiterowinner py-3">
+          <div class="col-sm-12 col-md-12">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <ul>
+                  <li>
+                    <h3>Digital Marketing Levels the Online Playing Field</h3>
+                    <p>With digital marketing, small companies now have the resources to perform sales and marketing
+                      processes that were previously available only to large corporations. Without a call centre, small
+                      businesses can engage effectively with multiple customers, even to customers from many parts of
+                      the world even if they don’t have physical stores or branches in these locations.</p>
+                  </li>
+
+                </ul>
+
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <ul>
+                  <li>
+                    <h3> Digital Marketing Provides better ROI for Your Marketing Investments </h3>
+                    <p>The objective of any business is to generate a high ROI; using digital marketing, this is easily
+                      possible. Many results are analyzed and monitored using some of the techniques of digital
+                      marketing. It helps the organizations to take necessary measures as soon as possible. The results
+                      are checked and kept in track in real-time.</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="row py-3">
+              <div class="col-sm-12 col-md-6">
+                <ul>
+                  <li>
+                    <h3>Digital Marketing Entices People to Take Favorable Action</h3>
+                    <p>By implementing CTA on your website or application, the user always has an action to perform such
+                      as signing up, or logging in, downloading a file, etc. This is an effective strategic technique
+                      that digital marketing company takes in order to entice people to an action that is best suited to
+                      your needs.</p>
+                  </li>
+
+                </ul>
+
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <ul>
+                  <li>
+                    <h3>Digital Marketing Ensures Business Survival Online</h3>
+                    <p>Even if you have tons of website visitors, but none of them ever convert, your business will also
+                      cease to exist. Digital marketing ensures this never happens by applying various techniques and
+                      methods which allow a business to not only survive but thrive online.</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <ul>
+                  <li>
+                    <h3>Digital Marketing Caters to the Mobile Consumer</h3>
+                    <p>The world has gone digital with over 91% of people in the US alone having their mobile device
+                      within reaching distance at all periods of time. This was taken from a recent survey provided by a
+                      leading research company. Every answer to every query maybe just a Google search away and thus so
+                      is their consumer needs. This can be matched by the help of digital marketing and setting up
+                      online domains for the consumer to visit, such as websites, social media etc.</p>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <ul>
+                  <li>
+                    <h3>Digital Marketing Helps Generate Better Revenues </h3>
+                    <p>With the help of digital marketing, it is possible to get a good SEO to lead generation
+                      conversion rate, which in turn provides higher revenue. That is the objective of most business and
+                      the likelihood of a greater revenue generated is far higher with the help of a digital marketing
+                      agency.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
+
+
+<section class="elevnthsec">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2> Is digital marketing important cost effective?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <tabset [vertical]="true" [justified]="true">
+          <tab *ngFor="let portfolios of myPortfolioItems" [heading]="portfolios.title">
+            <h3>{{portfolios.title}}</h3>
+            <p>{{portfolios.content}}</p>
+          </tab>
+
+        </tabset>
+      </div>
+    </div>
+
+    <!--<div class="row">
+  <div class="col-sm-12 col-md-4 py-3"> <ul class="costlisting">
+    <li  class="seccolorcha" (click)="updateProductCategory('retargeting-ads')">Retargeting Ads</li>
+    <li  class="seccolorcha" (click)="updateProductCategory('Return-investment')">Return on investment</li>
+    <li  class="seccolorcha"  (click)="updateProductCategory('Track-success')">Track success & Adjust campaigns</li>
+    <li  class="seccolorcha" (click)="updateProductCategory('Social-Selling')">Social Selling</li>
+  </ul>
+    </div>
+  <div class="col-sm-12 col-md-8 py-3" *ngFor="let portfolios of myPortfolioItems | category:ProductCategory">
+    <h5 class="card-title mt-3 px-3">{{ portfolios.title }}</h5>
+
+    <p class="card-text  px-3 pb-3">{{ portfolios.content }}</p>
+    </div>
+
+</div>-->
+
+  </div>
+</section>
+
+
+<section class="sec12">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>Types of skills available in a digital marketing agency?</h2>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12 py-3">
+        <p>Digital marketing is regarded to be a simple business due to the fact that real work is done online. Several
+          agency owners overlook the fact that you have to spend an equivalent quantity of energy and time in devising a
+          team which carries advertising activities. One person may possibly be focusing on multiple functions, so the
+          accidents could be avoided; however, it's much better to split work evenly and separately.</p>
+        <p>The creative department is currently going to determine the achievement of your company because the narrative
+          of a digital marketing agency is fueled by the creatives. They consist of designers, art directors, website
+          designers, creative directors and content writers.</p>
+        <p> The accounts department helps incorporate account supervisors and fund managers. One executive in the
+          account section, at first, is sufficient.</p>
+        <p>Technical service has increased given your customer's requirement for UX perfection. 14 percentage of this
+          commission out of digital bureaus belongs to technician services. This team may be the backbone of one's
+          projects on the web.</p>
+        <p> A few significant functions you should meet are leading end programmers who'll write and execute code to be
+          displayed on web browsers, etc. Backend programmer will do the job together, managing a business system's
+          heart.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="sec13">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>What are the benefits of digital marketing?</h2>
+        <p>There are various advantages that a business may benefit from if they choose to hire a digital marketing
+          agency to take care of their online marketing needs. Some of the benefits are:</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12 py-3">
+
+        <div class="wrapper">
+          <owl-carousel-o [options]="my3rdslider" [carouselClasses]="['owl-theme', 'sliding']" id="slider1">
+
+            <ng-container *ngFor="let item of slider_4;">
+              <ng-template class="slide" carouselSlide>
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 py-3">
+                    <img [src]="item.img_url" alt="{{item.alt}}">
+                  </div>
+                  <div class="col-sm-12  thirdslidercontent col-md-6 py-5 px-3">
+                    <h3>{{item.heading}}</h3>
+                    <p>{{item.text}}</p>
+                    <p *ngIf="item.text2">{{item.text2}}</p>
+
+                    <ng-container  *ngIf="item.list_array.length>0">
+                      <ul *ngFor="let list of item.list_array">
+                        <li>{{list}}</li>
+                      </ul>
+                    </ng-container>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+
+          </owl-carousel-o>
+        </div>
+
+
+        <!-- <owl-carousel [options]="my3rdslider" [carouselClasses]="['owl-theme', 'sliding']">
+          <div class=" item mx-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 py-3"> <img src="assets/images/dmb/3rdslider1.png" alt="Real_Time Results">
+              </div>
+              <div class="col-sm-12  thirdslidercontent col-md-6 py-5 px-3">
+                <h3>Real_Time Results</h3>
+                <p>There are various factors that determine the success or failure of a product or service. This can be
+                  judged easily with the help of digital marketing in real-time, which proves to be an enormous
+                  advantage to us. Some of these factors which you can know through online marketing are</p>
+                <ul>
+                  <li>The site traffic</li>
+                  <li>the increase in subscribers</li>
+                  <li>peak trading times</li>
+                  <li>conversion rates</li>
+                  <li>rise and fall of website traffic</li>
+                  <li>bounce rate</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 py-3"> <img src="assets/images/dmb/3rdslider2.png"
+                  alt="Outreach can be improved"> </div>
+              <div class="col-sm-12  thirdslidercontent col-md-6 py-5 px-3">
+                <h3>Outreach can be improved</h3>
+                <p>The sky’s the limit in digital marketing as the service is online, it can be accessed globally. When
+                  traditional marketing constricts you to one geographic area, digital marketing can help you interact
+                  with customers from any geographic location quite easily. To sum it up, it is like having your store
+                  open for 24 hours. With the help of digital marketing specialists and analysts, it is possible to
+                  reach a global platform and optimally reach your targets in the digital spectrum.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 py-3"> <img src="assets/images/dmb/3rdslider3.png"
+                  alt="Gain Knowledge of your Competitors"> </div>
+              <div class="col-sm-12  thirdslidercontent col-md-6 py-5 px-3">
+                <h3>Gain Knowledge of your Competitors</h3>
+                <p>Analyzing and strategizing plays a vital role in digital marketing. Observe the strategies and
+                  techniques implemented by your competitors, and thus you can gain the upper hand and reach more
+                  customers. This helps to cash in on possible opportunities at the right time. </p>
+                <p>Digital marketing’s importance also lies in the fact that it lets you compete directly with big
+                  brands and large corporations. Irrespective of the size of your company or cooperation, with the help
+                  of digital marketing, it is possible to make your product or service available on a global platform.
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 py-3"> <img src="assets/images/dmb/3rdslider4.png"
+                  alt="Ensure Online Business Survival"> </div>
+              <div class="col-sm-12  thirdslidercontent col-md-6 py-5 px-3">
+                <h3>Ensure Online Business Survival</h3>
+                <p>A target audience is the most efficient way to market a product. Thus, by implementing smart tactics
+                  such as creating videos, blogs and overall content on social media which is made with the appropriate
+                  target audience in mind, we can ensure that the online business will not only survive but thrive.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class=" item mx-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 py-3"> <img src="assets/images/dmb/3rdslider5.png"
+                  alt="Ensure Online Business Survival"> </div>
+              <div class="col-sm-12  thirdslidercontent col-md-6 py-5 px-3">
+                <h3>Greater ROI on Campaigns</h3>
+                <p>The objective of any business is to generate a high ROI. Using digital marketing, this is easily
+                  possible. Many results are analyzed and monitored using some of the techniques of digital marketing.
+                  It helps the organizations to take necessary measures as soon as possible.</p>
+
+              </div>
+            </div>
+          </div>
+
+        </owl-carousel> -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec14">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>What are the B2B Marketing services offered?</h2>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12 py-3 b2bms">
+
+        <div class="wrapper">
+          <owl-carousel-o [options]="my4thslider" [carouselClasses]="['owl-theme', 'sliding']" id="slider1">
+
+            <ng-container *ngFor="let item of slider_5;">
+              <ng-template class="slide" carouselSlide>
+                <div class="" [attr.class]="item.color" [ngClass]="{'box mx-3 my-3 px-3 py-3': true}">
+                  <div class="curosalhed">
+                    <h4>{{item.heading}}</h4>
+                  </div>
+                  <p>{{item.text}}</p>
+
+                </div>
+              </ng-template>
+            </ng-container>
+
+          </owl-carousel-o>
+        </div>
+
+        <!-- <owl-carousel [options]="my4thslider" [carouselClasses]="['owl-theme', 'sliding']">
+          <div class=" item mx-3 my-3">
+            <div class="box firstbox px-3 py-3">
+              <div class="curosalhed">
+                <h4>B2B Marketing Web Design</h4>
+              </div>
+              <p>Your B2B Marketing Website is a living, breathing part of your digital marketing presence where your
+                target audience is going to fall in (or out of) love with you - so it is important that you get it right
+                to generate the right leads through your digital marketing strategy. Failing to get your B2B Marketing
+                Website right will see you lose business to your competitors. Nobody wants that.</p>
+
+            </div>
+          </div>
+          <div class=" item mx-3 my-3">
+            <div class="box secondbox px-3 py-3">
+              <div class="curosalhed">
+                <h4>B2B Social Media Marketing</h4>
+              </div>
+              <p>Many corporations and companies have adopted B2B marketing services for a period of time now. However,
+                many companies are not getting it right or are spending too much time on menial tasks that are part of a
+                fad and aren’t likely to get much, if any, traction. Thus hiring a B2B agency is a step in the right
+                direction.</p>
+
+            </div>
+          </div>
+          <div class=" item mx-3 my-3">
+            <div class="box thirdbox px-3 py-3">
+              <div class="curosalhed">
+                <h4>B2B Influencer Marketing</h4>
+              </div>
+              <p>Influencer Marketing has become so famous recently, but it isn’t for everyone. Nor is it as complicated
+                as some Marketing Agencies and Marketing Consultants like to make out. Hence it is ideal for working
+                with a B2B marketing agency to identify whether B2B Influencer Marketing is for you, which Influencers
+                you should be looking to collaborate with, how to approach them, and how to know whether your Influencer
+                Marketing is effective.</p>
+
+            </div>
+          </div>
+          <div class=" item mx-3 my-3">
+            <div class="box fourthbox px-3 py-3">
+              <div class="curosalhed">
+                <h4>B2B Content Marketing</h4>
+              </div>
+              <p>B2B Content Marketing comes in many different guises and a range of formats, building compelling B2B
+                Marketing Content that attracts the right target audience into our clients’ sales and marketing pipeline
+                and accelerates them through the pipeline.</p>
+
+            </div>
+          </div>
+          <div class=" item mx-3 my-3">
+            <div class="box cfivethbox px-3 py-3">
+              <div class="curosalhed">
+                <h4>B2B Case Studies</h4>
+              </div>
+              <p>The first thing most businesses need to do is prove themselves through examples of previous work,
+                previous clients, and previous successes. In some instances, a simple portfolio will suffice, but for
+                many businesses to business decision-makers, more significant effort is required. That’s where B2B Case
+                Studies come into the equation.</p>
+
+            </div>
+          </div>
+          <div class=" item mx-3 my-3">
+            <div class="box wsixthbox px-3 py-3">
+              <div class="curosalhed">
+                <h4>B2B White Papers</h4>
+              </div>
+              <p>Content is king, right? We’ve all heard it before. It’s nothing new. But few businesses are acting on
+                it. Producing informative, insightful and thought-provoking White Papers is an effective way of not only
+                building brand awareness but positioning and keeping your business front-of-mind with prospects,
+                customers, clients, and partners alike.</p>
+
+            </div>
+          </div>
+          <div class=" item mx-3 my-3">
+            <div class="box cseventhbox px-3 py-3">
+              <div class="curosalhed">
+                <h4>B2B Community Management</h4>
+              </div>
+              <p>B2B Marketing has evolved over the last few years, and it is only going to accelerate. One-way messages
+                are becoming less acceptable to customers and increasingly less effective. Customers and clients now
+                want to feel like they belong. They want to feel like they are part of your journey. This is just the
+                beginning.</p>
+
+            </div>
+          </div>
+
+        </owl-carousel> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2> What are the usual B2B Marketing Tactics used in Industries?</h2>
+      </div>
+    </div>
+    <div class="row py-5">
+      <div class="col-sm-12  order-sm-12 col-md-6 imagealign">
+        <img src="assets/images/dmb/section14image1.png" alt="Niche Targeting">
+      </div>
+      <div class="col-sm-12  order-sm-1 col-md-6 ordercontent">
+        <h3>Niche Targeting</h3>
+        <p>Some companies aim to be more general in their messaging, believing it will resonate with more people. This
+          method, however, often produces a "meh" response. But the more specific a message is to your niche, the more
+          engagement it will generate and the more it will truly resonate with your niche audience.</p>
+        <p>It really pays to segment your audience into specific buyer personas. Drill down to the specific niche you
+          want to reach. Then create messages focused on each segment. Your audience will be more responsive to such
+          messages and ultimately more loyal to you. </p>
+      </div>
+
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12  col-md-6 imagealign">
+        <img src="assets/images/dmb/section14image2.png" alt="Influencer Marketing">
+      </div>
+      <div class="col-sm-12   col-md-6 ordercontent">
+        <h3>Influencer Marketing</h3>
+        <p>Influencer Marketing has slowly but surely become a mature marketing tactic that has been employed by various
+          B2B marketing agencies. For starters, we see more tools designed to find and utilize influencers to their
+          maximum potential. Tools like Traackr and Buzzsumo help marketers to find industry influencer who fit their
+          brand, develop a solid strategy, and measure the results. </p>
+      </div>
+    </div>
+
+    <div class="row py-3">
+      <div class="col-sm-12  order-sm-12 col-md-6 imagealign">
+        <img src="assets/images/dmb/section14image3.png" alt="Personalization">
+      </div>
+      <div class="col-sm-12  order-sm-1 col-md-6 ordercontent">
+        <h3>Personalization</h3>
+        <p>For many, the first thing that comes to mind when they hear "personalization" is their name in the header of
+          a marketing email. But this small, software-automated example is just scraping the surface. </p>
+        <p>Let's start with a fresh definition. Personalization is the action of taking data about your audience and
+          using it to make your content (whether it's blogs, emails, infographics, etc.) more useful and pertinent. This
+          could mean using demographic data, such as age, gender, and career of your audience to create more engaging
+          content. For instance, if the majority of your audience includes executive males in their late 40s., you could
+          use this data to compile blog posts to fit their needs and concerns. Or say you notice that the majority of
+          your website traffic is from blog posts about social media. You will want to create content that's more
+          focused on that subject, such as an in-depth eBook or video.</p>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12  col-md-6 imagealign">
+        <img src="assets/images/dmb/section14image4.png" alt="Customer User Groups">
+      </div>
+      <div class="col-sm-12   col-md-6 ordercontent">
+        <h3>Customer User Groups</h3>
+        <p>Ever wish you could get inside the head of your B2B buyers? You can! Arrange customer user groups and events
+          to get to know your customers. These groups are two-way streets. While it gives you the opportunity to learn
+          more about your customers, your customers will have a chance to learn more about your company. It fosters a
+          positive relationship where both sides get to know and see each other in action.</p>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12  order-sm-12 col-md-6 imagealign">
+        <img src="assets/images/dmb/section14image5.png" alt="Personal Branding">
+      </div>
+      <div class="col-sm-12  order-sm-1 col-md-6 ordercontent">
+        <h3>Personal Branding</h3>
+        <p> One of the most sought after forms of B2B marketing available today is Personal Branding. Buyers have begun
+          to look more at the faces and voices behind the company logo. Some of the ways in which this may be achieved
+          are to look for opportunities outside of your company, such as speaking engagements at industry events.
+          Individualize your style and delivery according to your personality.</p>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12 col-md-12">
+        <h2>What is in a B2B Marketing Agency's tech stack?</h2>
+      </div>
+    </div>
+
+    <div class="row borderrow">
+      <div class="col-sm-12 col-md-6 px-3 py-5">
+        <h3><img src="assets/images/dmb/section14ion1.png" alt="Account based Marketing">Account based Marketing</h3>
+        <P>While Mailchimp edged out Hubspot in terms of total overall agency use, Eloqua, Marketo and Hubspot had the
+          highest proportion of certified or accredited agencies. This suggests Mailchimp is being used for one-off or
+          limited-run campaigns, whereas the larger traditional B2B players are in use for more sophisticated, strategic
+          projects where specialist expertise is necessary.</P>
+      </div>
+      <div class="col-sm-12 col-md-6 px-3 py-5">
+        <h3> <img src="assets/images/dmb/section14ion2.png" alt="Social Media Management">Social Media Management</h3>
+        <P>While Mailchimp edged out Hubspot in terms of total overall agency use, Eloqua, Marketo and Hubspot had the
+          highest proportion of certified or accredited agencies. This suggests Mailchimp is being used for one-off or
+          limited-run campaigns, whereas the larger traditional B2B players are in use for more sophisticated, strategic
+          projects where specialist expertise is necessary.</P>
+      </div>
+      <div class="col-sm-12 col-md-6 px-3 py-5">
+        <h3> <img src="assets/images/dmb/section14ion3.png" alt="Content Management Systems"> Content Management Systems
+        </h3>
+        <P>WordPress powers 75 million websites, almost a fifth of all sites on the web. Adobe also has a presence in
+          this category, having acquired e-commerce platform Magento for $1.8 billion in May 2018.</P>
+      </div>
+      <div class="col-sm-12 col-md-6 px-3 py-5">
+        <h3><img src="assets/images/dmb/section14ion4.png" alt="Automation Strategies"> Automation Strategies</h3>
+        <P>While the likes of Hubspot, Marketo and Salesforce Pardot trumpet their ABM credentials, these tech platforms
+          enable ABM campaigns, in comparison with orchestration platforms such as Demandbase, Engagio and Terminus.
+          It’s likely that many of the agencies we surveyed are taking their first steps in ABM, so are using their
+          existing platforms before investing in the ‘pure-play’ technology available in the market.</P>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="sec15">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <h2>Finally…A SEO Agency That Actually Gets Results</h2>
+        <p>We base our SEO campaigns on verifiable, results-driven thematic keywords so you outrank the competition</p>
+      </div>
+      <div class="col-sm-12 col-md-4 text-center">
+        <a href="https://brandstory.in/contact-us/" class="btn btn-primary rdbtn mt-3 px-4 py-2">Get your results
+          now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="sec16">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>What is ABM (Account-based Marketing)?</h2>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="sec17">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <p>ABM is highly personalized, and combines insight-driven marketing with sales, to increase awareness, develop
+          relationships and drive growth within specific high-value, high-propensity accounts. This is specifically to a
+          certain target audience and has the potential to drive stronger, more valuable customer relationships and
+          enhance retention. Account-Based Marketing is an increasingly valuable strategy for B2B marketers.</p>
+      </div>
+    </div>
+    <div class="row py-5">
+      <div class="col-sm-12  order-sm-12 col-md-6 imagealign">
+        <img src="assets/images/dmb/section17image1.png" alt="Internal alignment">
+      </div>
+      <div class="col-sm-12  order-sm-1 col-md-6 ordercontent">
+        <h3>Internal alignment</h3>
+        <p>Internal alignment starts with key stakeholder buy-in from your marketing team, sales, executives and the
+          board. Once you have secured this (and that is no easy feat in itself), the majority of your efforts will be
+          to maintain your understanding and alliance with sales. Friction between you will have an effect on your
+          performance. Top tip: This isn’t just about being friendly with sales but having clear, shared objectives and
+          responsibilities. Sales must be aware that ABM is not about what marketing does for them, but what sales and
+          marketing do together. </p>
+      </div>
+
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12  col-md-6 imagealign">
+        <img src="assets/images/dmb/section17image2.png" alt="Data & insight">
+      </div>
+      <div class="col-sm-12   col-md-6 ordercontent">
+        <h3>Data & insight</h3>
+        <p>Again sales and marketing must work collaboratively together to pool the information they need to select the
+          right accounts. Once they’ve chosen them, they have to dig deeper into those insights, mapping what they don’t
+          know and plugging that gap. That information must be clean, up-to-date and readily shared.</p>
+        <p>Top tip: Pooling account information is currently the biggest challenge for B2B ABMers with 86% saying it’s a
+          challenge or a big challenge. An easy way to resolve this is to go after fewer accounts and choosing those you
+          already know. Of course, don’t forget third-party data providers, who can really help take the pressure off!
+        </p>
+      </div>
+    </div>
+
+    <div class="row py-3">
+      <div class="col-sm-12  order-sm-12 col-md-6 imagealign">
+        <img src="assets/images/dmb/section17image3.png" alt="Programme & content execution">
+      </div>
+      <div class="col-sm-12  order-sm-1 col-md-6 ordercontent">
+        <h3>Programme & content execution</h3>
+        <p>This is the process by which marketing and sales work together to define what the ideal account will look
+          like, and then select them. This includes agreeing on the number, size and type of accounts you will target.
+          That decision must be data-driven and made collaboratively by sales and marketing.</p>
+        <p>Top tip: The process by which you select your accounts is crucial and often underestimated. Success in ABM is
+          limited to the potential worth of your accounts – that means picking targets that represent value to your
+          business while having a high likelihood of unlocking that value within the given timeframe.</p>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12  col-md-6 imagealign">
+        <img src="assets/images/dmb/section17image4.png" alt="Account definition">
+      </div>
+      <div class="col-sm-12   col-md-6 ordercontent">
+        <h3>Account definition</h3>
+        <p>This is the process by which marketing and sales work together to define what the ideal account will look
+          like, and then select them. This includes agreeing on the number, size and type of accounts you will target.
+          That decision must be data-driven and made collaboratively by sales and marketing. Top tip: The process by
+          which you select your accounts is crucial and often underestimated. Success in ABM is limited to the potential
+          worth of your accounts – that means picking targets that represent value to your business while having a high
+          likelihood of unlocking that value within the given timeframe.</p>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12  order-sm-12 col-md-6 imagealign">
+        <img src="assets/images/dmb/section17image5.png" alt="Technology">
+      </div>
+      <div class="col-sm-12  order-sm-1 col-md-6 ordercontent">
+        <h3>Technology</h3>
+        <p>This is the process by which marketing and sales work together to define what the ideal account will look
+          like, and then select them. This includes agreeing on the number, size and type of accounts you will target.
+          That decision must be data-driven and made collaboratively by sales and marketing. Top tip: The process by
+          which you select your accounts is crucial and often underestimated. Success in ABM is limited to the potential
+          worth of your accounts – that means picking targets that represent value to your business while having a high
+          likelihood of unlocking that value within the given timeframe.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="sec18">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>How to avoid mistakes in ABM?</h2>
+      </div>
+    </div>
+
+
+    <!--<div class="row">
+  <div class="col-sm-12 col-md-3 py-3">
+    <div class="box"  (click)="updateAbmCategory('starting')">
+    <img src="assets/images/dmb/section18icon1.png" alt="Starting too soon">
+    <h4>Starting too soon</h4>
+  </div>
+    </div>
+<div class="col-sm-12 col-md-3 py-3">
+  <div class="box"  (click)="updateAbmCategory('overselling')">
+  <img src="assets/images/dmb/section18icon2.png" alt="Overselling">
+  <h4>Overselling</h4>
+</div>
+  </div>
+  <div class="col-sm-12 col-md-3 py-3">
+    <div class="box"  (click)="updateAbmCategory('selecting')">
+    <img src="assets/images/dmb/section18icon3.png" alt="Selecting too many accounts">
+    <h4>Selecting too many accounts</h4>
+  </div>
+    </div>
+  <div class="col-sm-12 col-md-3 py-3">
+    <div class="box"  (click)="updateAbmCategory('insufficient')">
+      <img src="assets/images/dmb/section18icon4.png" alt="Insufficient Research">
+      <h4>Insufficient Research</h4>
+    </div>
+      </div>
+</div>-->
+    <div class="row">
+      <tabset [justified]="true">
+        <tab *ngFor="let abm of myAbm">
+          <span *tabHeading>
+            <img src="{{abm.img1}}" alt="Insufficient Research">
+            <h4 class="pt-3">{{abm.heading}}</h4>
+          </span>
+          <p class="card-text  px-3 pb-3">{{ abm.content }}</p>
+          <p class="card-text  px-3 pb-3">{{ abm.content2 }}</p>
+        </tab>
+
+      </tabset>
+      <!--<div class="col-sm-12 col-md-12 py-3" *ngFor="let abm of myAbm | category:AbmCategory">
+
+    <p class="card-text  px-3 pb-3">{{ abm.content }}</p>
+    <p class="card-text  px-3 pb-3">{{ abm.conten2 }}</p>
+    </div>  -->
+
+    </div>
+
+  </div>
+</section>
+
+<section class="sec19">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>SEO Optimization</h2>
+        <p>SEO stands for Search Engine Optimization. It is an effective art or science which can be implemented to
+          match your website, product or service to what people are searching for online. An SEO is a tool which plays
+          an essential role in increasing the rank of a particular website in a given search engine such as Google, Bing
+          etc. SEO is used to cater to the consumer’s needs rather than bombarding them with advertisements. An SEO can
+          either be paid or organic and will rank on a search engine accordingly.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 px-5">
+            <h4>Why use SEO</h4>
+            <p>SEO plays a vital role in any form of digital marketing. The higher the page ranking of your website,
+              product or service, the greater the likelihood that the appropriate consumer would match it. It is a great
+              advantage to have as it provides an edge over the competition by ranking your website higher than the
+              rest. A good SEO can help your business, product or service grow and meet its objectives. It is an
+              essential tool with how it works as shown below:</p>
+          </div>
+          <div class="col-sm-12 col-md-6 px-5">
+            <h4>How SEO works</h4>
+            <p>A search engine will never provide us with a definite algorithm that it follows, but we have a pretty
+              clear idea of how the SEO works. The factors which influence an SEO may be broadly classified into two
+              types, namely.</p>
+            <p> A search engine always loves great content, and a consumer needs this to understand the quality better
+              and value your organization can provide. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<section class="sec20">
+  <div class="container py-5">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 px-5 whitetext">
+            <h3>SEO factors</h3>
+            <div class="row my-5">
+              <div class="col-sm-12 col-md-12">
+                <!--<img src="assets/images/dmb/seofactor1.png" alt="On-page factors">-->
+                <h4 class="py-5">On-page factors</h4>
+                <!--<img src="assets/images/dmb/seofactor2.png" alt="Off-page factors">-->
+                <h4 class="py-3">Off-page factors</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 px-5">
+            <div class="card-deck">
+              <div class="card services-card-shadow ">
+                <div class="card-body">
+                  <h3 class="py-2">Strategies for creating good content </h3>
+                  <ul class="strategies">
+                    <li> <img src="assets/images/dmb/seofactor-icon1.png" alt="Social Media content"> Social Media
+                      content</li>
+                    <li><img src="assets/images/dmb/seofactor-icon2.png" alt="Videos and Audio submission"> Videos and
+                      Audio submission</li>
+                    <li><img src="assets/images/dmb/seofactor-icon3.png" alt="Aesthetic appeal"> Aesthetic appeal</li>
+                    <li><img src="assets/images/dmb/seofactor-icon4.png" alt="Articles and Blog posts"> Articles and
+                      Blog posts</li>
+                    <li><img src="assets/images/dmb/seofactor-icon5.png"
+                        alt="Infographics or other visual representation"> Infographics or other visual representation
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<section class="sec21">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <p>There are various other features which should make the user more suited to accessing the web pages an overall
+          great experience and will proportionally generate traffic onto the page. Freshness with new and updated
+          information is vital for any website. Though creating great content may be time as well as resource-consuming,
+          the benefits are sure to make it worth it.</p>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<section class="sec22">
+  <div class="container py-5">
+
+    <div class="row whiterow py-3 px-2">
+      <div class="col-sm-12 col-md-12">
+        <h3>On-Page SEO </h3>
+        <div class="row text-center">
+          <div class="col-sm-12 col-md-6 seo-banner-tar">
+            <img src="assets/images/dmb/on-page-seo-1.png" alt="User signals">
+            <h4>User signals</h4>
+          </div>
+          <div class="col-sm-12 col-md-6 onseo-img py-3 px-3">
+            <img src="assets/images/dmb/on-page-seo-2.png" alt="User signals Report">
+          </div>
+          <div class="col-sm-12 col-md-6 seo-banner-tar">
+            <img src="assets/images/dmb/on-page-seo-3.png" alt="Technical">
+            <h4>Technical</h4>
+          </div>
+          <div class="col-sm-12 col-md-6 onseo-img py-3 px-3">
+            <img src="assets/images/dmb/on-page-seo-4.png" alt="Technical Report">
+          </div>
+          <div class="col-sm-12 col-md-6 seo-banner-tar">
+            <img src="assets/images/dmb/on-page-seo-5.png" alt="Technical">
+            <h4>User experience</h4>
+          </div>
+          <div class="col-sm-12 col-md-6 onseo-img py-3 px-3">
+            <img src="assets/images/dmb/on-page-seo-6.png" alt="User experience Report">
+          </div>
+          <div class="col-sm-12 col-md-6 text-left py-3 px-3">
+            <h4>Title Tag</h4>
+            <p>Search engines use these to figure out what the website is all about. The rules to be followed are that
+              it maybe 70 characters or less, including both the keyword your content focuses on and your business name.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-left py-3 px-3">
+            <h4>Meta Description</h4>
+            <p>The meta description on your website tells search engines a little bit more about what each page is
+              about. This is also used by your human visitors to understand better what the page is about and if it’s
+              relevant. Sub-headings</p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-left py-3 px-3">
+            <h4>Internal Links </h4>
+            <p>Building internal links, or hyperlinks to other content on your site can help search engines learn more
+              about your site. For example, if you are writing a post about the value of a specific product or service,
+              you can link to the product or service page in your blog post.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-left py-3 px-3">
+            <h4>Image Name and ALT Tags</h4>
+            <p>A keyword or phrase must always be added to an image when it is being added on a website or on a blog
+              site. Indexing of the images becomes easier, and thus when a user uses the keyword or phrase, then it may
+              be easily generated.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
+
+
+<section class="sec23">
+  <div class="container py-5">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <h2>First Page results for your dreams</h2>
+        <p>We base our SEO campaigns on verifiable, results-driven thematic keywords so you outrank the competition </p>
+      </div>
+      <div class="col-sm-12 col-md-4 text-center">
+        <a href="https://brandstory.in/contact-us/" class="btn btn-primary rdbtn mt-3 px-4 py-2">Contact Us</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec24">
+  <div class="container py-5">
+
+    <div class="row whiterow py-3 px-2">
+      <div class="col-sm-12 col-md-12">
+        <h3>Off-page SEO</h3>
+        <div class="row text-center">
+          <div class="col-sm-12 col-md-6 seo-banner-tar">
+            <img src="assets/images/dmb/off-page-seo-1.png" alt="User signals">
+            <h4>Backlinks</h4>
+          </div>
+          <div class="col-sm-12 col-md-6 onseo-img py-3 px-3">
+            <img src="assets/images/dmb/off-page-seo-2.png" alt="User signals Report">
+          </div>
+          <div class="col-sm-12 col-md-6 seo-banner-tar">
+            <img src="assets/images/dmb/off-page-seo-3.png" alt="Technical">
+            <h4>Social signals</h4>
+          </div>
+          <div class="col-sm-12 col-md-6 onseo-img py-3 px-3">
+            <img src="assets/images/dmb/off-page-seo-4.png" alt="Technical Report">
+          </div>
+
+          <div class="col-sm-12 col-md-6 text-left py-3 px-3">
+            <h4>Trust</h4>
+            <p> Sights which have authority can be used to create quality backlinks. Google is the most trusted search
+              engine, and if a trust is established with your website, then it could play as a vital factor in page
+              ranking.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-left py-3 px-3">
+            <h4>Links</h4>
+            <p> Backlinks may be the most effective and popular way to build an Off-page SEO. You want to be careful
+              here as spamming sites with your links is a quick and easy way to get your site banned from the search
+              engines.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-left py-3 px-3">
+            <h4>Social </h4>
+            <p>This is directly proportional to that of the content as the better the content, the greater the number of
+              likes and shares that are generated</p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-left py-3 px-3">
+            <h4>The Benefits</h4>
+            <ul class="datalist2">
+              <li>Increase in traffic</li>
+              <li>Greater access to data</li>
+              <li>Results are permanent</li>
+              <li>Higher Brand Credibility</li>
+              <li>There are many millions of websites, and a SEO could make the difference in making you stand out</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
+
+<section class="sec25">
+  <div class="container py-5">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>Web Design with SEO</h2>
+        <p>SEO stands for Search Engine Optimization. It is an effective art or science which can be implemented to
+          match your website, product or service to what people are searching for online. An SEO is a tool which plays
+          an essential role in increasing the rank of a particular website in a given search engine such as Google, Bing
+          etc. SEO is used to cater to the consumer’s needs rather than bombarding them with advertisements. An SEO can
+          either be paid or organic and will rank on a search engine accordingly.</p>
+      </div>
+    </div>
+    <div class="row px-0">
+      <!-- <div class="col-sm-12 col-md-4 px-0">
+          <img src="assets/images/dmb/web-design-with-seo.png" alt="Web Design with SEO">
+         </div>  -->
+      <div class="col-sm-12 col-md-12 px-3 webdesign">
+        <owl-carousel [options]="mywebdesign" [carouselClasses]="['owl-theme', 'webdesigninner', 'sliding']">
+          <div class=" item mx-3 my-3">
+            <div class="row webdesignrow px-3 py-3">
+              <h4>Make sure your Design is Accessible</h4>
+              <p> The internet is an increasingly important source in many facets of life: education, occupation,
+                government, trade, healthcare, recreation, and much more. It’s very important that the internet be
+                available so as to give equal access and equal opportunity.</p>
+              <p>Web access means that technology, tools, and sites are developed and designed so that they can be used
+                by individuals with disabilities. Individuals can comprehend, understand, navigate, and interact with
+                the Internet. Web access also benefits individuals with no disabilities, for example:</p>
+
+              <div class="col-sm-12 col-md-12">
+                <ul>
+                  <li>Older people with changing abilities due to ageing</li>
+                  <li>Individuals with “temporary disabilities” like a broken arm or missing glasses</li>
+                  <li>Individuals with “situational limitations” like in bright sunshine or in an environment where they
+                    can’t listen to the sound</li>
+                  <li>People with a slow Online link, or who have limited or expensive bandwidth</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class=" item mx-3 my-3">
+            <div class="row webdesignrow px-3 py-3">
+              <h4>Be Careful with Flash Elements</h4>
+              <p>When using flash elements, we risk the effect of making the whole website seem tacky. They also do not
+                contribute to the search engine optimization of a website. Flash elements should be used sparingly as
+                they are considered not to be a great resource which can be used multiple times, as it does not play a
+                specific role in the overall functionality of a website. These elements may be considered to be “More
+                style than substance”.</p>
+              <p>By creating your net style additional SEO friendly, the overall traffic generated for a particular
+                website may be drastically increased. Make many easy changes to your web site in the week, and see,
+                however, it affects your site’s computer program ranking. </p>
+
+
+            </div>
+          </div>
+
+          <div class=" item mx-3 my-3">
+            <div class="row webdesignrow px-3 py-3">
+              <h4>Assessing Access</h4>
+              <p>When creating or redesigning a web site, assess accessibility early and during the development process
+                as it is a lot easier to deal with them to determine issues early. Simple steps, such as configurations
+                in a browser, will enable you to assess any aspects of accessibility. Whether a site meets all
+                guidelines requires in-depth effort evaluation to find out.</p>
+              <p> No instrument can ascertain whether a website meets accessibility guidelines. Whether there is a
+                website accessible, knowledgeable analysis is needed to determine.</p>
+
+
+            </div>
+          </div>
+
+          <div class=" item mx-3 my-3">
+            <div class="row webdesignrow px-3 py-3">
+              <h4>Place Your Keywords in many Different Places</h4>
+              <p>Many people specialize in mistreatment keywords in their copy; however, they neglect all alternative
+                areas. Not solely will keywords be employed in copy, and inside any articles on your web site, they can
+                also be incorporated. As mentioned earlier, you’ll additionally use keywords to optimize pictures too,
+                but there are also many other areas where you can use them. They can be employed in the title tag, H1
+                tags, website slogans, meta descriptions, meta keywords, navigation, H2 tags, bullet points, title
+                attribute on links, H3 tags, breadcrumb trails, footer links, URL’s, file names, internal links and
+                folder names</p>
+
+
+            </div>
+          </div>
+
+          <div class=" item mx-3 my-3">
+            <div class="row webdesignrow px-3 py-3">
+              <h4>Use SEO for Images Too</h4>
+              <p>An SEO search is not exclusive to keywords comprising of relevant information but also to images; the
+                algorithm which many search engines use are both constantly changing and are really unpredictable. Thus,
+                is one in which in terms of images as well, for example, it is possible for a search engine such as
+                Google to index images as well.</p>
+
+
+            </div>
+          </div>
+          <div class=" item mx-3 my-3">
+            <div class="row webdesignrow px-3 py-3">
+              <h4>Integrate Social Media into your Website’s Design</h4>
+              <p>By creating the process of adding social media onto the platforms such as the website can prove to be a
+                valuable asset as it is an integral part of the ecosystem. This can prove to be a vital step as it
+                allows a potential client or customer who may visit the website to be having a point of contact. If the
+                POC is one in which it is linked to the social media or a handle as such, then it is also bringing more
+                potential leads to other platforms as well.</p>
+
+
+            </div>
+          </div>
+
+        </owl-carousel>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec27">
+  <div class="container py-5">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>Lead Generation</h2>
+        <p>Lead generation is the marketing process of stimulating and capturing interest in a product or service for
+          the purpose of selling the given product. Lead generation in modern times is generated online through various
+          techniques like social media, SEO etc.</p>
+        <p>Some of the Lead generation techniques used are as follows:</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-4">
+        <div class="tabmob">
+          <ul>
+            <li (click)="updateleadgen('firstcontent')">Make Sure Your Site is Mobile-Friendly</li>
+            <li (click)="updateleadgen('secondcontent')">Audit and Find Opportunities to Improve</li>
+            <li (click)="updateleadgen('thirdcontent')">Ways to Boost Your Mobile Content</li>
+            <li (click)="updateleadgen('fourthcontent')">Redesign ASAP</li>
+            <li (click)="updateleadgen('fivethcontent')">Target Long-Tail Keywords</li>
+            <li (click)="updateleadgen('sixthcontent')">Update Existing Content That Has Performed</li>
+            <li (click)="updateleadgen('seventhcontent')">More Posts, More Keywords</li>
+            <li (click)="updateleadgen('eightthcontent')">Maintain Your Portfolio Informed and Upgraded </li>
+            <li (click)="updateleadgen('ninetthcontent')">Use Your Competition’s Keywords as a Roadmap</li>
+            <li (click)="updateleadgen('tenthcontent')">Create Long-Form Content</li>
+            <li (click)="updateleadgen('eleventhcontent')">Composing long-form permits you to have a reader from
+              beginner.</li>
+            <li (click)="updateleadgen('twelvetthcontent')">Long-form Is Very Good for SEO</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-8">
+        <div class="col-sm-12 col-md-12 py-3" *ngFor="let leadgen of myleadgen | category:Leadgen">
+          <h4>{{ leadgen.title }}</h4>
+          <p>{{ leadgen.content }}</p>
+          <p>{{ leadgen.content1 }}</p>
+          <p>{{ leadgen.content2 }}</p>
+          <p>{{ leadgen.content3 }}</p>
+          <p>{{ leadgen.content4 }}</p>
+          <p>{{ leadgen.content5 }}</p>
+          <p>{{ leadgen.content6 }}</p>
+          <p>{{ leadgen.content7 }}</p>
+          <p>{{ leadgen.content8 }}</p>
+          <p>{{ leadgen.content9 }}</p>
+          <p>{{ leadgen.content10 }}</p>
+          <p>{{ leadgen.content11 }}</p>
+          <p>{{ leadgen.content12 }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec28">
+  <div class="container py-5">
+
+    <div class="row ">
+      <div class="col-sm-12 col-md-12">
+        <h2>Integrating Conventional and Digital Marketing</h2>
+        <p>That which we believe is that digital just isn't designed to restore conventional marketing. Both are
+          supposed to coexist and possess their functions to play upon the customer travel. </p>
+        <p> marketing remains quite helpful in gaining awareness and attention in brands. However, digital marketing
+          performs an even far more prominent role as clients carry onto build closer connections with brands. The
+          objective of digital ought to be to induce actions and advocacy, also in perspective of greater
+          responsibility, the focus ought to be on driving results, instead of classic marketing at which the attention
+          ought to focus on initiating customer discussion. Essentially, Marketing 4.0 intends to help marketers
+          identify and get ready for the changing functions of conventional and digital marketing in establishing
+          customer participation and advocacy. </p>
+      </div>
+    </div>
+
+    <div class="row px-0">
+      <div class="col-sm-12 col-md-12">
+
+        <div class="wrapper">
+          <owl-carousel-o [options]="myicadm" [carouselClasses]="['owl-theme', 'sliding']">
+
+            <ng-container *ngFor="let item of slider_6">
+              <ng-template class="slide my-3" carouselSlide>
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <img [src]="item.img" alt="{{item.alt}}">
+                  </div>
+                  <div class="col-sm-12 col-md-6 icadmcontent">
+                    <h4>{{item.heading}}</h4>
+                    <p>{{item.text}}</p>
+                    <p *ngIf="item.text1">{{item.text1}}</p>
+                    <p *ngIf="item.text2">{{item.text2}}</p>
+
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+
+          </owl-carousel-o>
+        </div>
+
+        <!-- <owl-carousel [options]="myicadm" [carouselClasses]="['owl-theme', 'sliding']">
+          <div class=" item my-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img src="assets/images/dmb/icadm1.png" alt="Advertisement Network">
+              </div>
+              <div class="col-sm-12 col-md-6 icadmcontent">
+                <h4>Advertisement Network</h4>
+                <p> A monthly fee is frequently included by the commission/CPM model overriding in AdTech. By way of
+                  instance, commission charges in your spend per month. If you invest $25,000, the cost is $2,500. This
+                  is the procedure of evaluation and collection of information in addition to the generation of
+                  accounts. Web analytics are utilized for market and company research and also to evaluate and enhance
+                  a website's effectiveness. Web analytics may consist of platforms such as the ones that provide
+                  attributes, and Piwik PRO, for example, maps. Likewise, a huge majority of AdTech options are
+                  predicated on third party info (e.g. third-party cookies), whereas MarTech options can tap to some
+                  combo of first-party biscuits and assorted private data (or even identifiable data ) like mails and
+                  titles which are generally supplied by the users when they download a free ebook or whitepaper. This
+                  can be to nurture the present customer base, a technique.</p>
+                <p> Platforms function in an environment. With all the steps in the consumer travel, MarTech deals this
+                  manner by converting them to customers and finally attaining audiences. It places the consumers, who
+                  entered the marketing funnel by downloading an ebook or subscribing to a newsletter. Advertising
+                  technology is intended to help advertising agencies and advertisers produce, run, quantify, and manage
+                  online marketing campaigns across several programs or sites. It helps publishers (sites and programs )
+                  to market their available ad space, also called stock, to a significant number of advertisers. This
+                  may be achieved via screen advertisements or search engine marketing (SEM). Specialized AdTech
+                  platforms cope with affirmation, attribution and viewability. </p>
+
+              </div>
+            </div>
+          </div>
+          <div class=" item my-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img src="assets/images/dmb/icadm2.png" alt="Personalization">
+              </div>
+              <div class="col-sm-12 col-md-6 icadmcontent">
+                <h4>Personalization</h4>
+                <p>Never has there been a solid focus on our lifestyles, consumer behavior, and preferences. Algorithms
+                  work anonymously, drawing on advice about how we want to devote our own time. There are reasons that
+                  the library of Netflix ensures artwork mixes to its own user preferences, and Coca Cola established
+                  its much-lauded “Name Branded” drinks range. Personalization can be really actually a strong tool at
+                  the age of “Ad Fatigue.” Adjusting to a position to pack a punch using adverts that induce
+                  significance to the consumers they’re targeting has revolutionized how entrepreneurs participate
+                  together with their own consumers.</p>
+                <p>Personalization could be seeking to remain heard at the electronic age, as well as the brakes are in
+                  motion. After we asked consumers if they’d seen a billboard advertising on television, 59 percent said
+                  they had. But more seriously, of those people having said that they’d, just 20 percent could recall
+                  what the product or brand was associated with. It appears advertising demands sticking capability to
+                  allow new voices to be heard </p>
+                <p>Inherently, advertisements usually entail pitching to unidentified prospects based on specific
+                  targeting parameters (location, browser history, behaviour, etc.) while marketing is much more about
+                  nurturing a particular group of individuals who have specifically expressed interest in your services
+                  or products.</p>
+              </div>
+            </div>
+          </div>
+          <div class=" item my-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img src="assets/images/dmb/icadm3.png" alt="The Platform">
+              </div>
+              <div class="col-sm-12 col-md-6 icadmcontent">
+                <h4>The Platform</h4>
+                <p>The number of advertising programs that are available makes your head spin, as well as your own
+                  financial plan, seem miniature. You do not have to utilize every media option readily available to
+                  generate a profitable advertising effort. You might actually be given better results by narrowing your
+                  choices down. Understanding advertisement options and to pick the best ones help increase earnings.
+                  App books, magazines, direct mail, catalogs, and newspapers let prospects spend so much because they
+                  desire with your own ad, if it is seen by them, they go back to it. It's crucial that you employ
+                  someone knowledgeable about design and advertisements layout to make your advertising as you're
+                  competing with text and content as well as along different advertisements. Predicated on the number of
+                  hours people invest in the web every day, advertisements are currently finding its way on smartphones
+                  and people's monitors.</p>
+                <p>Is there confusion in the first place? Options derive from the concept of automating the process of
+                  targeting and purchasing of advertisements. The billing version for this would be to charge a fee at
+                  the top or a commission. Marketing automation is the umbrella term involving a range of different
+                  MarTech programs (such as those listed above).</p>
+              </div>
+            </div>
+          </div>
+          <div class=" item my-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img src="assets/images/dmb/icadm4.png" alt="Martech + AdTech">
+              </div>
+              <div class="col-sm-12 col-md-6 icadmcontent">
+                <h4>Martech + AdTech</h4>
+                <p>Advertising technology has revolutionized the way brands connect with their audiences and the way
+                  advertisers and publishers interact with each other. MarTech, on the other hand, is much more about
+                  "trimming your trees." While advertising agencies have been a vital component to marketing campaigns,
+                  the rising popularity of AdTech has jeopardized their function. AdTech sellers attempt to market to
+                  manufacturers mixing elements of MarTech to secure their gain. A DSP is a technology platform which
+                  allows advertising campaigns to conduct and purchase stock from SSPs and advertisement exchanges via a
+                  single user interface. DSPs are an integral part of the bidding procedure, which enables advertisers
+                  to get press. To help enhance targeting and improve media purchases, DSPs frequently utilize data from
+                  data-management programs (DMPs) and information brokers. Let us look at the five places that highlight
+                  the differences between MarTech and AdTech. An advertisement server is an online technology platform
+                  accountable for making decisions regarding which ads to display on a web site, serving them, and
+                  collecting and reporting the information (for instance, impressions, clicks, etc.). Ad servers would
+                  be to advertisements. The platform assists publishers to market their stock on lots of different
+                  advertisement exchanges within an automatic manner. Though publishers do not have to use an SSP so as
+                  to market their stock on the advertising exchange, the technologies utilized with SSPs supplies them
+                  with many advantages that permit them to obtain the maximum yield in their stock and gain better
+                  insights in their audience.</p>
+              </div>
+            </div>
+          </div>
+
+        </owl-carousel> -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec29">
+  <div class="container py-3">
+
+    <div class="row py-3">
+      <div class="col-sm-12 col-md-12">
+        <h2>Content Marketing</h2>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-12 col-md-6 leftcolumn">
+        <p>In the last few years, digital entrepreneurs, bloggers, and companies of all sizes are busy generating the
+          content of all kinds to participate in their target market. When it’s in the shape of informative blog
+          articles, customer care videos, or listed webinars, content is anywhere on the web. As an innovative tool
+          which uses information to supply successful answers to a plethora of complicated digital marketing issues, ML
+          can benefit companies by helping them locate hidden knowledge in accessing consumer information to streamline
+          marketing procedures.</p>
+        <p>To start the procedure for applying machine learning for a digital marketing plan, digital entrepreneurs can
+          begin in several areas. By way of instance, ML techniques will help resolve many different complicated issues,
+          like processing massive data sets and generating personalized articles drips for customers almost immediately.
+          Among the most significant innovations in the digital marketing sector, is that the introduction of artificial
+          intelligence resources that will streamline marketing procedures and make companies more successful.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 rightcolumn">
+        <div class="row my-5">
+          <div class="col-md-6 whitebox py-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6"> Informative blog articles</div>
+              <div class="col-sm-12 col-md-6"><img src="assets/images/dmb/cmicon1.png" alt="Informative blog articles">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-6 offset-md-6 whitebox py-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">listed Webinars</div>
+              <div class="col-sm-12 col-md-6"> <img src="assets/images/dmb/cmicon2.png" alt="listed Webinars"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-6 whitebox py-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">Customer care videos</div>
+              <div class="col-sm-12 col-md-6"> <img src="assets/images/dmb/cmicon3.png" alt="Customer care videos">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<section class="sec291">
+
+
+  <div class="container">
+
+    <div class="row py-3">
+      <div class="col-sm-12 col-md-12">
+        <h2>Privacy Policy:<br> It’s impact on DM using GDPA or CCPA </h2>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12 col-md-6">
+        <p>Regions by that your business doesn’t believe it can remain competitive based on the privacy legislation of
+          that region can be excluded by your policy. “But attempting to screw the needle, is only likely to be
+          difficult.” Know Your Computer Data collection Build Trust and Make Better Data-driven Marketer Frank’s
+          research affirms the notion of using the info that GDPR relies on this and all this data that determines
+          exactly what the man or woman is taking a look at, does during that time or different sorts of ways they may
+          be interacting which do not have anything regarding their own individuality. That sort of advice may be “more
+          notification regarding exactly what their aim may be at any time,” Frank added.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 py-5 px-5 differentbg">
+        <p class="addqoute">Clients are interested in being educated, so they don’t really desire to get promoted to.
+          And being a marketer, you are buying digital, you are attempting to comprehend what the client wants, and you
+          are attempting to work with data that will help this consumer experience is created by you. In the event you
+          take action they know what they will need to understand and obtain a purchasing decision which delivers
+          significance for them.</p>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12 col-md-6 py-5 px-5 differentbg">
+        <p class="addqoute">It gets far more expensive and insecure to attempt and keep a hodgepodge of privacy policies
+          instead of simply just have one worldwide policy which is employed everywhere.The significant thing for me
+          personally is that the access component for this
+          <br> <br> <br>
+          <b>- Swarthout</b>
+        </p>
+
+      </div>
+      <div class="col-sm-12 col-md-6 ">
+        <p>It data out of a privacy perspective but includes a lot of marketing price. “And people are those who must be
+          emphasizing”. Utilize these privacy legislation, Stirrup included, being a chance to turn into far much
+          superior marketer. Methods that are good means targeting, which contributes to marketing helps their buying
+          cycle is shortened by an individual, Talend added.</p>
+        <p>Just take inventory of your current statistics, work and also embrace a program that adheres to one of the
+          strict legislation and experts advised CMSWire. “make an effort to think of a privacy policy that is likely in
+          order to stick to the best standards as opposed to trying to develop with piecemeal policies which can be
+          particular to different regions,” Attempting to stay on top of different privacy legislation on a case by case
+          basis is going to soon be considered a nightmare.</p>
+      </div>
+    </div>
+    <div class="row whiterow">
+      <div class="col-sm-12 col-md-8 py-3 px-3">
+        <h4>How Monetate’s team compromised announcements?</h4>
+        <p>Monetate’s team had to comprise announcements such as data-sharing using Marketo and sales-force, as opposed
+          to simply saying “third parties.”</p>
+        <a href="#">Read Article ></a>
+      </div>
+      <div class="col-sm-12 col-md-4 px-0">
+        <img src="assets/images/dmb/sec291-article.png" alt="Brandstory">
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12 col-md-12">
+        <p>The Frank of Gartner has pushed for brands and marketers to look for out personification. And this has too
+          much to do. Personification is your"delivery and optimization of relevant digital adventures centred in a
+          person's inferred membership at a customer area and also their immediate circumstances in the place of their
+          private individuality," Frank wrote in his "Use Personification into Balance Personalized Marketing together
+          with Privacy and also GDPR." However, the notion is you can do certain sorts of customization without
+          automatically having personal data" "To exemplify," he stated, "the difference isn't you never possess a data
+          control strategy or a CRM method. A lot of the infrastructure isn't connected as it had to be, until today.
+          And discussions of a potential federal data privacy law from the works, this question has to be studied
+          seriously" Bottom line? You want to establish trust with clients and your prospects. "Clients want to realize
+          that when they are prepared to generally share their data they would like to understand they could trust you,
+          which you are not likely to work with it to the incorrect intentions, you aren't going to pay off it, and you
+          aren't likely to provide it in to the wrong individuals," explained Ashley Stirrup, chief marketing officer
+          for Talend. "And therefore essentially whether you are taking a look at GDPR or your California Privacy Act,
+          they are both saying the exact identical task. You have to own the methods to take care of your client data.
+          You have to have the capacity to talk about this with consumers in order the buyer may have confidence you are
+          actually managing their data" "By leveraging info," he added, "businesses understand the foundation of the
+          data they are collecting on customers and may guarantee they are collecting it out of agreeing with people.
+        </p>
+      </div>
+    </div>
+    <div class="row py-0">
+      <div class="col-sm-12 col-md-6">
+        <img src="assets/images/dmb/sec2912.png" alt="Brandstory">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <p>First-Party data won't merely develop into an easy method to follow the law, but in addition, a substantial
+          competitive advantage" Utilize Data Mapping While a privacy clinic that is worldwide could possibly be
+          described as considered a good starting point, entrepreneurs can not always depend on compliance. Knowing the
+          significant regulations as well as its own particular terms continues to be a pragmatic strategy, based to
+          Jonathan Lacoste,'' Jebbit's president and co-founder. </p>
+        <p>Lacoste explained. "California's solitude behaves a bit more different compared to the GDPR. Therefore if you
+          should be GDPR-compliant now, this does not mean that you're compliant with California's law,"</p>
+        <p>Lacoste explained. Implementing Data Vs. Renting Third-party California Law Enables Statistics Specifity
+          Personification Over Personalization International Policy is Inadequate.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="sec30">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h2>Agile Marketing</h2>
+      </div>
+    </div>
+    <div class="row firstrow">
+      <div class="col-sm-12 col-md-8">
+        <p>Here are three of our most early wins with the Agile strategy: Before our Agile procedures, we had been
+          generating content, but at a plodding pace. Now we could more accurately quantify our group's bandwidth, and
+          we could devote time every sprint to generating and distributing content.</p>
+      </div>
+      <div class="col-sm-12 col-md-4 agmimage">
+        <img class="image1" src="assets/images/dmb/agile-marketing.png" alt="Agile marketing">
+      </div>
+    </div>
+
+    <div class="row py-3 secondrow">
+
+      <div class="col-sm-12 col-md-8">
+        <div class="row">
+          <div class="col-md-12 newlistform ">
+            <div class="row  services-card-shadow py-3 my-2">
+              <div class="col-md-3 text-center"> <img class="image12 px-2" src="assets/images/dmb/ag-icon1.png"
+                  alt="local audience "> </div>
+              <div class="col-md-9">
+                <p> Respond quickly to fluctuations in the Industry.</p>
+              </div>
+            </div>
+            <div class="row  services-card-shadow py-3 my-2">
+              <div class="col-md-3 text-center"><img class="image12 px-2" src="assets/images/dmb/ag-icon2.png"
+                  alt="Your audience"> </div>
+              <div class="col-md-9">
+                <p> Create rapid campaigns which may be analyzed and optimized over time</p>
+              </div>
+            </div>
+            <div class="row services-card-shadow py-3 my-2">
+              <div class="col-md-3 text-center"> <img class="image12 px-2" src="assets/images/dmb/ag-icon3.png"
+                  alt="Your audience"> </div>
+              <div class="col-md-9">
+                <p>Try a lot of items and replicate those that succeed</p>
+              </div>
+            </div>
+            <div class="row  services-card-shadow py-3 my-2">
+              <div class="col-md-3 text-center"> <img class="image12 px-2" src="assets/images/dmb/ag-icon4.png"
+                  alt="Your audience"> </div>
+              <div class="col-md-9">
+                <p> Utilize input from different sections to augment marketing campaigns</p>
+              </div>
+            </div>
+            <div class="row services-card-shadow py-3 my-2">
+              <div class="col-md-3 text-center"> <img class="image12 px-2" src="assets/images/dmb/ag-icon5.png"
+                  alt="Your audience"> </div>
+              <div class="col-md-9">
+                <p> Justify options in projects and campaigns using harddata.</p>
+              </div>
+            </div>
+            <div class="row  services-card-shadow py-3 my-2">
+              <div class="col-md-3 text-center"> <img class="image12 px-2" src="assets/images/dmb/ag-icon6.png"
+                  alt="Your audience"> </div>
+              <div class="col-md-9">
+                <p> Collaborate with staff members to protect against a tunnel-vision strategy to marketing</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <owl-carousel [options]="myagmarket" [carouselClasses]="['owl-theme', 'sliding']">
+          <div class=" item my-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <p> Departments who are Agile have workers, enjoy development, and adapt to changes. When you start
+                  becoming more specific and taking a look at the chances on a project-by-project and sprint-by-sprint
+                  foundation, the listing of Agile possibilities is practically infinite. Here at MarketerGizmo and also
+                  our sister firm SurveyGizmo, Agile marketing has allowed us to bring a new marketing group, a few of
+                  whom were rather inexperienced, and push quickly towards our objectives.Around two individual
+                  websites, our content creation has become four times greater than it was, with no lack of quality.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class=" item my-3">
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <p>A More Sophisticated Definition of Agile Marketing It follows that emails do not go out late when
+                  someone becomes ill, we do not skip a blog article deadline since our editor has dragged into a
+                  meeting, and no quantity of vet visits may derail our objectives. In its heart, Agile marketing is a
+                  strategic marketing strategy where groups identify and focus their collective efforts on high-value
+                  jobs, complete those jobs cooperatively, quantify their effect, then continuously and proactively
+                  enhance the outcomes with time. And that is the variant of the list. Agile marketing is a marketing
+                  strategy where marketing teams identify jobs. "Agile marketing" is a hot buzzword, but it is one that
+                  really lives up to its standing.</p>
+
+              </div>
+            </div>
+          </div>
+
+        </owl-carousel>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12 col-md-12">
+        <h2>How data plays an important role in digital marketing?</h2>
+        <p class="py-3">It can help to understand massive data collections more easily and quickly because individuals
+          are visual by nature. Sentiment evaluation is a procedure which assesses information about how the client
+          feels about a business, its manufacturer, and their services or products. It's also referred to as view
+          mining. With sentiment evaluation, a business may get better consumer insights, and that will help
+          entrepreneurs for future campaigns.</p>
+      </div>
+    </div>
+    <div class="row lastrow">
+      <div class="col-sm-12 col-md-4 agmimage text-center">
+        <img class="image1" src="assets/images/dmb/ag-lastrow1.png" alt="Agile marketing">
+        <h4>Prescriptive Analytics</h4>
+        <p>It provides guidance based on forecasts.</p>
+      </div>
+      <div class="col-sm-12 col-md-4 agmimage text-center">
+        <img class="image1" src="assets/images/dmb/ag-lastrow2.png" alt="Agile marketing">
+        <h4>Velocity</h4>
+        <p>it describes the rate where the information is created, stored, analyzed and used.</p>
+
+      </div>
+      <div class="col-sm-12 col-md-4 agmimage text-center">
+        <img class="image1" src="assets/images/dmb/ag-lastrow3.png" alt="Agile marketing">
+        <h4>Veracity</h4>
+        <p>it describes the uncertainty of information.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec31">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 px-5">
+        <p class="addqoute">With the support of the Attribution version, entrepreneurs can comprehend exactly what
+          motivates the customers to buy. Additionally, it will help to recognize the contribution of every station in
+          CTR and conversion. That means that you may better invest in stations with a high conversion speed.
+          Advertisers should possess the answers for a number of queries to enhance effort effectiveness. These queries
+          include which person to contact, the method of contacting them and what are the offers available. When Amazon
+          urges a product, it also utilizes market basket analysis to get cross-selling.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec32">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 whitetext">
+        <h2>Data Visualization</h2>
+        <P>MBA is the most common method among marketers to determine exactly what products customers purchased
+          together. It can help to suggest another product depending on the purchase history as well as other customer's
+          purchase history, who purchased the exact same product. Analyze unstructured customer responses through social
+          networking articles, testimonials, and client care dialogue allow businesses to understand the client's
+          feelings, opinions, and perspectives about a specific brand, service or product. It informs whether the
+          underlying belief is positive, negative or neutral. With the support of significant information analysis,
+          businesses can learn more about their clients like their product preference, their payment preference and
+          their buying frequency. It will help make the ideal deal at the ideal time, which contributes to increased
+          earnings. Personalized marketing permits marketers to achieve a particular audience. If a business sends an
+          ideal email to the ideal person at the ideal time, it aids the company to construct a personal bond with their
+          client and that in turn, contributes to increased earnings.</P>
+        <p> It is possible to produce an effective email for your intended audience based on their demography, search
+          history and preferred content. From the start, the business may find massive information through discussion
+          with the clients, like, their needs, their considerations, their preferred brands, and if they purchased
+          through the link. Examining client's buying behaviour help marketers to supply more applicable product
+          recommendations to their clients.</p>
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+        <div class="col-md-12">
+          <div class="row card services-card-shadow py-3">
+            <div class="col-md-12">
+
+              <p> Substantial data will also help predict the need for a commodity. This permits businesses to
+                ascertain; how much they create, which product, which place. </p>
+              <p>visualization enable businesses to know that product is very good for which sections. With the
+                assistance of information visualization, entrepreneurs can determine the changes in client behaviour and
+                the peaks of purchasing periods.</p>
+
+              <ul class="datalist py-3">
+                <li>It can help to understand which variable impact client's behaviour.</li>
+                <li>Data visualization helps businesses to recognize the shifting trends in the marketplace.</li>
+                <li>It will help to identify the areas which require improvements too.</li>
+                <li>Measuring effort's results are more correct.</li>
+                <li>Cost optimization may maximize sales and earnings.</li>
+                <li>Predictive analytics along with information visualization, will help to enhance the efficacy of the
+                  marketing effort.</li>
+                <li>Significant data analysis allows businesses to spot the very best cost for goods based on opponent's
+                  cost, seasonal cost, cost of raw materials and other factors.</li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="sec33">
+  <div class="container py-5">
+
+    <!--<div class="row py-3">
+
+    <div class="col-sm-12  col-md-6 sec33content">
+
+      <p>It is possible to produce an effective email for your intended audience based on their demography, search history and preferred content. From the start, the business may find massive information through discussion with the clients, like, their needs, their considerations, their preferred brands, and if they purchased through the link. Examining client's buying behaviour help marketers to supply more applicable product recommendations to their clients.</p>
+    </div>
+    <div class="col-sm-12  col-md-6">
+     <h4> Effective email strategies</h4>
+     <div class="row my-5">
+      <div class="col-md-4 whitebox text-center py-3">
+        <img src="assets/images/dmb/demography.png" alt="Demography">
+        <h4> Demography</h4>
+
+      </div>
+      <div class="col-md-4 offset-md-4 whitebox text-center py-3">
+        <img src="assets/images/dmb/preferred-content.png" alt="Preferred Content">
+        <h4>Preferred Content</h4>
+
+
+      </div>
+    </div>
+    <div class="row my-5">
+
+      <div class="col-md-4 offset-md-4 whitebox text-center py-3">
+        <img src="assets/images/dmb/search-history.png" alt="Search History">
+        <h4>Search History</h4>
+
+
+      </div>
+    </div>
+
+
+  </div>
+  </div>-->
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <h2>Why choose Brandstory</h2>
+        <p>Increase organic traffic. Land first page search results. Collaborate with some really cool people. Need we
+          say more? </p>
+      </div>
+      <div class="col-sm-12 col-md-4 text-center">
+        <a href="https://brandstory.in/contact-us/" class="btn btn-primary rdbtn mt-3 px-4 py-2">Contact Us</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec34">
+  <div class="container py-5">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12 py-3">
+        <h2>Advantages of opinion evaluation</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 py-3">
+        <img src="assets/images/dmb/adavantage-opinion.png" alt="Advantages of opinion evaluation">
+      </div>
+      <div class="alignmid col-sm-12 col-md-6 py-3">
+        <ul>
+          <li>It is helpful to optimize your marketing plan based on the client's view.</li>
+          <li>It will be helpful to recognize new strengths and weaknesses.</li>
+          <li>It can help to produce a product with good quality.</li>
+          <li>It also will help to identify new business opportunities.</li>
+        </ul>
+      </div>
+    </div>
+    <!--<div class="row whiterow py-3 px-2">
+<div class="col-sm-12 col-md-12">
+  <div class="row whiterowinner py-3">
+    <div class="col-sm-12 col-md-12">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <h3>It is helpful to optimize your marketing plan based on the client's view.</h3>
+            </div>
+      </div>
+</div>
+</div>
+  </div>
+
+</div>
+<div class="row whiterow py-3 px-2 my-3">
+  <div class="col-sm-12 col-md-12">
+    <div class="row whiterowinner py-3">
+      <div class="col-sm-12 col-md-12">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+              <h3>It will be helpful to recognize new strengths and weaknesses.</h3>
+              </div>
+        </div>
+  </div>
+  </div>
+    </div>
+
+  </div>
+  <div class="row whiterow py-3 px-2 my-3">
+    <div class="col-sm-12 col-md-12">
+      <div class="row whiterowinner py-3">
+        <div class="col-sm-12 col-md-12">
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <h3>It can help to produce a product with good quality.</h3>
+                </div>
+          </div>
+    </div>
+    </div>
+      </div>
+
+    </div>
+    <div class="row whiterow py-3 px-2 my-3">
+      <div class="col-sm-12 col-md-12">
+        <div class="row whiterowinner py-3">
+          <div class="col-sm-12 col-md-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+                  <h3>It also will help to identify new business opportunities.</h3>
+                  </div>
+            </div>
+      </div>
+      </div>
+        </div>
+
+      </div>-->
+
+
+  </div>
+</section>
+
+
+<section class="sec35">
+  <div class="container py-3">
+
+    <div class="row py-5">
+      <div class="col-sm-12  order-sm-12 col-md-6 imagealign">
+        <img src="assets/images/dmb/cost-optimization.png" alt="Cost optimization">
+      </div>
+      <div class="col-sm-12  order-sm-1 col-md-6 ordercontent">
+        <h3>Cost optimization</h3>
+        <p>It permits businesses to control their manufacturing costs too. With the support of significant data
+          investigation, entrepreneurs may understand their target market quite well. In this era of heavy competition,
+          understanding and identifying your target market is essential for organizations to stay a step forward. With
+          the support of predictive analytics, entrepreneurs may decide which client or client segments to target and it
+          also helps them choose the ideal content for each and every single client.</p>
+      </div>
+
+    </div>
+    <div class="row py-3">
+      <div class="col-sm-12  col-md-6 imagealign">
+        <img src="assets/images/dmb/more-targeted-advertising.png" alt="More targeted Advertising">
+      </div>
+      <div class="col-sm-12   col-md-6 ordercontent">
+        <h3>More targeted Advertising</h3>
+        <p>These days, personalization is the central strategy for each marketer. Engaging the consumers at the perfect
+          moment with the ideal message is the largest problem for entrepreneurs. Substantial data helps the
+          entrepreneurs to create customized and targeted campaigns.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec36">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 py-3">
+        <h2>Conclusion</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12  order-sm-12 col-md-6">
+        <h4>Volume</h4>
+        <p>It pertains to a great deal of information. Personalized marketing is generating and sending messages to the
+          people or the target audience via information analysis with the support of customer's information like
+          geolocation, browsing history, clickstream behaviour and buying history. It's also called one - to - one
+          marketing. Through big data analytics, businesses can boost their profitability, recognize the keywords that
+          drive visitors to your site and discover client needs that assist in making excellent content. Accurate
+          campaign outcomes help entrepreneurs for future campaign plans.</p>
+      </div>
+      <div class="col-sm-12  order-sm-1 col-md-6 ordercontent">
+        <h4>Variety</h4>
+        <p> It pertains to the different sources and kinds of information, like formatted, semi-structured and
+          unstructured information. Large data is vital for digital marketers to plan successful digital marketing
+          strategies. These days, organizations gather, store and analyze the huge amounts of information which is
+          referred to as large data. Examining the information and taking the insights from these data is referred to as
+          large data analytics.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="sec37">
+  <div class="container py-5">
+
+
+    <!--<div class="row">
+<div class="col-sm-12 col-md-3 py-3 text-center">
+  <div class="box"  (click)="updateConclusion('survey_gizmo')">
+  <h4>Survey Gizmo Cases Pages</h4>
+</div>
+  </div>
+<div class="col-sm-12 col-md-3 py-3 text-center">
+<div class="box"  (click)="updateConclusion('stand_meeting')">
+<h4>Stand meetings up</h4>
+</div>
+</div>
+<div class="col-sm-12 col-md-3 py-3 text-center">
+  <div class="box"  (click)="updateConclusion('job_progress')">
+  <h4>Board to monitor job progress</h4>
+</div>
+  </div>
+<div class="col-sm-12 col-md-3 py-3 text-center">
+  <div class="box"  (click)="updateConclusion('teamwork')">
+    <h4>Teamwork</h4>
+  </div>
+    </div>
+</div>-->
+    <div class="row">
+      <!--<div class="col-sm-12 col-md-12 py-3" *ngFor="let conclusion of myconclusion | category:Conclusion">
+
+  <p class="card-text  px-3 pb-3">{{ conclusion.content }}</p>
+  <p class="card-text  px-3 pb-3">{{ conclusion.content2 }}</p>
+  </div>  -->
+      <div class="col-sm-12 col-md-12 py-3">
+        <tabset [vertical]="true" [justified]="true">
+          <tab heading="Survey Gizmo Cases Pages" id="tab1">
+            <p>Notice that we have chosen to concentrate on the approaches of marketing instead of this plan. We found
+              our present and possible clients were frequently looking for "poll examples," however our current
+              offerings were not doing a fantastic job of fulfilling that need. It's just a method. How nimble teams
+              operate becomes clear once you look at what exactly is normally recorded as the "worth" of Agile
+              marketing. By abiding by the methods found by programmers (with our very own spins, naturally),
+              entrepreneurs may open up completely new ways to achieve our viewers and our objectives. These vary from
+              two to fourteen days. Some larger initiatives will not fit into one sprint, which means you will want to
+              split up those into bite-sized pieces which you are able to handle sprint.</p>
+          </tab>
+          <tab heading="Stand meetings up">
+            <p>Each day that your staff should get together and have a very short check-in. Each group member goes over
+              exactly what they did the day before, what they are likely to do now, and also any blocks they have
+              struck. Blocks must be addressed straight away.</p>
+          </tab>
+          <tab heading="Board to monitor job progress">
+            <p>Whether it is the fantastic' whiteboard with sticky notes, a pleasant and easy Trello plank, or large
+              fancy technical applications, you want a centralized approach to keep track of your sprint which everybody
+              has access to.</p>
+          </tab>
+          <tab heading="Teamwork" class="active">
+            <!-- <tab heading="Teamwork" active="true"> -->
+            <p>While a person may have a job, the failure or success of this rush rests on all of the group members.
+              Everybody needs to be ready to collaborate and help in the Agile frame. More than a staff member has
+              struck an obstruction, either inner (a client needs my help!) Or outside (my puppy ate a sock!), and
+              they're able to instantly bring it to the staff who will rally round the compromised project to be certain
+              that it doesn't endure. Over the duration of a one-week dash, we wrote six guides to shared survey kinds
+              and generated templates for all those surveys that our clients can increase their own account with one
+              click. The page views for our cases landing page increased 252%, skyrocketed 810 per cent. We are going to
+              go into more detail about this definition of Agile marketing beneath, in addition, to outline a few. This
+              is beginning to seem. All staff members are current on progress and projects.</p>
+            <p>Therefore we are empowered to create certain things get done. Are you prepared to reply? You certainly
+              require an overarching strategy to underpin your Agile procedures, but the plan is something which each
+              marketing department ought to be concentrated on no matter how they intend to execute it. Teams utilize
+              sprints (brief, finite intervals of intensive labour) to finish those jobs cooperatively. After each rush,
+              they improve the outcomes with time and quantify the effect of the jobs and continuously. Whether you
+              utilize collaborative or top-down procedures to produce your strategy, it's still possible to bring it to
+              life using Agile techniques. Agile marketing interrupts failure provided that it includes lessons and
+              generates jobs that are successful. Cost and customer are the two pillars of digital marketing.</p>
+          </tab>
+        </tabset>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="sec38">
+  <div class="container py-5">
+
+    <div class="row faqsimage">
+      <div class="col-sm-12 col-md-6 py-3">
+
+        <img src="assets/images/dmb/faqs.png" alt="More targeted Advertising">
+      </div>
+      <div class="col-sm-12 col-md-6 py-3 faqcontent">
+        <h4>FAQ</h4>
+        <h3>Frequently Asked Questions</h3>
+        <accordion>
+          <accordion-group heading="What is your return Policy?" [isOpen]="isFirstOpen">
+            <p class="faq-content p-0">
+              SEO services are charged monthly because of the lag in ever changing search engines algorithms. Changes
+              made to any website take weeks to a few months to show effect on the search results and we move further
+              after analyzing the impact. The activities can be divided into one time and recurring activities which
+              have to be carried out month on month.
+            </p>
+          </accordion-group>
+
+          <accordion-group heading="What is a project?" [isOpen]="isFirstOpen">
+            <p class="faq-content p-0">
+              White-hate SEO services and strategies take at least 4 to12 months depending on the keyword difficulty
+              (KD) to rank websites at the top. No credible SEO agency can provide a concrete timeline for results but
+              can only promise definite results.
+            <p>
+
+          </accordion-group>
+          <accordion-group heading="Are sites SEO-friend?" [isOpen]="isFirstOpen">
+            <p class="faq-content p-0">
+              White-hate SEO services and strategies take at least 4 to12 months depending on the keyword difficulty
+              (KD) to rank websites at the top. No credible SEO agency can provide a concrete timeline for results but
+              can only promise definite results.
+            <p>
+
+          </accordion-group>
+
+
+
+        </accordion>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="sec39">
+  <div class="container">
+
+    <div class="row bgcolor px-3 py-3">
+      <div class="col-sm-12 col-md-8">
+        <h2>Brandstory Solutions</h2>
+        <p>We are Design and Digital Consultants</p>
+      </div>
+      <div class="col-sm-12 col-md-4 text-center">
+        <a href="https://brandstory.in/contact-us/" class="btn btn-primary rdbtn mt-3 px-4 py-2">Drop us a line</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="col-sm-8">
+  <ng-template #template>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Request SEO Free Audit</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+      <form [formGroup]="bannerModalForm" (ngSubmit)="onSubmitBannerModal()" novalidate>
+        <div class="form-group">
+          <input type="text" formControlName="fName" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fName.errors }" placeholder="Enter Name" />
+          <div *ngIf="submitted && fbannermodal.fName.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fName.errors.required" class="px-3">Name is required</div>
+            <div *ngIf="fbannermodal.fName.errors.pattern" class="px-3">Only characters and Minimun 3 characters allowed
+            </div>
+            <div *ngIf="fbannermodal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" formControlName="fEmail" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fEmail.errors }" placeholder="Enter Email">
+          <div *ngIf="submitted && fbannermodal.fEmail.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fEmail.errors.required" class="px-3">Email is required</div>
+            <div *ngIf="fbannermodal.fEmail.errors.pattern" class="px-3">Email must be a valid email address</div>
+            <div *ngIf="fbannermodal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <input type="tel" formControlName="fPhone" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fPhone.errors }" placeholder="Mobile Number" />
+          <div *ngIf="submitted && fbannermodal.fPhone.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+            <div *ngIf="fbannermodal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+            <div *ngIf="fbannermodal.fPhone.errors.minLength" class="px-3">Mobile Number format is required</div>
+            <div *ngIf="fbannermodal.fPhone.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <input type="url" formControlName="fService" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fService.errors }" placeholder="Website Link" />
+          <div *ngIf="submitted && fbannermodal.fService.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fService.errors.required" class="px-3">Website Link is required</div>
+            <div *ngIf="fbannermodal.fService.errors.pattern" class="px-3">Website Link is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <textarea formControlName="fMessage" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fMessage.errors }" placeholder="Message" rows="2"
+            style="height:auto !important;"></textarea>
+          <div *ngIf="submitted && fbannermodal.fMessage.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fMessage.errors.required" class="px-3">Message is required</div>
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+      </form>
+      <br><br>
+    </div>
+  </ng-template>
+</div>

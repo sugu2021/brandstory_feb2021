@@ -1,0 +1,140 @@
+<!-- <ng-container *ngIf="filteredData.length>0"> -->
+
+<div style="padding-top:80px; "></div>
+<div class="row">
+<div class="container seo" >
+  <div class="col-md-12">
+     <h1 class="text-center py-5">{{ filteredData[0].title }}</h1>
+     <!-- <h1 class="text-center py-5">{{ myPageItems[0].title }}</h1> -->
+ <div  [innerHTML]="filteredData[0].content "> </div>
+</div>
+</div>
+</div>
+
+
+<br><br>
+<div class="container">
+   <div class="enquire">
+       <div class="jumbotron text-center bg-red p-4">
+           <h1 class="display-4 text-white">Get started with us</h1>
+             <a class="btn btn-lg mt-3 enquiry-btn" (click)="openModal(template)" role="button"> Enquire</a><br><br>
+             <a class="btn btn-link text-white"  routerLink="/contact-us" role="button">Or Contact Us</a>
+       </div>
+   </div>
+</div>
+
+ <!-- </ng-container> -->
+
+
+
+
+<script type="application/ld+json">
+  {"@context":"https://schema.org",
+  "@graph":
+  [
+  {
+  "@type":"WebSite",
+  "@id":"https://brandstory.in/blogs/#website",
+  "url":"https://brandstory.in/blogs/",
+  "name":"Brandstory Blog",
+  "description":"Here is the list of april 2020 top digital marketing companies in bangalore India",
+  "potentialAction":{
+  "@type":"SearchAction",
+  "target":"https://brandstory.in/blogs/?s={search_term_string}",
+  "query-input":"required name=search_term_string"}},
+  {
+  "@type":"ImageObject",
+  "@id":"https://brandstory.in/list-of-digital-marketing-companies-in-bangalore/#primaryimage",
+  "url":"https://brandstory.in/assets/images/blogs/successful-keyword-study-needs-understanding-of-your-audience.jpg",
+  "width":1020,"height":680},
+  {"@type":"WebPage",
+  "@id":"https://brandstory.in/list-of-digital-marketing-companies-in-bangalore/#webpage",
+  "url":"https://brandstory.in/list-of-digital-marketing-companies-in-bangalore/",
+  "inLanguage":"en-US",
+  "name":"List of Top Digital Marketing Companies in Bangalore April 2020",
+  "isPartOf":{"@id":"https://brandstory.in/blogs/#website"},
+  "primaryImageOfPage":{"@id":"https://brandstory.in/list-of-digital-marketing-companies-in-bangalore/#primaryimage"},
+  "datePublished":"2016-01-27T06:59:05+00:00",
+  "dateModified":"2020-04-06T08:53:53+00:00",
+  "author":{
+  "@id":"https://brandstory.in/blogs/#/schema/person/20719399e4da786efc251a773ba0d962"},
+  "description":"Here is the list of digital marketing companies in bangalore India which is suitable for all kinds of business from small scale to large scale"},
+  {"@type":["Person"],
+  "@id":"https://brandstory.in/blogs/#/schema/person/20719399e4da786efc251a773ba0d962",
+  "name":"Brandstory",
+  "image":{
+  "@type":"ImageObject",
+  "@id":"https://brandstory.in/blogs/#authorlogo",
+  "url":"https://en.gravatar.com/userimage/113738842/50e556d6784f01c284ec4959f10b7547.png",
+  "caption":"Brandstory"},
+  "sameAs":[]}]}</script>
+
+
+<div class="col-sm-8">
+    <ng-template #template >
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Get Quote</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+      <form [formGroup]="enquiryModal" (ngSubmit)="onSubmitEnquiryModal()"   novalidate>
+        <div class="form-group">
+            <input type="text" formControlName="fName" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fName.errors }" placeholder="Enter Name"/>
+          <div *ngIf="submitted && fenquiryModal.fName.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal.fName.errors.required" class="px-3">Name is required</div>
+              <div *ngIf="fenquiryModal.fName.errors.pattern" class="px-3">Only character and Minimun 3 characters allowed</div>
+              <div *ngIf="fenquiryModal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+          </div>
+          </div>
+        <div class="form-group">
+            <input type="email" formControlName="fEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fEmail.errors }"  placeholder="Enter Email">
+            <div *ngIf="submitted && fenquiryModal.fEmail.errors" class="invalid-feedback">
+                <div *ngIf="fenquiryModal.fEmail.errors.required" class="px-3">Email is required</div>
+            <div *ngIf="fenquiryModal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+            <input type="tel" formControlName="fPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fPhone.errors }"  placeholder="Mobile Number"/>
+            <div *ngIf="submitted && fenquiryModal.fPhone.errors" class="invalid-feedback">
+                <div *ngIf="fenquiryModal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+                <div *ngIf="fenquiryModal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+                <div *ngIf="fenquiryModal.fPhone.errors.minLength" class="px-3">Mobile Number minimum digits is required</div>
+                <div *ngIf="fenquiryModal.fPhone.errors.maxLeanth" class="px-3">Mobile Number maximum digits is required</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <select formControlName="fService" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fService.errors }">
+                <option disabled selected>Select a service</option>
+                <option>Design</option>
+                <option>UI/UX</option>
+                <option>Development</option>
+                <option>Digital</option>
+            </select>
+            <div *ngIf="submitted && fenquiryModal.fService.errors" class="invalid-feedback">
+                <div *ngIf="fenquiryModal.fService.errors.required" class="px-3">Select  service is required</div>
+            </div>
+          </div>
+
+        <div class="form-group">
+            <textarea formControlName="fMessage" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fMessage.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+            <div *ngIf="submitted && fenquiryModal.fMessage.errors" class="invalid-feedback">
+                <div *ngIf="fenquiryModal.fMessage.errors.required" class="px-3">Message is required</div>
+            </div>
+          </div>
+          <br>
+        <button  type="submit"  class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+      </form>
+
+          <br><br>
+      </div>
+    </ng-template>
+  </div>
+

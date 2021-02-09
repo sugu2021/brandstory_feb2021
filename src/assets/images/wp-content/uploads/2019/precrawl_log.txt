@@ -1,0 +1,13 @@
+IP addresses of Semrush Bot ( Site Audit ): 46.229.173.66, 46.229.173.67, 46.229.173.68
+
+REQUEST:
+curl -i -sS -L --proto-redir -all,http,https --max-time 5 -A 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' http://www.klicpic.com/
+
+RESPONSE:
+HTTP/1.1 403 Forbidden
+Date: Fri, 30 Aug 2019 07:40:33 GMT
+Server: Apache
+Content-Length: 134
+Content-Type: text/html; charset=iso-8859-1
+
+Access denied.  Your IP address is blacklisted.  If you feel this is in error please contact your hosting provider's abuse department.

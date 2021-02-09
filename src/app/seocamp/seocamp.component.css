@@ -1,0 +1,184 @@
+.row{
+    margin-right: -0px; 
+    margin-left: -0px; 
+}
+.seocolin h2 a{
+   color: #212529 !important;
+   text-decoration: none;
+   background-color: transparent;}
+.seocolin img{align-items: center; width:100% !important;}
+.services-card-shadow{
+    box-shadow: 0 5px 13px 4px rgba(239,239,239,.8);
+    -webkit-transform: translate3d(0,-2px,0);
+    transform: translate3d(0,-2px,0);
+    border: none;
+    min-height:450px !important;
+}
+.card-body h2 a {
+    color: #212529 !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+.seo h2 a
+{
+    color: #212529 !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+.seo img{align-items: center; 
+	width:100% !important;}
+.navbar-nav{ display: none !important; visibility: hidden !important;}
+.navbar-expand-lg .navbar-collapse{
+	display: none !important;
+}
+.banner-left-outerwrap-landing {
+	margin: 0px;
+}
+.seo-banner-head-landing{
+	
+
+padding:30px 5px 25px 20px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 52px;
+line-height: 67px;
+
+color: #FFFFFF;
+}
+.seo-banner-subtxt-landing{
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 31px;
+line-height:48px;
+	color: #fff;
+max-width: 432px;
+	padding: 32px 0px 32px 20px;
+}
+.landing-body{
+	padding:51px 74px 46px 48px; 
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+
+color: #000000;
+}
+.card-text{
+	margin-bottom: 20px;
+}
+.txt-red-landing{
+	font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-decoration-line: underline;
+
+color: #DE5F46;
+}
+.card-title-landing{
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 14px;
+margin-bottom: 30px;
+color: #2B17A7;
+}
+.txt-white-landing{
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 33px;
+color: #FFFFFF;
+}
+.card-whitetitle-landing{
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height:32px;
+color: #FFFFFF;
+	margin-bottom: 10px;
+}
+.landing-block .card-text{
+	line-height: 17px !important;
+}
+.card{
+	margin-bottom: 10px;
+	border-radius: 0px;
+	border: 0px;
+	display: flex;
+	height: 100%;
+}
+.card-txt-white li{
+	list-style: none;
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 32px;
+color: #FFFFFF;
+}
+.seo-banner-sub-landing{
+	font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height:45px;
+	color: #fff;
+	max-width: 375px;
+	padding-left: 54px;
+}
+.banner-form-innerwrap-landing{
+margin-top:45px;
+	background-color: #fff;
+	padding:52px;
+}
+.casestudies{
+	background-color: #3D5D55;
+	padding-top: 40px;
+}
+.casestudies .clients-heading-clone{
+	color: #fff;
+}
+.casestudies .clients-heading{
+	color: #fff;
+	z-index: 0;
+	opacity: 0.1;
+}
+footer{
+	display: none;
+}
+@media (max-width: 560px) {
+	.card{
+		height: auto;
+	}
+	.seo-banner-head-landing{
+		padding: 39px 5px 14px 20px;
+		font-size: 28px;
+line-height: 37px;
+	}
+	.seo-banner-subtxt-landing{
+		font-size: 16px;
+line-height: 27px;
+		padding: 10px 0 10px 20px;	
+	}
+	.banner-form-innerwrap-landing{
+		margin-top: 0px;
+	}
+	.seo-banner-sub-landing{
+		font-size: 18px;
+line-height: 30px;
+	}
+	.banner-form-innerwrap-landing{
+		padding: 20px;
+	}
+}

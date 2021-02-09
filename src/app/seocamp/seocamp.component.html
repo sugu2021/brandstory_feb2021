@@ -1,0 +1,475 @@
+<div style="max-width: 1350px; display: block; margin: 0 auto;">
+  <div
+    style="background: url('assets/images/wp-content/uploads/2020/seo-bg.png'); background-repeat: no-repeat; background-size: cover;">
+    <div class="banner-space-init"></div>
+    <div class="row banner-left-outerwrap-landing">
+      <div class="col-sm-7 banner-left-innerwrap">
+        <h1 class="seo-banner-head-landing">
+          Best of SEO strategies<br>
+          designed for Enterprises
+        </h1>
+
+        <h5 class="seo-banner-subtxt-landing">
+          Looking for an SEO Firm to
+          Rank Above, Reach Beyond?
+        </h5>
+        <h5 class="seo-banner-sub-landing">
+          Rank on Page 1
+          <br>
+          Get greater visbility on Google
+
+          <br>
+          Be local, Go global
+          Automate SEO for Scale
+
+        </h5>
+        <br>
+      </div>
+
+
+
+
+
+      <div class="col-sm-5 banner-right-outerwrap">
+        <a id="CForm"></a>
+        <div class="banner-form-innerwrap-landing">
+          <h4 class="banner-form-headtxt">GET IN TOUCH WITH US</h4>
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmits()" novalidate>
+            <div class="form-group">
+              <input type="text" formControlName="firstName" class="form-control banner-form-field"
+                [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" placeholder="Your Name" />
+              <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                <div *ngIf="f.firstName.errors.required" class="px-3">Name is required</div>
+                <div *ngIf="f.firstName.errors.pattern" class="px-3">Only characters allowed</div>
+                <div *ngIf="f.firstName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="email" formControlName="email" class="form-control banner-form-field"
+                [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Work Email ID" />
+              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required" class="px-3">Work Email ID is required</div>
+                <div *ngIf="f.email.errors.email" class="px-3">Work Email ID must be a valid email address</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="tel" formControlName="lastName" class="form-control banner-form-field"
+                [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" placeholder="Mobile Number" />
+              <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                <div *ngIf="f.lastName.errors.required" class="px-3">Mobile Number is required</div>
+                <div *ngIf="f.lastName.errors.pattern" class="px-3">Only Numbers is required</div>
+                <div *ngIf="f.lastName.errors.minLength" class="px-3">Mobile Number format is required</div>
+                <div *ngIf="f.lastName.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" formControlName="organisation" class="form-control banner-form-field"
+                [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Organization Name" />
+              <div *ngIf="submitted && f.organisation.errors" class="invalid-feedback">
+                <div *ngIf="f.organisation.errors.required" class="px-3">Organization Name is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="url" formControlName="website" class="form-control banner-form-field"
+                [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Website Link" />
+              <div *ngIf="submitted && f.website.errors" class="invalid-feedback">
+                <div *ngIf="f.website.errors.required" class="px-3">Website Link is required</div>
+                <div *ngIf="f.website.errors.pattern" class="px-3">Website Link is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="url" formControlName="message" class="form-control banner-form-field"
+                [ngClass]="{ 'is-invalid': submitted && f.message.errors }" placeholder="Message" />
+              <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                <div *ngIf="f.message.errors.required" class="px-3">Message is required</div>
+                <div *ngIf="f.message.errors.pattern" class="px-3">Message is required</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button class="get-quote-btn btn-block btn btn-primary text-center bg-red border-0">SEND</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding-top:30px; "></div>
+
+  <!-- Clients -->
+  <div class="clients text-center">
+    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+      <span class="uvc-headings-line"
+        style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+    </div>
+    <h3 class="clients-heading-clone">CLIENTS</h3>
+    <h3 class="clients-heading">THE GREATEST</h3>
+
+  </div>
+
+
+  <div class="row">
+    <div class=" col-md-12">
+      <div class="client-img-list">
+
+        <img src="assets/images/wp-content/uploads/2018/10/sg_logo1.png" class="vc_gitem-zone-img"
+          alt="Digital Marketing Companies in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2018/07/flipkart180x90.png" class="vc_gitem-zone-img"
+          alt="Digital Marketing agency in bangalore">
+
+
+        <img src="assets/images/wp-content/uploads/2018/07/decathlon180x90.png" class="vc_gitem-zone-img"
+          alt="Best digital marketing company in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2017/12/49-1.png" class="vc_gitem-zone-img"
+          alt="digital marketing service providers in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2017/12/70.png" class="vc_gitem-zone-img"
+          alt="digital marketing bangalore">
+
+        <img src="assets/images/wp-content/uploads/2017/12/13.png" class="vc_gitem-zone-img"
+          alt="seo services in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2018/09/adarsh-devlogo.png" class="vc_gitem-zone-img"
+          alt="Best digital marketing company in bangalore India">
+
+        <img src="assets/images/wp-content/uploads/2018/09/jd-logo.png" class="vc_gitem-zone-img"
+          alt="SEO services in Bangalore">
+
+        <img src="assets/images/wp-content/uploads/2018/09/skylark-logo.png" class="vc_gitem-zone-img"
+          alt="Digital marketing companies in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2018/03/62.png" class="vc_gitem-zone-img"
+          alt="top digital marketing companies in india">
+
+        <img src="assets/images/wp-content/uploads/2018/03/65.png" class="vc_gitem-zone-img"
+          alt="real estate digital marketing company in bangalore">
+
+        <img src="assets/images/wp-content/uploads/2017/12/54.png" class="vc_gitem-zone-img"
+          alt="best seo services company in bangalore">
+
+        <img width="180" height="90" src="assets/images/wp-content/uploads/2017/12/180-50.png" class="vc_gitem-zone-img"
+          alt="online marketing company in bangalore" sizes="100vw">
+
+        <img width="180" height="90" src="assets/images/wp-content/uploads/2017/12/37.png" class="vc_gitem-zone-img"
+          alt="internet marketing company in bangalore" sizes="100vw">
+
+        <img width="180" height="90" src="assets/images/wp-content/uploads/2017/12/44.png" class="vc_gitem-zone-img"
+          alt="top digital marketing companies in bangalore" sizes="100vw">
+
+        <img width="180" height="90" src="assets/images/wp-content/uploads/2017/12/27.png" class="vc_gitem-zone-img"
+          alt="best digital marketing company bangalore" sizes="100vw">
+
+        <img width="250" height="57" src="assets/images/wp-content/uploads/2018/11/innoviti-logo.png"
+          class="vc_gitem-zone-img" alt="Brandstory digital marketing company" sizes="100vw">
+
+        <img width="250" height="57" src="assets/images/wp-content/uploads/2020/Redseer.png" class="vc_gitem-zone-img"
+          alt="Brandstory digital marketing company" sizes="100vw">
+
+        <img width="250" height="57" src="assets/images/wp-content/uploads/2020/Manthan.png" class="vc_gitem-zone-img"
+          alt="Brandstory digital marketing company" sizes="100vw">
+
+        <img width="250" height="57" src="assets/images/wp-content/uploads/2020/Strata.png" class="vc_gitem-zone-img"
+          alt="Brandstory digital marketing company" sizes="100vw">
+
+        <div class="vc_gitem-zone-img client-lastbox">+349 More</div>
+
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="casestudies">
+    <div class="clients text-center">
+      <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+        <span class="uvc-headings-line"
+          style="border-style: solid; border-bottom-width: 2px; border-color:#fff; width: 30px; margin: 0px auto;"></span>
+      </div>
+      <h3 class="clients-heading-clone">CASE STUDIES</h3>
+      <h3 class="clients-heading">RECENT WINS</h3>
+      <br><br>
+    </div>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card">
+          <span class="uvc-headings-line"
+            style="border-style: solid; border-bottom-width: 2px; border-color:#DE5F46; width: 265px; margin: 0px auto;"></span>
+          <div class="card-body landing-body">
+
+            <h5 class="card-title-landing">INTERIOR DESIGN COMAPNY</h5>
+            <p class="card-text">BrandStory ranks 30 keywords on 1st and 2nd position on page 1 in Google for a steady 6
+              months</p>
+            <p class="card-text">Organic traffic increased from 1000 unique visits to 3500 unique visits</p>
+            <p class="card-text">Organic conversion increased from 10 to 55 every month</p>
+            <p class="card-text">Website traffic increased by 110% and leads by 30%</p>
+            <p class="card-text"><a href="/seocamp/#" class="txt-red txt-red-landing">Request for full Case Study</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <span class="uvc-headings-line"
+            style="border-style: solid; border-bottom-width: 2px; border-color:#DE5F46; width: 265px; margin: 0px auto;"></span>
+          <div class="card-body landing-body">
+
+            <h5 class="card-title-landing">REAL ESTATE COMPANY</h5>
+            <p class="card-text">35+ keywords ranked on 1st and 2nd position on page 1 in Google for a steady 8 months
+            </p>
+            <p class="card-text">Organic traffic increased by 150% in 6 months</p>
+            <p class="card-text">Organic conversion increased from 10 to 55 every month</p>
+            <p class="card-text">Website traffic increased by 110% and leads by 30%</p>
+            <p class="card-text"><a href="/seocamp/#" class="txt-red txt-red-landing">Request for full Case Study</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <span class="uvc-headings-line"
+            style="border-style: solid; border-bottom-width: 2px; border-color:#DE5F46; width: 265px; margin: 0px auto;"></span>
+          <div class="card-body landing-body">
+
+            <h5 class="card-title-landing">UNIVERSITY</h5>
+            <p class="card-text">BrandStory ranked 200 keywords around multiple education categories across page 1 & 2
+              on Google
+            </p>
+            <p class="card-text">Organic traffic increasd by 3X in 9 months</p>
+            <p class="card-text">Offered continous tecnical, offpage and content optimization to grow the organic
+              traffic sice paid campaings were getting expensive year on year</p>
+
+            <p class="card-text"><a href="/seocamp/#" class="txt-red txt-red-landing">Request for full Case Study</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row" style="margin-top: 20px;">
+
+      <div class="col-md-4">
+        <div class="card">
+          <span class="uvc-headings-line"
+            style="border-style: solid; border-bottom-width: 2px; border-color:#DE5F46; width: 265px; margin: 0px auto;"></span>
+          <div class="card-body landing-body">
+
+            <h5 class="card-title-landing">A TECHNOLOGY COMPANY</h5>
+            <p class="card-text">We helped rank 150 Keywords around business vertical and segments for a large
+              technology MNC</p>
+            <p class="card-text">Achieved the above results in less than 7 months</p>
+            <p class="card-text">Long Tail SEO strategy increased organic traffic by 50%</p>
+            <p class="card-text">Qualified leads increased by 80%</p><br>
+            <p class="card-text"><a href="/seocamp/#" class="txt-red txt-red-landing">Request for full Case Study</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <span class="uvc-headings-line"
+            style="border-style: solid; border-bottom-width: 2px; border-color:#DE5F46; width: 265px; margin: 0px auto;"></span>
+          <div class="card-body landing-body landing-block">
+
+            <h5 class="card-title-landing">REAL ESTATE COMPANY</h5>
+            <p class="card-text">BrandStory ranked 140 keywords on page 1 & 2</p>
+            <p class="card-text">We helped organic traffic increase by 2X</p>
+            <p class="card-text">35+ keywords ranked on 1st and 2nd position on page 1 in Google for a steady 8 months
+            </p>
+            <p class="card-text">Organic traffic increased by 150% in 6 months</p>
+            <p class="">Organic conversion increased by 80% and generated 120+ qualified leads</p>
+            <p class="card-text"><a href="/seocamp/#" class="txt-red txt-red-landing">Request for full Case Study</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="background-color: #DE5F46;">
+          <span class="uvc-headings-line"
+            style="border-style: solid; border-bottom-width: 2px; border-color:#fff; width: 265px; margin: 0px auto;"></span>
+          <div class="card-body landing-body" style="background-color: #DE5F46;">
+
+            <h5 class="card-whitetitle-landing">Industries we win</h5>
+            <div class="card-text card-txt-white">
+              <ul>
+                <li>IT & Software</li>
+                <li>Real Estate</li>
+                <li>Technology / Emerging Tech</li>
+                <li>Analytics</li>
+                <li>Manufacturing</li>
+                <li>E Commerce</li>
+                <li>Education / Ed-Tech</li>
+              </ul>
+            </div>
+            <p class="card-text"><a href="/seocamp/#" class="txt-white-landing">Talk to us for your SEO success</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+
+
+
+  <!-- Google Partner -->
+  <div class="container-fluid bg-red p-0">
+    <div class="row">
+      <div class="row">
+
+        <div class="col-sm-1 my-auto google-container-image p-0">
+          <img src="assets/images/wp-content/uploads/2019/icons/seo/trophy.png" alt="SEO Company in Bangalore" />
+        </div>
+
+
+
+        <div class="col-sm-7">
+
+          <div class="google-container">
+            <h2 class="mt-5 branding-get-quote-text text-white ">Official Google Partner</h2>
+            <p class="text-white branding-cont">We are official partners with Google, so you know that you are in the
+              hands of a trusted and promising company.</p><br><br>
+          </div>
+
+        </div>
+        <div class="col-sm-4 my-auto google-container-image">
+          <a href="https://www.google.com/partners/agency?id=1975289574" target="_blank"><img
+              src="assets/images/wp-content/uploads/2019/icons/seo/gpartner.png" alt="Official Google Partner" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org",
+  "@graph":
+  [
+  {
+  "@type":"WebSite",
+  "@id":"https://brandstory.in/blogs/#website",
+  "url":"https://brandstory.in/blogs/",
+  "name":"Brandstory Blog",
+  "description":"Here is the list of april 2020 top digital marketing companies in bangalore India",
+  "potentialAction":{
+  "@type":"SearchAction",
+  "target":"https://brandstory.in/blogs/?s={search_term_string}",
+  "query-input":"required name=search_term_string"}},
+  {
+  "@type":"ImageObject",
+  "@id":"https://brandstory.in/list-of-digital-marketing-companies-in-bangalore/#primaryimage",
+  "url":"https://brandstory.in/assets/images/blogs/successful-keyword-study-needs-understanding-of-your-audience.jpg",
+  "width":1020,"height":680},
+  {"@type":"WebPage",
+  "@id":"https://brandstory.in/list-of-digital-marketing-companies-in-bangalore/#webpage",
+  "url":"https://brandstory.in/list-of-digital-marketing-companies-in-bangalore/",
+  "inLanguage":"en-US",
+  "name":"List of Top Digital Marketing Companies in Bangalore April 2020",
+  "isPartOf":{"@id":"https://brandstory.in/blogs/#website"},
+  "primaryImageOfPage":{"@id":"https://brandstory.in/list-of-digital-marketing-companies-in-bangalore/#primaryimage"},
+  "datePublished":"2016-01-27T06:59:05+00:00",
+  "dateModified":"2020-04-06T08:53:53+00:00",
+  "author":{
+  "@id":"https://brandstory.in/blogs/#/schema/person/20719399e4da786efc251a773ba0d962"},
+  "description":"Here is the list of digital marketing companies in bangalore India which is suitable for all kinds of business from small scale to large scale"},
+  {"@type":["Person"],
+  "@id":"https://brandstory.in/blogs/#/schema/person/20719399e4da786efc251a773ba0d962",
+  "name":"Brandstory",
+  "image":{
+  "@type":"ImageObject",
+  "@id":"https://brandstory.in/blogs/#authorlogo",
+  "url":"https://en.gravatar.com/userimage/113738842/50e556d6784f01c284ec4959f10b7547.png",
+  "caption":"Brandstory"},
+  "sameAs":[]}]}
+</script>
+
+
+  <div class="col-sm-8">
+    <ng-template #template>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Get Quote</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        <form [formGroup]="enquiryModal" (ngSubmit)="onSubmitEnquiryModal()" novalidate>
+          <div class="form-group">
+            <input type="text" formControlName="fName" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fName.errors }" placeholder="Enter Name" />
+            <div *ngIf="submitted && fenquiryModal.fName.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal.fName.errors.required" class="px-3">Name is required</div>
+              <div *ngIf="fenquiryModal.fName.errors.pattern" class="px-3">Only character and Minimun 3 characters
+                allowed</div>
+              <div *ngIf="fenquiryModal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" formControlName="fEmail" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fEmail.errors }" placeholder="Enter Email">
+            <div *ngIf="submitted && fenquiryModal.fEmail.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal.fEmail.errors.required" class="px-3">Email is required</div>
+              <div *ngIf="fenquiryModal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" formControlName="fPhone" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fPhone.errors }" placeholder="Mobile Number" />
+            <div *ngIf="submitted && fenquiryModal.fPhone.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+              <div *ngIf="fenquiryModal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+              <div *ngIf="fenquiryModal.fPhone.errors.minLength" class="px-3">Mobile Number minimum digits is required
+              </div>
+              <div *ngIf="fenquiryModal.fPhone.errors.maxLeanth" class="px-3">Mobile Number maximum digits is required
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <select formControlName="fService" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fService.errors }">
+              <option disabled selected>Select a service</option>
+              <option>Design</option>
+              <option>UI/UX</option>
+              <option>Development</option>
+              <option>Digital</option>
+            </select>
+            <div *ngIf="submitted && fenquiryModal.fService.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal.fService.errors.required" class="px-3">Select service is required</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <textarea formControlName="fMessage" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fMessage.errors }" placeholder="Message" rows="2"
+              style="height:auto !important;"></textarea>
+            <div *ngIf="submitted && fenquiryModal.fMessage.errors" class="invalid-feedback">
+              <div *ngIf="fenquiryModal.fMessage.errors.required" class="px-3">Message is required</div>
+            </div>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+        </form>
+
+
+      </div>
+    </ng-template>
+  </div>
+
+
+</div>

@@ -1,0 +1,40 @@
+User-agent: *
+
+Disallow: /p=?
+Disallow: /trackback/
+Disallow: /category/*/*
+Disallow: /tag
+Disallow: /category/
+Disallow: */trackback
+
+
+Disallow: /2017/04/
+Disallow: /author/
+Disallow: /?p*
+Disallow: /popup/*
+Disallow: /portfolio-posts/*
+Disallow: /portfolio_category/*
+
+
+User-agent: Yahoo! Slurp
+
+Disallow: /p=?
+Disallow: /trackback/
+Disallow: /category/*/*
+Disallow: /tag
+Disallow: /category/
+Disallow: */trackback
+
+
+Disallow: /2017/04/
+Disallow: /author/
+Disallow: /?p*
+Disallow: /popup/*
+Disallow: /portfolio-posts/*
+Disallow: /portfolio_category/*
+
+
+
+Allow: /
+
+Sitemap: https://brandstory.in/assets/ap-sitemap.xml

@@ -1,0 +1,25 @@
+/* @font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  }
+
+
+  @font-face {
+    font-family: roboto-bold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+  } */
+
+/*
+  .testFont{
+    font-family: Roboto;
+  } */
+
+.sec_top {
+  margin-top: 5% !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .sec_top {
+    margin-top: 22% !important;
+  }
+}

@@ -1,0 +1,1094 @@
+ <div class="background-pattern"></div>
+<div class="container">
+    <div class="banner-space-init"></div>
+    <div class="row banner-left-outerwrap">
+  <div class="col-sm-7 banner-left-innerwrap">
+
+      <img src="assets/images/wp-content/uploads/2019/icons/seo/search-seo.png" class="banner-inner-img" alt="Search Engine" />
+    <h2 class="seo-banner-head">
+        It all starts with some
+        words typed in a small box
+    </h2>
+    <br>
+    <h5 class="seo-banner-subtxt">
+        We are here to keep you on top of your competitors
+        on search engine result pages
+    </h5>
+    <br><br>
+    <a (click)="openModal(template)"  class="banner-request-btn ">REQUEST A FREE SEO AUDIT</a>
+  </div>
+
+
+
+  <div class="col-sm-5 banner-right-outerwrap">
+    <div class="banner-form-innerwrap" >
+    <h4 class="banner-form-headtxt">REQUEST A FREE SEO AUDIT</h4>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmits()">
+      <div class="form-group">
+          <input type="text" formControlName="firstName" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" placeholder="Name"/>
+          <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+              <div *ngIf="f.firstName.errors.required" class="px-3">Name is required</div>
+              <div *ngIf="f.firstName.errors.pattern" class="px-3">Only characters and Minimun 3 characters allowed</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <input type="text" formControlName="email" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email"/>
+          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required" class="px-3">Email is required</div>
+              <div *ngIf="f.email.errors.email" class="px-3">Email must be a valid email address</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <input type="tel" formControlName="lastName" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" placeholder="Mobile Number"/>
+          <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+              <div *ngIf="f.lastName.errors.required" class="px-3">Mobile Number is required</div>
+              <div *ngIf="f.lastName.errors.minLength" class="px-3">Mobile Number format is required</div>
+                    <div *ngIf="f.lastName.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+          </div>
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="organisation" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Company Name"/>
+        <div *ngIf="submitted && f.organisation.errors" class="invalid-feedback">
+            <div *ngIf="f.organisation.errors.required" class="px-3">Company Name is required</div>
+        </div>
+    </div>
+      <div class="form-group">
+          <textarea formControlName="password" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+          <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required" class="px-3">Message is required</div>
+          </div>
+      </div>
+      <div class="form-group">
+          <button class="get-quote-btn btn-block btn btn-primary text-center bg-red border-0" >SEND</button>
+      </div>
+  </form>
+
+      </div>
+  </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid bg-red">
+  <div class="row">
+      <div class="container">
+          <div class="row">
+      <div class="col-sm-7">
+
+      <div class="google-container">
+      <h2 class="mt-5 branding-get-quote-text text-white ">Official Google Partner</h2>
+      <p class="text-white branding-cont">We are official partners with Google, so you know that you are in the hands of a trusted and promising company.</p><br><br>
+      </div>
+
+      </div>
+      <div class="col-sm-4 my-auto google-container-image">
+          <img  src="assets/images/wp-content/uploads/2019/icons/seo/gpartner.png" />
+      </div>
+      </div>
+      </div>
+  </div>
+</div>
+ <br><br>
+
+<div class="container-fluid">
+<div class="row">
+    <div class=" col-12 mx-auto">
+  <div class="client-img-list text-center">
+
+      <img src="assets/images/wp-content/uploads/2018/09/adarsh-devlogo.png" class="vc_gitem-zone-img" style="width: auto !important;" alt="Digital Marketing Company">
+
+      <img src="assets/images/wp-content/uploads/2018/09/jd-logo.png" class="vc_gitem-zone-img" style="width: auto !important;" alt="Flipkart portfolio">
+
+
+      <img src="assets/images/wp-content/uploads/2018/09/skylark-logo.png" class="vc_gitem-zone-img" style="width: auto !important;" alt="decathlon portfolio">
+
+      <img src="assets/images/wp-content/uploads/2018/03/62.png" class="vc_gitem-zone-img" style="width: auto !important;" alt="top digital marketing companies in india">
+
+      <img src="assets/images/wp-content/uploads/2018/03/65.png" class="vc_gitem-zone-img" style="width: auto !important;" alt="real estate digital marketing">
+
+      <img src="assets/images/wp-content/uploads/2017/12/54.png" class="vc_gitem-zone-img" style="width: auto !important;" alt="best seo services in bangalore">
+
+   </div>
+  </div>
+</div>
+</div>
+<br> <br>
+
+<div class="container-fluid p-0" #target>
+    <div class="row">
+        <div class="col-sm-6 px-5 bg-red">
+            <div class="py-2 sticky-top flex-grow-1">
+                <div class="nav flex-sm-column">
+                    <div class="title-container mx-auto my-3 py-3">
+
+                        <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                            <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: #ffffff; width: 30px; margin: 0px auto;"></span>
+                          </div>
+                      <h3 class="whybrandstory-shadow-txt">WHY BRANDSTORY</h3>
+                      <h3 class="whybrandstory-rear-txt">WHY BRANDSTORY</h3>
+                    </div>
+
+                    <ul class="py-5">
+                      <li class="why-brandstory-list">SEO expertise and ability to tackle diverse SEO scenarios</li>
+                      <li class="why-brandstory-list">Experience of working with clients across industries</li>
+                      <li class="why-brandstory-list">Customized solution backed by solid processes</li>
+                      <li class="why-brandstory-list">Real time strategies to combat changing Search Engine
+                          algorithms</li>
+                      <li class="why-brandstory-list">Strict adherence to White Hat SEO practices</li>
+                      <li class="why-brandstory-list">User friendly reporting structure with metrics to enable
+                          decision making </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col" id="main">
+            	<div class="col-md-12">
+                <div class="row seo-card-block">
+
+                    <div class="col-md-12 title-container mx-auto">
+                        <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                            <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                          </div>
+                      <h3 class="casestudies-rear-txt">CASE STUDIES</h3>
+                      <h3 class="casestudies-shadow-txt">CASE STUDIES</h3>
+                      <br>
+                    </div>
+
+
+                    <div class="banner-space-init"></div>
+                    <div class="banner-space-init"></div>
+                    <div class="banner-space-init"></div>
+
+                    <div class="col-md-6">
+                      <div class="card-deck">
+                      <div class="card services-card-shadow">
+                      <div class="card-body">
+                      <p class="card-text ">How Quality Organic Traffic surged by <span class="red-txt">1164%</span> for a leading Interior Design Company in Bangalore.
+                      </p>
+                      <button  (click)="openModal2(template2)" class="download-btn btn btn-primary bg-red border-0 ">REQUEST ACCESS</button>
+                      </div>
+                      </div>
+                      </div>
+
+                      <br><br>
+                      <div class="card-deck">
+                      <div class="card services-card-shadow">
+                      <div class="card-body">
+                      <p class="card-text ">Delivering <span class="red-txt">340%</span> ROI in 6 months to renew an E-commerce company's dominance in search rankings and reclaim customer trust.
+                      </p>
+                      <button  (click)="openModal2(template2)" class="download-btn btn btn-primary bg-red border-0 ">REQUEST ACCESS</button>
+                      </div>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                        <div class="card services-card-shadow">
+                        <div class="card-body">
+                        <p class="card-text ">How relevant leads increased by <span class="red-txt">632%</span> for a Connected Transport Accelerator in the US.
+                        </p>
+                        <button  (click)="openModal2(template2)" class="download-btn btn btn-primary bg-red border-0 ">REQUEST ACCESS</button>
+                        </div>
+                        </div>
+                        </div>
+
+                        <br><br>
+                        <div class="card-deck">
+                        <div class="card services-card-shadow">
+                        <div class="card-body">
+                        <p class="card-text ">Boosting admission rate organically by <span class="red-txt">265%</span> in a year for a leading Engineering College in Bangalore.
+                        </p>   <br>
+                        <button  (click)="openModal2(template2)" class="download-btn btn btn-primary bg-red border-0 ">REQUEST ACCESS</button>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container my-3">
+    <div class="row">
+        <div class="col" id="main">
+
+
+            <div class="services-card ">
+
+                <div class="title-container mx-auto need-for-seo">
+                    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                        <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                      </div>
+                  <h3 class="casestudies-rear-txt">NEED</h3>
+                  <h3 class="need-shadow-txt">WHAT IS THE NEED FOR SEO ?</h3>
+                </div>
+
+
+                <div class="banner-space-init"></div>
+
+
+                <div class="card-deck py-3">
+                    <div class="card border-0">
+                      <div class="card-body ">
+                        <div class="mb-4">
+                            <img  src="assets/images/wp-content/uploads/2019/icons/seo/need1.png" />
+                        </div>
+                        <h6 class="font-weight-bold py-2 need-head">Revolutionize your business</h6>
+                        <p class="card-text ">
+                            Once your website is optimized with rich content and SEO services, you will appear at or near the top of organic search results of different search engines for relevant keywords.
+                        </p>
+                        <p class="card-text need-para">
+                            This guarantees the diversion of a huge relevant traffic to your website
+                            that will change and improve your business forever.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <div class="card-body ">
+                            <div class="mb-4">
+                                <img  src="assets/images/wp-content/uploads/2019/icons/seo/need2.png" />
+                            </div>
+                            <h6 class="font-weight-bold py-2 need-head">Cost effective solution</h6>
+                            <p class="card-text ">
+                                Once you are doing it right, SEO makes sure to get you new organic leads and traffic regularly.
+                            </p>
+                            <p class="card-text need-para">
+                                Of course it is better to obtain an organic top ranking than pay for
+                                individual campaigns continuously to attract traffic.
+                            </p>
+                          </div>
+                      </div>
+
+                </div>
+            </div>
+
+
+            <div class="services-card ">
+                <div class="card-deck py-3">
+                    <div class="card border-0">
+                        <div class="card-body ">
+                            <div class="mb-4">
+                                <img  src="assets/images/wp-content/uploads/2019/icons/seo/need3.png" />
+                            </div>
+                            <h6 class="font-weight-bold py-2 need-head">Users trust google</h6>
+                            <p class="card-text need-para">
+                                Users tend to search for details of their products on Google before making any purchase and trust its result because they find the relevant information on the first page itself.
+                            </p>
+
+                          </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <div class="card-body ">
+                          <div class="mb-4">
+                              <img  src="assets/images/wp-content/uploads/2019/icons/seo/need4.png" />
+                          </div>
+                          <h6 class="font-weight-bold py-2 need-head">Your competitors are doing it too.</h6>
+                          <p class="card-text need-para">
+                              You are not the only one wanting to rank first on search engine result pages. Your competitors work hard to increase their ranking on relevant keyword searches that have high monthly search volumes. If you are not there too, then you’ll be out of business soon enough.
+                          </p>
+
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Choose right agency -->
+
+<div class="container-fluid p-0">
+    <div class="row">
+        <div class="col-sm-6 px-5 bg-red">
+            <div class="py-2 flex-grow-1">
+                <div class="nav flex-sm-column">
+                    <div class="title-container mx-auto my-3 py-3">
+
+                        <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                            <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: #ffffff; width: 30px; margin: 0px auto;"></span>
+                          </div>
+                      <h3 class="whybrandstory-shadow-txt">WHY BRANDSTORY</h3>
+                      <h3 class="choosing-rear-txt">CHOOSING THE RIGHT AGENCY</h3>
+                    </div>
+                    <P class="choosing-ul-p">
+                        The right SEO partner targets relevant customers for its customers
+                    </P>
+                    <P class="choosing-ul-p">
+                        Here is a 4 point checklist you can refer to while looking for the right
+                        digital/ SEO partner for your business
+                    </P>
+                    <ul class="py-2">
+                      <li class="why-brandstory-list">If an agency has been in the market for some time with good results, then it will probably stay for a long while.</li>
+                      <li class="why-brandstory-list">Hiring an agency will be helpful only if they are ready to provide you with high level expertise and diverse seo services</li>
+                      <li class="why-brandstory-list">You know they will be able to bring you on top only if their own website ranks well for relevant queries</li>
+                      <li class="why-brandstory-list">Professional in house copywriters and web developers are always a plus point for increasing simplicity and efficiently using your resources</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col" id="main">
+            	<div class="col-md-12">
+                <div class="row seo-card-block">
+
+                    <div class="col-md-12 title-container mx-auto">
+                        <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                            <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                          </div>
+                      <h3 class="casestudies-rear-txt">SEO SERVICES</h3>
+                      <h3 class="casestudies-shadow-txt">SEO SERVICES</h3>
+                      <br>
+                    </div>
+
+
+                    <div class="col-md-6 ">
+                      <div class="card-deck">
+                      <div class="card services-card-shadow">
+                      <div class="card-body">
+                          <p class="card-text seoservice-h">Keyword ideas and difficulty</p>
+                      <p class="card-text seoservice-p">Competitive & frequently searched keywords are more expensive and take a longer time to reflect back.
+                      </p>
+                      </div>
+                      </div>
+                      </div>
+
+                      <br><br>
+                      <div class="card-deck">
+                      <div class="card services-card-shadow">
+                      <div class="card-body">
+                          <p class="card-text seoservice-h">On-Page Optimization</p>
+                          <p class="card-text seoservice-p"> Search engines constantly update their algorithms. Content build for users, Click Through Rates, Usability,Keywords Strategy, Interlinking
+                            </p>
+                      </div>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 ">
+                        <div class="card-deck">
+                        <div class="card services-card-shadow">
+                        <div class="card-body">
+                            <p class="card-text seoservice-h">Technical</p>
+                            <p class="card-text seoservice-p">Web pages load speed, crawlability, URLs structure, website code quality, website security.
+                            </p>
+                        </div>
+                        </div>
+                        </div>
+
+                        <br><br>
+                        <div class="card-deck">
+                        <div class="card services-card-shadow">
+                        <div class="card-body">
+                        <p class="card-text seoservice-h">Off-Page Optimization</p>
+                        <p class="card-text seoservice-p">Building high-quality and relevant back link that drive heavy traffic is the final step to ensure you are well reached out than your competitors.
+                        </p>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col" id="main">
+
+            <div class="services-card ">
+
+
+                <div class="title-container mx-auto my-5 ">
+                    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                        <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                      </div>
+                  <h3 class="casestudies-rear-txt">BENEFITS</h3>
+                  <h3 class="need-shadow-txt">BENEFITS OF WORKING WITH US</h3>
+                </div>
+                  <br><br>
+
+
+                <div class="card-deck">
+                    <div class="card border-0">
+                      <div class="card-body ">
+                        <div class="mb-4">
+                            <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben1.png" />
+                        </div>
+                        <h6 class="font-weight-bold py-2 need-head">Definite Results</h6>
+                        <p class="card-text need-para">
+                            In no time, we will have you ranked on the first page for targeted keyword.
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <div class="card-body ">
+                          <div class="mb-4">
+                              <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben2.png" />
+                          </div>
+                          <h6 class="font-weight-bold py-2 need-head">Expanded Customer Base</h6>
+                          <p class="card-text need-para">
+                              Being on top drives more relevant and targeted customers to your website
+                          </p>
+
+                        </div>
+                      </div>
+
+                      <div class="card border-0">
+                          <div class="card-body ">
+                            <div class="mb-4">
+                                <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben3.png" />
+                            </div>
+                            <h6 class="font-weight-bold py-2 need-head">Increased Conversion Rate</h6>
+                            <p class="card-text need-para">
+                                Your average conversion rate will increase as we drive more quality traffic to your website.
+                            </p>
+
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+            <div class="services-card ">
+                <div class="card-deck">
+                    <div class="card border-0">
+                      <div class="card-body ">
+                        <div class="mb-4">
+                            <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben4.png" />
+                        </div>
+                        <h6 class="font-weight-bold py-2 need-head">More In Bound Leads</h6>
+                        <p class="card-text need-para">
+                            An increase in the average in bound leads and conversions as your business will be projected to customers who are actually looking to buy or acquire your services
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <div class="card-body ">
+                          <div class="mb-4">
+                              <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben5.png" />
+                          </div>
+                          <h6 class="font-weight-bold py-2 need-head">Audit your website for free</h6>
+                          <p class="card-text need-para">
+                              We will help you get a better picture with a free website audit because we are confident of our results.
+                          </p>
+
+                        </div>
+                      </div>
+
+                      <div class="card border-0">
+                          <div class="card-body ">
+                            <div class="mb-4">
+                                <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben6.png" />
+                            </div>
+                            <h6 class="font-weight-bold py-2 need-head">Extensive reporting</h6>
+                            <p class="card-text need-para">
+                                Keep a tab on your progress as we send monthly reports with ranking changes and all trends.
+                            </p>
+
+                          </div>
+                        </div>
+                </div>
+            </div>
+
+
+
+            <div class="services-card ">
+                <div class="card-deck">
+                    <div class="card border-0">
+                      <div class="card-body ">
+                        <div class="mb-4">
+                            <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben7.png" />
+                        </div>
+                        <h6 class="font-weight-bold py-2 need-head">In house reliability</h6>
+                        <p class="card-text ">
+                            We have in house expertise in all fields and have no need to outsource, use black hat tactics or cut corners, we treat your site like our own.
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <div class="card-body ">
+                          <div class="mb-4">
+                              <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben8.png" />
+                          </div>
+                          <h6 class="font-weight-bold py-2 need-head">Access to all top SEO tools</h6>
+                          <p class="card-text need-para">
+                              Accelerate decision making, course correct strategies, and unlock powerful key insights. Save on investing in multiple tools that unearth results.
+                          </p>
+
+                        </div>
+                      </div>
+
+                      <div class="card border-0 enq-bg-red">
+                          <div class="card-body ">
+                            <div class="mb-4 text-center pt-4">
+                                <img  src="assets/images/wp-content/uploads/2019/icons/seo/enqbtn.png" />
+                            </div>
+                            <h6 class="font-weight-bold py-2 text-center enq-get-started">Get started with us</h6>
+                            <p class="card-text text-center">
+                                <button (click)="openModal3(template3)"  class="btn btn-primary border-0 enq-bnt-white">ENQUIRE</button>
+                            </p>
+
+                          </div>
+                        </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<br><br>
+
+
+
+
+
+<!-- <div class="title-container mx-auto my-5 ">
+    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+        <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+      </div>
+  <h3 class="casestudies-rear-txt">TESTIMONIALS</h3>
+  <h3 class="testimonial-shadow-txt">TESTIMONIALS</h3>
+</div>
+
+<br><br><br>
+<div class="container py-5">
+<div class="services-card">
+    <div class="card-deck">
+        <div class="card border-0">
+          <div class="card-body">
+            <div class="py-2">
+              <i class="fa fa-3x fa-quote-left " style="color: #C4C4C4;"></i>
+            </div>
+            <p class="card-text text-left testi-content">
+                BrandStory has been a very trusted and reliable partner for Vymo. It is very tough to fully absorb a client’s design preferences, tune your style to it and consistently deliver expectations.
+            </p>
+            <div class="container float-left seo-casestudy-block">
+                <div class="row">
+                    <div class="col-md-3 col-xs-3 ">
+                        <img  src="assets/images/wp-content/uploads/2018/04/vymo-test-logo.png" />
+                    </div>
+                    <div class="col-md-6 col-xs-6 m-2">
+                      <h5 class="testi-content-author">Yamini Bhat</h5>
+                      <p class="testi-content-author-desgn">CEO </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card card-box-shadow border-0 enq-bg-red">
+          <div class="card-body">
+              <div class="py-2">
+                  <i class="fa fa-3x fa-quote-left " style="color: #C4C4C4;"></i>
+                </div>
+            <p class="card-text text-left testi-content-white">
+                BrandStory has been a very trusted and reliable partner for Vymo. It is very tough to fully absorb a client’s design preferences, tune your style to it and consistently deliver expectations.
+            </p>
+            <div class="container float-left seo-casestudy-block">
+                <div class="row">
+                    <div class="col-md-3 col-xs-3 ">
+                        <img  src="assets/images/wp-content/uploads/2018/04/vymo-test-logo.png" />
+                    </div>
+                    <div class="col-md-6 col-xs-6 m-2">
+                      <h5 class="testi-content-author-white">Yamini Bhat</h5>
+                      <p class="testi-content-author-desgn-white">CEO </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card border-0">
+          <div class="card-body">
+              <div class="py-2">
+                  <i class="fa fa-3x fa-quote-left " style="color: #C4C4C4;"></i>
+                </div>
+            <p class="card-text text-left testi-content">
+                BrandStory has been a very trusted and reliable partner for Vymo. It is very tough to fully absorb a client’s design preferences, tune your style to it and consistently deliver expectations.
+            </p>
+            <div class="container float-left seo-casestudy-block">
+                <div class="row">
+                    <div class="col-md-3 col-xs-3 ">
+                        <img  src="assets/images/wp-content/uploads/2018/04/vymo-test-logo.png" />
+                    </div>
+                    <div class="col-md-6 col-xs-6 m-2">
+                      <h5 class="testi-content-author">Yamini Bhat</h5>
+                      <p class="testi-content-author-desgn">CEO </p>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+</div>
+
+</div>
+ -->
+
+
+
+<div class="container">
+  <div class="row">
+
+      <div class="col" id="main">
+
+          <div class="services-card ">
+
+
+
+              <div class="card-deck">
+                  <div class="card border-0">
+                    <div class="card-body ">
+                      <div class="mb-4">
+                          <img  src="assets/images/wp-content/uploads/2018/04/seo-img1.png" />
+                      </div>
+                      <h6 class="font-weight-bold py-2 need-head">Discover new keywords</h6>
+                      <p class="card-text need-para">
+                        When you have a plan you like, you can save it to your account or share your plan with others. Then, you can create ad groups and set bids for each keyword before turning your campaign on.
+                      </p>
+
+                    </div>
+                  </div>
+
+                  <div class="card border-0">
+                      <div class="card-body ">
+                        <div class="mb-4">
+                            <img  src="assets/images/wp-content/uploads/2018/04/seo-img2.png" />
+                        </div>
+                        <h6 class="font-weight-bold py-2 need-head">Compare keywords trends</h6>
+                        <p class="card-text need-para">
+                          We are there to guide you through this back-breaking task of selecting the right keywords for your product and services. As a leading Seo company our tried and tested processes ensures that all boxes are ticked and helps in finding you the list of keywords, most suitable for your business. You can select from the list according to your strategy.
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <div class="card-body ">
+                          <div class="mb-4">
+                              <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben3.png" />
+                          </div>
+                          <h6 class="font-weight-bold py-2 need-head">Create and share your plan</h6>
+                          <p class="card-text need-para">
+                            Start by searching words or phrases related to your products or services. Keyword Planner works to find the keywords that are most relevant to your business which you can then choose to add to your plan.
+                          </p>
+
+                        </div>
+                      </div>
+
+              </div>
+          </div>
+
+
+          <div class="services-card ">
+              <div class="card-deck">
+                  <div class="card border-0">
+                    <div class="card-body ">
+                      <div class="mb-4">
+                          <img  src="assets/images/wp-content/uploads/2018/04/seo-img4.png" />
+                      </div>
+                      <h6 class="font-weight-bold py-2 need-head">Unearthing new keywords</h6>
+                      <p class="card-text need-para">
+                        Get suggested bid estimates and see how often keywords are searched and how their search volume changes over time. That way, you can narrow down your keyword list and set your budget for the keywords you really want.
+                      </p>
+
+                    </div>
+                  </div>
+
+                  <div class="card border-0">
+                      <div class="card-body ">
+                        <div class="mb-4">
+                            <img  src="assets/images/wp-content/uploads/2018/04/seo-img5.png" />
+                        </div>
+                        <h6 class="font-weight-bold py-2 need-head">Compare keywords trends</h6>
+                        <p class="card-text need-para">
+                          Among the hundreds and thousands of keywords how to identify the most appropriate ones for your website? Tools like Keyword Planner along with a customized analysis from Brandstory guides you with the bid estimates and highlights how frequently the keywords are searched and how their volume changes with time. Thus you can narrow down your search quotient to a minimum level and set estimation for those keywords which you actually want.
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <div class="card-body ">
+                          <div class="mb-4">
+                              <img  src="assets/images/wp-content/uploads/2018/04/seo-img6.png" />
+                          </div>
+                          <h6 class="font-weight-bold py-2 need-head">Create a seo strategy to dominate your market</h6>
+                          <p class="card-text need-para">
+                            Want to conceptualize and execute an SEO strategy that can survive search engine algorithm updates, increasing competitors and industry highs and lows? An SEO strategy has to go beyond incremental growth. It needs to be defensible and inherently more difficult for your competitors to replicate. It has to set you apart from your competitors. Collaborating with Brandstory, leading Seo Company, will have all your Seo bases covered and catalyse your business.
+                          </p>
+
+                        </div>
+                      </div>
+              </div>
+          </div>
+
+
+
+      </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="title-container mx-auto my-5 ">
+    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+        <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+      </div>
+  <h3 class="casestudies-rear-txt">QUESTIONS</h3>
+  <h3 class="testimonial-shadow-txt">FAQ'S ON SEO</h3>
+</div>
+
+<br><br>
+<div class="container">
+  <accordion>
+    <accordion-group  heading="Why pay for SEO services monthly?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+         SEO services are charged monthly because of the lag in ever changing search engines algorithms. Changes made to any website take weeks to a few months to show effect on the search results and we move further after analyzing the impact. The activities can be divided into one time and recurring activities which have to be carried out month on month.
+      </p>
+    </accordion-group>
+
+    <accordion-group heading="When will my site rank on the top results on Google?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+        White-hate SEO services and strategies take at least 4 to12 months depending on the keyword difficulty (KD) to rank websites at the top. No credible SEO agency can provide a concrete timeline for results but can only promise definite results.
+      <p>
+      <p class="faq-content p-0">
+        Highly competitive and generic target keywords take more than a year to beat the competition as the search algorithms change consistently and shift the rankings up or down to all the websites worldwide.
+      <p>
+      <p class="faq-content p-0">
+      Optimizing your website for the first time will bring you to a higher ranking and drive traffic after at least 4-6 months after the campaign launch. Aged websites with high quality content can show the positive results in 2-3 months.
+      </p>
+    </accordion-group>
+
+    <accordion-group heading="Can I stop doing SEO after my website has reached the top ranks?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+          Once your webpages start receiving good traffic and ranking, we can work on other pages and relevant keywords or provide you with other SEO services. With dynamic changes on the web, we always have something new to offer, you decide when to stop.
+      </p>
+    </accordion-group>
+
+    <accordion-group heading="Why do I need texts on the site?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+        Websites breathe through text as search engines cannot figure out what the web page is about unless there is a description that revolves around a keyword or topic. Without professional content guided by SEO experts, your website can never rank on top.
+      </p>
+    </accordion-group>
+
+    <accordion-group heading="Is SEO a good investment?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+        It is definitely a better option than traditional marketing. SEO services build the pillars of the digital assets every business must have.
+      </p>
+    </accordion-group>
+
+    <accordion-group heading="How Does Organic Seo Traffic Help?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+        Organic Traffic is free. Paid SEO services are not only costly but their time frame ends as soon as you stop paying. It brings you local and targeted traffic along with promising leads.
+      </p>
+    </accordion-group>
+
+    <accordion-group heading="What is the difference between white hat and black hat SEO techniques" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0" >
+        White-hat SEO services revolve around content. The prime focus while optimizing our website for top search results is to deliver the requirements of the user. White-hate SEO is a long term approach to optimization.
+      </p>
+      <p class="faq-content p-0">
+      White hat SEO techniques focus on content quality. Creating quality content proves the search engines that your website uniquely displays a service and is genuinely liked by the users that visit it. White hat SEO services focus on researching and generating keywords around your brand and pushing regular and factual content.
+      </p>
+      <p class="faq-content p-0">
+        Black-hat SEO services use hacks to ace the search engines engine results by exploiting any weaknesses in their algorithms. They are usually geared towards search bots first, rather than human readers and can be penalized by the search engine.
+      </p>
+      <p class="faq-content p-0">
+          Google search algorithms are regularly updated to tackle Black-hat methods like Florida, which penalized keyword stuffing and Panda, which penalized content farms.
+      </p>
+    </accordion-group>
+
+  </accordion>
+  </div>
+
+
+ <div class="container">
+  <!--<h5 class="faq-head">
+    Why pay for SEO services monthly?
+  </h5>
+  <p class="faq-content">
+    SEO services are charged monthly because of the lag in ever changing search engines algorithms. Changes made to any website take weeks to a few months to show effect on the search results and we move further after analyzing the impact. The activities can be divided into one time and recurring activities which have to be carried out month on month.
+  </p>
+
+  <h5 class="faq-head">When will my site rank on the top results on Google? </h5>
+  <p class="faq-content pb-0">White-hate SEO services and strategies take at least 4 to12 months depending on the keyword difficulty (KD) to rank websites at the top. No credible SEO agency can provide a concrete timeline for results but can only promise definite results.
+  </p><p class="faq-content p-0">
+    Highly competitive and generic target keywords take more than a year to beat the competition as the search algorithms change consistently and shift the rankings up or down to all the websites worldwide.
+  </p><p class="faq-content p-0">
+    Optimizing your website for the first time will bring you to a higher ranking and drive traffic after at least 4-6 months after the campaign launch. Aged websites with high quality content can show the positive results in 2-3 months.
+    </p>
+
+  <h5 class="faq-head">Can I stop doing SEO after my website has reached the top ranks?  </h5>
+  <p class="faq-content">Once your webpages start receiving good traffic and ranking, we can work on other pages and relevant keywords or provide you with other SEO services. With dynamic changes on the web, we always have something new to offer, you decide when to stop.</p>
+
+  <h5 class="faq-head">Why do I need texts on the site?</h5>
+  <p class="faq-content">Websites breathe through text as search engines cannot figure out what the web page is about unless there is a description that revolves around a keyword or topic. Without professional content guided by SEO experts, your website can never rank on top.</p>
+
+  <h5 class="faq-head">Is SEO a good investment?</h5>
+  <p class="faq-content">It is definitely a better option than traditional marketing. SEO services build the pillars of the digital assets every business must have.</p>
+
+  <h5 class="faq-head">How Does Organic Seo Traffic Help?</h5>
+  <p class="faq-content">Organic Traffic is free. Paid SEO services are not only costly but their time frame ends as soon as you stop paying. It brings you local and targeted traffic along with promising leads.</p>
+
+  <h5 class="faq-head">What is the difference between white hat and black hat SEO techniques</h5>
+  <p class="faq-content pb-0">White-hat SEO services revolve around content. The prime focus while optimizing our website for top search results is to deliver the requirements of the user. White-hate SEO is a long term approach to optimization.
+  </p>
+    <p class="faq-content p-0">White hat SEO techniques focus on content quality. Creating quality content proves the search engines that your website uniquely displays a service and is genuinely liked by the users that visit it. White hat SEO services focus on researching and generating keywords around your brand and pushing regular and factual content.
+    </p>
+    <p class="faq-content p-0">Black-hat SEO services use hacks to ace the search engines engine results by exploiting any weaknesses in their algorithms. They are usually geared towards search bots first, rather than human readers and can be penalized by the search engine.
+    </p>
+    <p class="faq-content p-0">Google search algorithms are regularly updated to tackle Black-hat methods like Florida, which penalized keyword stuffing and Panda, which penalized content farms.
+    </p>
+
+  -->
+
+
+<br><br>
+
+
+<div class="col-sm-8">
+    <ng-template #template >
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Request SEO Free Audit</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form [formGroup]="bannerModalForm" (ngSubmit)="onSubmitBannerModal()"   novalidate>
+            <div class="form-group">
+                <input type="text" formControlName="fName" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fName.errors }" placeholder="Enter Name"/>
+                <div *ngIf="submitted && fbannermodal.fName.errors" class="invalid-feedback">
+                    <div *ngIf="fbannermodal.fName.errors.required" class="px-3">Name is required</div>
+                    <div *ngIf="fbannermodal.fName.errors.pattern" class="px-3">Only characters and Minimun 3 characters allowed</div>
+                    <div *ngIf="fbannermodal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+                </div>
+              </div>
+            <div class="form-group">
+              <input type="email" formControlName="fEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fEmail.errors }"  placeholder="Enter email">
+              <div *ngIf="submitted && fbannermodal.fEmail.errors" class="invalid-feedback">
+                  <div *ngIf="fbannermodal.fEmail.errors.required" class="px-3">Email is required</div>
+
+                  <div *ngIf="fbannermodal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+            </div>
+            </div>
+
+            <div class="form-group">
+
+              <input type="text" formControlName="fPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fPhone.errors }" placeholder="Mobile Number"/>
+                <div *ngIf="submitted && fbannermodal.fPhone.errors" class="invalid-feedback">
+                    <div *ngIf="fbannermodal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+                    <div *ngIf="fbannermodal.fPhone.errors.minLength" class="px-3">Mobile Number format is required</div>
+                    <div *ngIf="fbannermodal.fPhone.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+              <input type="text" formControlName="organisation" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.organisation.errors }" placeholder="Company Name"/>
+              <div *ngIf="submitted && fbannermodal.organisation.errors" class="invalid-feedback">
+                  <div *ngIf="fbannermodal.organisation.errors.required" class="px-3">Company Name is required</div>
+              </div>
+          </div>
+            <div class="form-group">
+                <input type="url" formControlName="fService" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fService.errors }" placeholder="Website Link"/>
+                <div *ngIf="submitted && fbannermodal.fService.errors" class="invalid-feedback">
+                    <div *ngIf="fbannermodal.fService.errors.required" class="px-3">Website Link is required</div>
+                    <div *ngIf="fbannermodal.fService.errors.pattern" class="px-3">Website Link is required</div>
+                </div>
+              </div>
+
+            <div class="form-group">
+
+                <textarea formControlName="fMessage" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fMessage.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+          <div *ngIf="submitted && fbannermodal.fMessage.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fMessage.errors.required" class="px-3">Message is required</div>
+          </div>
+              </div>
+              <br>
+            <button  type="submit"  class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+          </form>
+          <br><br>
+      </div>
+    </ng-template>
+  </div>
+
+
+
+<div class="col-sm-8">
+    <ng-template #template2 >
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Request Case Study </h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form [formGroup]="caseStudyForm" (ngSubmit)="onSubmitCaseStudy()"   novalidate>
+            <div class="form-group">
+                <input type="text" formControlName="fName" class="form-control" [ngClass]="{ 'is-invalid': submitted && fcaseStudyForm.fName.errors }" placeholder="Enter Name"/>
+                <div *ngIf="submitted && fcaseStudyForm.fName.errors" class="invalid-feedback">
+                    <div *ngIf="fcaseStudyForm.fName.errors.required" class="px-3">Name is required</div>
+                    <div *ngIf="fcaseStudyForm.fName.errors.pattern" class="px-3">Only characters and Minimun 3 characters allowed</div>
+                    <div *ngIf="fcaseStudyForm.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+                </div>
+              </div>
+            <div class="form-group">
+                <input type="email" formControlName="fEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && fcaseStudyForm.fEmail.errors }"  placeholder="Enter email">
+                <div *ngIf="submitted && fcaseStudyForm.fEmail.errors" class="invalid-feedback">
+                    <div *ngIf="fcaseStudyForm.fEmail.errors.required" class="px-3">Email is required</div>
+                    >
+                    <div *ngIf="fcaseStudyForm.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+
+              <input type="tel" formControlName="fPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && fcaseStudyForm.fPhone.errors }" placeholder="Mobile Number"/>
+                <div *ngIf="submitted && fcaseStudyForm.fPhone.errors" class="invalid-feedback">
+                    <div *ngIf="fcaseStudyForm.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+                    <div *ngIf="fcaseStudyForm.fPhone.errors.minLength" class="px-3">Mobile Number format is required</div>
+                    <div *ngIf="fcaseStudyForm.fPhone.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+
+                <input type="text" formControlName="fService" class="form-control" [ngClass]="{ 'is-invalid': submitted && fcaseStudyForm.fService.errors }" placeholder="Company Name"/>
+                <div *ngIf="submitted && fcaseStudyForm.fService.errors" class="invalid-feedback">
+                    <div *ngIf="fcaseStudyForm.fService.errors.required" class="px-3">Company is required</div>
+                </div>
+              </div>
+
+
+              <br>
+            <button  type="submit"  class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+          </form>
+          <br><br>
+      </div>
+    </ng-template>
+  </div>
+
+
+  <div class="col-sm-8">
+      <ng-template #template3 >
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">Get Quote </h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form [formGroup]="enquiryModal" (ngSubmit)="onSubmitEnquiryModal()"   novalidate>
+              <div class="form-group">
+                  <input type="text" formControlName="fName" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fName.errors }" placeholder="Enter Name"/>
+                <div *ngIf="submitted && fenquiryModal.fName.errors" class="invalid-feedback">
+                    <div *ngIf="fenquiryModal.fName.errors.required" class="px-3">Name is required</div>
+                    <div *ngIf="fenquiryModal.fName.errors.pattern" class="px-3">Only characters and Minimun 3 characters allowed</div>
+                    <div *ngIf="fenquiryModal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+                </div>
+                </div>
+              <div class="form-group">
+                  <input type="email" formControlName="fEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fEmail.errors }"  placeholder="Enter Email">
+                  <div *ngIf="submitted && fenquiryModal.fEmail.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fEmail.errors.required" class="px-3">Email is required</div>
+
+                      <div *ngIf="fenquiryModal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <input type="tel" formControlName="fPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fPhone.errors }" placeholder="Mobile Number"/>
+                  <div *ngIf="submitted && fenquiryModal.fPhone.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+                      <div *ngIf="fenquiryModal.fPhone.errors.minLength" class="px-3">Mobile Number format is required</div>
+                    <div *ngIf="fenquiryModal.fPhone.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+                  </div>
+              </div>
+              <div class="form-group">
+                <input type="text" formControlName="organisation" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.organisation.errors }" placeholder="Organization Name"/>
+                <div *ngIf="submitted && fenquiryModal.organisation.errors" class="invalid-feedback">
+                    <div *ngIf="fenquiryModal.organisation.errors.required" class="px-3">Organization Name is required</div>
+                </div>
+            </div>
+              <div class="form-group">
+                  <select formControlName="fService" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fService.errors }">
+                      <option disabled selected>Select a service</option>
+                      <option>Design</option>
+                      <option>UI/UX</option>
+                      <option>Development</option>
+                      <option>Digital</option>
+                  </select>
+                  <div *ngIf="submitted && fenquiryModal.fService.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fService.errors.required" class="px-3">Select  service is required</div>
+                  </div>
+                </div>
+
+              <div class="form-group">
+                  <textarea formControlName="fMessage" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fMessage.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+                  <div *ngIf="submitted && fenquiryModal.fMessage.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fMessage.errors.required" class="px-3">Message is required</div>
+                  </div>
+                </div>
+                <br>
+              <button  type="submit"  class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+            </form>
+            <br><br>
+        </div>
+      </ng-template>
+    </div>
+
+
+</div>

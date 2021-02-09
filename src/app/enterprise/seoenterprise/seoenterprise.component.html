@@ -1,0 +1,370 @@
+<div class="background-pattern "></div>
+<div class="container-fluid p-0 my-5">
+  <div class="banner-space-init"></div>
+  <div class="row banner-left-outerwrap my-5  mx-0">
+<div class="col-sm-12 col-md-6 banner-left-innerwrap p-5">
+
+    <h2 class="seo-banner-head">5 Years of experience in <span>Enterprise SEO</span> Services and Solutions
+
+  </h2>
+
+
+</div>
+
+  <div class="col-md-6">
+    <img class="b2b-banner"  src="assets/images/wp-content/uploads/2019/seo-email-banner.png" />
+
+  </div>
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col" id="main">
+
+            <div class="services-card videoprod">
+
+                <div class="title-container mx-auto my-5 ">
+                    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                        <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                      </div>
+                  <h3 class="casestudies-rear-txt">SERVICES</h3>
+                  <h3 class="need-shadow-txt seo-services">SERVICES</h3>
+                </div>
+
+
+
+                  <div class="row banner-left-outerwrap my-5">
+
+                    <div class="col-sm-12 col-md-8 banner-left-innerwrap">
+
+
+                <h3 class=" text-left">Enterprise SEO</h3>
+                <p>No one can ace the constantly changing 100 or more parameters that are considered by Search Engine Algorithms to rank a page. But at BrandStory, we make sure that our SEO services and online strategies bring you the best Enterprise Solutions for new and hard-to-rank competitive keywords in your business vertical.  </p>
+
+                <p>With a dedicated division for R&D and several sites to test the latest trends and tools, we invest our time and resources to bring you the best results every month!</p>
+
+                      <div class="row banner-left-outerwrap">
+                        <div class="col-sm-12  col-md-12 banner-left-innerwrap">
+                         <h6> What makes you an enterprise level website?</h6>
+                         <p>Enterprise websites are less about the company size and more about the number of pages, products and services that are offered by it under one domain. If you have thousands of webpages selling different services, you need enterprise SEO to rank well on search engines.</p>
+                        </div>
+
+                        <div class="col-sm-12  col-md-12 banner-left-innerwrap">
+                          <h6>The need for a definite Site Structure </h6>
+                          <p>Any high ranking and thorough enterprise website is built on the foundation of a solid site structure. The way you set up your website decides how everything is segmented and what keywords are associated with each segment of the website. It also gives the user a chance to drill through keywords and find the information they are looking for. </p>
+                        </div>
+
+                        <div class="col-sm-12  col-md-12 banner-left-innerwrap">
+                            <h6>Why hire an Enterprise SEO agency?</h6>
+                            <p>Your in-house SEO team may have amazing brains and strategies but when it comes to optimizing a large website, they cannot do it all. Hire an experienced agency that will not only support your team with specific projects but will also take over large scale content projects and SEO testing.</p>
+                          </div>
+                      </div>
+
+                    </div>
+
+
+
+                      <div class="col-sm-12 col-md-4 banner-left-innerwrap">
+                        <p class="text-center"> Rated as One Of The Top 10 Digital Marketing Agency In Bangalore, India
+                          </p>
+
+                        <div class="banner-form-innerwrap videoform" >
+                        <h4 class="banner-form-headtxt">Get Quote</h4>
+                        <form [formGroup]="registerForm" (ngSubmit)="onSubmits()">
+                            <div class="form-group">
+                                <input type="text" formControlName="firstName" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" placeholder="Name"/>
+                                <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                    <div *ngIf="f.firstName.errors.required" class="px-3">Name is required</div>
+                                    <div *ngIf="f.firstName.errors.pattern" class="px-3">Only character and Minimun 3 characters allowed</div>
+                                    <div *ngIf="f.firstName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" formControlName="email" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email"/>
+                                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                    <div *ngIf="f.email.errors.required" class="px-3">Email is required</div>
+                                    <div *ngIf="f.email.errors.email" class="px-3">Email must be a valid email address</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" formControlName="lastName" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" placeholder="Mobile Number"/>
+                                <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                                    <div *ngIf="f.lastName.errors.required" class="px-3">Mobile Number is required</div>
+                                    <div *ngIf="f.lastName.errors.pattern" class="px-3">Mobile Number is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                              <input type="text" formControlName="organisation" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Organization Name"/>
+                              <div *ngIf="submitted && f.organisation.errors" class="invalid-feedback">
+                                  <div *ngIf="f.organisation.errors.required" class="px-3">Organization Name is required</div>
+                              </div>
+                          </div>
+
+                            <div class="form-group">
+                                <textarea formControlName="password" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Message"  rows="5" style="height:auto !important;" ></textarea>
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required" class="px-3">Message is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="get-quote-btn btn-block btn btn-primary text-center bg-red border-0">SEND</button>
+                            </div>
+                        </form>
+
+                          </div>
+                      </div>
+                      </div>
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+ <!-- who we are 1 -->
+
+ <div class="container-fluid p-0" >
+    <div class="row m-0">
+
+        <div class="col-sm-6 px-5 bg-red">
+            <div class="py-2 sticky-top flex-grow-1">
+                <div class="nav flex-sm-column">
+                    <div class="title-container mx-auto my-3 py-3">
+
+                        <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                            <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: #ffffff; width: 30px; margin: 0px auto;"></span>
+                          </div>
+                      <h3 class="whybrandstory-shadow-txt">WHY BRANDSTORY</h3>
+                      <h3 class="whybrandstory-rear-txt">WHY BRANDSTORY</h3>
+                    </div>
+
+                    <ul class="py-5">
+                      <li class="why-brandstory-list">SEO expertise and ability to tackle diverse SEO scenarios</li>
+                      <li class="why-brandstory-list">Experience of working with clients across industries</li>
+                      <li class="why-brandstory-list">Customized solution backed by solid processes</li>
+                      <li class="why-brandstory-list">Real time strategies to combat changing Search Engine
+                          algorithms</li>
+                      <li class="why-brandstory-list">Strict adherence to White Hat SEO practices</li>
+                      <li class="why-brandstory-list">User friendly reporting structure with metrics to enable
+                          decision making </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col" id="main">
+              <div class="col-md-12">
+                <div class="row seo-card-block">
+
+                    <div class="title-container mx-auto">
+                        <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                            <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                          </div>
+                      <h3 class="casestudies-rear-txt">CASE STUDIES</h3>
+                      <h3 class="casestudies-shadow-txt">CASE STUDIES</h3>
+                    </div>
+                    <br>
+
+                    <div class="banner-space-init"></div>
+                    <div class="banner-space-init"></div>
+                    <div class="banner-space-init"></div>
+
+
+                    <div class="col-md-12 ">
+                      <div class="card-deck p-5">
+                      <div class="card services-card-shadow">
+                      <div class="card-body p-0">
+                          <img class="card-img-top videoimg"  src="assets/images/wp-content/uploads/2019/Rectangle12.png">
+
+                      <div class="card-block p-3">
+                          <p class="card-text seoservice-p">Brand increases Organic traffic by <span class="red-txt">1164%</span> in 5 Month
+                          </p>
+                          <button class="btn btn-primary bg-red border-0">DOWNLOAD</button>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+
+                    </div>
+
+
+
+                    </div>
+                </div>
+
+        </div>
+    </div>
+  </div>
+
+  <br><br>
+
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col" id="main">
+
+            <div class="services-card steps2">
+
+
+                <div class="title-container mx-auto my-5 ">
+                    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                        <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                      </div>
+                      <h3 class="casestudies-rear-txt">need</h3>
+                      <h3 class="need-shadow-txt seo-services">THE 6 STEPS FOR ENTERPRISE SEO </h3>
+                </div>
+
+                <div class="col-sm-12 col-md-12 banner-left-innerwrap">
+                    <p class="text-left">We know exactly what your target audience is searching for and our SEO strategies will help your enterprise website dominate the search results in your industry</p>
+            <div class="row banner-left-outerwrap p-0">
+              <div class="col-sm-12 col-md-6 banner-left-innerwrap">
+              <div class="card-deck">
+              <div class="card services-card-shadow">
+              <div class="card-body">
+                  <p class="card-text seoservice-h tips-video pb-3">Vertical Overview & SEO Intelligence  <img class="float-right" src="assets/images/wp-content/uploads/2019/icons/seo/research.png" /></p>
+              <p class="card-text seoservice-p">To begin, we study your business vertical before establishing a SEO game plan. Our R&D department analyses keyword trends in the industry and trends in your demography collecting and combining surplus data to make further observations and plans.
+              </p>
+              </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-sm-12  col-md-6 banner-left-innerwrap">
+              <div class="card-deck">
+              <div class="card services-card-shadow">
+              <div class="card-body">
+                  <p class="card-text  seoservice-h tips-video pb-3">Market Leaders SEO Capability & Analysis <img class="float-right" src="assets/images/wp-content/uploads/2019/icons/seo/noun_statistics.png" /></p>
+                  <p class="card-text seoservice-p">Your learn from the Market leaders of your business vertical. Their SEO capabilities not only determine the top rankings but also the cost of paid ads on Google. We analyse their business, keywords trends, SEO strategies and campaigns to frame the best solution for you.</p>
+              </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-sm-12  col-md-6 banner-left-innerwrap">
+                <div class="card-deck">
+                <div class="card services-card-shadow">
+                <div class="card-body">
+                    <p class="card-text seoservice-h tips-video pb-3">Competition's SEO Capability and analysis <img class="float-right" src="assets/images/wp-content/uploads/2019/icons/seo/Group 6.png" /></p>
+                    <p class="card-text seoservice-p">We thoroughly analyse your competitor brands and their keyword mappings, advanced rank tracking and other SEO capabilities. </p>
+                </div>
+                </div>
+                </div>
+           </div>
+              <div class="col-sm-12  col-md-6 banner-left-innerwrap">
+                <div class="card-deck">
+                <div class="card services-card-shadow">
+                <div class="card-body">
+                <p class="card-text seoservice-h tips-video pb-3">Asset Audit & Gap analysis<img class="float-right" src="assets/images/wp-content/uploads/2019/icons/seo/noun_Trends Analysis.png" /></p>
+                <p class="card-text seoservice-p">We provide Asset audit and gap analysis to make sure that your website is attracting and driving visitors through the purchasing funnel aptly.</p>
+                </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12  col-md-6 banner-left-innerwrap">
+                  <div class="card-deck">
+                  <div class="card services-card-shadow">
+                  <div class="card-body">
+                  <p class="card-text seoservice-h tips-video pb-3">Enterprise SEO Strategy and Consulting<img class="float-right" src="assets/images/wp-content/uploads/2019/icons/seo/noun_strategy.png" /></p>
+                  <p class="card-text seoservice-p"> A dedicated team to work on every enterprise section. Several combined minds will plan the best SEO strategies and provide the best consultancy for your brand.</p>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12  col-md-6 banner-left-innerwrap">
+                    <div class="card-deck">
+                    <div class="card services-card-shadow">
+                    <div class="card-body">
+                    <p class="card-text  seoservice-h tips-video pb-3">B2B - B2C SEO Roadmap & Implementation<img class="float-right" src="assets/images/wp-content/uploads/2019/icons/seo/noun_Planning.png" /></p>
+                    <p class="card-text seoservice-p">We design the roadmap for your B2B and B2C services. Optimized websites attract potential clients and we implement the best strategies to convert them according to their needs. </p>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+
+
+             </div>
+            </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-12 col-md-7 offset-md-3 my-5 finalvideosec">
+            <p> SEO offers huge opportunities for enterprises that directly influence revenue growth, cost savings, etc.</p>
+            <p>Our SEO campaigns align with your short-term and long-term needs.</p>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-12 col-md-7 offset-md-3 my-5  ">
+           <p>
+             <strong>At BrandStory, we make sure that no Business Vertical trends pass by unnoticed. Check out our thorough R&D of global and local market trends for different enterprises:</strong>
+           </p>
+
+           <div class="d-flex flex-row">
+              <div class="d-flex flex-column mx-auto">
+                <ul>
+                <div class="p-2"><li>SEO for Data Analytics</li></div>
+                <div class="p-2"><li>SEO for Real Estate</li></div>
+                <div class="p-2"><li>SEO for Interior Design</li></div>
+                <div class="p-2"><li>SEO for UX/ UI Services</li></div>
+                <div class="p-2"><li>SEO for Travel</li></div>
+                <div class="p-2"><li>SEO for Hospitality</li></div>
+                </ul>
+              </div>
+              <div class="d-flex flex-column mx-auto">
+                  <ul>
+                  <div class="p-2"><li>SEO for B2B Softwares</li></div>
+                  <div class="p-2"><li>SEO for Food and Beverage</li></div>
+                  <div class="p-2"><li>SEO for E-commerce</li></div>
+                  <div class="p-2"><li>SEO for Local Businesses</li></div>
+                  <div class="p-2"><li>SEO for Healthcare</li></div>
+                  <div class="p-2"><li>SEO for Startups</li></div>
+                  </ul>
+              </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

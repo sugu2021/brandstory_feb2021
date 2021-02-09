@@ -1,0 +1,811 @@
+ <div class="background-pattern"></div>
+<div class="container">
+    <div class="banner-space-init"></div>
+    <div class="row banner-left-outerwrap">
+  <div class="col-sm-7 banner-left-innerwrap">
+
+     <!-- <img src="assets/images/wp-content/uploads/2019/icons/seo/search-seo.png" class="banner-inner-img" alt="Search Engine" /> -->
+    <h1 class="seo-banner-head">
+      PPC Campaign Management – Bringing traffic to
+      your page, one click at a time
+    </h1>
+    <br>
+    <!--<h5 class="seo-banner-subtxt">
+        We are here to keep you on top of your competitors
+        on search engine result pages
+    </h5>-->
+    <p>Over 76% of PPC ads fail to produce a single conversion.</p>
+    <p>90% of PPC campaign management services do not optimize their campaigns every
+week.</p>
+<p>We think our clients deserve better. We provide PPC campaign management services
+take your ad campaigns a notch above the rest.</p>
+<p>Leverage our AdWords campaign management services to turn your every ad into a
+conversion, and every visitor into a customer.</p>
+
+    <a (click)="openModal(template)"  class="banner-request-btn ">REQUEST A FREE SEO AUDIT</a>
+  </div>
+
+
+
+  <div class="col-sm-5 banner-right-outerwrap">
+    <div class="banner-form-innerwrap" >
+    <h4 class="banner-form-headtxt">REQUEST A FREE SEO AUDIT</h4>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmits()">
+      <div class="form-group">
+          <input type="text" formControlName="firstName" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" placeholder="Name"/>
+          <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+              <div *ngIf="f.firstName.errors.required" class="px-3">Name is required</div>
+              <div *ngIf="f.firstName.errors.pattern" class="px-3">Only characters and Minimun 3 characters allowed</div>
+                <div *ngIf="f.firstName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <input type="email" formControlName="email" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email"/>
+          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required" class="px-3">Email is required</div>
+                <div *ngIf="f.email.errors.email" class="px-3">Email must be a valid email address</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <input type="tel" formControlName="lastName" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" placeholder="Mobile Number"/>
+          <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+              <div *ngIf="f.lastName.errors.required" class="px-3">Mobile Number is required</div>
+              <div *ngIf="f.lastName.errors.pattern" class="px-3">Only Numbers is required</div>
+                    <div *ngIf="f.lastName.errors.minLength" class="px-3">Mobile Number format is required</div>
+                    <div *ngIf="f.lastName.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+          </div>
+      </div>
+      <div class="form-group">
+          <textarea formControlName="password" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+          <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required" class="px-3">Message is required</div>
+          </div>
+      </div>
+      <div class="form-group">
+          <button class="get-quote-btn btn-block btn btn-primary text-center bg-red border-0" >SEND</button>
+      </div>
+  </form>
+
+      </div>
+  </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+
+      <div class="col" id="main">
+
+          <div class="services-card ">
+
+
+              <div class="title-container mx-auto my-5 ">
+                  <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                      <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                    </div>
+                <h3 class="casestudies-rear-txt">PPC</h3>
+                <h1 class="need-shadow-txt">Our Pay Per Click Campaign Management Services</h1>
+                <p class="text-center">The PPC campaign management team oversees the entire PPC Ad, budget and strategy. The services provided are:</p>
+              </div>
+                <br><br>
+
+
+              <div class="card-deck">
+                  <div class="card border-0">
+                    <div class="card-body ">
+                      <div class="mb-4">
+                          <img  src="assets/images/wp-content/uploads/2018/04//seo-img1.png" />
+                      </div>
+                      <h6 class="font-weight-bold py-2 need-head">Keyword Research</h6>
+                      <p class="card-text need-para">
+                        Researching and identifying the keywords that your potential customers are looking for.
+                      </p>
+
+                    </div>
+                  </div>
+
+                  <div class="card border-0">
+                      <div class="card-body ">
+                        <div class="mb-4">
+                            <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben8.png" />
+                        </div>
+                        <h6 class="font-weight-bold py-2 need-head">Selection of Marketing Channels</h6>
+                        <p class="card-text need-para">
+                          We narrow down the social media and other channels that are going to be used for marketing such as Google Ads and social media networks.
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <div class="card-body ">
+                          <div class="mb-4">
+                              <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben3.png" />
+                          </div>
+                          <h6 class="font-weight-bold py-2 need-head">PPC Monitoring</h6>
+                          <p class="card-text need-para">
+                            PPC management is never a onetime fix. Our team performs continuous monitoring of the campaign to ensure its effectiveness and ability to generate a higher ROI.
+                          </p>
+
+                        </div>
+                      </div>
+
+              </div>
+          </div>
+
+
+          <div class="services-card ">
+              <div class="card-deck">
+                  <div class="card border-0">
+                    <div class="card-body ">
+                      <div class="mb-4">
+                          <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben4.png" />
+                      </div>
+                      <h6 class="font-weight-bold py-2 need-head">Analysis of Competition</h6>
+                      <p class="card-text need-para">
+                        We believe that being abreast with the top competitors’ strategies is one of the main aspects of PPC campaign management. The business must know what keywords they are targeting, what ad creatives they are adopting and so on.
+                      </p>
+
+                    </div>
+                  </div>
+
+                  <div class="card border-0">
+                      <div class="card-body ">
+                        <div class="mb-4">
+                            <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben5.png" />
+                        </div>
+                        <h6 class="font-weight-bold py-2 need-head">Optimization of Campaign</h6>
+                        <p class="card-text need-para">
+                          PPC campaigns are optimized by continuous monitoring and analyzing top ranking keywords. Our solutions focus mainly on the top performing keywords to bring in maximum traffic to your page.
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <div class="card-body ">
+                          <div class="mb-4">
+                              <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben6.png" />
+                          </div>
+                          <h6 class="font-weight-bold py-2 need-head">Periodic Testing</h6>
+                          <p class="card-text need-para">
+                            Continuous testing and experimentation is a vital feature of our PPC campaign management process. Response and feedback on new ads are analysed, landing pages are tested and regular experiments are conducted on all parts of the PPC campaign.
+                          </p>
+
+                        </div>
+                      </div>
+              </div>
+          </div>
+
+
+
+
+
+      </div>
+
+  </div>
+</div>
+
+
+
+<div class="container-fluid" #target>
+    <div class="row">
+        <div class="col-sm-6 px-5 bg-red">
+            <div class="py-2 sticky-top flex-grow-1">
+                <div class="nav flex-sm-column">
+                    <div class="title-container mx-auto my-3 py-3">
+
+                        <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                            <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: #ffffff; width: 30px; margin: 0px auto;"></span>
+                          </div>
+                      <h3 class="whybrandstory-shadow-txt">PPC campaign</h3>
+                      <h3 class="whybrandstory-rear-txt">PPC campaign management</h3>
+                    </div>
+                    <p class="text-white">Your PPC ads are deemed failures if they don’t lead to conversions. PPC or Pay Per Click in simple words is a marketing technique used to give your brand the attention it needs. Our PPC campaign management services can drive your marketing campaigns towards their goals. Our optimised PPC campaign management strategy will churn out profitable PPC campaigns before you know it. </p>
+<p class="text-white">To make the most of your PPC ads and campaigns, a solid PPC management strategy must be in place. Our Google AdWords campaign management services have helped businesses reach out to potential customers on paid platforms such as Google Adwords and Facebook Ads. </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col" id="main">
+            	<div class="col-md-12">
+                <div class="row seo-card-block">
+
+                    <div class="title-container mx-auto">
+                        <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                            <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                          </div>
+                      <h3 class="casestudies-rear-txt">Google AdWords</h3>
+                      <h3 class="casestudies-shadow-txt">Google AdWords Campaign Management Services can help you</h3>
+                    </div>
+
+
+                    <div class="banner-space-init"></div>
+                    <div class="banner-space-init"></div>
+                    <div class="banner-space-init"></div>
+
+                    <div class="col-md-6">
+                      <div class="card-deck">
+                      <div class="card services-card-shadow">
+                      <div class="card-body">
+                          <h2 class="card-text seoservice-h">Realistic Goals</h2>
+                      <p class="card-text ">Our team sets a clear roadmap for all your PPC campaigns. Your business will know where you are headed to even before you begin. A few possible goals can be:</p>
+
+                      </div>
+                      </div>
+                      </div>
+
+                      <br><br>
+                      <div class="card-deck">
+                      <div class="card services-card-shadow">
+                      <div class="card-body">
+                          <h2 class="card-text seoservice-h">Increase purchases</h2>
+                      <p class="card-text ">Increasing number of purchases will be the first goal of any ecommerce or sales website.</p>
+
+                      </div>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                        <div class="card services-card-shadow">
+                        <div class="card-body">
+                            <h2 class="card-text seoservice-h">Lead Generation</h2>
+                        <p class="card-text ">If you are a B2B service provider, lead generation will be your first priority. We will generate PPC campaigns that can convert your visitors into clients. </p>
+
+                        </div>
+                        </div>
+                        </div>
+
+                        <br><br>
+                        <div class="card-deck">
+                        <div class="card services-card-shadow">
+                        <div class="card-body">
+                            <h2 class="card-text seoservice-h">Improve Brand Awareness</h2>
+                        <p class="card-text ">This is crucial if you are a new business. We can help you stay on top of your game through PPC management. </p>
+
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+
+      <div class="col" id="main">
+
+          <div class="services-card ">
+
+
+              <div class="title-container mx-auto my-5 ">
+                  <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                      <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                    </div>
+                <h3 class="casestudies-rear-txt">Google Ads Campaign Management</h3>
+                <h3 class="need-shadow-txt">Customized Google Ads Campaign Management Structure</h3>
+                <p class="text-center">We ensure that only Google is not a part of your PPC campaigns. We slow down the pace for our PPC management services for new businesses and discover ways and means to optimize every element of your campaign. These are the few elements we optimize:</p>
+              </div>
+                <br>
+
+
+              <div class="card-deck">
+                  <div class="card border-0">
+                    <div class="card-body ">
+                      <div class="mb-4">
+                          <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben1.png" />
+                      </div>
+                      <h6 class="font-weight-bold py-2 need-head">Keywords Strategy</h6>
+                      <p class="card-text need-para">
+                        If you are a new business, you have the liberty to experiment with your bucket of keywords to see what works and what doesn’t. But if you are already running campaigns for a while, you must stick to using only those ad groups that target only specific keywords.
+                      </p>
+
+                    </div>
+                  </div>
+
+                  <div class="card border-0">
+                      <div class="card-body ">
+                        <div class="mb-4">
+                            <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben2.png" />
+                        </div>
+                        <h6 class="font-weight-bold py-2 need-head">Specific Campaigns</h6>
+                        <p class="card-text need-para">
+                          Your campaigns must be tailor made and directed towards the specific service or product your business is trying to sell. For instance, you can run a campaign for product categories, one for specific brands and one for competitor items.
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="card border-0 scrolldivd">
+                        <div class="card-body ">
+                          <div class="mb-4">
+                              <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben3.png" />
+                          </div>
+                          <h6 class="font-weight-bold py-2 need-head">Adword Campaign management</h6>
+                          <p class="card-text need-para">
+                            Our Adwords campaign management services comprise of creating ad groups for each level. This way, ads of similar nature can be grouped together and be served with their relevant keywords.</p>
+                            <p class="card-text need-para">  Our Google adwords campaign management team works with you to come up with the most optimized ads. We ensure that ads that feature in the landing pages have all ingredients to catch the attention of the customer. We include USP of the product, benefits and the element of persuasion to make them take action right away. </p>
+
+                        </div>
+                      </div>
+
+              </div>
+          </div>
+
+
+          <div class="services-card ">
+              <div class="card-deck">
+                  <div class="card border-0">
+                    <div class="card-body ">
+                      <div class="mb-4">
+                          <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben4.png" />
+                      </div>
+                      <h6 class="font-weight-bold py-2 need-head">Specific Landing Pages</h6>
+                      <p class="card-text need-para">
+                        We ensure that all PPC campaigns of our clients point to landing pages. Landing page bridges the gap between customer query and conversion. These pages help to understand the potential customer’s need and intent.
+                      </p>
+
+                    </div>
+                  </div>
+
+                  <div class="card border-0">
+                      <div class="card-body ">
+                        <div class="mb-4">
+                            <img  src="assets/images/wp-content/uploads/2019/icons/seo/ben5.png" />
+                        </div>
+                        <h6 class="font-weight-bold py-2 need-head">Analytics</h6>
+                        <p class="card-text need-para">
+                          We examine and analyse each and every step of our PPC management service solution. WE use metrics to measure what ads, keywords and landing pages are generating more traffic. The business can rightly allocate their budget to these areas and bump up their ROI.
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="card border-0 enq-bg-red">
+                      <div class="card-body ">
+                        <div class="mb-4 text-center pt-4">
+                            <img  src="assets/images/wp-content/uploads/2019/icons/seo/enqbtn.png" />
+                        </div>
+                        <h6 class="font-weight-bold py-2 text-center enq-get-started">Get started with us</h6>
+                        <p class="card-text text-center">
+                            <button (click)="openModal3(template3)"  class="btn btn-primary border-0 enq-bnt-white">ENQUIRE</button>
+                        </p>
+
+                      </div>
+                    </div>
+              </div>
+          </div>
+
+
+
+
+      </div>
+
+  </div>
+</div>
+
+
+<!-- Choose right agency -->
+
+<div class="container-fluid" >
+    <div class="row">
+        <div class="col-sm-6 px-5 bg-red">
+            <div class="py-2 sticky-top flex-grow-1">
+                <div class="nav flex-sm-column">
+                    <div class="title-container mx-auto my-3 py-2">
+
+                        <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                            <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: #ffffff; width: 30px; margin: 0px auto;"></span>
+                          </div>
+                      <h3 class="whybrandstory-shadow-txt">Capabilities</h3>
+                      <h3 class="choosing-rear-txt">Our Capabilities</h3>
+
+                    </div>
+                    <ul class="py-2">
+                      <li class="why-brandstory-list">Google Adwords campaign management</li>
+                      <li class="why-brandstory-list">Google Ads campaign management</li>
+                      <li class="why-brandstory-list">Facebook Ads management</li>
+                      <li class="why-brandstory-list">Ads in other social media such as Instagram, Linkedin</li>
+                      <li class="why-brandstory-list">Keyword management</li>
+                      <li class="why-brandstory-list">Ad campaign optimization and testing</li>
+                      <li class="why-brandstory-list">Landing pages reviews</li>
+                      <li class="why-brandstory-list">Frequent performance and cost analysis</li>
+                      <li class="why-brandstory-list">Frequent campaign performance reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col" id="main">
+            	<div class="col-md-12">
+                <div class="row seo-card-block">
+
+                    <div class="title-container mx-auto">
+                        <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                            <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                          </div>
+                      <h3 class="casestudies-rear-txt">WHY</h3>
+                      <h3 class="casestudies-shadow-txt">Why Brandstory</h3>
+                      <p class="text-left">Our customers love us for the reasons below:</p>
+                    </div>
+                    <br>
+
+                    <div class="banner-space-init"></div>
+                    <div class="banner-space-init"></div>
+                    <div class="banner-space-init"></div>
+
+
+                    <ul class="py-2">
+                      <li class="why-brandstory-list1">We provide quicker results with custom landing pages</li>
+                      <li class="why-brandstory-list1">We work out a winning combination of higher conversion rate with PPC campaign management leading to quicker profitable campaigns.</li>
+                      <li class="why-brandstory-list1">We don’t force our clients into long term contracts. We let the results do the talking.</li>
+                      <li class="why-brandstory-list1">We like to diversify our services for your all round benefit. Along with PPC management, we also look at related business areas that we can improve upon.</li>
+                    </ul>
+                                      </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+      <div class=" col-12 mx-auto">
+          <div class="title-container mx-auto my-5 ">
+              <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                  <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                </div>
+            <h3 class="casestudies-rear-txt">CLIENTS</h3>
+            <h3 class="need-shadow-txt">Our Clients</h3>
+
+          </div>
+    <div class="client-img-list text-center">
+
+        <img src="assets/images/wp-content/uploads/2018/09/adarsh-devlogo.png" class="vc_gitem-zone-img cliimg1"  alt="Digital Marketing Company">
+
+        <img src="assets/images/wp-content/uploads/2018/09/jd-logo.png" class="vc_gitem-zone-img" style="width: auto !important;" alt="Flipkart portfolio">
+
+
+        <img src="assets/images/wp-content/uploads/2018/09/skylark-logo.png" class="vc_gitem-zone-img" style="width: auto !important;" alt="decathlon portfolio">
+
+        <img src="assets/images/wp-content/uploads/2018/03/62.png" class="vc_gitem-zone-img" style="width: auto !important;" alt="top digital marketing companies in india">
+
+        <img src="assets/images/wp-content/uploads/2018/03/65.png" class="vc_gitem-zone-img" style="width: auto !important;" alt="real estate digital marketing">
+
+        <img src="assets/images/wp-content/uploads/2017/12/54.png" class="vc_gitem-zone-img" style="width: auto !important;" alt="best seo services in bangalore">
+
+     </div>
+     <br>
+    </div>
+  </div>
+  </div>
+
+
+
+
+<div class="title-container mx-auto my-5 ">
+    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+        <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+      </div>
+  <h3 class="casestudies-rear-txt">QUESTIONS</h3>
+  <h3 class="testimonial-shadow-txt">FAQs</h3>
+</div>
+
+<br><br>
+<div class="container">
+  <accordion>
+    <accordion-group  heading="What is Paid Marketing Vs Organic Marketing?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+          Organic search traffic comes from individuals looking for business links among search engine results, while paid search traffic is attributed to visitors clicking a link on a sponsored listing or advertisement that a business has paid for in order to appear in the top results.
+      </p>
+    </accordion-group>
+
+    <accordion-group heading="What are the types of paid advertising?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+          Search Ads and Display Ads are two of the major categories of paid advertisements. Search ads appear when the consumer is already looking for an answer or product, while display ads appear at other times.</p>
+    </accordion-group>
+
+    <accordion-group heading="Can you do Paid Advertising for Small Business?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+          Paid advertising can be an extremely efficient way to guide more traffic to your website and grow business, no matter the scale of your operations. Paid online advertising is not too expensive, and hence ideal for small businesses.
+        </p>
+    </accordion-group>
+
+    <accordion-group heading="Which type of paid advertising that suits my business?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+          While this will depend on your individual business circumstances, PPC advertising tends to work for almost every business sector and industry. If you offer services or products that people are likely to search for on the web, then PPC would be ideal for you.
+      </p>
+    </accordion-group>
+
+    <accordion-group heading="Can you do video advertising for my business?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+          Yes. Advertisements with “thumb stopping” effects can be created, that gets your target audience to watch the videos and buy from you. As per a Facebook study, people spend 5 times longer watching video content in comparison to reading static content.
+      </p>
+    </accordion-group>
+
+    <accordion-group heading="Can you do mobile app advertising?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0">
+          Yes. There are multiple types of advertisements designed to suit mobile applications, including Banner Ads, Native Ads, Interstitial Ads, Video Ads, Rich Media Ads, and Rewarded Videos Ads.
+      </p>
+    </accordion-group>
+
+    <accordion-group heading="What are the paid advertising plans available?" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0" >
+          Adwords (Google) and Adcenter (Microsoft) are two of the major platforms for paid advertising plans. Twitter, Linkedin and Facebook also offer pay per click service.
+      </p>
+    </accordion-group>
+    <accordion-group heading="When will I expect paid results?" [isOpen]="isFirstOpen">
+        <p class="faq-content p-0" >
+            When it comes to PPC, the first three months are the testing period of the campaign and should be seen as an investment. In certain cases results may start showing within this period. Most often, the results can be witnessed after adequate data gathering, extensive testing and optimization.
+        </p>
+      </accordion-group>
+      <accordion-group heading="How relevant leads or conversion I will get?" [isOpen]="isFirstOpen">
+          <p class="faq-content p-0" >
+              To get superior  Lead Conversion Rates you can use sales and marketing tactics like practicing lead nurturing, setting higher standards for lead quality, using a lead scoring system, as well as connecting your CRM and marketing automation platform.
+          </p>
+      </accordion-group>
+        <accordion-group heading="Can I get paid advertising report?" [isOpen]="isFirstOpen">
+            <p class="faq-content p-0" >
+                Yes. You can get reports on the success of your paid advertising campaigns executed through Twitter, LinkedIn, Facebook, Instragam and Google.
+            </p>
+        </accordion-group>
+        <accordion-group heading="What are the benefits of paid advertising?" [isOpen]="isFirstOpen">
+              <p class="faq-content p-0" >
+                  Paid advertising provides you with faster results than organic search. It is a measurable and affordable form of advertising, where specific and granular targeting is available. Paid advertising additionally enables you to broadcast your message across multiple platforms.
+                  </p>
+        </accordion-group>
+        <accordion-group heading="What Is Remarketing??" [isOpen]="isFirstOpen">
+                <p class="faq-content p-0" >
+                    Remarketing involves showing ads to the users who come to your website, but do not get converted due to any particular reason. Through remarketing you can reach all individuals who have earlier visited your site.
+                </p>
+        </accordion-group>
+        <accordion-group heading="Can I set budgets for PPC campaigns?" [isOpen]="isFirstOpen">
+                  <p class="faq-content p-0" >
+                      Major PPC engines allow you to set budgets. You may set daily budgets and budget limits at the campaign level, as well as the account level.
+                  </p>
+        </accordion-group>
+  <accordion-group heading="What factors determine my PPC costs?" [isOpen]="isFirstOpen">
+            <p class="faq-content p-0" >
+                In case of PPC, what you pay per click depends on a number of factors, including your bid, Ad quality and targeting. Targeting involves elements from keywords to demographics.
+            </p>
+  </accordion-group>
+  <accordion-group heading="What is an ordinal value and how is it used??" [isOpen]="isFirstOpen">
+      <p class="faq-content p-0" >
+          How duplicate conversions are processed is controlled by ordinal values. The ordinal is used to determine if conversions are deduplicated or processed individually when multiple conversions having same conversion date, user identifier and floodlight values are inserted.
+      </p>
+  </accordion-group>
+
+
+  </accordion>
+  </div>
+
+<br><br>
+
+<div class="container-fluid bg-red">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+        <div class="col-sm-7">
+
+        <div class="google-container">
+        <h2 class="mt-5 branding-get-quote-text text-white ">Official Google Partner</h2>
+        <p class="text-white branding-cont">We are official partners with Google, so you know that you are in the hands of a trusted and promising company.</p><br><br>
+        </div>
+
+        </div>
+        <div class="col-sm-4 my-auto google-container-image">
+            <img  src="assets/images/wp-content/uploads/2019/icons/seo/gpartner.png" />
+        </div>
+        </div>
+        </div>
+    </div>
+  </div>
+   <br>
+ <div class="container">
+
+
+<div class="col-sm-8">
+    <ng-template #template >
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Request SEO Free Audit</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form [formGroup]="bannerModalForm" (ngSubmit)="onSubmitBannerModal()"   novalidate>
+            <div class="form-group">
+                <input type="text" formControlName="fName" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fName.errors }" placeholder="Enter Name"/>
+                <div *ngIf="submitted && fbannermodal.fName.errors" class="invalid-feedback">
+                    <div *ngIf="fbannermodal.fName.errors.required" class="px-3">Name is required</div>
+                    <div *ngIf="fbannermodal.fName.errors.pattern" class="px-3">Only characters and Minimun 3 characters allowed</div>
+                    <div *ngIf="fbannermodal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+                </div>
+              </div>
+            <div class="form-group">
+              <input type="email" formControlName="fEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fEmail.errors }"  placeholder="Enter email">
+              <div *ngIf="submitted && fbannermodal.fEmail.errors" class="invalid-feedback">
+                  <div *ngIf="fbannermodal.fEmail.errors.required" class="px-3">Email is required</div><div *ngIf="fbannermodal.fEmail.errors.pattern" class="px-3">Email must be a valid email address</div>
+                  <div *ngIf="fbannermodal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+            </div>
+            </div>
+
+            <div class="form-group">
+
+              <input type="text" formControlName="fPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fPhone.errors }" placeholder="Company Name"/>
+                <div *ngIf="submitted && fbannermodal.fPhone.errors" class="invalid-feedback">
+                  <div *ngIf="fbannermodal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+                  <div *ngIf="fbannermodal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+                  <div *ngIf="fbannermodal.fPhone.errors.minLength" class="px-3">Mobile Number format is required</div>
+                  <div *ngIf="fbannermodal.fPhone.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+
+                <input type="url" formControlName="fService" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fService.errors }" placeholder="Website Link"/>
+                <div *ngIf="submitted && fbannermodal.fService.errors" class="invalid-feedback">
+                    <div *ngIf="fbannermodal.fService.errors.required" class="px-3">Website Link is required</div>
+                    <div *ngIf="fbannermodal.fService.errors.pattern" class="px-3">Website Link is required</div>
+                </div>
+              </div>
+
+            <div class="form-group">
+
+                <textarea formControlName="fMessage" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fMessage.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+          <div *ngIf="submitted && fbannermodal.fMessage.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fMessage.errors.required" class="px-3">Message is required</div>
+          </div>
+              </div>
+              <br>
+            <button  type="submit"  class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+          </form>
+          <br><br>
+      </div>
+    </ng-template>
+  </div>
+
+
+
+<div class="col-sm-8">
+    <ng-template #template2 >
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Request Case Study </h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form [formGroup]="caseStudyForm" (ngSubmit)="onSubmitCaseStudy()"   novalidate>
+            <div class="form-group">
+                <input type="text" formControlName="fName" class="form-control" [ngClass]="{ 'is-invalid': submitted && fcaseStudyForm.fName.errors }" placeholder="Enter Name"/>
+                <div *ngIf="submitted && fcaseStudyForm.fName.errors" class="invalid-feedback">
+                    <div *ngIf="fcaseStudyForm.fName.errors.required" class="px-3">Name is required</div>
+                    <div *ngIf="fcaseStudyForm.fName.errors.pattern" class="px-3">Only character and Minimun 3 characters allowed</div>
+              <div *ngIf="fcaseStudyForm.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+                </div>
+              </div>
+            <div class="form-group">
+                <input type="email" formControlName="fEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && fcaseStudyForm.fEmail.errors }"  placeholder="Enter email">
+                <div *ngIf="submitted && fcaseStudyForm.fEmail.errors" class="invalid-feedback">
+                    <div *ngIf="fcaseStudyForm.fEmail.errors.required" class="px-3">Email is required</div>
+                    <div *ngIf="fcaseStudyForm.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+                    <div *ngIf="fcaseStudyForm.fEmail.errors.pattern" class="px-3">Email must be a valid email address</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+
+              <input type="tel" formControlName="fPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && fcaseStudyForm.fPhone.errors }" placeholder="Mobile Number"/>
+                <div *ngIf="submitted && fcaseStudyForm.fPhone.errors" class="invalid-feedback">
+                    <div *ngIf="fcaseStudyForm.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+                    <div *ngIf="fcaseStudyForm.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+                <div *ngIf="fcaseStudyForm.fPhone.errors.minLength" class="px-3">Mobile Number minimum digits is required</div>
+                <div *ngIf="fcaseStudyForm.fPhone.errors.maxLeanth" class="px-3">Mobile Number maximum digits is required</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+
+                <input type="text" formControlName="fService" class="form-control" [ngClass]="{ 'is-invalid': submitted && fcaseStudyForm.fService.errors }" placeholder="Company Name"/>
+                <div *ngIf="submitted && fcaseStudyForm.fService.errors" class="invalid-feedback">
+                    <div *ngIf="fcaseStudyForm.fService.errors.required" class="px-3">Company is required</div>
+                </div>
+              </div>
+
+
+              <br>
+            <button  type="submit"  class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+          </form>
+          <br><br>
+      </div>
+    </ng-template>
+  </div>
+
+
+  <div class="col-sm-8">
+      <ng-template #template3 >
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">Get Quote </h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form [formGroup]="enquiryModal" (ngSubmit)="onSubmitEnquiryModal()"   novalidate>
+              <div class="form-group">
+                  <input type="text" formControlName="fName" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fName.errors }" placeholder="Enter Name"/>
+                <div *ngIf="submitted && fenquiryModal.fName.errors" class="invalid-feedback">
+                    <div *ngIf="fenquiryModal.fName.errors.required" class="px-3">Name is required</div>
+                    <div *ngIf="fenquiryModal.fName.errors.pattern" class="px-3">Only character and Minimun 3 characters allowed</div>
+              <div *ngIf="fenquiryModal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+                </div>
+                </div>
+              <div class="form-group">
+                  <input type="email" formControlName="fEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fEmail.errors }"  placeholder="Enter Email">
+                  <div *ngIf="submitted && fenquiryModal.fEmail.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fEmail.errors.required" class="px-3">Email is required</div>
+                      <div *ngIf="fenquiryModal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <input type="tel" formControlName="fPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fPhone.errors }" placeholder="Mobile Number"/>
+                  <div *ngIf="submitted && fenquiryModal.fPhone.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+                      <div *ngIf="fenquiryModal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+                <div *ngIf="fenquiryModal.fPhone.errors.minLength" class="px-3">Mobile Number minimum digits is required</div>
+                <div *ngIf="fenquiryModal.fPhone.errors.maxLeanth" class="px-3">Mobile Number maximum digits is required</div>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <select formControlName="fService" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fService.errors }">
+                      <option disabled selected>Select a service</option>
+                      <option>Design</option>
+                      <option>UI/UX</option>
+                      <option>Development</option>
+                      <option>Digital</option>
+                  </select>
+                  <div *ngIf="submitted && fenquiryModal.fService.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fService.errors.required" class="px-3">Select  service is required</div>
+                  </div>
+                </div>
+
+              <div class="form-group">
+                  <textarea formControlName="fMessage" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fMessage.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+                  <div *ngIf="submitted && fenquiryModal.fMessage.errors" class="invalid-feedback">
+                      <div *ngIf="fenquiryModal.fMessage.errors.required" class="px-3">Message is required</div>
+                  </div>
+                </div>
+                <br>
+              <button  type="submit"  class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+            </form>
+            <br><br>
+        </div>
+      </ng-template>
+    </div>
+
+
+</div>

@@ -1,0 +1,112 @@
+.branding-get-quote-text{    
+    color: #ffffff;
+    text-align: justify;
+    font-size: 34px !important;
+    line-height: 44px !important;
+}
+
+.design-brand-title{
+    font-weight: normal;
+    margin-bottom: 25px; 
+}
+
+.design-brand-sub{ 
+    line-height: 26px !important;
+    color: #676766;
+    font-size: 18px !important;
+}
+
+.smallheading2{
+    font-size: 40px !important;
+    line-height: 50px !important;
+    color: #1e1e1e !important;
+    font-weight: 300 !important;
+    margin: 0% 0% 0% 4% !important;
+}
+
+.banner-layer1-txt{
+    margin:0% 0% 0% 14% !important;
+  }
+
+.banner-layer2-txt{
+      margin:0% 0% 0% 35% !important;
+}
+
+.banner-backdrop{
+    width: 155px;
+    position: absolute;
+    z-index: -888;
+    margin: 0;
+    top: 25%;
+    left: 45%;
+    padding: 0 !important;
+}
+
+.smallheadng,.bigheading,.banner-knwomore{
+    animation-name: topFadeOut;
+    animation-duration: 5s;
+}
+ 
+@keyframes topFadeOut {
+    0% { 
+        bottom: 10rem;
+        opacity: 0;
+      }
+    
+      75% { 
+        bottom: 10%;
+        opacity: 1;
+      }           
+      
+  }
+  
+  .services-card-shadow{
+    box-shadow: 0px 5px 13px 4px rgba(239, 239, 239, 0.8);
+    transform: translate3d(0,-2px,0);
+    border: none;
+  }
+
+  .card-box-shadow{
+    box-shadow: -4px 5px 25px -5px rgba(113, 109, 109, 0.8);
+    transform: translate3d(0,-2px,0);
+    border: none;
+  }
+
+  .imageup {
+    -webkit-animation: floatBubble 2s   normal ;
+    animation: floatBubble 2s   normal ;
+}
+
+@-webkit-keyframes floatBubble {
+    0% {
+        top: 50%; 
+    }
+    100% {
+        top: 25%;
+    }
+}
+@keyframes floatBubble {
+    0% {
+        top: 50%; 
+    }
+    100% {
+        top: 25%;
+    }
+}
+
+.google-marketing-visibleimg{
+    width: 300px;
+}
+.bg-light-grey{
+    background: rgb(246, 246, 246);    
+    position:   relative;
+    z-index: 0;
+}
+
+.playbtn{
+    margin-left: .8rem!important;
+}
+
+.mg-adjust{
+    margin: 180px 0px 0px 0px;
+}

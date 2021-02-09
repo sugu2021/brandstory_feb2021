@@ -1,0 +1,29 @@
+.row{
+    margin-right: -0px; 
+    margin-left: -0px; 
+}
+.seocolin h2 a{
+   color: #212529 !important;
+   text-decoration: none;
+   background-color: transparent;}
+.seocolin img{align-items: center; width:100% !important;}
+.services-card-shadow{
+    box-shadow: 0 5px 13px 4px rgba(239,239,239,.8);
+    -webkit-transform: translate3d(0,-2px,0);
+    transform: translate3d(0,-2px,0);
+    border: none;
+    min-height:450px !important;
+}
+.card-body h2 a {
+    color: #212529 !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+.seo h2 a
+{
+    color: #212529 !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+.seo img{align-items: center; 
+    width:100% !important;}

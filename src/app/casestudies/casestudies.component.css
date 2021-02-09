@@ -1,0 +1,63 @@
+.background-pattern{
+    height:50% !important;
+}
+.services-card-shadow{
+    box-shadow: 0px 5px 13px 4px rgba(239, 239, 239, 0.8);
+    transform: translate3d(0,-2px,0);
+    border: none;
+  }
+  .card-box-shadow{
+    /* box-shadow: -4px 5px 25px -5px rgba(113, 109, 109, 0.8); */
+    transform: translate3d(0,-2px,0);
+    border: none;
+    padding: 0px 15px !important;
+  }
+  .prodbutton{
+    margin-right: 50px;
+  }
+.goodreads,.goodreads .card-text{
+	font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #8c8c8c;
+	padding:10px 20px;
+}
+.goodreads h3{
+	margin-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000;
+}
+  h5.card-title{
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 38px;
+    color:#333 !important;
+    font-family: "SourceSansPro-Regular", sans-serif !important;
+  }
+
+  @media (min-width: 1200px){ .blog-card-deck {
+    margin: 0 auto !important;
+}}
+
+
+.header-btn{
+  font-weight: 500 !important;
+  color: #ffffff!important;
+  font-family: "SourceSansPro-Regular", sans-serif !important;
+  padding: 4px 10px;
+  font-size: 18px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  line-height: 20px !important;
+}
+@media (max-width: 768px){
+  .prodbutton{
+    margin-right: 0px;
+  }
+}

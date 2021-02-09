@@ -1,0 +1,639 @@
+<div class="background-pattern "></div>
+<div class="container-fluid p-0 my-5">
+  <div class="banner-space-init"></div>
+  <div class="row banner-left-outerwrap my-5  mx-0">
+    <div class="col-sm-12 col-md-3 banner-left-innerwrap p-5">
+
+      <h2 class="seo-banner-head"><span>Video production </span>
+        services for your enterprise branding
+
+      </h2>
+
+
+    </div>
+
+    <div class="col-md-9">
+
+      <div class="wrapper">
+        <owl-carousel-o [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+          <ng-container *ngIf="AllVideos.length>0">
+
+            <ng-container *ngFor="let item of AllVideos; let i=index">
+              <ng-template class="slide mx-3" carouselSlide>
+                <div class="card card-box-shadow ml-5">
+                  <div class="card-body p-0">
+
+                    <div class="embed-responsive embed-responsive-1by1" *ngIf="item.video_src">
+
+                      <div [innerHtml]="item.video_src" class="card-img-top works-img" width="200" height="200">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </ng-container>
+
+        </owl-carousel-o>
+      </div>
+    </div>
+
+    <!--<owl-carousel [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'row','sliding']">
+        <div class="item mx-3">
+          <div class="card card-box-shadow my-3 p-0">
+            <div class="card-body p-0">
+
+              <iframe class="card-img-top works-img embed-responsive embed-responsive-16by9 mt-3" width="200"
+                height="200" src="https://player.vimeo.com/video/335140059" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+         <div class="item mx-3">
+          <div class="card card-box-shadow my-3 p-0">
+            <div class="card-body p-0">
+
+              <iframe class="card-img-top works-img" width="200" height="200"
+                src="https://player.vimeo.com/video/335138900" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+        <div class="item mx-3">
+          <div class="card card-box-shadow my-3 p-0">
+            <div class="card-body p-0">
+
+              <iframe class="card-img-top works-img" width="200" height="200"
+                src="https://player.vimeo.com/video/333045212" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+        <div class="item mx-3">
+          <div class="card card-box-shadow my-3 p-0">
+            <div class="card-body p-0">
+
+              <iframe class="card-img-top works-img" width="200" height="200"
+                src="https://player.vimeo.com/video/335139822" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+        <div class="item mx-3">
+          <div class="card card-box-shadow my-3 p-0">
+            <div class="card-body p-0">
+
+              <iframe class="card-img-top works-img" width="200" height="200"
+                src="https://player.vimeo.com/video/335138830" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+        <div class="item mx-3">
+          <div class="card card-box-shadow my-3 p-0">
+            <div class="card-body p-0">
+
+              <iframe class="card-img-top works-img" width="200" height="200"
+                src="https://player.vimeo.com/video/333046100" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+        <div class="item mx-3">
+          <div class="card card-box-shadow my-3 p-0">
+            <div class="card-body p-0">
+
+              <iframe class="card-img-top works-img" width="200" height="200"
+                src="https://player.vimeo.com/video/335139976" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+        <div class="item mx-3">
+          <div class="card card-box-shadow my-3 p-0">
+            <div class="card-body p-0">
+
+              <iframe class="card-img-top works-img" width="200" height="200"
+                src="https://player.vimeo.com/video/335139019" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+        <div class="item mx-3">
+          <div class="card card-box-shadow my-3 p-0">
+            <div class="card-body p-0">
+
+              <iframe class="card-img-top works-img" width="200" height="200"
+                src="https://player.vimeo.com/video/335162733" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+        <div class="item mx-3">
+          <div class="card card-box-shadow my-3 p-0">
+            <div class="card-body p-0">
+
+              <iframe class="card-img-top works-img" width="200" height="200"
+                src="https://player.vimeo.com/video/335138779" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+      </owl-carousel>-->
+
+
+
+
+
+
+    <!--
+  <div class="col-sm-12  col-md-3 banner-left-innerwrap">
+
+   <img class="videoimg" src="assets/images/wp-content/uploads/2019/Rectangle12.png">
+
+
+  </div>
+  <div class="col-sm-12  col-md-3 banner-left-innerwrap">
+
+      <img class="videoimg" src="assets/images/wp-content/uploads/2019/Rectangle12.png">
+
+
+
+    </div>
+    <div class="col-sm-12  col-md-3 banner-left-innerwrap">
+
+        <img class="videoimg" src="assets/images/wp-content/uploads/2019/Rectangle12.png">
+
+
+      </div> -->
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+<!--<div class="container  my-5">
+    <div class="banner-space-init"></div>
+    <div class="row banner-left-outerwrap my-5">
+  <div class="col-sm-12 col-md-3 banner-left-innerwrap">
+
+      <h2 class="seo-banner-head"> <span>Video production </span>
+        services for your enterprise branding
+
+
+    </h2>
+
+
+  </div>
+
+
+
+  <div class="col-sm-12  col-md-3 banner-left-innerwrap">
+
+   <img class="videoimg" src="assets/images/wp-content/uploads/2019/Rectangle12.png">
+
+
+  </div>
+  <div class="col-sm-12  col-md-3 banner-left-innerwrap">
+
+      <img class="videoimg" src="assets/images/wp-content/uploads/2019/Rectangle12.png">
+
+
+
+    </div>
+    <div class="col-sm-12  col-md-3 banner-left-innerwrap">
+
+        <img class="videoimg" src="assets/images/wp-content/uploads/2019/Rectangle12.png">
+
+
+      </div>
+  </div>
+</div>
+-->
+<div class="container">
+  <div class="row">
+
+    <div class="col" id="main">
+
+      <div class="services-card videoprod">
+
+
+        <div class="title-container mx-auto my-5 ">
+          <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+            <span class="uvc-headings-line"
+              style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+          </div>
+          <h3 class="casestudies-rear-txt">SERVICES</h3>
+          <h1 class="need-shadow-txt seo-services">Video Production Services in Bangalore</h1>
+        </div>
+
+        <p>Technology is transforming the marketing landscape. Believe it or not, video marketing has sparked off a
+          meteoric climb in the world that was once dominated by textual information. </p>
+
+        <p>In a video, effective storytelling pooled with human faces, product demos, and impassioned language help tap
+          into the psychological hard-wiring for maximum effectiveness. And, that’s exactly how we roll the dice.</p>
+
+        <p>If your organization has not jumped on the bandwagon of video marketing yet, it’s time you know that it is
+          greatly limiting the outreach and user interaction. There’s been a sharp dip in the human attention span since
+          2000. Here’s how you can beat the yearly decline by combining a powerful story with intense visuals. Now, how
+          about taking a dip in the ocean of intuitive ideas and start this day with a fresh dose of inspiration, in a
+          world of uncertainty?</p>
+
+        <div class="row banner-left-outerwrap my-5">
+          <div class="col-sm-12 col-md-8 banner-left-innerwrap">
+            <h2 class="casestudies-shadow-txt text-left">Video Production Company in Bangalore</h2>
+            <div class="row banner-left-outerwrap p-0">
+              <div class="col-sm-12  col-md-6 banner-left-innerwrap">
+                <div class="card-deck">
+                  <div class="card services-card-shadow">
+                    <div class="card-body">
+                      <p class="card-text seoservice-h">Corporate Video <img
+                          src="assets/images/wp-content/uploads/2019/icons/seo/corporate-video.png"
+                          alt="Corporate Video" /></p>
+                      <p class="card-text seoservice-p">Everyone has a story to tell, but corporate videos wouldn’t be
+                        just another story with us by your side! We craft a language that differentiates your brand from
+                        the rest and inspires your audience.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12  col-md-6 banner-left-innerwrap">
+                <div class="card-deck">
+                  <div class="card services-card-shadow">
+                    <div class="card-body">
+                      <p class="card-text seoservice-h">Commercials <img
+                          src="assets/images/wp-content/uploads/2019/icons/seo/commercials.png"
+                          alt="Digital Marketing Company in Bangalore" /></p>
+                      <p class="card-text seoservice-p">The making of commercials is a game of inches and the line is
+                        razor thin. Let's join hands to make a winning commercial with a killer promotion strategy and a
+                        compelling story - a little something different from the norm.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12  col-md-6 banner-left-innerwrap">
+                <div class="card-deck">
+                  <div class="card services-card-shadow">
+                    <div class="card-body">
+                      <p class="card-text seoservice-h">Testimonials <img
+                          src="assets/images/wp-content/uploads/2019/icons/seo/testimonials.png" alt="Testimonials" />
+                      </p>
+                      <p class="card-text seoservice-p">Client testimonial is a tangible proof of how you provide a
+                        real-world value to your customers. Did you hear the world talk about how we mastered the art of
+                        the quick, to-the-point, and benefit-focused testimonial video? </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12  col-md-6 banner-left-innerwrap">
+                <div class="card-deck">
+                  <div class="card services-card-shadow">
+                    <div class="card-body">
+                      <p class="card-text seoservice-h">Advertising Photography <img
+                          src="assets/images/wp-content/uploads/2019/icons/seo/advertisep.png"
+                          alt="Advertising Photography" /></p>
+                      <p class="card-text seoservice-p">We understand how a few milliseconds can make or break an
+                        impression. Here’s how we execute successful ad campaigns and achieve your marketing goals. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12  col-md-6 banner-left-innerwrap">
+                <div class="card-deck">
+                  <div class="card services-card-shadow">
+                    <div class="card-body">
+                      <p class="card-text seoservice-h">Training Videos <img
+                          src="assets/images/wp-content/uploads/2019/icons/seo/training-video.png"
+                          alt="Training Videos" /></p>
+                      <p class="card-text seoservice-p">The power of the motion picture can hook up people across all
+                        boundaries. If you are looking for fresh concepts for your next corporate training video, you
+                        have knocked at the right door!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12  col-md-6 banner-left-innerwrap">
+                <div class="card-deck">
+                  <div class="card services-card-shadow">
+                    <div class="card-body">
+                      <p class="card-text seoservice-h">Animation Videos <img
+                          src="assets/images/wp-content/uploads/2019/icons/seo/animation-video.png"
+                          alt="Animation Videos" /></p>
+                      <p class="card-text seoservice-p">Another talking head or a mind-numbing explainer video? That
+                        just won’t do the trick anymore. Bring your products/ services, or even training to life with
+                        our dynamic motion graphics video. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-12 col-md-4 banner-left-innerwrap">
+            <p class="videformabovetext text-center"> Rated as One Of The Top 10 Video Production Agency In Bangalore,
+              India
+            </p>
+
+            <div class="banner-form-innerwrap videoform">
+              <h4 class="banner-form-headtxt">Get Quote</h4>
+              <form [formGroup]="registerForm" (ngSubmit)="onSubmits()" novalidate>
+                <div class="form-group">
+                  <input type="text" formControlName="firstName" class="form-control banner-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" placeholder="Name" />
+                  <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                    <div *ngIf="f.firstName.errors.required" class="px-3">Name is required</div>
+                    <div *ngIf="f.firstName.errors.pattern" class="px-3">Only characters and Minimun 3 characters
+                      allowed</div>
+                    <div *ngIf="f.firstName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" formControlName="email" class="form-control banner-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email" />
+                  <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required" class="px-3">Email is required</div>
+                    <div *ngIf="f.email.errors.email" class="px-3">Email must be a valid email address</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" formControlName="lastName" class="form-control banner-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" placeholder="Mobile Number" />
+                  <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                    <div *ngIf="f.lastName.errors.required" class="px-3">Mobile Number is required</div>
+                    <div *ngIf="f.lastName.errors.pattern" class="px-3">Mobile Number is required</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" formControlName="organisation" class="form-control banner-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Organization Name" />
+                  <div *ngIf="submitted && f.organisation.errors" class="invalid-feedback">
+                    <div *ngIf="f.organisation.errors.required" class="px-3">Organization Name is required</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <textarea formControlName="password" class="form-control banner-form-field"
+                    [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Message" rows="5"
+                    style="height:auto !important;"></textarea>
+                  <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required" class="px-3">Message is required</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button class="get-quote-btn btn-block btn btn-primary text-center bg-red border-0">SEND</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col" id="main">
+
+        <div class="services-card steps2">
+
+
+          <div class="title-container mx-auto my-5 ">
+            <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+              <span class="uvc-headings-line"
+                style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+            </div>
+            <h3 class="casestudies-rear-txt">APPROACH</h3>
+            <h3 class="need-shadow-txt seo-services">The 4 steps for VIDEO PRODUCTION</h3>
+          </div>
+
+
+
+          <div class="card-deck">
+            <div class="card border-0">
+              <div class="card-body ">
+                <div class="mb-4">
+                  <img src="assets/images/wp-content/uploads/2019/icons/seo/discover.png" alt="SEO Company" />
+                </div>
+                <span class="py-2 need-head"><b>Discover:</b><br>
+                  · Clarify the objectives and goals of the video <br>
+                  · Brainstorm relevant concepts that can provide value to your audience
+                </span>
+
+
+              </div>
+            </div>
+
+            <div class="card border-0">
+              <div class="card-body ">
+                <div class="mb-4">
+                  <img src="assets/images/wp-content/uploads/2019/icons/seo/define.png" alt="video plan" />
+                </div>
+                <span class="py-2 need-head"><b> Define:</b><br>
+                  · Determine the strategy and call to action <br>
+                  · Outline the creation of the video plan
+                </span>
+              </div>
+            </div>
+
+            <div class="card border-0">
+              <div class="card-body ">
+                <div class="mb-4 ">
+                  <img src="assets/images/wp-content/uploads/2019/icons/seo/develop.png"
+                    alt="video after few refinements" />
+                </div>
+                <span class="py-2 need-head"><b> Develop: </b><br>
+                  · Gather all the footages and create an initial draft of the video<br>
+                  · A final clearance of the video after few refinements
+                </span>
+              </div>
+            </div>
+
+            <div class="card border-0">
+              <div class="card-body ">
+                <div class="mb-4 ">
+                  <img src="assets/images/wp-content/uploads/2019/icons/seo/deliver.png"
+                    alt="Completion of post-production video work" />
+                </div>
+                <span class="py-2 need-head"><b>Deliver:</b><br>
+                  · Completion of post-production video work <br>
+                  · Final video takes off in all platforms
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-8 offset-md-2 my-5 finalvideosec">
+        <p>Videos have the power to engage your potential customer and keep them interested throughout your presentation
+        </p>
+        <p>Our video production services align with every budget and enterprise requirement</p>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="clients text-center">
+    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+      <span class="uvc-headings-line"
+        style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+    </div>
+    <h3 class="clients-heading-clone">FAQ's on Digital Marketing</h3>
+    <h3 class="clients-heading">QUESTIONS</h3>
+    <br><br>
+  </div>
+
+  <div class="faq">
+    <accordion [closeOthers]="false">
+      <accordion-group heading="What do video production companies do?" [isOpen]="isFirstOpen">
+        <p class="faq-content p-0">We, as one of the best video production companies in Bangalore, works with ad
+          agencies, corporations, local businesses, and other entities to develop internal and public-facing videos,
+          which may include promotional or educational videos, User-Generated Content, Live Streaming Videos, and many
+          more. We are also known for providing broadcast spot work.</p>
+
+      </accordion-group>
+      <accordion-group heading="What are the types of video productions?" [isOpen]="isFirstOpen">
+        <p class="faq-content p-0">We are known for providing the best video production services in Bangalore, that will
+          help you to build brand awareness, captivate customers, and influence your target audience to take action.
+          Below are the types of video productions which will help you to choose the right video production for your
+          business. </p>
+        <p class="faq-content p-0">Vlogs or Video Blogs, Branding Videos, Event Video, Training, Tutorial & Educational
+          Videos, Promotional Videos, Video Testimonials or Endorsements, Video Sales Letters (VSL’s), Company Overview
+          Videos, Interviews/Stories, Webinar, Presentation, Animation, Live Streaming Videos, Video Emails,
+          User-Generated Content, Contests/Giveaways, 360º Videos, 4K Video, and Personalized Video.</p>
+
+      </accordion-group>
+      <accordion-group heading="What are the qualities of your video production team?" [isOpen]="isFirstOpen">
+        <p class="faq-content p-0">If you are hunting for the best video production services in Bangalore, to work with
+          you on your new project, then below are some of the qualities to look for in a Video Production Company.</p>
+        <ul>
+          <li> Professional Portfolio</li>
+          <li>Genuine & Convincing Client Testimonials.</li>
+          <li>Clear & Defined Expectations</li>
+          <li>High Standards</li>
+          <li>Creativity</li>
+          <li>A passion for video production.</li>
+          <li>Timeliness</li>
+        </ul>
+      </accordion-group>
+      <accordion-group heading="What is your video production process?" [isOpen]="isFirstOpen">
+        <p class="faq-content p-0">Our video production houses in Bangalore follow three phases, i.e., pre-production,
+          production, and post-production, that helps to determine your needs for the next video and to create the same.
+          Let's walk through the production process step-by-step.</p>
+        <ol>
+          <li>
+            <h3>Pre-production phase:</h3>
+            It is the first and foremost step where the thoughts brought together to create a cohesive plan, and the
+            goals & objectives established. The more time you will spend on your planning, the smoother will be your
+            film, and better will be your final video.
+            Thus, this phase will ensure that your video is a success. For that, video production houses in Bangalore
+            preplan about
+            Your objectives
+            Who is this video for
+            What is your core message
+            Build a strategy
+            Write a video production brief
+            What’s your creative approach
+            Write your script
+            Create your storyboard
+            Scout locations to film in
+            What video equipment do you need
+            Cast talent
+            Schedule the shoot
+          </li>
+          <li>
+            <h3>Production Phase</h3>
+            After pre-planning, this is the spans where actual filming starts. During this phase, the camera rolls, and
+            all presentations, renditions, and overlay shots captured to video. It is the period that many people think
+            about when they think about producing videos, films, or TV. During this period, the Director ensures that
+            the talent gives the desired performance, you will get through all the shots you need, that the shots are
+            correctly framed and lit, and also the storyboard and scripts are actualized. This phase includes:
+            Set up the lights
+            Set up the camera
+            Direct the talent
+            Get B-roll footage
+          </li>
+          <li>
+            <h3>Post Production Phase</h3>
+            Undoubtedly, the beginning of anything is important but what matters the most is how you are going to finish
+            something. During this span, all your best takes & shots, and all other elements created, are stitched
+            together. It involves video editing and adding music & special effects. This final phase includes:
+            Logging the interviews
+            Final Story production
+            Music selection
+            Video editing
+            Reviews/approvals
+            Final Delivery
+            Above given are the three phases of the production process, followed by the best video content creation
+            companies in Bangalore, India, which will go together to create a final video production. Videos can produce
+            a lot when you have a focused strategy and well-organization, that will end up with a high-grade quality
+            product that your viewers impelled to share your stuff.
+          </li>
+        </ol>
+
+
+      </accordion-group>
+      <accordion-group heading="How much does it cost to produce a 5-minute video?" [isOpen]="isFirstOpen">
+        <p class="faq-content p-0">Undoubtedly, it’s never been easy to answer this question. Production cost varies and
+          depends on various factors like the project scope, script, concept, locations, days needed to shoot, editing
+          time, final length, music, narration, audio mixing, etc. Therefore, it is better to contact us with details of
+          the production that you want, so that we would be able to provide you with the best quality service in your
+          budget with all our experience and expertise. </p>
+
+      </accordion-group>
+      <accordion-group heading="Can you do corporate video production services?" [isOpen]="isFirstOpen">
+        <p class="faq-content p-0">Yes. As a corporate video production services provider, we are having an in-house
+          team of experts to make videos for companies like yours.</p>
+
+      </accordion-group>
+      <accordion-group heading="Can you do video marketing?" [isOpen]="isFirstOpen">
+        <p class="faq-content p-0">Yes. Videos nowadays are one of the most efficient and versatile promotional tool use
+          by digital marketers. Through our videos, we help you to engage your customers by creating and promoting your
+          videos that offer real value for your viewers.</p>
+
+      </accordion-group>
+    </accordion>
+
+  </div>
+
+  <br><br>
+</div><!-- /.container -->

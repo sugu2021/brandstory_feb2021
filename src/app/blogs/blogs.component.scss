@@ -1,0 +1,25 @@
+.blog-title{
+    /*line-height: 30px;*/line-height: inherit;
+    text-transform: uppercase;
+}
+.blog-sub-txt{
+    font-size: 13px;
+    color: #808890;
+}
+.blog-txt-overview{
+    font-size: 18px !important;
+    line-height: 26px !important;
+    color: #676766;
+}
+.background-pattern{
+    height:50% !important;
+}
+
+.blog-card-deck{
+    margin: 0px;
+}
+.card-body .cardimg{width:350px;height:150px;} 
+.blog-card-deck {
+    margin: 0px auto !important;
+}
+.card-body div img{display: block !important;}

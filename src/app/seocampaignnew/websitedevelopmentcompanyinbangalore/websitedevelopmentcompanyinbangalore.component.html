@@ -1,0 +1,1085 @@
+<div class="background-pattern mobile"></div>
+<div class="container">
+  <div class="banner-space-init"></div>
+  <div class="row banner-left-outerwrap">
+    <div class="col-sm-7 banner-left-innerwrap">
+      <h1 class="seo-banner-head">
+        Website Development Company in Bangalore
+      </h1>
+      <br>
+      <h5 class="seo-banner-subtxt">
+        At Brandstory we offer development across Wordpress, PHP, Angular, Node and React JS
+      </h5>
+      <h5 class="seo-banner-subtxt">
+        As a website development company in Bangalore we focus on bullet proof quality of codes with best practices in
+        place for future scalability.
+      </h5>
+      <h5 class="seo-banner-subtxt">
+        Our website development practices are 100% responsive and mobile compatible. We also help in simple front-end
+        development to complex Dev-ops architecture.
+      </h5>
+      <br><br>
+      <a (click)="openModal(template)" class="banner-request-btn ">KNOW MORE HERE</a>
+      <br><br>
+    </div>
+
+
+    <div class="col-sm-5 banner-right-outerwrap">
+      <div class="banner-form-innerwrap">
+        <h4 class="banner-form-headtxt">GET IN TOUCH WITH US</h4>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmits()">
+          <div class="form-group">
+            <input type="text" formControlName="firstName" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" placeholder="Name" />
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+              <div *ngIf="f.firstName.errors.required" class="px-3">Name is required</div>
+              <div *ngIf="f.firstName.errors.pattern" class="px-3">Only characters and Minimun 3 characters allowed
+              </div>
+              <div *ngIf="f.firstName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="email" formControlName="email" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required" class="px-3">Email is required</div>
+              <div *ngIf="f.email.errors.email" class="px-3">Email must be a valid email address</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" formControlName="lastName" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" placeholder="Mobile Number" />
+            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+              <div *ngIf="f.lastName.errors.required" class="px-3">Mobile Number is required</div>
+              <div *ngIf="f.lastName.errors.pattern" class="px-3">Only Numbers is required</div>
+              <div *ngIf="f.lastName.errors.minLength" class="px-3">Mobile Number format is required</div>
+              <div *ngIf="f.lastName.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="organisation" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Organization Name" />
+            <div *ngIf="submitted && f.organisation.errors" class="invalid-feedback">
+              <div *ngIf="f.organisation.errors.required" class="px-3">Organization Name is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="url" formControlName="website" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Website Link" />
+            <div *ngIf="submitted && f.website.errors" class="invalid-feedback">
+              <div *ngIf="f.website.errors.required" class="px-3">Website Link is required</div>
+              <div *ngIf="f.website.errors.pattern" class="px-3">Website Link is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea formControlName="password" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Message" rows="2"
+              style="height:auto !important;"></textarea>
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required" class="px-3">Message is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="get-quote-btn btn-block btn btn-primary text-center bg-red border-0">SEND</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- who we are 3 -->
+
+<div class="container-fluid p-0">
+  <div class="row">
+    <div class="col-sm-6 px-5 bg-red">
+      <div class="py-2 sticky-top flex-grow-1">
+        <div class="nav flex-sm-column">
+          <div class="title-container mx-auto my-3 py-3">
+          </div>
+          <P class="choosing-ul-p">
+            At BrandStory we create SEO-friendly professional websites for your business. We offer a wide range of
+            website development services to businesses ranging from enterprises to small medium enterprise companies to
+            start-ups.
+          </P>
+          <P class="choosing-ul-p">
+            We have 7+ years of experience with a team of 20+ website designers and developers who take care of project
+            management from design to delivery.
+          </P>
+          <P class="choosing-ul-p">
+            To create a better online presence for your brand, you need a well-working, fast, SEO friendly website to
+            occupy digital spaces in major search engine’s result pages.
+          </P>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" id="main">
+      <div class="col-md-12">
+        <div class="row seo-card-block">
+
+          <div class="title-container mx-auto">
+          </div>
+          <br>
+
+          <div class="banner-space-init"></div>
+          <div class="banner-space-init"></div>
+          <div class="banner-space-init"></div>
+
+
+          <div class="col-md-12 ">
+            <div class="card-deck">
+              <div class="card services-card-shadow">
+                <div class="card-body">
+                  <p class="card-text seoservice-p">At Brandstory, the leading web design agency in Bangalore, we create
+                    responsive websites.
+                  </p>
+                  <p class="card-text seoservice-p">This means our websites are faster loading with better user
+                    interface design. We test our development across different devices like tablets, mobile devices,
+                    desktop etc.
+                  </p>
+                  <p class="card-text seoservice-p">Our SEO friendly websites can easily occupy better-ranking or SERP
+                    position on google, bing, yahoo and other search engines which lead to business growth organically
+                    and produce higher conversion for your business.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Website Design Services Bangalore -->
+
+
+<div class="container my-5">
+  <div class="row">
+
+
+    <div class="col" id="main">
+
+
+      <div class="services-card ">
+
+        <div class="title-container mx-auto need-for-seo">
+          <h2 class="need-shadow-txt seoblr">Website Design Services in Bangalore</h2>
+        </div>
+
+
+        <div class="banner-space-init"></div>
+
+
+        <div class="card-deck py-1">
+          <div class="card border-0  mx-2  my-auto">
+            <div class="card-body ">
+              <p class="card-text ">
+                BrandStory is a leading Website Development Company in Bangalore and we promise to deliver
+                comprehensive, planned and unique Website development services depending upon the client’s’ requirements
+              </p>
+              <p class="card-text need-para">
+                Our services range from custom website design to development of complex enterprise Web applications. Our
+                Web development services support guaranteed high-quality, consistent and cost-effective results to
+                maximize clients’ competitive advantage and productivity.
+              </p>
+              <p class="card-text need-para">
+                As a leading Web Development company in Bangalore, we follow an Agile methodology of Website design and
+                development with constant interaction with the clients throughout the development process to ensure them
+                with the best web development service.
+              </p>
+              <p class="card-text need-para">
+                BrandStory is a complete Digital Solutions company and we know that your website needs to be developing
+                strategies to ensure unique positioning across the digital platform to deliver effective interactive
+                communication to stay ahead in this competitive market.
+              </p>
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow mx-2 px-3 py-5 my-auto">
+            <div class="card-body ">
+              <h6 class="bg-red text-white p-2 mb-3 red-strip-seoblr">OUR PROCESS</h6>
+              <p class="card-text ">
+                The first stage of the process is the planning phase which contains finding the target audience for your
+                products or services.
+              </p>
+              <p class="card-text need-para">
+                The second stage is the website layout approval, once we get approval we will move to the next stage of
+                the web design process.
+              </p>
+              <p class="card-text need-para">
+                The third stage is our good web designer will start to identify the website design projects to be built
+                with HTML, CSS or content management system based websites from the gathered information.
+              </p>
+              <p class="card-text need-para">
+                The final stage is the building a website, custom website design, website graphics design, quality
+                content update, user interface and user experience optimization, page loading speed optimization,
+                SEO-friendly responsive web design development, web hosting management etc.
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Gray Strip -->
+
+
+<div class="container-fluid bg-light">
+  <div class="row">
+    <div class="row">
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-10 ">
+
+        <div class="google-container py-3">
+          <p class="branding-cont">
+            Website Development is an integrated process which encompasses a dedicated methodology to develop a website
+            over the internet which amalgamates fulfilment of Business objectives with customers' needs.
+          </p>
+          <p class="branding-cont">
+            In a place where everybody claims to be the best, how to find the real best Website Development Company in
+            Bangalore ? Well, the truth is no one company is the best fit for all website development related functions.
+          </p>
+          <p class="branding-cont">
+            It varies from company to company depending on their specific requirements. One who doesn’t have an
+            extensive methodology can never understand their clients and thereby never deliver assured performance.
+          </p>
+          <p class="branding-cont">
+            So, choosing the best web development company in Bangalore depends on how the company plans to give
+            solutions to your web development requirements and the success associated with it.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Web Development Methodology -->
+
+<div class="container">
+  <div class="row">
+
+    <div class="col" id="main">
+
+      <div class="services-card ">
+
+
+        <div class="title-container mx-auto my-5 ">
+          <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+          </div>
+          <h3 class="need-shadow-txt seoblr"> What is Our Web Development Methodology?</h3>
+
+        </div>
+        <br><br>
+
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head">Website Planning</h6>
+              <p class="card-text need-para">
+                It involves identifying the business objective and formulating a strategy that reflects your corporate
+                image and validates your product/service offerings to the targeted customers.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head">Website Content</h6>
+              <p class="card-text need-para">
+                Content is the King. And it is our job to formulate the king in the most unique and royal way. It is our
+                job to make sure that the website content caters to all information needs of the customers and compel
+                them to choose you for their need fulfilment.
+              </p>
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"> Website Design</h6>
+              <p class="card-text need-para">
+                Our web designing experts integrate interactive designs in the wireframes to ensure visually pleasing
+                website designs to keep the customers engaged. We also make sure that the website is responsive in this
+                mobile-friendly era.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="services-card mt-4">
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head">Website Construction and Testing</h6>
+              <p class="card-text need-para">
+                Website construction involves converting the content and design into web code based on conformance with
+                certain guidelines that include
+              </p>
+              <p class="card-text need-para">
+                Other related essentials viz. Metadata, character set, analytics, sitemap, robots file, search engine
+                submission, title creation etc.
+              </p>
+              <p class="card-text need-para">
+                This is followed by Website Testing which involves testing the website against the above guidelines.
+                This ranges from a simple spell-check testing to full functionality and security review followed by
+                real-time operational monitoring.
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+      <div class="services-card mt-4">
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head"> Website Maintenance and Review </h6>
+              <p class="card-text need-para">
+                Web Development doesn’t stop with the launch of a website. The real development begins after the site is
+                live and website maintenance is an ongoing process to manage the operational aspect of web development
+                and maintain the online presence of the company. The purpose of a website review is to establish if
+                Website Goals are being achieved and, if not, what corrective action is needed. It is important to
+                review the contribution of the website in attaining the goals and propose and make any further changes
+                or adjustments as per the requirements.
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Clients -->
+      <div class="clients text-center">
+        <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+          <span class="uvc-headings-line"
+            style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+        </div>
+        <h3 class="clients-heading-clone">OUR PROCESS</h3>
+        <h3 class="clients-heading">DESIGN THINKING</h3>
+        <br><br> <br>
+      </div>
+
+
+
+      <div class="principles container px-5">
+        <p class="approach-text2">
+          Along with making sure that your website is universally compatible and user-friendly, an exclusive expert team
+          of designers and developers are you assigned to ensure that not only the plan goes according to a timeline but
+          also that your approval is taken at every step. We will work closely with you to make sure that your website
+          is just as had dreamt and better. Keeping in mind that the main purpose of a website is to increase your
+          visibility, your website is made search-engine friendly. Your brand identity and core value are prominently
+          flown into the screens and pages of your website with ease.
+        </p>
+        <p class="approach-text2">
+          Our process ranges from discussions, approvals, feedbacks, incorporating your vision for your website.
+        </p>
+      </div>
+
+
+
+      <br><br>
+
+
+      <div class="services-card px-5 container">
+        <div class="card-deck">
+          <div class="card services-card-shadow">
+            <div class="card-body">
+              <div class="text-center m-3">
+                <img src="assets/images/wp-content/uploads/2018/04/princ-img-4.png"
+                  alt="Online Marketing Company in Bangalore" />
+              </div>
+              <h6 class="text-center font-weight-bold">Dynamic & Mobile Ready Website</h6>
+              <p class="card-text text-center">
+                Majority of the users visiting your website are most likely using a mobile device. So, if you insist on
+                dynamic, accelerated performance, mobile-friendly website frameworks.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card services-card-shadow">
+            <div class="card-body">
+              <div class="text-center m-3">
+                <img src="assets/images/wp-content/uploads/2018/04/princ-img-3.png" alt="SEO Company Bangalore" />
+              </div>
+              <h6 class="text-center font-weight-bold">Convenient Navigation</h6>
+              <p class="card-text text-center">
+                We help website visitors navigate efficiently within the website. By designing the perfect homepage with
+                efficient site navigation capabilities, we ensure simple and easy accessibility to core pages of the
+                site, thus reducing bounce rates.
+              </p>
+            </div>
+          </div>
+          <div class="card services-card-shadow">
+            <div class="card-body">
+              <div class="text-center m-3">
+                <img src="assets/images/wp-content/uploads/2018/04/princ-img-1.png" alt="SEO Company in Bangalore" />
+              </div>
+              <h6 class="text-center font-weight-bold">Performance Ready</h6>
+              <p class="card-text text-center">
+                With a brilliant website live, we configure strategic forms enabled with Analytics and Heatmap tools to
+                sense the User-Journey and make relevant changes. <a
+                  href="https://developers.google.com/speed/pagespeed/insights/" target="_blank"
+                  rel="noopener">Speed</a> is of an utmost component of the test during this process.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <br>
+
+      <div class="services-card px-5 container">
+        <div class="card-deck">
+
+          <div class="card services-card-shadow">
+            <div class="card-body">
+              <div class="text-center m-3">
+                <img src="assets/images/wp-content/uploads/2018/04/princ-img-4.png" alt="Digital Marketing" />
+              </div>
+              <h6 class="text-center font-weight-bold">Analytics and the aftermath</h6>
+              <p class="card-text text-center">
+                We offer Clickstream + In-page analytics reporting which allows you to keep track of our work to develop
+                and promote your website based on various performance indicators. With our analytics in place, we get
+                better at the art of making your website that works for you over a period of time.
+              </p>
+
+            </div>
+          </div>
+
+
+          <div class="card services-card-shadow">
+            <div class="card-body">
+              <div class="text-center m-3">
+                <img src="assets/images/wp-content/uploads/2018/04/princ-img-3.png" alt="ui ux design company" />
+              </div>
+              <h6 class="text-center font-weight-bold">Web Browsers Compatibility</h6>
+              <p class="card-text text-center">
+                Your website can be accessed through multiple devices, mobile as well as desktops and there are multiple
+                web browsers that have distinct methods to visually deliver your web content to users. We design and
+                integrate your web design to be compatible across different browsers in all operating systems.
+              </p>
+
+            </div>
+          </div>
+
+
+          <div class="card services-card-shadow">
+            <div class="card-body">
+              <div class="text-center m-3">
+                <img src="assets/images/wp-content/uploads/2018/04/princ-img-1.png"
+                  alt="social medi marketing company" />
+              </div>
+              <h6 class="text-center font-weight-bold">Sitemap and Architecture</h6>
+              <p class="card-text text-center">
+                A sitemap is a file that consists of all web pages of your website that is accessible to Search Engine
+                web crawlers. Along with strong, engaging and unique content for your website users which offers a fresh
+                perspective regarding the subject matter.This allows search engines and users to easily access all
+                content of your website.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <p class="card-text need-para pt-5">
+        We at BrandStory can help you design and develop end-to-end digital solutions which involve blogging websites,
+        e-commerce websites, information websites, online brochure/catalogue websites and many more with all essential
+        accessibility features including high-volume transaction management, authentication and secured communication,
+        automated workflow, data and content management, and payment gateway integration. With our expertise in content,
+        design, and development, we assure to build customized websites with visually pleasing designs and manage your
+        online presence with respect to the ever-changing user behaviour.
+      </p>
+      <p class="card-text need-para">
+        If you are looking for web development services in bangalore that offers the best services as per your demands,
+        you are welcome at BrandStory.
+      </p>
+
+
+    </div>
+
+  </div>
+</div>
+
+
+<br><br>
+
+
+<br><br>
+<!-- Clients -->
+<div class="clients text-center" #target>
+  <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+    <span class="uvc-headings-line"
+      style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+  </div>
+  <h3 class="clients-heading-clone">OUR TOOLS</h3>
+  <h3 class="clients-heading">TECH STACKS</h3>
+  <br><br>
+</div>
+
+
+
+<div class="box">
+  <div class="container py-5">
+    <div class="row">
+
+
+      <div class="col">
+        <div class="box-part text-center">
+          <img src="assets/images/wp-content/uploads/2018/02/bootstrap-80x80.png"
+            alt="Top Website Development Company in Bangalore" />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="box-part text-center">
+          <img src="assets/images/wp-content/uploads/2018/02/HTML-80x80.png"
+            alt="Website Development Company in Bangalore" />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="box-part text-center">
+          <img src="assets/images/wp-content/uploads/2018/02/php-logo-80x80.png"
+            alt="Mobile App UI UX Design Company in Bangalore" />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="box-part text-center">
+          <img src="assets/images/wp-content/uploads/2018/02/react-80x80.png"
+            alt="Mobile App Design Company in Bangalore" />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="box-part text-center">
+          <img src="assets/images/wp-content/uploads/2018/02/wordpress-80x80.png"
+            alt="Digital Marketing Company in Bangalore" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="clients text-center">
+    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+      <span class="uvc-headings-line"
+        style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+    </div>
+    <h3 class="clients-heading-clone">FAQs </h3>
+    <h3 class="clients-heading">QUESTIONS</h3>
+    <br><br>
+  </div>
+
+  <div class="faq" itemscope itemtype="http://schema.org/FAQPage">
+
+
+    <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+      <h2 itemprop="name">What are the website development platforms available? </h2>
+      <span itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">There are
+          several website development platforms through which one can build robust and attractive websites. It is
+          crucial to know which of these platforms would be perfectly suited for catering to the unique needs and
+          requirements of a person/company. WordPress, PHP, Joomla, HTML, Magento, Open Cart and JSP are some of the
+          most popular website development platforms available </span>
+      </span>
+    </span>
+    <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+      <h2 itemprop="name">Are your websites SEO friendly? </h2>
+      <span itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+          Yes, our websites are extremely SEO friendly. We aim to create a responsive web design that has strategically,
+          technically optimized content. We incorporate simple and user-friendly URLs in the websites, to make the
+          browsing experience simpler for the users. We also make sure that the speed of our websites is fast on all
+          types of devices.</span>
+      </span>
+    </span>
+    <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+      <h2 itemprop="name">Can you help me with online marketing? </h2>
+      <span itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+          Yes, we do offer you a wide range of online marketing services that can go a long way in enabling your
+          business to grow and attract more prospective customers. Our online marketing services are focused at
+          increasing your online visibility, strengthening your business branding and augmenting your customer
+          engagement. </span>
+      </span>
+    </span>
+    <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+      <h2 itemprop="name">Can you develop a website within a budget?</h2>
+      <span itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+          Yes, we can surely design a website within a budget. The cost of your website would largely depend on how
+          complex it is, how many pages does it have, etc. We would thoroughly discuss your requirements and concerns,
+          and plan how to meet all those needs within your relevant budget. </span>
+      </span>
+    </span>
+    <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+      <h2 itemprop="name">How long you will give support once the project is completed?</h2>
+      <span itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+          Yes. We care a lot about are clients, and strive to make sure that they do not face any kind of problems. Our
+          services go way beyond the delivery of the final product, which is the website. We shall be right beside you
+          to offer you guidance and assistance with any problems or issues you might have related to it. </span>
+      </span>
+    </span>
+    <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+      <h2 itemprop="name">What is a responsive website design?</h2>
+      <span itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+          A <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank" rel="noopener">web design</a> that
+          adjusts automatically for distinguished sized screens and viewports is referred to as a responsive <a
+            href="https://en.wikipedia.org/wiki/Web_design" target="_blank" rel="noopener">web design</a>. By having a
+          responsive <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank" rel="noopener">web design</a>,
+          people can ensure that one can browse their website through just about any device and it would still function
+          and look perfectly. Such websites looks and 'responds' in a distinguished fashion, depending on the website it
+          is being opened in. </span>
+      </span>
+    </span>
+    <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+      <h2 itemprop="name">What is static/dynamic website?</h2>
+      <span itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+          A static website basically is coded wholly with HTML, where each and every webpage is a distinguished document
+          and does not have any database or external file to depend to depend on. The only way to edit these pages is to
+          edit each of them separately. A dynamic website on the on the other hand features a complex code like PHP or
+          ASP, with superior degree of functionality like being integrated with a content management system.</span>
+      </span>
+    </span>
+    <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+      <h2 itemprop="name">What is CMS? Do I require it?</h2>
+      <span itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+          Content Management System basically is a software package that makes the maintenance of websites much more
+          systematic and easy. It allows people to manage their websites smoothly without much help. CMS is recommended
+          if you want multiple users with multiple roles for your website.</span>
+      </span>
+    </span>
+    <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+      <h2 itemprop="name">What Is A Mobile-First Website?</h2>
+      <span itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+          Google surfaced their mobile-first strategy in 2010, as consumer online content consumption started to switch
+          from being primarily desktop based to being mobile phone based. In 2016 Google started to roll their
+          mobile-first index that looked at the mobile versions of websites first, and the despot versions later. These
+          designs are minimal, clean and easy to interact with on a small screen. </span>
+      </span>
+    </span>
+    <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+      <h2 itemprop="name">How do I track progress of my project?</h2>
+      <span itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+          We strive to maintain absolute transparency with our discerning clients. Hence, you can be rest assured to get
+          regular updates in regards to the progress of your project. You can easily reach out to us whenever you want
+          in order to for any questions or queries about your project.</span>
+      </span>
+    </span>
+
+
+  </div>
+
+</div>
+<br><br>
+<!-- ROI Strip-->
+
+<div class="container-fluid bg-red p-0">
+  <div class="row">
+    <div class="row">
+
+      <div class="col-sm-1 my-auto google-container-image p-0">
+        <img src="assets/images/wp-content/uploads/2019/icons/seo/gold-medal.png"
+          alt="Website Development Company in Bangalore" />
+      </div>
+
+      <div class="col-sm-11 pl-5">
+
+        <div class="google-container">
+          <h2 class="mt-5 branding-get-quote-text roi text-white ">ROI Lead Best SEO Company/Agency in Bangalore India
+          </h2>
+          <p class="text-white branding-cont">We are group of passionate digital marketing experts; industry thought
+            leaders and creative designers coming together to produce stunning ROI lead digital marketing campaigns for
+            brands. We are a social media marketing agency based in Bangalore, India providing digital marketing
+            campaign management support to brands across the globe.</p><br><br>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col" id="main">
+
+      <div class="services-card ">
+
+
+        <div class="title-container mx-auto my-5 ">
+          <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+            <span class="uvc-headings-line"
+              style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+          </div>
+          <h3 class="casestudies-rear-txt">SERVICES</h3>
+          <h3 class="need-shadow-txt seo-services">SERVICES</h3>
+        </div>
+        <br><br>
+
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/ui-design-company-bangalore/">UI UX Designing</a></h6>
+              <p class="card-text need-para">
+                As an user-centric design agency in Bangalore, India, we create functionally beautiful digital
+                experiences that highly engage with your target audience. We tend to create meaningful relationships
+                amidst brands and their consumers through inspiring design…
+              </p>
+              <a href="https://brandstory.in/ui-design-company-bangalore/" class="txt-red">READ MORE</a>
+
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/website-development-company-in-bangalore/">Website Development</a></h6>
+              <p class="card-text need-para">
+                Making sure that your website is universally compatible and user friendly, an exclusive expert team of
+                designers and developers are you assigned to to ensure that not only the plan goes according to a
+                timeline but also that your approval is taken…
+              </p>
+              <a href="https://brandstory.in/website-development-company-in-bangalore/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/content-marketing/">Content
+                  Marketing</a></h6>
+              <p class="card-text need-para">
+                Simple.We create digital content. It’s the element that helps us to be the company we are and our ever
+                growing client list is an proof to that. Brandstory is one of the leading content marketing
+                communications company in Bangalore, India provides…
+              </p>
+              <a href="https://brandstory.in/content-marketing/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="services-card mt-3">
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/seo-company-bangalore/">Search
+                  Engine Optimisation</a></h6>
+              <p class="card-text need-para">
+                Search Engine Optimization (SEO) program increases overall visibility of your business across all search
+                engine platform. It provides an opportunities for brands to create acquisitions (sales, leads, inquiries
+                etc.), and help consumers to …
+              </p>
+              <a href="https://brandstory.in/seo-company-bangalore/" class="txt-red">READ MORE</a>
+
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/pay-per-click-ppc-services-in-bangalore/">Pay Per Click (PPC)</a></h6>
+              <p class="card-text need-para">
+                We increase your digital footprint with Pay Per Click campaigns or Google Adwords and Bing Adwords. A
+                plan is sketched out and implemented accordingly, with this your campaign has begun. The plan includes
+                specific important keywords …
+              </p>
+              <a href="https://brandstory.in/pay-per-click-ppc-services-in-bangalore/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/services/social-media-marketing-agency-bangalore/">Social Media
+                  Marketing</a></h6>
+              <p class="card-text need-para">
+                We provide expertise in design implementation providing a full range of social media marketing
+                services(SMM) bounding in popular social media platforms, content generation, creatives ideation, social
+                branding techniques. Holding it all together …
+              </p>
+              <a href="https://brandstory.in/services/social-media-marketing-agency-bangalore/" class="txt-red">READ
+                MORE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="services-card mt-3">
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/email-marketing-services-in-bangalore/">Email Marketing</a></h6>
+              <p class="card-text need-para">
+                Email Marketing It’s not as easy as it may sound. It’s not just composing an email draft, copying a list
+                of contacts, and clicking the “send” button. Invariably, you will face struggles ranging from privacy
+                issues, permission boundaries, technical glitches …
+              </p>
+              <a href="https://brandstory.in/email-marketing-services-in-bangalore/" class="txt-red">READ MORE</a>
+
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/orm-company-bangalore-india/">Online Reputation Management</a></h6>
+              <p class="card-text need-para">
+                Online reputation management includes managing your business and its brand value across every review and
+                rating forum to every social media platform. It is ideally required for 3 major purposes adding to the
+                growth of your business…
+              </p>
+              <a href="https://brandstory.in/orm-company-bangalore-india/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/analytics-and-reporting/">Analytics and Reporting</a></h6>
+              <p class="card-text need-para">
+                A gripping content, catchy headline, constant updates will mean nothing if you can’t see the returns on
+                it. So after all the hard work is done, we send you a detailed report and statistics on how well you are
+                doing on digital…
+              </p>
+              <a href="https://brandstory.in/analytics-and-reporting/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+  </div>
+</div>
+<br><br>
+<!-- Clients -->
+<div class="clients text-center">
+  <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+    <span class="uvc-headings-line"
+      style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+  </div>
+  <h3 class="clients-heading-clone">OUR WORK</h3>
+  <h3 class="clients-heading">OUR WORK</h3>
+  <br><br>
+</div>
+
+<br><br>
+
+<div class="showcase-card px-5">
+  <!-- <owl-carousel [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'row','sliding']">
+    <div class="item mx-3" *ngFor="let portfolios of myPortfolioItems  ">
+      <a class="nounderline" routerLink="/portfolio/{{ portfolios.url }}">
+        <div class="card card-box-shadow my-3 p-0">
+          <div class="card-body p-0">
+            <img class="card-img-top works-img" src="{{ portfolios.img }}" alt="ppc company in Bangalore">
+            <h5 class="card-title mt-3 px-3">{{ portfolios.title }}</h5>
+            <p class="card-text px-3 pb-3"><small><a routerLink="/portfolio/{{ portfolios.url }}" class="txt-red">VIEW
+                  PROJECT >></a></small></p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </owl-carousel> -->
+
+  <div class="wrapper">
+    <owl-carousel-o [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+
+      <ng-container *ngFor="let portfolios of myPortfolioItems">
+        <ng-template class="slide" carouselSlide>
+          <a class="nounderline" routerLink="/portfolio/{{ portfolios.url }}">
+            <div class="card card-box-shadow mx-3 my-3 p-0">
+              <div class="card-body p-0">
+                <img class="card-img-top works-img" [src]="portfolios.img" alt="ppc company in Bangalore">
+                <h5 class="card-title mt-3 px-3">{{ portfolios.title }}</h5>
+                <p class="card-text px-3 pb-3"><small><a routerLink="/portfolio/{{ portfolios.url }}" class="txt-red">VIEW
+                      PROJECT >></a></small></p>
+              </div>
+            </div>
+          </a>
+
+        </ng-template>
+      </ng-container>
+
+    </owl-carousel-o>
+  </div>
+
+
+</div>
+ <!-- Showcase Ends -->
+<br><br>
+
+
+
+
+<!-- Google Partner -->
+<div class="container-fluid bg-red p-0">
+  <div class="row">
+    <div class="row">
+
+      <div class="col-sm-1 my-auto google-container-image p-0">
+        <img src="assets/images/wp-content/uploads/2019/icons/seo/trophy.png" alt="Web Design Company" />
+      </div>
+
+
+
+      <div class="col-sm-7">
+
+        <div class="google-container">
+          <h2 class="mt-5 branding-get-quote-text text-white ">Official Google Partner</h2>
+          <p class="text-white branding-cont">We are official partners with Google, so you know that you are in the
+            hands of a trusted and promising company.</p><br><br>
+        </div>
+
+      </div>
+      <div class="col-sm-4 my-auto google-container-image">
+        <a href="https://www.google.com/partners/agency?id=1975289574" target="_blank"><img
+            src="assets/images/wp-content/uploads/2019/icons/seo/gpartner.png" alt="Official Google Partner" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+
+
+
+<div class="col-sm-8">
+  <ng-template #template>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Request SEO Free Audit</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+      <form [formGroup]="bannerModalForm" (ngSubmit)="onSubmitBannerModal()" novalidate>
+        <div class="form-group">
+          <input type="text" formControlName="fName" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fName.errors }" placeholder="Enter Name" />
+          <div *ngIf="submitted && fbannermodal.fName.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fName.errors.required" class="px-3">Name is required</div>
+            <div *ngIf="fbannermodal.fName.errors.pattern" class="px-3">Only characters and Minimun 3 characters allowed
+            </div>
+            <div *ngIf="fbannermodal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" formControlName="fEmail" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fEmail.errors }" placeholder="Enter Email">
+          <div *ngIf="submitted && fbannermodal.fEmail.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fEmail.errors.required" class="px-3">Email is required</div>
+            <div *ngIf="fbannermodal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <input type="tel" formControlName="fPhone" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fPhone.errors }" placeholder="Mobile Number" />
+          <div *ngIf="submitted && fbannermodal.fPhone.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+            <div *ngIf="fbannermodal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+            <div *ngIf="fbannermodal.fPhone.errors.minLength" class="px-3">Mobile Number format is required</div>
+            <div *ngIf="fbannermodal.fPhone.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <input type="url" formControlName="fService" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fService.errors }" placeholder="Website Link" />
+          <div *ngIf="submitted && fbannermodal.fService.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fService.errors.required" class="px-3">Website Link is required</div>
+            <div *ngIf="fbannermodal.fService.errors.pattern" class="px-3">Website Link is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <textarea formControlName="fMessage" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fMessage.errors }" placeholder="Message" rows="2"
+            style="height:auto !important;"></textarea>
+          <div *ngIf="submitted && fbannermodal.fMessage.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fMessage.errors.required" class="px-3">Message is required</div>
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+      </form>
+      <br><br>
+    </div>
+  </ng-template>
+</div>

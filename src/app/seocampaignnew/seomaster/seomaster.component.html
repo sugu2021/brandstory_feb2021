@@ -1,0 +1,1348 @@
+<div class="background-pattern"></div>
+<div class="container">
+    <div class="banner-space-init"></div> 
+    <div class="row banner-left-outerwrap">
+  <div class="col-sm-7 banner-left-innerwrap"> 
+    <h2 class="seo-banner-head">
+      SEO Company in Bangalore
+    </h2>
+    <br>
+    <h5 class="seo-banner-subtxt">
+      Looking for SEO firms in Bangalore. Its simple Brandstory is one of the top SEO Company in Bangalore, India.
+    </h5>
+    <h5 class="seo-banner-subtxt">
+      Our SEO experts in Bangalore applied all the innovative ideas to our clients/business owners to achieve their business goals.
+    </h5>
+    <h5 class="seo-banner-subtxt">
+      We have more than 5+ years’ experience in digital marketing services. We are offering a wide range of Internet Marketing Services in Bangalore and all over the world.
+    </h5>
+    <h5 class="seo-banner-subtxt">
+      Our Digital Marketing experts provide only quality results to our clients. Brandstory is the top and best seo companies in bangalore, having google certified seo experts.
+    </h5>
+    <br><br>
+    <!-- <a (click)="openModal(templatedefault)"  class="banner-request-btn ">KNOW MORE HERE</a> -->
+    <br><br>
+    <br><br>
+  </div>
+
+  
+
+  <div class="col-sm-5 banner-right-outerwrap">
+    <div class="banner-form-innerwrap" >
+    <h4 class="banner-form-headtxt">GET IN TOUCH WITH US</h4>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmits()">
+        <div class="form-group"> 
+            <input type="text" formControlName="firstName" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" placeholder="Name"/>
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                <div *ngIf="f.firstName.errors.required" class="px-3">Name is required</div>
+            </div>
+        </div>
+
+        <div class="form-group"> 
+            <input type="text" formControlName="email" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email"/>
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required" class="px-3">Email is required</div>
+                <div *ngIf="f.email.errors.email" class="px-3">Email must be a valid email address</div>
+            </div>
+        </div>
+
+        <div class="form-group"> 
+            <input type="text" formControlName="lastName" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" placeholder="Mobile Number"/>
+            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                <div *ngIf="f.lastName.errors.required" class="px-3">Mobile Number is required</div>
+            </div>
+        </div>
+        <div class="form-group"> 
+            <textarea formControlName="password" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                <div *ngIf="f.password.errors.required" class="px-3">Message is required</div> 
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="get-quote-btn btn-block btn btn-primary text-center bg-red border-0">SEND</button>
+        </div>
+    </form>
+   
+      </div>
+  </div>
+  </div>
+</div>
+  
+
+ <!-- who we are 1 -->
+
+<div class="container-fluid p-0" >
+  <div class="row">
+      <div class="col-sm-6 px-5 bg-red">
+          <div class="py-2 sticky-top flex-grow-1">
+              <div class="nav flex-sm-column">
+                  <div class="title-container mx-auto my-3 py-5">
+
+                      <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                          <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: #ffffff; width: 30px; margin: 0px auto;"></span>
+                        </div>
+                    <h3 class="whybrandstory-shadow-txt">WHO WE ARE</h3>
+                    <h3 class="choosing-rear-txt">ABOUT BRANDSTORY</h3>
+                  </div>
+                  <P class="choosing-ul-p">
+                    As the best SEO company in Bangalore, we are following white hat SEO techniques to our clients.
+                  </P>
+                  <P class="choosing-ul-p">
+                    Black hat seo techniques sometimes will give better ranking but it is not a long term result, It may lead to search engine penalty.
+                  </P>
+                  <P class="choosing-ul-p">
+                    So we are adopting only white hat seo marketing strategy to get better website ranking in google or bing organic results.
+                  </P>
+                  <br><br><br><br>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col" id="main"> 
+            <div class="col-md-12">
+              <div class="row seo-card-block"> 
+                  
+                  <div class="title-container mx-auto">
+                      <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                          <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                        </div>
+                    <h3 class="casestudies-rear-txt">SEO SERVICES</h3>
+                    <h3 class="casestudies-shadow-txt">SEO SERVICES</h3>
+                  </div>
+                  <br>
+
+                  <div class="banner-space-init"></div> 
+                  <div class="banner-space-init"></div> 
+                  <div class="banner-space-init"></div> 
+                  
+
+                  <div class="col-md-6 "> 
+                    <div class="card-deck">
+                    <div class="card services-card-shadow"> 
+                    <div class="card-body">  
+                        <p class="card-text seoservice-h">Keyword ideas and difficulty</p>
+                    <p class="card-text seoservice-p">Competitive & frequently searched keywords are more expensive and take a longer time to reflect back.
+                    </p>   
+                    </div>
+                    </div>
+                    </div>
+
+                    <br><br>
+                    <div class="card-deck">
+                    <div class="card services-card-shadow"> 
+                    <div class="card-body">  
+                        <p class="card-text seoservice-h">On-Page Optimization</p>
+                        <p class="card-text seoservice-p"> Search engines constantly update their algorithms. Content build for users, Click Through Rates, Usability,Keywords Strategy, Interlinking 
+                          </p>   
+                    </div>
+                    </div>
+                    </div> 
+                  </div> 
+
+                  <div class="col-md-6 "> 
+                      <div class="card-deck">
+                      <div class="card services-card-shadow"> 
+                      <div class="card-body">   
+                          <p class="card-text seoservice-h">Technical</p>
+                          <p class="card-text seoservice-p">Web pages load speed, crawlability, URLs structure, website code quality, website security.
+                          </p>                
+                      </div>
+                      </div>
+                      </div>
+
+                      <br><br>
+                      <div class="card-deck">
+                      <div class="card services-card-shadow"> 
+                      <div class="card-body">  
+                      <p class="card-text seoservice-h">Off-Page Optimization</p>
+                      <p class="card-text seoservice-p">Building high-quality and relevant back link that drive heavy traffic is the final step to ensure you are well reached out than your competitors.
+                      </p>              
+                      </div>
+                      </div>
+                      </div> 
+                    </div> 
+
+                  </div>
+              </div> 
+              
+      </div>
+  </div>
+</div>
+
+<br><br>
+
+ <!-- who we are 2 -->
+
+ <div class="container-fluid p-0" >
+  <div class="row">
+      <div class="col-sm-6 px-5 bg-red">
+          <div class="py-2 sticky-top flex-grow-1">
+              <div class="nav flex-sm-column">
+                  <div class="title-container mx-auto my-3 py-5">
+
+                      <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                          <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: #ffffff; width: 30px; margin: 0px auto;"></span>
+                        </div>
+                    <h3 class="whybrandstory-shadow-txt">WHO WE ARE</h3>
+                    <h3 class="choosing-rear-txt">ABOUT BRANDSTORY</h3>
+                  </div>
+                  <P class="choosing-ul-p">
+                    Brandstory is the leading digital marketing company in bangalore offers a wide range of ppc services in bangalore for various range of product or services.
+                  </P>
+                  <P class="choosing-ul-p">
+                    We are having 5+ years experienced google certified partners in google adwords and bing adwords to manage pay per click campaigns.
+                  </P> 
+                  <br><br>  
+              </div>
+          </div>
+      </div>
+      
+      <div class="col" id="main"> 
+            <div class="col-md-12">
+              <div class="row seo-card-block"> 
+                  
+                  <div class="title-container mx-auto">
+                      <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                          <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                        </div>
+                    <h3 class="casestudies-rear-txt">PPC EXPERT</h3>
+                    <h3 class="casestudies-shadow-txt">APPROACH</h3>
+                  </div>
+                  <br> 
+
+                  <div class="banner-space-init"></div> 
+                  <div class="banner-space-init"></div> 
+                  <div class="banner-space-init"></div> 
+                  
+
+                  <div class="col-md-12 "> 
+                    <div class="card-deck">
+                    <div class="card services-card-shadow"> 
+                    <div class="card-body">   
+                    <p class="card-text seoservice-p">Our team of pay per click experts are very well experienced in search advertising, display advertising, mobile app advertising, shopping advertising and video advertising.
+                    </p>    
+                    <p class="card-text seoservice-p">Our team pay per click experts can increase higher Return on Investmentment ( ROI ) for all types of ppc ads like search ads, display ads, shopping ads, video ads and mobile app install ads.
+                    </p>   
+                    </div>
+                    </div>
+                    </div> 
+                  </div>  
+
+                  </div>
+              </div> 
+
+      </div>
+  </div>
+</div>
+
+
+<br><br>
+
+ <!-- who we are 3 -->
+
+ <div class="container-fluid p-0" >
+  <div class="row">
+      <div class="col-sm-6 px-5 bg-red">
+          <div class="py-2 sticky-top flex-grow-1">
+              <div class="nav flex-sm-column">
+                  <div class="title-container mx-auto my-3 py-3"> 
+                  </div>
+                  <P class="choosing-ul-p">
+                    Brandstory is the leading digital marketing company in bangalore offers a wide range of ppc services in bangalore for various range of product or services.
+                  </P>
+                  <P class="choosing-ul-p">
+                    We are having 5+ years experienced google certified partners in google adwords and bing adwords to manage pay per click campaigns.
+                  </P>  
+              </div>
+          </div>
+      </div>
+      
+      <div class="col" id="main"> 
+            <div class="col-md-12">
+              <div class="row seo-card-block"> 
+                  
+                  <div class="title-container mx-auto"> 
+                  </div>
+                  <br>
+
+                  <div class="banner-space-init"></div> 
+                  <div class="banner-space-init"></div> 
+                  <div class="banner-space-init"></div> 
+                  
+
+                  <div class="col-md-12 "> 
+                    <div class="card-deck">
+                    <div class="card services-card-shadow"> 
+                    <div class="card-body">   
+                    <p class="card-text seoservice-p">At Brandstory, the leading web design agency in Bangalore, we create responsive websites.
+                    </p>    
+                    <p class="card-text seoservice-p">This means our websites are faster loading with better user interface design. We test our development across different devices like tablets, mobile devices, desktop etc.
+                    </p>  
+                    <p class="card-text seoservice-p">Our SEO friendly websites can easily occupy better-ranking or SERP position on google, bing, yahoo and other search engines which lead to business growth organically and produce higher conversion for your business.
+                    </p>      
+                    </div>
+                    </div>
+                    </div> 
+                  </div>  
+
+                  </div>
+              </div> 
+
+      </div>
+  </div>
+</div>
+
+
+<br><br>
+
+ <!-- Android app development & IOS app development -->
+
+ <div class="container-fluid p-0" >
+    <div class="row">
+        <div class="col-sm-6 px-5 bg-red">
+            <div class="pt-2 sticky-top flex-grow-1">
+                <div class="nav flex-sm-column">
+                    <div class="title-container mx-auto mt-3 pt-5">
+   
+                      <!-- <h3 class="whybrandstory-shadow-txt">WHO WE ARE</h3> -->
+                      <h3 class="choosing-rear-txt ">Android app development & IOS app development</h3><br><br> 
+                      <img  src="assets/images/wp-content/uploads/2019/icons/seo/android-logo.png" class="img-responsive mt-5" />
+                      <img  src="assets/images/wp-content/uploads/2019/icons/seo/apple.png" class="img-responsive mt-5"/>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="col" id="main"> 
+              <div class="col-md-12">
+                <div class="row seo-card-block"> 
+                    
+                    <div class="title-container mx-auto"> 
+                      <br><br>
+                    </div>
+                    <br> 
+  
+                    <div class="banner-space-init"></div> 
+                    <div class="banner-space-init"></div> 
+                    <div class="banner-space-init"></div> 
+                    
+  
+                    <div class="col-md-12 "> 
+                      <div class="card-deck">
+                      <div class="card services-card-shadow"> 
+                      <div class="card-body">   
+                      <p class="card-text seoservice-p">If you are on the lookout for Mobile App development services and need an intrigued revision of the apps that you as a company encounter, we can integrate all the aspects to enable proper functioning of the apps. 
+                      </p>    
+                      <p class="card-text seoservice-p"> Where others battle, as a mobile app development company in Bangalore, we flourish.
+                      </p>   
+                      </div>
+                      </div>
+                      </div> 
+                    </div>  
+  
+                    </div>
+                </div> 
+  
+        </div>
+    </div>
+  </div>
+
+
+
+
+<br><br>
+
+<!-- our seo process -->
+
+<div class="container"> 
+    <div class="row">
+      
+        <div class="col" id="main">
+ 
+            <div class="services-card ">
+               
+
+                <div class="title-container mx-auto my-5 ">
+                    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;"> 
+                      </div> 
+                  <h3 class="need-shadow-txt">Our SEO Process</h3>
+                </div>
+                  <br><br>
+
+
+                <div class="card-deck">
+                    <div class="card border-0"> 
+                      <div class="card-body services-card-shadow">   
+                        <p class="card-text need-para text-center">
+                            Understanding Your Business                       
+                        </p>             
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0"> 
+                        <div class="card-body services-card-shadow">   
+                          <p class="card-text need-para text-center"> 
+                              Finding Valuable Keyword Research For Your Business
+                          </p>             
+                      
+                        </div>
+                      </div>
+
+                      <div class="card border-0"> 
+                          <div class="card-body services-card-shadow"> 
+                            <p class="card-text need-para text-center"> 
+                                Optimizing Website For Target Audience
+                            </p>             
+                        
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+            <div class="services-card py-4">
+
+                <div class="card-deck">
+                    <div class="card border-0"> 
+                      <div class="card-body services-card-shadow">   
+                        <p class="card-text need-para text-center">
+                            Technical Optimization                       
+                        </p>             
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0"> 
+                        <div class="card-body services-card-shadow">   
+                          <p class="card-text need-para text-center"> 
+                              On Page Optimization
+                          </p>             
+                      
+                        </div>
+                      </div>
+
+                      <div class="card border-0"> 
+                          <div class="card-body services-card-shadow"> 
+                            <p class="card-text need-para text-center"> 
+                                Off Page Optimization
+                            </p>             
+                        
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+            
+            <div class="services-card py-4">
+
+                <div class="card-deck">
+                    <div class="card border-0"> 
+                      <div class="card-body services-card-shadow">   
+                        <p class="card-text need-para text-center">
+                            Local SEO Optimization                       
+                        </p>             
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0"> 
+                        <div class="card-body services-card-shadow">   
+                          <p class="card-text need-para text-center"> 
+                              Structured Data Implementation
+                          </p>             
+                      
+                        </div>
+                      </div>
+
+                      <div class="card border-0"> 
+                          <div class="card-body services-card-shadow"> 
+                            <p class="card-text need-para text-center"> 
+                                Amp Implementation
+                            </p>             
+                        
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+            <p class="card-text seoservice-p my-3">
+                which will lead to generating more conversions or leads to your business. 
+            </p>
+            <p class="card-text seoservice-p py-2">
+                We are not only rank your website for the targeted keyword on the 1st page of major search engines like Google, Bing and other search engines search results but also we generate leads and conversions.
+            </p>
+            <p class="card-text seoservice-p">
+                Reach out to <span class="txt-red">info@brandstory.in</span> the best SEO services company in Bangalore to gain the top position for your business.
+            </p>
+        </div>
+      
+    </div>
+</div>
+
+
+<br><br>
+
+<!-- PPC Services -->
+
+<div class="container my-5"> 
+    <div class="row">
+      
+                   
+        <div class="col" id="main">
+ 
+          
+            <div class="services-card ">
+
+                <div class="title-container mx-auto need-for-seo"> 
+                  <h3 class="need-shadow-txt">PPC Services in Bangalore</h3>
+                </div>
+
+              
+                <div class="banner-space-init"></div>  
+ 
+
+                <div class="card-deck py-1">
+                    <div class="card border-0 services-card-shadow mx-2  my-auto"> 
+                      <div class="card-body ">   
+                        <p class="card-text ">
+                            As a top ppc agency in bangalore, we analyse your website products or services first. 
+                        </p>             
+                        <p class="card-text need-para">
+                            Our PPC services include valuable keyword research for your product and services, Ad copy creation, affordable budget management, campaign management, conversion tracking set up and optimization, monthly campaign performance reporting etc. for your ppc ads.
+                        </p>
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 px-3 mx-5"> 
+                        <div class="card-body "> 
+                            <div class="mb-4">
+                                <img  src="assets/images/wp-content/uploads/2019/icons/seo/ppc-services-banner.png" />
+                            </div> 
+                          </div>
+                      </div>
+                           
+                </div>
+            </div>
+
+ 
+
+      
+        </div>
+      
+    </div>
+</div>
+
+ 
+
+
+<!-- Social Media Marketing -->
+
+<div class="container my-5"> 
+    <div class="row">
+      
+                   
+        <div class="col" id="main">
+ 
+          
+            <div class="services-card ">
+
+                <div class="title-container mx-auto need-for-seo"> 
+                  <h3 class="need-shadow-txt">Social Media Marketing Services in Bangalore</h3>
+                </div>
+
+              
+                <div class="banner-space-init"></div>  
+ 
+
+                <div class="card-deck py-1">
+                    <div class="card border-0  mx-2  my-auto"> 
+                      <div class="card-body ">   
+                        <p class="card-text ">
+                            Brandstory will ensure that your business is properly placed in a social media marketplace, based on that we will devise result-oriented social media marketing strategy/techniques to increase your wider brand visibility and increased sales across social media platforms.
+                        </p>             
+                        <p class="card-text need-para">
+                            As the top marketing companies in Bangalore, our social media marketing process includes creating business-oriented social profiles, social media community management, social media content creation & distribution, social media advertising & media services, social media strategy creation, full service social media management, landing page web design management, creates content for the post, managing social media page for search engine ranking and Influencer Marketing.
+                        </p>
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 services-card-shadow  mx-2 px-3 py-5 my-auto"> 
+                        <div class="card-body ">   
+                          <p class="card-text ">
+                              Brandstory digital marketing company is also one of the best social media marketing companies in Bangalore, India. Our social media marketing company will devices, social media marketing strategies to find the right target audience on social networks platforms like Facebook, Twitter, LinkedIn, Pinterest, Instagram etc. We will also be managing social media accounts for you.
+                          </p>             
+                          <p class="card-text need-para">
+                              At Brandstory, we create ROI based social media marketing campaigns to interact with the community to gain new customers and make existing customer to return. We also increase your website traffic in both organic ways as well as by the paid ways, which will lead to more conversion or lead generation.
+                          </p>
+                        </div>
+                      </div>
+                       
+                           
+                </div>
+            </div>
+
+ 
+
+      
+        </div>
+      
+    </div>
+</div>
+
+ 
+<!-- Website Design Services Bangalore -->
+ 
+
+<div class="container my-5"> 
+    <div class="row">
+      
+                   
+        <div class="col" id="main">
+ 
+          
+            <div class="services-card ">
+
+                <div class="title-container mx-auto need-for-seo"> 
+                  <h3 class="need-shadow-txt">Website Design Services in Bangalore</h3>
+                </div>
+
+              
+                <div class="banner-space-init"></div>  
+ 
+
+                <div class="card-deck py-1">
+                    <div class="card border-0  mx-2  my-auto"> 
+                      <div class="card-body ">   
+                        <p class="card-text ">
+                            BrandStory is a leading Website Development Company in Bangalore and we promise to deliver comprehensive, planned and unique Website development services depending upon the client’s’ requirements
+                        </p>             
+                        <p class="card-text need-para">
+                            Our services range from custom website design to development of complex enterprise Web applications. Our Web development services support guaranteed high-quality, consistent and cost-effective results to maximize clients’ competitive advantage and productivity.
+                        </p>            
+                        <p class="card-text need-para">
+                            As a leading Web Development company in Bangalore, we follow an Agile methodology of Website design and development with constant interaction with the clients throughout the development process to ensure them with the best web development service. 
+                        </p>
+                        <p class="card-text need-para">
+                            BrandStory is a complete Digital Solutions company and we know that your website needs to be developing strategies to ensure unique positioning across the digital platform to deliver effective interactive communication to stay ahead in this competitive market.
+                        </p>
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 services-card-shadow mx-2 px-3 py-5 my-auto"> 
+                        <div class="card-body ">   
+                          <p class="card-text ">
+                              The first stage of the process is the planning phase which contains finding the target audience for your products or services. 
+                          </p>             
+                          <p class="card-text need-para">
+                              The second stage is the website layout approval, once we get approval we will move to the next stage of the web design process.
+                          </p>               
+                          <p class="card-text need-para">
+                              The third stage is our good web designer will start to identify the website design projects to be built with HTML, CSS or content management system based websites from the gathered information.
+                          </p>           
+                          <p class="card-text need-para">
+                              The final stage is the building a website, custom website design, website graphics design, quality content update, user interface and user experience optimization, page loading speed optimization, SEO-friendly responsive web design development, web hosting management etc.
+                          </p>
+                        </div>
+                      </div>
+                       
+                           
+                </div>
+            </div>
+
+ 
+
+      
+        </div>
+      
+    </div>
+</div>
+
+
+
+<!-- SEO Service Bangalore -->
+ 
+<div class="container my-5"> 
+    <div class="row">
+      
+                   
+        <div class="col" id="main">
+ 
+          
+            <div class="services-card ">
+
+                <div class="title-container mx-auto need-for-seo"> 
+                  <h3 class="need-shadow-txt">SEO Services in Bangalore</h3>
+                </div>
+
+              
+                <div class="banner-space-init"></div>  
+ 
+
+                <div class="card-deck py-1">
+                    <div class="card border-0  mx-2  my-auto"> 
+                      <div class="card-body ">   
+                        <p class="card-text ">
+                            Nowadays internet users are increased to 95% and started to search for online products and online services in Google, Bing, Yahoo and other search engines. 
+                        </p>             
+                        <p class="card-text need-para">
+                            Brandstory advertising agencies were set up to offer expert online marketing services from a small business organization to large-scale organization throughout India.
+                        </p>            
+                        <p class="card-text need-para">
+                            Generally, SEO is a long term process. Choosing SEO marketing companies are the right option to create brand awareness for your products or services on the page of google result. 
+                        </p>
+                        <p class="card-text need-para">
+                            By following latest search engine optimization techniques, Our seo services in bangalore helps business owners to get their potential organic search traffic by finding potential customers on the geo targetted location or local search location.
+                        </p>
+                        <p class="card-text need-para">
+                            As the best seo services company in bangalore our seo strategy will drive traffic to your website and turn visitors into potential leads/conversions and to maximize your Return On Investment (ROI ), that is why we offer SEO services to maximize value from visitors at every stage of the path to conversion/lead.
+                        </p>
+
+                        <p class="card-text need-para">
+                            <b>RATED #1 Best SEO Company in Bangalore -99.99% Outcomes Guaranteed</b> 
+                      </div>
+                    </div> 
+                           
+                </div>
+            </div>
+
+ 
+
+      
+        </div>
+      
+    </div>
+</div>
+
+<!-- SEO Service Bangalore Continuity-->
+ 
+
+ <div class="container-fluid p-0" >
+    <div class="row">
+        <div class="col-sm-6 px-5 bg-red">
+            <div class="py-2 sticky-top flex-grow-1">
+                <div class="nav flex-sm-column">
+                    <div class="title-container mx-auto my-3 py-3"> 
+                    </div>
+                    <P class="choosing-ul-p">
+                        Search Engine Optimization is all about how interactive your website is, how much time user spending on the website, CTR of a website with respect to the search engines results.
+                    </P>
+                    <P class="choosing-ul-p">
+                        SEO is all about finding your web page on the search engines results with the business-oriented search query or keywords.
+                    </P> 
+                    <P class="choosing-ul-p">
+                        Our team of SEO Analysts devises an organized plan of action by researching, analyzing and evaluating your Search engine listing position as per the latest search engine algorithm or Google algorithm updates. 
+                    </P> 
+                    <P class="choosing-ul-p">
+                        Then, the benchmark against the existing top ranker and execute the plan to enhance the visibility of a website and reach the top in the search engine results.
+                    </P>
+                    <P class="choosing-ul-p">
+                        We are named as one of the top 10 SEO company in Bangalore.
+                    </P>    
+                </div>
+            </div>
+        </div>
+        
+        <div class="col" id="main"> 
+              <div class="col-md-12">
+                <div class="row seo-card-block"> 
+                    
+                    <div class="title-container mx-auto"> 
+                    </div>
+                    <br>
+  
+                    <div class="banner-space-init"></div> 
+                    <div class="banner-space-init"></div> 
+                    <div class="banner-space-init"></div> 
+                    
+  
+                    <div class="col-md-12 "> 
+                      <div class="card-deck">
+                      <div class="card services-card-shadow mx-2 px-4 py-5 my-auto"> 
+                      <div class="card-body">   
+                      <p class="card-text seoservice-p">Our SEO services company in Bangalore can do more than just optimize your business website.
+                      </p>    
+                      <p class="card-text seoservice-p">Some of our seo campaigns will drive immediate traffic to your website. 
+                      </p>  
+                      <p class="card-text seoservice-p"> The best SEO service providers in Bangalore, we will do SEO, search engine penalty recovery services, email marketing, influencer marketing, SMS marketing, paid advertising, web analytics, web design, website redesign etc. 
+                      </p>  
+                      <p class="card-text seoservice-p">  We are also expert in search engines marketing advertising services like search advertising, display advertising, mobile app advertising, shopping advertising and video advertising
+                      </p>       
+                      </div>
+                      </div>
+                      </div> 
+                    </div>  
+  
+                    </div>
+                </div> 
+  
+        </div>
+    </div>
+  </div>
+
+  
+
+
+
+<!-- Our offering as a Mobile App development company in Bangalore -->
+
+<div class="container my-5"> 
+    <div class="row">
+      
+                   
+        <div class="col" id="main">
+ 
+          
+            <div class="services-card ">
+
+                <div class="title-container mx-auto need-for-seo"> 
+                  <h3 class="need-shadow-txt">Our offering as a Mobile App development company in Bangalore</h3>
+                </div>
+
+              
+                <div class="banner-space-init"></div>  
+ 
+
+                <div class="card-deck py-1">
+                    <div class="card border-0  mx-2  my-auto"> 
+                      <div class="card-body ">   
+                          <h6 class="font-weight-bold py-2 need-head">MVPS for New Product</h6>
+                        <p class="card-text ">
+                            We strategize the base practical product for new companies by building up an application in view of their goals and business offerings. 
+                        </p>             
+                        <p class="card-text need-para">
+                            Developing the application is to quickly assemble an application with the arrangement of elements that is sufficient to convey the product compilations and test the key presumptions. 
+                        </p>             
+                        <p class="card-text need-para">
+                            BrandStory constitutes an all around organized group to handle all related innovation and computerized showcasing parts of the client’s item/benefit.
+                        </p>             
+                        <p class="card-text need-para">
+                            We offer prominent concerning ideal arrangements at less cost. 
+                        </p>             
+                        <p class="card-text need-para">
+                            Furthermore the building of client’s system is depended on our business experts who are as passionate as you to help you in taking the thoughts forward. 
+                        </p>
+                      </div>
+                    </div>
+            
+                    <div class="card border-0  mx-2 px-3 py-5 my-auto"> 
+                        <div class="card-body ">   
+                            <h6 class="font-weight-bold py-2 need-head">Android App development and IOS app development</h6>
+                          <p class="card-text ">
+                              Application Store Optimization (ASO) administrations are fundamentally seen as SEO for applications. With each brand discharging an application, having a striking resemblance as the other, it is difficult to have a one of a kind looking application.
+                          </p>             
+                          <p class="card-text need-para">
+                              With the assistance of expert ASO administration, you as a client build a strong stage to boost discovery on application stores and to rule in the business sector.
+                          </p>            
+                          <p class="card-text need-para">
+                              Making a premium brand esteem comes as a part of the bundle with great ASO. Your application experiences every one of the channels that has its revelation in the store.
+                          </p>            
+                          <p class="card-text need-para">
+                              We trust that by profiting our services before dispatching your application, all you need to do is build future downloads of the application and get on to the top outlines of the business.
+                          </p>
+                        </div>
+                      </div>
+                       
+                           
+                </div>
+            </div>
+
+ 
+
+      
+        </div>
+      
+    </div>
+</div>
+
+
+
+<!-- SEO Packages and Reporting -->
+ 
+<div class="container my-5"> 
+    <div class="row">
+      
+                   
+        <div class="col" id="main">
+ 
+          
+            <div class="services-card ">
+
+                <div class="title-container mx-auto need-for-seo"> 
+                  <h3 class="need-shadow-txt">SEO Packages and Reporting</h3>
+                </div>
+
+              
+                <div class="banner-space-init"></div>  
+ 
+
+                <div class="card-deck py-1">
+                    <div class="card border-0  mx-2  my-auto"> 
+                      <div class="card-body ">   
+                        <p class="card-text ">
+                            Brandstory is the top-rated SEO services company in Bangalore or SEO consultant Bangalore.
+                        </p>             
+                        <p class="card-text need-para">
+                            As a top digital marketing agency, We offer the best SEO services in Bangalore to all kind of business peoples like the small-scale business, medium scale business and large-scale business organization.
+                        </p>            
+                        <p class="card-text need-para">
+                            Our SEO campaigns has to be executed with different SEO Strategy with different SEO Packages. We also have Customized SEO solutions that suit your budget and requirement.
+                        </p> 
+                                   
+                        <p class="card-text need-para">
+                            Some of our SEO package plans
+                        </p> 
+                      </div>
+                    </div> 
+                           
+                </div>
+            </div>
+
+ 
+
+      
+        </div>
+      
+    </div>
+</div>
+
+
+<!-- our seo process -->
+
+<div class="container"> 
+    <div class="row">
+      
+        <div class="col" id="main">
+ 
+            <div class="services-card ">
+                
+
+                <div class="card-deck">
+                    <div class="card border-0"> 
+                      <div class="card-body services-card-shadow">   
+                        <p class="card-text need-para text-center">
+                            Basic SEO Plans                      
+                        </p>             
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0"> 
+                        <div class="card-body services-card-shadow">   
+                          <p class="card-text need-para text-center"> 
+                              Local SEO Plan
+                          </p>             
+                      
+                        </div>
+                      </div>
+
+                      <div class="card border-0"> 
+                          <div class="card-body services-card-shadow"> 
+                            <p class="card-text need-para text-center"> 
+                                National & International SEO Plan
+                            </p>             
+                        
+                          </div>
+                        </div>
+                        <p class="card-text seoservice-p mt-3 mx-3">
+                            Apart from this, we will provide monthly site audit report, monthly keywords ranking report, monthly conversion tracking report and event tracking reports.
+                        </p>
+                        <p class="card-text seoservice-p py-2 mb-4 mx-3">
+                            We are the best SEO consultant / SEO service providers in Bangalore, India.
+                        </p> 
+                </div>
+            </div>
+
+
+            <div class="services-card py-4">
+
+                <div class="card-deck">
+                    <div class="card border-0"> 
+                      <div class="card-body services-card-shadow">   
+                        <p class="card-text need-para text-center">
+                            Search Engine Optimization (SEO)                     
+                        </p>             
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0"> 
+                        <div class="card-body services-card-shadow">   
+                          <p class="card-text need-para text-center"> 
+                              Search Engine Marketing (SEM)
+                          </p>             
+                      
+                        </div>
+                      </div>
+
+                      <div class="card border-0"> 
+                          <div class="card-body services-card-shadow"> 
+                            <p class="card-text need-para text-center"> 
+                                Social Media Marketing (SMM)
+                            </p>             
+                        
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+            
+            <div class="services-card py-4">
+
+                <div class="card-deck">
+                    <div class="card border-0"> 
+                      <div class="card-body services-card-shadow">   
+                        <p class="card-text need-para text-center">
+                            Online Reputation Management (ORM)                      
+                        </p>             
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0"> 
+                        <div class="card-body services-card-shadow">   
+                          <p class="card-text need-para text-center"> 
+                              Lead Based Marketing (LBM)
+                          </p>             
+                      
+                        </div>
+                      </div>
+
+                      <div class="card border-0"> 
+                          <div class="card-body services-card-shadow"> 
+                            <p class="card-text need-para text-center"> 
+                                ADigital Marketing (DM)
+                            </p>             
+                        
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+  
+
+                        
+            <div class="services-card py-4">
+
+                <div class="card-deck">
+                    <div class="card border-0"> 
+                      <div class="card-body services-card-shadow">   
+                        <p class="card-text need-para text-center">
+                            SEO Copy/Content Writing Services                      
+                        </p>             
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0"> 
+                        <div class="card-body services-card-shadow">   
+                          <p class="card-text need-para text-center"> 
+                              ROI & Revenue Generation
+                          </p>             
+                      
+                        </div>
+                      </div>
+
+                      <div class="card border-0"> 
+                          <div class="card-body services-card-shadow"> 
+                            <p class="card-text need-para text-center"> 
+                                Web Design & Development
+                            </p>             
+                        
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+            <div class="services-card py-4">
+
+                <div class="card-deck">
+                    <div class="card border-0"> 
+                      <div class="card-body services-card-shadow">   
+                        <p class="card-text need-para text-center">
+                            Pay Per Click Management Services (PPC)                    
+                        </p>             
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0"> 
+                        <div class="card-body services-card-shadow">   
+                          <p class="card-text need-para text-center"> 
+                              CMS Website Development
+                          </p>             
+                      
+                        </div>
+                      </div>
+
+                      <div class="card border-0"> 
+                          <div class="card-body services-card-shadow"> 
+                            <p class="card-text need-para text-center"> 
+                                E-Commerce Website Development
+                            </p>             
+                        
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+            <div class="services-card py-4">
+
+                <div class="card-deck">
+                    <div class="card border-0"> 
+                      <div class="card-body services-card-shadow">   
+                        <p class="card-text need-para text-center">
+                            Magento Website Development                 
+                        </p>             
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0"> 
+                        <div class="card-body services-card-shadow">   
+                          <p class="card-text need-para text-center"> 
+                              E-Commerce Products Based Marketing
+                          </p>             
+                      
+                        </div>
+                      </div>
+
+                      <div class="card border-0"> 
+                          <div class="card-body  "> 
+                            <p class="card-text need-para text-center"> 
+                               
+                            </p>             
+                        
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+      
+    </div>
+</div>
+
+
+<br><br>
+
+
+
+<!-- ROI Strip-->
+
+<div class="container-fluid bg-red p-0">
+    <div class="row"> 
+            <div class="row">
+
+        <div class="col-sm-1 my-auto google-container-image p-0">
+            <img  src="assets/images/wp-content/uploads/2019/icons/seo/gold-medal.png" />
+        </div>
+
+        <div class="col-sm-11 pl-5">
+        
+        <div class="google-container">
+        <h2 class="mt-5 branding-get-quote-text text-white ">ROI Lead Best SEO Company/Agency in Bangalore India</h2>
+        <p class="text-white branding-cont">We are group of passionate digital marketing experts; industry thought leaders and creative designers coming together to produce stunning ROI lead digital marketing campaigns for brands. We are a social media marketing agency based in Bangalore, India providing digital marketing campaign management support to brands across the globe.</p><br><br>
+        </div>
+        
+        </div>
+        </div> 
+    </div>
+  </div>
+   <br><br>
+  
+   
+    
+ 
+
+<div class="container"> 
+    <div class="row">
+      
+        <div class="col" id="main">
+ 
+            <div class="services-card ">
+               
+
+                <div class="title-container mx-auto my-5 ">
+                    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                        <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                      </div>
+                  <h3 class="casestudies-rear-txt">SERVICES</h3>
+                  <h3 class="need-shadow-txt">SERVICES</h3>
+                </div>
+                  <br><br>
+
+
+                <div class="card-deck">
+                    <div class="card border-0 services-card-shadow"> 
+                      <div class="card-body">  
+                        <h6 class="font-weight-bold py-2 need-head">UI UX Designing</h6>
+                        <p class="card-text need-para">
+                            As an user-centric design agency in Bangalore, India, we create functionally beautiful digital experiences that highly engage with your target audience. We tend to create meaningful relationships amidst brands and their consumers through inspiring design…                        
+                        </p> 
+                        <a href="" class="txt-red">READ MORE</a>            
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 services-card-shadow"> 
+                        <div class="card-body ">  
+                          <h6 class="font-weight-bold py-2 need-head">Website Development</h6>
+                          <p class="card-text need-para"> 
+                              Making sure that your website is universally compatible and user friendly, an exclusive expert team of designers and developers are you assigned to to ensure that not only the plan goes according to a timeline but also that your approval is taken… 
+                          </p>             
+                          <a href="" class="txt-red">READ MORE</a>      
+                        </div>
+                      </div>
+
+                      <div class="card border-0 services-card-shadow"> 
+                          <div class="card-body "> 
+                            <h6 class="font-weight-bold py-2 need-head">Content Marketing</h6>
+                            <p class="card-text need-para"> 
+                                Simple.We create digital content. It’s the element that helps us to be the company we are and our ever growing client list is an proof to that. Brandstory is one of the leading content marketing communications company in Bangalore, India provides…
+                            </p>             
+                            <a href="" class="txt-red">READ MORE</a>
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+            <div class="services-card mt-3">
+                
+                <div class="card-deck">
+                    <div class="card border-0 services-card-shadow"> 
+                      <div class="card-body">  
+                        <h6 class="font-weight-bold py-2 need-head">Search Engine Optimisation</h6>
+                        <p class="card-text need-para">
+                            Search Engine Optimization (SEO) program increases overall visibility of your business across all search engine platform. It provides an opportunities for brands to create acquisitions (sales, leads, inquiries etc.), and help consumers to …                        
+                        </p> 
+                        <a href="" class="txt-red">READ MORE</a>            
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 services-card-shadow"> 
+                        <div class="card-body ">  
+                          <h6 class="font-weight-bold py-2 need-head">Pay Per Click (PPC)</h6>
+                          <p class="card-text need-para"> 
+                              We increase your digital footprint with Pay Per Click campaigns or Google Adwords and Bing Adwords. A plan is sketched out and implemented accordingly, with this your campaign has begun. The plan includes specific important keywords … 
+                          </p>             
+                          <a href="" class="txt-red">READ MORE</a>      
+                        </div>
+                      </div>
+
+                      <div class="card border-0 services-card-shadow"> 
+                          <div class="card-body "> 
+                            <h6 class="font-weight-bold py-2 need-head">Social Media Marketing</h6>
+                            <p class="card-text need-para"> 
+                                We provide expertise in design implementation providing a full range of social media marketing services(SMM) bounding in popular social media platforms, content generation, creatives ideation, social branding techniques. Holding it all together …
+                            </p>             
+                            <a href="" class="txt-red">READ MORE</a>
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="services-card mt-3">
+                
+                <div class="card-deck">
+                    <div class="card border-0 services-card-shadow"> 
+                      <div class="card-body">  
+                        <h6 class="font-weight-bold py-2 need-head">Email Marketing</h6>
+                        <p class="card-text need-para">
+                            Email Marketing It’s not as easy as it may sound. It’s not just composing an email draft, copying a list of contacts, and clicking the “send” button. Invariably, you will face struggles ranging from privacy issues, permission boundaries, technical glitches …         
+                        </p> 
+                        <a href="" class="txt-red">READ MORE</a>            
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 services-card-shadow"> 
+                        <div class="card-body ">  
+                          <h6 class="font-weight-bold py-2 need-head">Online Reputation Management</h6>
+                          <p class="card-text need-para"> 
+                              Online reputation management includes managing your business and its brand value across every review and rating forum to every social media platform. It is ideally required for 3 major purposes adding to the growth of your business… 
+                          </p>             
+                          <a href="" class="txt-red">READ MORE</a>      
+                        </div>
+                      </div>
+
+                      <div class="card border-0 services-card-shadow"> 
+                          <div class="card-body "> 
+                            <h6 class="font-weight-bold py-2 need-head">Analytics and Reporting</h6>
+                            <p class="card-text need-para"> 
+                                A gripping content, catchy headline, constant updates will mean nothing if you can’t see the returns on it. So after all the hard work is done, we send you a detailed report and statistics on how well you are doing on digital…
+                            </p>             
+                            <a href="" class="txt-red">READ MORE</a>
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+
+
+    
+
+        </div>
+      
+    </div>
+</div>
+
+
+<br><br> 
+ 
+ 
+
+
+<!-- Google Partner -->
+<div class="container-fluid bg-red p-0">
+    <div class="row"> 
+        <div class="row">
+        
+        <div class="col-sm-1 my-auto google-container-image p-0">
+                <img  src="assets/images/wp-content/uploads/2019/icons/seo/trophy.png" />
+        </div>
+
+            
+        
+        <div class="col-sm-7">
+        
+        <div class="google-container">
+        <h2 class="mt-5 branding-get-quote-text text-white ">Official Google Partner</h2>
+        <p class="text-white branding-cont">We are official partners with Google, so you know that you are in the hands of a trusted and promising company.</p><br><br>
+        </div>
+        
+        </div>
+        <div class="col-sm-4 my-auto google-container-image">
+            <img  src="assets/images/wp-content/uploads/2019/icons/seo/gpartner.png" />
+        </div>
+        </div> 
+    </div>
+  </div>
+   <br><br>
+    
+   
+
+   
+ 

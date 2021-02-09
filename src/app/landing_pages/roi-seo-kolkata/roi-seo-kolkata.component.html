@@ -1,0 +1,1408 @@
+<div class="background-pattern mobile"></div>
+<div class="container">
+  <div class="banner-space-init"></div>
+  <div class="row banner-left-outerwrap">
+    <div class="col-sm-7 banner-left-innerwrap">
+      <h1 class="seo-banner-head">
+        SEO Company in Kolkata
+      </h1>
+      <br>
+      <h5 class="seo-banner-subtxt">
+        Kolkata is home to several start-ups and global MNCs and we are one such <strong>SEO agency in Kolkata</strong>
+        that
+        helps enterprises big and small to stay at the top of the race using various SEO tips and tricks. We are
+        considered nationwide among the top <strong>SEO agencies in Kolkata India</strong>. We are an award-winning SEO
+        company in Kolkata.
+      </h5>
+      <h5 class="seo-banner-subtxt">
+        As an <strong>SEO services company in Kolkata</strong>, our team is dedicated to keeping your company's website
+        at
+        the top of the Google search results. In today's digital world, you do not only need a properly designed website
+        but you also need to have a good SEO strategy in place to beat out your rivals. Small small firms to large
+        firms, every single one of them have a competent SEO team that is working behind closed doors day and night. We
+        are here to do exactly that.
+      </h5>
+      <h5 class="seo-banner-subtxt">
+        Our SEO strategies have a 100 percent success rate which makes us the best <strong>SEO company in
+          Kolkata</strong>.
+        Our team consists of experienced SEO strategists who have gained their knowledge after working in different
+        industries. Our strategies will give you results immediately as you will see a jump in your traffic rate as soon
+        as you start working with us.
+      </h5>
+      <h5 class="seo-banner-subtxt">
+        Whether you are a new company that needs to create an online presence or need help with your existing SEO
+        strategy, we are always here to help.
+      </h5>
+      <br>
+      <a (click)="openModal(template)" class="banner-request-btn ">KNOW MORE HERE</a>
+      <br><br>
+    </div>
+
+
+    <div class="col-sm-5 banner-right-outerwrap">
+      <div class="banner-form-innerwrap">
+        <h4 class="banner-form-headtxt">GET IN TOUCH WITH US</h4>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmits()" novalidate>
+          <div class="form-group">
+            <input type="text" formControlName="firstName" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" placeholder="Name" />
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+              <div *ngIf="f.firstName.errors.required" class="px-3">Name is required</div>
+              <div *ngIf="f.firstName.errors.pattern" class="px-3">Only characters allowed</div>
+              <div *ngIf="f.firstName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="email" formControlName="email" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required" class="px-3">Email is required</div>
+              <div *ngIf="f.email.errors.email" class="px-3">Email must be a valid email address</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" formControlName="lastName" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" placeholder="Mobile Number" />
+            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+              <div *ngIf="f.lastName.errors.required" class="px-3">Mobile Number is required</div>
+              <div *ngIf="f.lastName.errors.pattern" class="px-3">Only Numbers is required</div>
+              <div *ngIf="f.lastName.errors.minLength" class="px-3">Mobile Number format is required</div>
+              <div *ngIf="f.lastName.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="organisation" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Organization Name" />
+            <div *ngIf="submitted && f.organisation.errors" class="invalid-feedback">
+              <div *ngIf="f.organisation.errors.required" class="px-3">Organization Name is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="url" formControlName="website" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Website Link" />
+            <div *ngIf="submitted && f.website.errors" class="invalid-feedback">
+              <div *ngIf="f.website.errors.required" class="px-3">Website Link is required</div>
+              <div *ngIf="f.website.errors.pattern" class="px-3">Website Link is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea formControlName="password" class="form-control banner-form-field"
+              [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Message" rows="2"
+              style="height:auto !important;"></textarea>
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required" class="px-3">Message is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="get-quote-btn btn-block btn btn-primary text-center bg-red border-0">SEND</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- who we are 1 -->
+
+<div class="container-fluid p-0">
+  <div class="row">
+    <div class="col-sm-6 px-5 bg-red">
+      <div class="py-2 sticky-top flex-grow-1">
+        <div class="nav flex-sm-column">
+          <div class="title-container mx-auto my-3 py-5">
+
+            <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+              <span class="uvc-headings-line"
+                style="border-style: solid; border-bottom-width: 2px; border-color: #ffffff; width: 30px; margin: 0px auto;"></span>
+            </div>
+            <h3 class="seo-whybrandstory-shadow-txt">WHO WE ARE</h3>
+            <h3 class="seoblr-choosing-rear-txt">ABOUT BRANDSTORY</h3>
+          </div>
+          <P class="choosing-ul-p">
+            As the best SEO company in Kolkata, we are following white hat SEO techniques to our clients.
+          </P>
+          <P class="choosing-ul-p">
+            Black hat seo techniques sometimes will give better ranking but it is not a long term result, It may lead to
+            search engine penalty.
+          </P>
+          <P class="choosing-ul-p">
+            So we are adopting only white hat seo marketing strategy to get better website ranking in google or bing
+            organic results.
+          </P>
+          <br><br><br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" id="main">
+      <div class="col-md-12">
+        <div class="row seo-card-block">
+
+          <div class="title-container mx-auto">
+            <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+              <span class="uvc-headings-line"
+                style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+            </div>
+            <h3 class="casestudies-rear-txt">SEO SERVICES</h3>
+            <h3 class="casestudies-shadow-txt">SEO SERVICES</h3>
+          </div>
+          <br>
+
+          <div class="banner-space-init"></div>
+          <div class="banner-space-init"></div>
+          <div class="banner-space-init"></div>
+
+
+          <div class="col-md-6 ">
+            <div class="card-deck">
+              <div class="card services-card-shadow">
+                <div class="card-body">
+                  <p class="card-text seoservice-h">Keyword ideas and difficulty</p>
+                  <p class="card-text seoservice-p">Competitive & frequently searched keywords are more expensive and
+                    take a longer time to reflect back.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <br><br>
+            <div class="card-deck">
+              <div class="card services-card-shadow">
+                <div class="card-body">
+                  <p class="card-text seoservice-h">On-Page Optimization</p>
+                  <p class="card-text seoservice-p"> Search engines constantly update their algorithms. Content build
+                    for users, Click Through Rates, Usability,Keywords Strategy, Interlinking
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 ">
+            <div class="card-deck">
+              <div class="card services-card-shadow">
+                <div class="card-body">
+                  <p class="card-text seoservice-h">Technical</p>
+                  <p class="card-text seoservice-p">Web pages load speed, crawlability, URLs structure, website code
+                    quality, website security.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <br><br>
+            <div class="card-deck">
+              <div class="card services-card-shadow">
+                <div class="card-body">
+                  <p class="card-text seoservice-h">Off-Page Optimization</p>
+                  <p class="card-text seoservice-p">Building high-quality and relevant back link that drive heavy
+                    traffic is the final step to ensure you are well reached out than your competitors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- our seo process -->
+
+<div class="container">
+  <div class="row">
+
+    <div class="col" id="main">
+
+      <div class="services-card ">
+
+
+        <div class="title-container mx-auto mx-auto mt-sm-5 mb-5 ">
+          <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+          </div>
+          <h2 class="need-shadow-txt seo">Our SEO Process</h2>
+        </div>
+        <br><br>
+
+
+        <div class="card-deck">
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Understanding Your Business
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Finding Valuable Keyword Research For Your Business
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Optimizing Website For Target Audience
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="services-card py-4 py-sm-4">
+
+        <div class="card-deck">
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+
+
+              <button type="button" class="btn btn-primary ngbs-dropdown container  "
+                (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+                aria-controls="collapseBasic">Technical Optimization
+                <i class="fa fa-angle-down pl-3"></i></button>
+
+              <div id="collapseBasic" [collapse]="isCollapsed" class="ngbs-dropdown container pl-5">
+                <div class="well well-lg card card-block card-header ngbs-dropdown  ngbs-list">Some content</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">User interface
+                  optimization and user experience optimization for various devices like mobile, tablet and desktops
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+
+              <button type="button" class="btn btn-primary ngbs-dropdown container  "
+                (click)="isCollapsed2 = !isCollapsed2" [attr.aria-expanded]="!isCollapsed2"
+                aria-controls="collapseBasic">On Page Optimization
+                <i class="fa fa-angle-down pl-3"></i></button>
+
+              <div id="collapseBasic" [collapse]="isCollapsed2" class="ngbs-dropdown container pl-5">
+                <div class="well well-lg card card-block card-header ngbs-dropdown  ngbs-list">Title tag optimization
+                </div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Meta description
+                  optimization</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Robots file</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Sitemap update</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Clean URL optimization
+                </div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Canonical tag</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Robots tag</div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Duplicate content checking
+                </div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Quality content creation
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <button type="button" class="btn btn-primary ngbs-dropdown container  "
+                (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed3"
+                aria-controls="collapseBasic">Off Page Optimization
+                <i class="fa fa-angle-down pl-3"></i></button>
+
+              <div id="collapseBasic" [collapse]="isCollapsed3" class="ngbs-dropdown container pl-5">
+                <div class="well well-lg card card-block card-header ngbs-dropdown  ngbs-list">Quality link building
+                </div>
+                <div class="well well-lg card card-block card-header ngbs-dropdown ngbs-list">Building links through
+                  content marketing</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="services-card  py-sm-4">
+
+        <div class="card-deck">
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Local SEO Optimization
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Structured Data Implementation
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Amp Implementation
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <img style="width:100%;" src="assets/images/wp-content/uploads/2019/our-seo-process.jpg" alt="Our SEO Process"
+            title="Our SEO Process">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <p class="card-text seoservice-p my-3">
+            which will lead to generating more conversions or leads to your business.
+          </p>
+          <p class="card-text seoservice-p py-2">
+            We are not only rank your website for the targeted keyword on the 1st page of major search engines like
+            Google, Bing and other search engines search results but also we generate leads and conversions.
+          </p>
+          <p class="card-text seoservice-p">
+            Reach out to <a href="mailto:info@brandstory.in" class="txt-red">info@brandstory.in</a> the best SEO
+            services company in Kolkata to gain the top position for your business.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<br><br>
+
+<!-- SEO Service Bangalore -->
+
+<div class="container mt-2">
+  <div class="row">
+
+
+    <div class="col" id="main">
+
+
+      <div class="services-card ">
+
+        <div class="title-container mx-auto need-for-seo">
+          <h1 class="need-shadow-txt seo-services-blr">SEO Services in Kolkata</h1>
+        </div>
+
+
+        <!-- <div class="banner-space-init"></div> -->
+
+
+        <div class="row py-5">
+
+          <div class="col-md-6 col-sm-12">
+            <div class="card card_h_50 flex-grow-1 ">
+              <div class="card-body">
+                <div class="col-md-12 mx-auto">
+                  <h4 class="roi_h4_head text-center">Build a Brand Name with the trusted SEO companies of Kolkata</h4>
+
+                  <p class="roi_para_text">It seems fascinating to have a brand name when customers recognize you with a
+                    simple hint. You stay ahead of the competitors, rule the industry, increase the sales gradually, and
+                    whatnot. But all results are sweet when the struggles are right.
+                  </p>
+
+                  <p class="roi_para_text">At the topmost <strong>SEO service provider in Kolkata</strong>, you get the
+                    best of services that fit exactly with your needs</p>
+
+                  <ul class="card_ul01">
+                    <li class="para_list">Keyword research and market analysis</li>
+                    <p class="roi_para_text">Finding relevant keywords that fall under your business domain is a
+                      professional task. A
+                      regular person cannot
+                      understand the statics of the number of times each keyword is used for what location. Only an
+                      expert from the
+                      SEO services in Kolkata understands keyword research in the proper way and the ones which the
+                      market prefers the
+                      most.</p>
+
+                    <li class="para_list">Competitive Intelligence</li>
+                    <p class="roi_para_text">The marketing professionals of SEO in Kolkata will always collect insights
+                      from your
+                      competitors for the
+                      benefit of your company. Gathering relevant information about the competitors helps to understand
+                      the
+                      whereabouts and how far your company has to go to fill the gaps.</p>
+
+                    <li class="para_list">Content development & Promotion</li>
+                    <p class="roi_para_text">Content plays the majority part in making a web page responsive and
+                      informative. Besides
+                      the technicalities and
+                      designing, visual content or a written blog helps the customers to understand your services a
+                      little closer. The
+                      <b>SEO company in Kolkata</b> produces plagiarism free content to engage the target audience
+                      throughout your
+                      website.
+                    </p>
+
+                    <li class="para_list">Website Audit & Optimization</li>
+                    <p class="roi_para_text">Website Auditing includes analyzing the entire system from the root, then
+                      finding
+                      solutions according to the
+                      site performance. The auditing may go through a few stages or would take days to complete. The
+                      time estimation
+                      usually depends on the developmental stage of the website. </p>
+
+                    <li class="para_list">High-grade Link building</li>
+                    <p class="roi_para_text">Link building is done in order to build a network of your website with
+                      other websites of
+                      a similar domain, in
+                      simple words, with proper backlinks and external linking, customers will easily direct to your web
+                      page. It will
+                      give you a desirable number of leads in the SEO service.</p>
+
+                    <li class="para_list">Reporting and Analysis</li>
+                    <p class="roi_para_text">Clients of the top <b>SEO company in Kolkata</b> receives a proper report
+                      of the project
+                      the companies are
+                      working on. If you are comfortable with a monthly or weekly reporting system, the customization is
+                      feasible.</p>
+
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="card  card_h_50 flex-grow-1">
+              <div class="card-body">
+                <div class="col-md-12 mx-auto">
+                  <h4 class="roi_h4_head text-center">Benefits of hiring the best SEO agency in Kolkata</h4>
+
+                  <ul class="card_ul01">
+                    <li class="para_list">Google ranking</li>
+                    <p class="roi_para_text">SEO is a method that is used to get higher placement or ranking on search
+                      engine results
+                      like bing, google, etc without any paid advertisements. Your google page ranking can also high up
+                      using SEO
+                      techniques. Whatever result you get, they are driven by the algorithm of the search engine you
+                      wish to focus on.
+                      The <b>best SEO service company in Kolkata</b> has vast experience the 360-degree knowledge of
+                      online marketing.
+                      You can avail the benefits quite simply!</p>
+
+                    <li class="para_list">Organic SEO</li>
+                    <p class="roi_para_text">Organic SEO is the method that places a website on higher placement on a
+                      specific search
+                      engine. Here, the procedure refers to organic methods and strategies that will increase the
+                      visibility, value,
+                      brand awareness over time, without opting for any paid promotion. In Organic SEO, you get results
+                      for what your
+                      website actually contains. Therefore, content and design play a major role in it.</p>
+
+                    <li class="para_list">Off-Page SEO</li>
+                    <p class="roi_para_text">Any kind of promotional activity which is done outside the website is
+                      called off-page
+                      SEO. It can comprise strong content writing, visuals, guest blogging, link building, influencer
+                      outreach, and
+                      much more. it is done to increase the site's popularity by linking your website to valuable
+                      content. The links
+                      can be natural, manually built, or self-created links. </p>
+
+                    <li class="para_list">Google Analytics</li>
+                    <p class="roi_para_text">It is the ultimate web analytics service in today’s world. The main purpose
+                      of Google
+                      Analytics is to connect a website through a piece of code mainly on JavaScript. The account holder
+                      will generate
+                      the code and place it on the HTML terminus of their respected site. But, if you are hiring a
+                      professional SEO
+                      company for the services, it comes hassle-free. </p>
+
+                    <p class="roi_para_text">The simple way you found this website by simple means, the best SEO
+                      strategies will help
+                      your website reach potential customers in less time. </p>
+                  </ul>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="card card_h_51 flex-grow-1">
+              <div class="card-body">
+                <div class="col-md-12 mx-auto">
+                  <h4 class="roi_h4_head text-center">Turn your visitors into potential customers by using the right SEO
+                    Strategies</h4>
+
+                  <p class="roi_para_text">Business competition is increasing every day. A lot of companies are
+                    refreshing their online business strategies into newer ones while some businesses are starting the
+                    digital stream afresh. Amidst the hustle, every business wants to be on top – the streaming #1 on
+                    the search list is the ultimate destination. If your demands are somewhat similar, an <strong>SEO
+                      company in Kolkata</strong> will give support from years of experience.</p>
+
+                  <p class="roi_para_text">The top companies have found profound ways to achieve search   engine rankings based on excellent performances by the experts of the <strong>SEO company in Kolkata</strong>.Digital marketing aims at increasing the traffic for websites. It enhances the web page's visibility to the specific audience who are interested.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="card card_h_51 flex-grow-1">
+              <div class="card-body">
+                <div class="col-md-12 mx-auto">
+                  <h4 class="roi_h4_head text-center">Other SEO Service's Location</h4>
+
+                  <ul class="card_ul02">
+                    <li class="list_seo_text"> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-delhi/" alt="seo-company-in-delhi" class="a_seo_text"> SEO Services in
+                        Delhi</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-hyderabad/" alt="seo-company-in-hyderabad" class="a_seo_text"> SEO
+                        Services in Hyderabad</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-kochi/" alt="seo-company-in-kochi" class="a_seo_text"> SEO Services
+                        in Kochi</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-kolkata/" alt="seo-company-in-kolkata" class="a_seo_text"> SEO
+                        Services in Kolkata</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-coimbatore/" alt="seo-company-in-coimbatore" class="a_seo_text">
+                        SEO Services in Coimbatore</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-pune/" alt="seo-company-in-pune" class="a_seo_text"> SEO Services
+                        in Pune</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-chennai/" alt="seo-company-in-chennai" class="a_seo_text"> SEO
+                        Services in Chennai</a>
+                    </li>
+                    <li class="list_seo_text">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <a routerLink="/seo-company-in-bangalore/" alt="seo-company-in-bangalore" class="a_seo_text">  SEO Services in Bangalore</a>
+                    </li>
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<br>
+<br>
+<!-- SEO Service Bangalore Continuity-->
+
+<div class="container-fluid p-0">
+  <div class="row">
+    <div class="col-sm-6 px-5 bg-red">
+      <div class="py-2 sticky-top flex-grow-1">
+        <div class="nav flex-sm-column">
+          <div class="title-container mx-auto my-3 py-3">
+          </div>
+          <P class="choosing-ul-p">
+            Search Engine Optimization is all about how interactive your website is, how much time user spending on
+            the
+            website, CTR of a website with respect to the search engines results.
+          </P>
+          <P class="choosing-ul-p">
+            SEO is all about finding your web page on the search engines results with the business-oriented search
+            query
+            or keywords.
+          </P>
+          <P class="choosing-ul-p">
+            Our team of SEO Analysts devises an organized plan of action by researching, analyzing and evaluating your
+            Search engine listing position as per the latest search engine algorithm or Google algorithm updates.
+          </P>
+          <P class="choosing-ul-p">
+            Then, the benchmark against the existing top ranker and execute the plan to enhance the visibility of a
+            website and reach the top in the search engine results.
+          </P>
+          <P class="choosing-ul-p">
+            We are named as one of the top 10 SEO company in Kolkata.
+          </P>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" id="main">
+      <div class="col-md-12">
+        <div class="row seo-card-block">
+
+          <div class="title-container mx-auto">
+          </div>
+          <br>
+
+          <div class="banner-space-init"></div>
+          <div class="banner-space-init"></div>
+          <div class="banner-space-init"></div>
+
+
+          <div class="col-md-12 ">
+            <div class="card-deck">
+              <div class="card services-card-shadow mx-2 px-4 py-5 my-auto">
+                <div class="card-body">
+                  <p class="card-text seoservice-p">Our SEO services company in Kolkata can do more than just optimize
+                    your business website.
+                  </p>
+                  <p class="card-text seoservice-p">Some of our seo campaigns will drive immediate traffic to your
+                    website.
+                  </p>
+                  <p class="card-text seoservice-p"> The best SEO service providers in Kolkata, we will do SEO, search
+                    engine penalty recovery services, <a
+                      href="https://brandstory.in/email-marketing-services-in-bangalore/">email marketing</a>,
+                    influencer marketing, SMS marketing, <a
+                      href="https://brandstory.in/pay-per-click-ppc-services-in-bangalore/">paid advertising</a>, web
+                    analytics, <a href="https://brandstory.in/website-development-company-in-bangalore/">web
+                      design</a>,
+                    website redesign etc.
+                  </p>
+                  <p class="card-text seoservice-p"> We are also expert in search engines marketing advertising
+                    services
+                    like search advertising, display advertising, mobile app advertising, shopping advertising and
+                    video
+                    advertising
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- SEO Packages and Reporting -->
+
+<div class="container my-3">
+  <div class="row">
+
+
+    <div class="col" id="main">
+
+
+      <div class="services-card ">
+
+        <div class="title-container mx-auto need-for-seo">
+          <h3 class="need-shadow-txt">SEO Packages and Reporting</h3>
+        </div>
+
+        <div class="banner-space-init"></div>
+
+        <div class="card-deck py-1">
+          <div class="card border-0  mx-2  my-auto">
+            <div class="card-body ">
+              <p class="card-text need-para">
+                Brandstory is the top-rated SEO services company in Kolkata or SEO consultant Kolkata.
+              </p>
+              <p class="card-text need-para">
+                As a top <a href="https://brandstory.in/">digital marketing agency</a>, We offer the best SEO services
+                in Kolkata to all kind of business peoples like the small-scale business, medium scale business and
+                large-scale business organization.
+              </p>
+              <p class="card-text need-para">
+                Our SEO campaigns has to be executed with different SEO Strategy with different SEO Packages. We also
+                have Customized SEO solutions that suit your budget and requirement.
+              </p>
+
+              <p class="card-text need-para">
+                Some of our SEO package plans
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- our seo process -->
+
+<div class="container">
+  <div class="row">
+
+    <div class="col" id="main">
+
+      <div class="services-card ">
+
+
+        <div class="card-deck">
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Basic SEO Plans
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                Local SEO Plan
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body services-card-shadow">
+              <p class="card-text need-para text-center">
+                National & International SEO Plan
+              </p>
+
+            </div>
+          </div>
+          <p class="card-text seoservice-p mt-3 mx-3">
+            Apart from this, we will provide monthly site audit report, monthly keywords ranking report, monthly
+            conversion tracking report and event tracking reports.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<br><br>
+
+<!-- ROI Strip-->
+
+<div class="container-fluid bg-red p-0">
+  <div class="row">
+    <div class="row">
+
+      <div class="col-sm-1 my-auto google-container-image p-0">
+        <img src="assets/images/wp-content/uploads/2019/icons/seo/gold-medal.png" alt="SEO Services Bangalore" />
+      </div>
+
+      <div class="col-sm-11 pl-5">
+
+        <div class="google-container">
+          <h2 class="mt-5 branding-get-quote-text roi text-white ">ROI Lead Best SEO Company/Agency in Kolkata India
+          </h2>
+          <p class="text-white branding-cont">We are group of passionate digital marketing experts; industry thought
+            leaders and creative designers coming together to produce stunning ROI lead digital marketing campaigns
+            for
+            brands. We are a social media marketing agency based in Kolkata, India providing digital marketing
+            campaign management support to brands across the globe.</p><br><br>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+
+
+
+<!-- SERVICES -->
+<div class="container">
+  <div class="row">
+
+    <div class="col" id="main">
+
+      <div class="services-card ">
+
+
+        <div class="title-container mx-auto my-3">
+          <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+            <span class="uvc-headings-line"
+              style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+          </div>
+          <h3 class="casestudies-rear-txt">SERVICES</h3>
+          <h3 class="need-shadow-txt seo-services">SERVICES</h3>
+        </div>
+        <br><br>
+
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/ui-design-company-bangalore/">UI UX Designing</a></h6>
+              <p class="card-text need-para">
+                As an user-centric design agency in Kolkata, India, we create functionally beautiful digital
+                experiences that highly engage with your target audience. We tend to create meaningful relationships
+                amidst brands and their consumers through inspiring design…
+              </p>
+              <a href="https://brandstory.in/ui-design-company-bangalore/" class="txt-red">READ MORE</a>
+
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/website-development-company-in-bangalore/">Website Development</a></h6>
+              <p class="card-text need-para">
+                Making sure that your website is universally compatible and user friendly, an exclusive expert team of
+                designers and developers are you assigned to to ensure that not only the plan goes according to a
+                timeline but also that your approval is taken…
+              </p>
+              <a href="https://brandstory.in/website-development-company-in-bangalore/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/content-marketing/">Content
+                  Marketing</a></h6>
+              <p class="card-text need-para">
+                Simple.We create digital content. It’s the element that helps us to be the company we are and our ever
+                growing client list is an proof to that. Brandstory is one of the leading content marketing
+                communications company in Kolkata, India provides…
+              </p>
+              <a href="https://brandstory.in/content-marketing/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="services-card mt-3">
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/seo-company-bangalore/">Search
+                  Engine Optimisation</a></h6>
+              <p class="card-text need-para">
+                Search Engine Optimization (SEO) program increases overall visibility of your business across all
+                search
+                engine platform. It provides an opportunities for brands to create acquisitions (sales, leads,
+                inquiries
+                etc.), and help consumers to …
+              </p>
+              <a href="https://brandstory.in/seo-company-bangalore/" class="txt-red">READ MORE</a>
+
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/pay-per-click-ppc-services-in-bangalore/">Pay Per Click (PPC)</a></h6>
+              <p class="card-text need-para">
+                We increase your digital footprint with Pay Per Click campaigns or Google Adwords and Bing Adwords. A
+                plan is sketched out and implemented accordingly, with this your campaign has begun. The plan includes
+                specific important keywords …
+              </p>
+              <a href="https://brandstory.in/pay-per-click-ppc-services-in-bangalore/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/services/social-media-marketing-agency-bangalore/">Social Media
+                  Marketing</a></h6>
+              <p class="card-text need-para">
+                We provide expertise in design implementation providing a full range of social media marketing
+                services(SMM) bounding in popular social media platforms, content generation, creatives ideation,
+                social
+                branding techniques. Holding it all together …
+              </p>
+              <a href="https://brandstory.in/services/social-media-marketing-agency-bangalore/" class="txt-red">READ
+                MORE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="services-card mt-3">
+
+        <div class="card-deck">
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/email-marketing-services-in-bangalore/">Email Marketing</a></h6>
+              <p class="card-text need-para">
+                Email Marketing It’s not as easy as it may sound. It’s not just composing an email draft, copying a
+                list
+                of contacts, and clicking the “send” button. Invariably, you will face struggles ranging from privacy
+                issues, permission boundaries, technical glitches …
+              </p>
+              <a href="https://brandstory.in/email-marketing-services-in-bangalore/" class="txt-red">READ MORE</a>
+
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/orm-company-bangalore-india/">Online Reputation Management</a></h6>
+              <p class="card-text need-para">
+                Online reputation management includes managing your business and its brand value across every review
+                and
+                rating forum to every social media platform. It is ideally required for 3 major purposes adding to the
+                growth of your business…
+              </p>
+              <a href="https://brandstory.in/orm-company-bangalore-india/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="card border-0 services-card-shadow">
+            <div class="card-body ">
+              <h6 class="font-weight-bold py-2 need-head"><a
+                  href="https://brandstory.in/analytics-and-reporting/">Analytics and Reporting</a></h6>
+              <p class="card-text need-para">
+                A gripping content, catchy headline, constant updates will mean nothing if you can’t see the returns
+                on
+                it. So after all the hard work is done, we send you a detailed report and statistics on how well you
+                are
+                doing on digital…
+              </p>
+              <a href="https://brandstory.in/analytics-and-reporting/" class="txt-red">READ MORE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<br><br>
+
+
+
+<!-- ROI SEO state -->
+<!-- <div class="container py-5">
+  <h1 class="col-md-10 mx-auto text-center roi_head">Turn your visitors into potential customers by using the right SEO
+    Strategies</h1>
+
+  <div class="col-md-12 mx-auto mt-5">
+
+    <p class="roi_para_text">Business competition is increasing every day. A lot of companies are refreshing their
+      online business strategies into newer ones while some businesses are starting the digital stream afresh. Amidst
+      the hustle, every business wants to be on top – the streaming #1 on the search list is the ultimate destination.
+      If your demands are somewhat similar, an <b>SEO company in Kolkata</b> will give support from years of experience.
+    </p>
+
+    <p class="roi_para_text">The top companies have found profound ways to achieve search engine rankings based on
+      excellent performances by the experts of the <b>SEO company in Kolkata</b>. Digital marketing aims at increasing
+      the traffic for websites. It enhances the web page's visibility to the specific audience who are interested. </p>
+
+  </div>
+
+
+  <div class="col-md-12 mx-auto mt-5">
+    <h4 class="roi_h4_head">Build a Brand Name with the trusted SEO companies of Kolkata</h4>
+
+    <p class="roi_para_text">It seems fascinating to have a brand name when customers recognize you with a simple hint.
+      You stay ahead of the competitors, rule the industry, increase the sales gradually, and whatnot. But all results
+      are sweet when the struggles are right.</p>
+
+    <p class="roi_para_text">At the topmost <b>SEO service provider in Kolkata</b>, you get the best of services that
+      fit exactly with your needs </p>
+
+    <ul>
+      <li class="para_list">Keyword research and market analysis</li>
+      <p class="roi_para_text">Finding relevant keywords that fall under your business domain is a professional task. A
+        regular person cannot
+        understand the statics of the number of times each keyword is used for what location. Only an expert from the
+        SEO services in Kolkata understands keyword research in the proper way and the ones which the market prefers the
+        most.</p>
+
+      <li class="para_list">Competitive Intelligence</li>
+      <p class="roi_para_text">The marketing professionals of SEO in Kolkata will always collect insights from your
+        competitors for the
+        benefit of your company. Gathering relevant information about the competitors helps to understand the
+        whereabouts and how far your company has to go to fill the gaps.</p>
+
+      <li class="para_list">Content development & Promotion</li>
+      <p class="roi_para_text">Content plays the majority part in making a web page responsive and informative. Besides
+        the technicalities and
+        designing, visual content or a written blog helps the customers to understand your services a little closer. The
+        <b>SEO company in Kolkata</b> produces plagiarism free content to engage the target audience throughout your
+        website.
+      </p>
+
+      <li class="para_list">Website Audit & Optimization</li>
+      <p class="roi_para_text">Website Auditing includes analyzing the entire system from the root, then finding
+        solutions according to the
+        site performance. The auditing may go through a few stages or would take days to complete. The time estimation
+        usually depends on the developmental stage of the website. </p>
+
+      <li class="para_list">High-grade Link building</li>
+      <p class="roi_para_text">Link building is done in order to build a network of your website with other websites of
+        a similar domain, in
+        simple words, with proper backlinks and external linking, customers will easily direct to your web page. It will
+        give you a desirable number of leads in the SEO service.</p>
+
+      <li class="para_list">Reporting and Analysis</li>
+      <p class="roi_para_text">Clients of the top <b>SEO company in Kolkata</b> receives a proper report of the project
+        the companies are
+        working on. If you are comfortable with a monthly or weekly reporting system, the customization is feasible.</p>
+
+    </ul>
+
+
+  </div>
+
+  <div class="col-md-12 mx-auto mt-5">
+    <h2 class="roi_h4_head">Benefits of hiring the <b>best SEO agency in Kolkata</b></h2>
+
+    <ul>
+      <li class="para_list">Google ranking</li>
+      <p class="roi_para_text">SEO is a method that is used to get higher placement or ranking on search engine results
+        like bing, google, etc without any paid advertisements. Your google page ranking can also high up using SEO
+        techniques. Whatever result you get, they are driven by the algorithm of the search engine you wish to focus on.
+        The <b>best SEO service company in Kolkata</b> has vast experience the 360-degree knowledge of online marketing.
+        You can avail the benefits quite simply!</p>
+
+      <li class="para_list">Organic SEO</li>
+      <p class="roi_para_text">Organic SEO is the method that places a website on higher placement on a specific search
+        engine. Here, the procedure refers to organic methods and strategies that will increase the visibility, value,
+        brand awareness over time, without opting for any paid promotion. In Organic SEO, you get results for what your
+        website actually contains. Therefore, content and design play a major role in it.</p>
+
+      <li class="para_list">Off-Page SEO</li>
+      <p class="roi_para_text">Any kind of promotional activity which is done outside the website is called off-page
+        SEO. It can comprise strong content writing, visuals, guest blogging, link building, influencer outreach, and
+        much more. it is done to increase the site's popularity by linking your website to valuable content. The links
+        can be natural, manually built, or self-created links. </p>
+
+      <li class="para_list">Google Analytics</li>
+      <p class="roi_para_text">It is the ultimate web analytics service in today’s world. The main purpose of Google
+        Analytics is to connect a website through a piece of code mainly on JavaScript. The account holder will generate
+        the code and place it on the HTML terminus of their respected site. But, if you are hiring a professional SEO
+        company for the services, it comes hassle-free. </p>
+
+      <p class="roi_para_text">The simple way you found this website by simple means, the best SEO strategies will help
+        your website reach potential customers in less time. </p>
+    </ul>
+  </div>
+
+</div> -->
+
+<div class="clients text-center">
+  <div class="uvc-heading-spacer line_only" style="margin-bottom: 12px; height: 2px;"><span class="uvc-headings-line"
+      style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+  </div>
+  <h3 class="clients-heading-clone">SEO FAQs </h3>
+  <h3 class="clients-heading">QUESTIONS</h3>
+  <br>
+  <br>
+</div>
+
+<div class="container">
+
+  <div class="col-md-12 mx-auto">
+    <div class="row" *ngFor="let item of faq_array; let i=index;">
+      <p class="float-left w_95">
+        {{item.title}}
+      </p>
+
+      <span class="float-right" (click)="faq_click(i);">
+        <i class="fa " aria-hidden="true" [ngClass]="{' fa-plus': !item.checked,' fa-minus': item.checked}"></i>
+      </span>
+
+      <div class="col-12 mb-3" *ngIf="item.checked">
+
+        <p *ngIf="item.sub_text">
+          {{item.sub_text}}
+        </p>
+
+        <ul class="desc_width90" *ngIf="item.message_list.length>0">
+          <li class="list_h30" *ngFor="let list of item.message_list;">
+            <div class="fa_hand_p10">
+              <i class="fa fa-share" aria-hidden="true"></i>
+            </div>
+            <div class="text_w90">
+              <span class=""> {{list}} </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<!-- ROI SEO state -->
+<br>
+<br>
+<!-- Google Partner -->
+<div class="container-fluid bg-red p-0">
+  <div class="row">
+    <div class="row">
+
+      <div class="col-sm-1 my-auto google-container-image p-0">
+        <img src="assets/images/wp-content/uploads/2019/icons/seo/trophy.png" alt="SEO Company in Bangalore" />
+      </div>
+
+      <div class="col-sm-7">
+
+        <div class="google-container">
+          <h2 class="mt-5 branding-get-quote-text text-white ">Official Google Partner</h2>
+          <p class="text-white branding-cont">We are official partners with Google, so you know that you are in the
+            hands of a trusted and promising company.</p><br><br>
+        </div>
+
+      </div>
+      <div class="col-sm-4 my-auto google-container-image">
+        <a href="https://www.google.com/partners/agency?id=1975289574" target="_blank"><img
+            src="assets/images/wp-content/uploads/2019/icons/seo/gpartner.png" alt="Official Google Partner" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<div class="col-sm-8">
+  <ng-template #template>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Request SEO Free Audit</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+      <form [formGroup]="bannerModalForm" (ngSubmit)="onSubmitBannerModal()" novalidate>
+        <div class="form-group">
+          <input type="text" formControlName="fName" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fName.errors }" placeholder="Enter Name" />
+          <div *ngIf="submitted && fbannermodal.fName.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fName.errors.required" class="px-3">Name is required</div>
+            <div *ngIf="fbannermodal.fName.errors.pattern" class="px-3">Only characters allowed</div>
+            <div *ngIf="fbannermodal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" formControlName="fEmail" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fEmail.errors }" placeholder="Enter Email">
+          <div *ngIf="submitted && fbannermodal.fEmail.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fEmail.errors.required" class="px-3">Email is required</div>
+            <div *ngIf="fbannermodal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <input type="tel" formControlName="fPhone" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fPhone.errors }" placeholder="Mobile Number" />
+          <div *ngIf="submitted && fbannermodal.fPhone.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+            <div *ngIf="fbannermodal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+            <div *ngIf="fbannermodal.fPhone.errors.minLength" class="px-3">Mobile Number format is required</div>
+            <div *ngIf="fbannermodal.fPhone.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <input type="url" formControlName="fService" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fService.errors }" placeholder="Website Link" />
+          <div *ngIf="submitted && fbannermodal.fService.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fService.errors.required" class="px-3">Website Link is required</div>
+            <div *ngIf="fbannermodal.fService.errors.patterns" class="px-3">Website Link is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <textarea formControlName="fMessage" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && fbannermodal.fMessage.errors }" placeholder="Message" rows="2"
+            style="height:auto !important;"></textarea>
+          <div *ngIf="submitted && fbannermodal.fMessage.errors" class="invalid-feedback">
+            <div *ngIf="fbannermodal.fMessage.errors.required" class="px-3">Message is required</div>
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+      </form>
+      <br><br>
+    </div>
+  </ng-template>
+</div>
+
+
+<script type='application/ld+json'>
+    {
+     "@context": "http://www.schema.org",
+     "@type": "ProfessionalService",
+     "name": "seo company in Pune | seo services in Pune",
+     "url": "https://brandstory.in/seo-company-in-Pune/",
+     "logo": "https://brandstory.in/assets/images/wp-content/uploads/2017/10/logo.png",
+     "image": "https://brandstory.in/assets/images/wp-content/uploads/2017/10/logo.png",
+     "description": "Best seo companies in Pune, India. Hire Brandstory seo agency in Pune to increase your website visibility in search engines. Enhance your website ranking in google and other search engines with brandstory seo services in Pune",
+                  "telephone": "+919008504821",
+                  "pricerange":"Contact: +919008504821 | Email : info@brandstory.in",
+      "aggregateRating": {
+    "@type": "AggregateRating",
+     "ratingValue": "[4.0]",
+     "reviewCount": 39
+    },
+     "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No 5, 1st Cross, 3rd floor, Krishna Reddy Colony, Domlur Layout, Pune, Karnataka 560071",
+    "addressLocality": "Pune",
+    "addressRegion": "Karnataka",
+    "postalCode": "560071",
+    "addressCountry": "India"
+     },
+     "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "12.9561124",
+    "longitude": "77.637451"
+     },
+    "sameAs" : [ "https://www.facebook.com/brandstory.in/",
+    "https://www.linkedin.com/company/brandstory-in/", 
+           "https://twitter.com/BrandStory_in/"],
+           "openingHours": "Mo, Tu, We, Th, Fr 10:00-19:00",
+           "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+919008504821",
+    "contactType": "customer support"
+     }
+  }
+    
+  
+  </script>
+
+<!-- ROI SEO state -->
+
+
+
+
+<!-- Request SEO Free Audit - modal -->
+<div class="container">
+
+  <div class="col-sm-8">
+    <ng-template #template>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Request SEO Free Audit</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form [formGroup]="bannerModalForm" (ngSubmit)="onSubmitBannerModal()" novalidate>
+          <div class="form-group">
+            <input type="text" formControlName="fName" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fbannermodal.fName.errors }" placeholder="Enter Name" />
+            <div *ngIf="submitted && fbannermodal.fName.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fName.errors.required" class="px-3">Name is required</div>
+              <div *ngIf="fbannermodal.fName.errors.pattern" class="px-3">Only characters and Minimun 3 characters
+                allowed</div>
+              <div *ngIf="fbannermodal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" formControlName="fEmail" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fbannermodal.fEmail.errors }" placeholder="Enter Email">
+            <div *ngIf="submitted && fbannermodal.fEmail.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fEmail.errors.required" class="px-3">Email is required</div>
+              <div *ngIf="fbannermodal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+
+            <input type="tel" formControlName="fPhone" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fbannermodal.fPhone.errors }" placeholder="Mobile Number" />
+            <div *ngIf="submitted && fbannermodal.fPhone.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+              <div *ngIf="fbannermodal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+              <div *ngIf="fbannermodal.fPhone.errors.minLength" class="px-3">Mobile Number format is required</div>
+              <div *ngIf="fbannermodal.fPhone.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+
+            <input type="url" formControlName="fService" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fbannermodal.fService.errors }" placeholder="Website Link" />
+            <div *ngIf="submitted && fbannermodal.fService.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fService.errors.required" class="px-3">Website Link is required</div>
+              <div *ngIf="fbannermodal.fService.errors.pattern" class="px-3">Website Link is required</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+
+            <textarea formControlName="fMessage" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && fbannermodal.fMessage.errors }" placeholder="Message" rows="2"
+              style="height:auto !important;"></textarea>
+            <div *ngIf="submitted && fbannermodal.fMessage.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fMessage.errors.required" class="px-3">Message is required</div>
+            </div>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary text-center bg-red border-0">Submit</button>
+
+        </form>
+        <br><br>
+      </div>
+    </ng-template>
+  </div>
+</div>

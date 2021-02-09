@@ -1,0 +1,502 @@
+.welcome-text{
+  padding: 70px 0px;
+}
+
+/*.smallheadng,.bigheading,.banner-knwomore{
+   xanimation-name: topFadeOut;
+    animation-duration: 5s;
+}*/
+.card{
+	border-radius: 0px;
+	margin-bottom: 10px
+}
+.img-responsive{
+	width: 100%;
+}
+.casestudies-row{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.card-title-case{
+	font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+padding:15px 0px;
+color: #000000;
+
+}
+.card-text-case{
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+	color: #8C8C8C;
+}
+.topbanner{
+
+	margin:0 auto;
+	overflow: hidden;
+}
+.bannertext{
+	background-color: #fff;
+	color: #000;
+	padding: 44px 43px 43px 47px;
+	font-family: Roboto;
+	font-size: 20px;
+	margin-right: 2%;
+}
+.quick-content{
+	position: relative;
+	margin: -60px 44px 20px;
+	padding: 62px;
+	background-color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	min-height: 280px;
+}
+.getQuotetitle{
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height:36px;
+	margin:20px 10px;
+
+
+color: #000000;
+}
+.casecontent li{
+	list-style: none;
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height:36px;
+
+}
+.casecontent p{
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height:26px;
+
+color: #000000;
+}
+.clients.text-center{
+  margin-bottom: 69px;
+}
+.casestudies-white{
+max-width: 1440px;
+margin: 0 auto;
+
+	background-color:#3d5d55;
+	padding-top: 80px;
+}
+.casestudies-white #searchengine,.casestudies #campaignmanagement{
+	display: none;
+}
+.casestudies{
+overflow: hidden;
+
+	background-color: #3D5D55;
+	padding-top: 80px;
+
+}
+.casecontent h2,.casecontent h3{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.casepoints-normal{
+	padding: 10px 0px;
+}
+.casepoints,.casepoints li{
+	padding: 10px 0px;
+	color: #DE5F46;
+}
+.casestudies-white .clients-heading-clone{
+	color: #fff;
+}
+
+.casestudies .clients-heading-clone{
+	color: #fff;
+}
+.casestudies .media,.casestudies-white .media{
+	margin-bottom: 90px;
+}
+.casestudies-white .clients-heading{
+	font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 80px;
+line-height: 94px;
+
+color: #00221A  !important;
+	z-index: 0;
+	opacity: 0.1;
+}
+.casestudies .clients-heading{
+	font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 80px;
+line-height: 94px;
+
+color: #00221A  !important;
+	z-index: 0;
+	opacity: 0.1;
+}
+
+.bannerlatest{
+	padding: 84px 122px 87px 0px ;
+	background: url('/assets/images/banner-background.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: #000;
+
+}
+.media-left{
+	margin-right: 17px;
+}
+.casestudies-white .read-more{
+	color: #fff;;
+}
+.read-more{
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+text-decoration-line: underline;
+
+color: #FFFFFF;
+}
+.casetab{
+margin-bottom: 20px;
+}
+.tableft{
+	float: right;
+}
+.casestudies-white .uvc-headings-line{
+	border-color: #fff !important;
+}
+.casestudies-white  a.tableft{
+	color: #fff;
+	border-bottom: 3px solid #3d5d55;
+}
+.casestudies-white  a.tabright{
+	color: #FFF;
+	border-bottom: 3px solid #de5f46 !important;
+}
+.casetab a:hover,.casestudies  a.tableft,.casestudies-white  a.tabright{
+	border-bottom:3px solid #de5f46;
+}
+.casetab a{
+	display: inline-block;
+	font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 30px;
+margin-bottom: 20px;
+color: #FFFFFF;
+border-bottom: 3px solid #3D5D55;
+}
+.casestudies-white .media-heading{
+	color: #fff;
+}
+.media-heading{
+	font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 30px;
+margin-bottom: 40px;
+
+color: #FFFFFF;
+}
+.media-body p{
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 26px;
+
+color: #709289;
+}
+.knowmore{
+cursor: pointer;
+color: #DE5F46 !important;
+	position: absolute;
+	vertical-align: bottom;
+	bottom: 0px;
+	margin-bottom: 20px;
+}
+
+.bannersolution{
+	padding: 30px 96px 43px 96px;
+}
+.bannersolution ul{
+	padding: 0px;
+}
+.bannerright{
+	padding: 0px;
+}
+.bannersolution li{
+	list-style: none;
+	padding:10px 0px;
+}
+.bannersubtitle{
+	margin: 0 auto;
+	text-align: center;
+
+}
+.bannersubtitle span{
+	padding: 10px;
+	margin-top: 10px;
+	font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+text-decoration-line: underline;
+	display: inline-block;
+}
+.Bannertxt{
+	margin: 0 auto;
+	width: 912px;
+	padding-top: 40px;
+	font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height:49px;
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.bannercolor{
+	background-color:#2E4942;
+	color:#fff;
+	padding-left: 135px;
+	padding-top:53px;
+	padding-bottom: 37px;
+	padding-right: 66px;
+}
+.bannercolor h2{
+	font-family: Roboto;
+	font-size: 50px;
+	color: #fff;
+}
+@keyframes topFadeOut {
+    /*0% {
+        top: -50rem;
+        opacity:0;
+      }
+
+      75% {
+        bottom: 50%;
+        top: 25%;
+        opacity: 1;
+      }  */
+
+  }
+
+  .banner-layer1-txt{
+    margin:0% 0% 0% 20% !important;
+  }
+
+  .banner-layer2-txt{
+      margin:0% 0% 0% 20% !important;
+  }
+
+  .background-pattern{
+      /* height: 80% ; */
+      z-index: -9999;
+  }
+
+  .services-card-shadow{
+    box-shadow: 0px 5px 13px 4px rgba(239, 239, 239, 0.8);
+    transform: translate3d(0,-2px,0);
+    border: none;
+  }
+  .card-box-shadow{
+    box-shadow: -4px 5px 25px -5px rgba(113, 109, 109, 0.8);
+    transform: translate3d(0,-2px,0);
+    border: none;
+  }
+
+.get-quote-btn{
+    border-radius: 0px ;
+}
+  .quote-text {
+      line-height: 1.7em;
+  }
+
+  .faq h4{
+    margin: 5px 0 15px;
+    padding-top: 15px !important;
+    line-height: 34px !important;
+  }
+
+  .faq p{
+    line-height: 26px !important;
+  }
+
+  .works-img{
+    min-height: 206px !important;
+  }
+  .land-getquote{
+    margin: 0px 0px !important;
+	  padding-left: 0px !important;
+	  padding-right: 0px !important;
+  }
+.tags .col-md-6 span{
+	margin-left: 15px;
+}
+.tags{
+margin-top:20px;
+}
+.tags .col-md-6,.tags .col-md-3{
+	padding: 2px;
+}
+.tags span{
+background: #EBE9E9;
+	border-radius: 5px;
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+display: block;
+padding: 5px;
+color: #717171;
+}
+.border-red{
+padding: 1.5rem !important;
+	}
+  .client-img-list{
+    margin: 0 80px;
+  }
+
+  .client-lastbox{
+    display: block;
+    background: red ;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    margin: 30px 20px 40px 20px;
+  }
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+.banner-layer2-txt{
+  margin:0% 0% 0% 10% !important;
+}
+.banner-layer1-txt{
+  margin:0% 0% 0% 10% !important;
+}
+}
+.faq h2{font-size:24px;} .faq p a, .faq li a {color: gray;}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .banner-layer2-txt{
+    margin:0% 0% 0% 35% !important;
+  }
+  .banner-layer1-txt{
+    margin:0% 0% 0% 25% !important;
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner-layer2-txt{
+    margin:0% 0% 0% 35% !important;
+  }
+  .banner-layer1-txt{
+    margin:0% 0% 0% 25% !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .banner-layer2-txt{
+    margin:0% 0% 0% 35% !important;
+  }
+  .banner-layer1-txt{
+    margin:0% 0% 0% 25% !important;
+  }
+}
+.enquire h4{
+  /*font-family: "SourceSansPro-Light", sans-serif !important;*/
+  color: #ffffff !important;
+  font-size: 41px !important;
+  text-align: center !important;
+  line-height: 47px!important;
+  color: #fff !important;
+  letter-spacing: 0px !important;
+}
+
+accordion .panel-body.card-block.card-body{line-height: normal;}
+accordion button.btn.btn-link{text-align: left;}
+.background-pattern{height:75%;}
+@media (min-width: 1200px){
+.space-init {
+     margin: 100px;
+}
+}
+@media (min-width: 768px){
+.space-init {
+    margin: 100px;
+}
+}
+.space-init {
+  margin: 100px;
+}
+@media (min-width: 768px){
+  .background-pattern{height:70%;}
+}
+@media (max-width: 768px){
+.casestudies-row{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+  .bannercolor{    padding: 53px 30px 37px 30px;}
+.casestudies .clients-heading, .casestudies-white .clients-heading{
+font-size: 42px;
+line-height: 34px;
+}
+
+.bannersolution{
+	padding: 30px 42px 43px 42px;}
+  .Bannertxt{ width: auto !important;}
+  .land-getquote{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+.tags{
+margin-top:20px;
+    padding: 10px;
+}
+.tags .col-md-6 span{
+    margin-left: 0px;
+}
+  .casetab .col-md-6{
+    text-align: center;
+  }
+  .casetab .tableft{
+    float: none;
+  }
+  .casetab .tabright{
+    float: none;
+  }
+.clients.text-center{
+    margin-bottom: 19px;
+  }
+
+}

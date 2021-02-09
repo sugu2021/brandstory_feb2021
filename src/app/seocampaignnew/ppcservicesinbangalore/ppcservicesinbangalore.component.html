@@ -1,0 +1,748 @@
+<div class="background-pattern mobile"></div>
+<div class="container">
+    <div class="banner-space-init"></div> 
+    <div class="row banner-left-outerwrap">
+  <div class="col-sm-7 banner-left-innerwrap"> 
+    <h1 class="seo-banner-head">
+      PPC Company in Bangalore
+    </h1>
+    <br>
+    <h5 class="seo-banner-subtxt">
+        We increase your digital footprint with Pay Per Click campaigns or Google Adwords and Bing Adwords.
+    </h5>
+    <h5 class="seo-banner-subtxt">
+        A plan is sketched out and implemented accordingly, with this your campaign has begun. The plan includes specific important keywords and exclusive landing page, to which your Pay Per Click (PPC) Ads will direct traffic to.
+    </h5>
+    <h5 class="seo-banner-subtxt">
+        In brief, PPC gets immediate traffic to your site, can easily be modified as and when we see a change in results, re-used into other campaigns and most importantly, they can be controlled by us easily. We do the tracking and adjusting of your campaign’s performance including keywords, message, the amount of money spent per click.
+    </h5> 
+    <br><br>
+    <a (click)="openModal(template)"  class="banner-request-btn ">KNOW MORE HERE</a>
+    <br><br>
+ 
+  </div>
+
+  
+
+  <div class="col-sm-5 banner-right-outerwrap">
+    <div class="banner-form-innerwrap" >
+    <h4 class="banner-form-headtxt">GET IN TOUCH WITH US</h4>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmits()">
+        <div class="form-group"> 
+            <input type="text" formControlName="firstName" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" placeholder="Name"/>
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                <div *ngIf="f.firstName.errors.required" class="px-3">Name is required</div>
+                <div *ngIf="f.firstName.errors.pattern" class="px-3">Only characters and Minimun 3 characters allowed</div>
+                <div *ngIf="f.firstName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+            </div>
+        </div>
+
+        <div class="form-group"> 
+            <input type="text" formControlName="email" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email"/>
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required" class="px-3">Email is required</div>
+                <div *ngIf="f.email.errors.email" class="px-3">Email must be a valid email address</div>
+            </div>
+        </div>
+
+        <div class="form-group"> 
+            <input type="tel" formControlName="lastName" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" placeholder="Mobile Number"/>
+            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                <div *ngIf="f.lastName.errors.required" class="px-3">Mobile Number is required</div>
+                <div *ngIf="f.lastName.errors.pattern" class="px-3">Only Numbers is required</div>
+                    <div *ngIf="f.lastName.errors.minLength" class="px-3">Mobile Number format is required</div>
+                    <div *ngIf="f.lastName.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+            </div>
+        </div>
+        <div class="form-group"> 
+          <input type="text" formControlName="organisation" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Organization Name"/>
+          <div *ngIf="submitted && f.organisation.errors" class="invalid-feedback">
+              <div *ngIf="f.organisation.errors.required" class="px-3">Organization Name is required</div>
+          </div>
+      </div>
+      <div class="form-group"> 
+        <input type="url" formControlName="website" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.organisation.errors }" placeholder="Website Link"/>
+        <div *ngIf="submitted && f.website.errors" class="invalid-feedback">
+            <div *ngIf="f.website.errors.required" class="px-3">Website Link is required</div>
+            <div *ngIf="f.website.errors.pattern" class="px-3">Website Link is required</div>
+        </div>
+    </div>
+        <div class="form-group"> 
+            <textarea formControlName="password" class="form-control banner-form-field" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                <div *ngIf="f.password.errors.required" class="px-3">Message is required</div> 
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="get-quote-btn btn-block btn btn-primary text-center bg-red border-0">SEND</button>
+        </div>
+    </form>
+   
+      </div>
+  </div>
+  </div>
+</div>
+  
+
+ 
+ <!-- who we are 2 -->
+
+ <div class="container-fluid p-0" >
+  <div class="row">
+      <div class="col-sm-6 px-5 bg-red">
+          <div class="py-2 sticky-top flex-grow-1">
+              <div class="nav flex-sm-column">
+                  <div class="title-container mx-auto my-3 py-5">
+
+                      <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                          <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: #ffffff; width: 30px; margin: 0px auto;"></span>
+                        </div>
+                    <h3 class="seo-whybrandstory-shadow-txt">WHO WE ARE</h3>
+                    <h3 class="seoblr-choosing-rear-txt">ABOUT BRANDSTORY</h3>
+                  </div>
+                  <P class="choosing-ul-p">
+                    Brandstory is the leading digital marketing company in bangalore offers a wide range of ppc services in bangalore for various range of product or services.
+                  </P>
+                  <P class="choosing-ul-p">
+                    We are having 5+ years experienced google certified partners in google adwords and bing adwords to manage pay per click campaigns.
+                  </P> 
+                  <br><br>  
+              </div>
+          </div>
+      </div>
+      
+      <div class="col" id="main"> 
+            <div class="col-md-12">
+              <div class="row seo-card-block"> 
+                  
+                  <div class="title-container mx-auto">
+                      <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                          <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                        </div>
+                    <h3 class="casestudies-rear-txt">PPC EXPERT</h3>
+                    <h3 class="casestudies-shadow-txt">APPROACH</h3>
+                  </div>
+                  <br> 
+
+                  <div class="banner-space-init"></div> 
+                  <div class="banner-space-init"></div> 
+                  <div class="banner-space-init"></div> 
+                  
+
+                  <div class="col-md-12 "> 
+                    <div class="card-deck">
+                    <div class="card services-card-shadow"> 
+                    <div class="card-body">   
+                    <p class="card-text seoservice-p">Our team of pay per click experts are very well experienced in search advertising, display advertising, mobile app advertising, shopping advertising and video advertising.
+                    </p>    
+                    <p class="card-text seoservice-p">Our team pay per click experts can increase higher Return on Investmentment ( ROI ) for all types of ppc ads like search ads, display ads, shopping ads, video ads and mobile app install ads.
+                    </p>   
+                    </div>
+                    </div>
+                    </div> 
+                  </div>  
+
+                  </div>
+              </div> 
+
+      </div>
+  </div>
+</div>
+ 
+<!-- PPC Services -->
+
+<div class="container my-5"> 
+    <div class="row">
+      
+                   
+        <div class="col" id="main">
+ 
+          
+            <div class="services-card ">
+
+                <div class="title-container mx-auto need-for-seo"> 
+                  <h2 class="need-shadow-txt">PPC Services in Bangalore</h2>
+                </div>
+
+              
+                <div class="banner-space-init"></div>  
+ 
+
+                <div class="card-deck py-1">
+                    <div class="card border-0 services-card-shadow mx-2  my-auto"> 
+                      <div class="card-body ">   
+                        <p class="card-text need-para">
+                            As a top ppc agency in bangalore, we analyse your website products or services first. 
+                        </p>             
+                        <p class="card-text need-para">
+                            Our PPC services include valuable keyword research for your product and services, Ad copy creation, affordable budget management, campaign management, conversion tracking set up and optimization, monthly campaign performance reporting etc. for your ppc ads.
+                        </p>
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 px-3 "> 
+                        <div class="card-body "> 
+                            <div class="mb-4">
+                                <img  class="smmimg" src="assets/images/wp-content/uploads/2019/icons/seo/ppc-services-banner.png" alt="PPC Company in Bangalore"/>
+                            </div> 
+                          </div>
+                      </div>
+                           
+                </div>
+            </div>
+
+ 
+
+      
+        </div>
+      
+    </div>
+</div>
+
+  <br>
+  <div class="container"> 
+    <div class="row">
+      
+        <div class="col" id="main">
+ 
+            <div class="services-card ">
+               
+
+                  <div class="card-deck">
+                    <div class="card border-0 services-card-shadow"> 
+                      <div class="card-body">  
+                        <h6 class="font-weight-bold py-2 need-head">Search Engine Marketing </h6>
+                        <p class="card-text need-para">
+                          Increase the visibility of your website in the search engine results pages (SERPS). Our SEM services include SEO, Pay Per Click (PPC) ad campaigns and social media marketing. Our strategic approach to search engine marketing can generate instant leads for your business. We tailor our SEM solutions around the needs of each customer. We ensure that our SEM clients consistently achieve high search engine rankings.
+                        </p> 
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 services-card-shadow"> 
+                        <div class="card-body ">  
+                          <h6 class="font-weight-bold py-2 need-head">Search Ads</h6>
+                          <p class="card-text need-para"> 
+                            Every second, customers are searching online for businesses like you on Google. Get in front of them through Search Ads. Our Search ad services help you show up when people search for your product offerings either on a desktop computer or mobile. Pay only for calls to your business or clicks to your website.  
+                          </p>             
+                        </div>
+                      </div>
+
+                      <div class="card border-0 services-card-shadow"> 
+                          <div class="card-body "> 
+                            <h6 class="font-weight-bold py-2 need-head">Display Ads</h6>
+                            <p class="card-text need-para"> 
+                              Quality online display ads must do more than make impressions. Our PPC experts design display ads that get the right message across to the right audience. Our Display Ad services include banner, text and video ads. Our ads target specific interest categories, demographics, regular website visitors, and keywords. 
+                            </p>             
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+            <div class="services-card mt-3">
+                
+                <div class="card-deck">
+                    <div class="card border-0 services-card-shadow"> 
+                      <div class="card-body">  
+                        <h6 class="font-weight-bold py-2 need-head">Video Ads </h6>
+                        <p class="card-text need-para">
+                          Video advertising is more likely to engage your audience and get them interested in your products and services than blocks of text. We can help create powerful video ad campaigns that can promote your content, get valuable leads and greatly improve your conversion rates.
+
+                        </p> 
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 services-card-shadow"> 
+                        <div class="card-body ">  
+                          <h6 class="font-weight-bold py-2 need-head">Shopping Ads</h6>
+                          <p class="card-text need-para"> 
+                            Our wide range of Shopping Ad campaign services can help your business to achieve higher revenue and better ROI. We design Shopping Ads that allow you to promote your product with a title, image, description and store name. The right Shopping Ads with ratings and promotions encourage shoppers to trust your brand.
+                          </p>             
+                        </div>
+                      </div>
+
+                      <div class="card border-0 services-card-shadow"> 
+                          <div class="card-body "> 
+                            <h6 class="font-weight-bold py-2 need-head">Remarketing Ads</h6>
+                            <p class="card-text need-para"> 
+                              Remarketing ads visually remind your customers to continue visiting your site thereby increasing your click rate. Our remarketing ad campaigns will align with your branding and help deliver a seamless and natural advertising experience. Our campaigns ensure that the content, designs, and message are clearly put forth to the audience. 
+                            </p>   
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="services-card mt-3">
+                
+                <div class="card-deck">
+                    <div class="card border-0 services-card-shadow"> 
+                      <div class="card-body">  
+                        <h6 class="font-weight-bold py-2 need-head">Facebook Advertising</h6>
+                        <p class="card-text need-para">
+                          We help you leverage on the 	world’s biggest social media network, Facebook. Our Facebook advertising services will help your business to build its online followers, enhance brand awareness and boost lead generation. Our Facebook ads target its massive audience through diverse ads and advanced targeting options.
+                        </p> 
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 services-card-shadow"> 
+                        <div class="card-body ">  
+                          <h6 class="font-weight-bold py-2 need-head">Twitter Advertising</h6>
+                          <p class="card-text need-para"> 
+                            Twitter ads need to evolve and be impactful to make them heard in the noise. Our Twitter Ad campaigns can help your business make a huge positive impact amongst competition on the huge social media platform. Our compelling twitter ads can target and engage generation X and millennials in one place.
+                          </p>      
+                        </div>
+                      </div>
+
+                      <!--<div class="card border-0 services-card-shadow"> 
+                          <div class="card-body "> 
+                            <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/analytics-and-reporting/">Analytics and Reporting</a></h6>
+                            <p class="card-text need-para"> 
+                                A gripping content, catchy headline, constant updates will mean nothing if you can’t see the returns on it. So after all the hard work is done, we send you a detailed report and statistics on how well you are doing on digital…
+                            </p>             
+                            <a href="https://brandstory.in/analytics-and-reporting/" class="txt-red">READ MORE</a>
+                          </div>
+                        </div>-->
+
+                </div>
+            </div>
+
+
+
+
+    
+
+        </div>
+      
+    </div>
+</div>
+
+
+<br><br>
+  <div class="container"> 
+      <div class="clients text-center">
+       <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+           <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+         </div>
+       <h2 class="clients-heading-clone">Google Adwords Campaign Management Company in Bangalore </h2>
+       <h3 class="clients-heading">ADWORDS</h3>
+       <br>
+   </div>
+   <div class="row">
+     <div class="col-md-12">
+      <p>We offer the following services as the certified Google Ads partner:</p>
+     <ul><li> Campaign Setup and Strategy – Our campaign set up and strategy is founded on campaign goals, analysis of policies and identification of the key influencers. </li>
+         <li>A/B Testing on Landing Pages – We devise A/B testing strategies to avoid risks and allow you to target business resources for maximum efficiency. </li>
+        <li>AdWords credit on new accounts – We offer Google Adwords vouchers or credit to help new users to use AdWords without any heavy investment  </li>
+          <li>Facebook Ads Pixel Retargeting – We leverage on Facebook’s most powerful targeting capability, Facebook Pixel to attract relevant audiences.  </li>
+            <li>Monitoring clicks, conversions and click fraud – Our click and fraud monitoring services help to detect click fraud as it happens, recover lost money from PPC Ads, block and detect fraudulent clicks.  </li>
+              <li>Ongoing keyword development and tweaking – Our keyword tweaking and development services directly impacts the search visibility of your website. </li>
+                <li>Ad campaign copywriting – Our Ad campaign copywriting services include composing smart, slick and professional ads that convert ad viewers into readers and readers into customers. </li>
+                  <li>Ad copy performance testing – Ad copy testing helps businesses to figure out what ads perform better to enable them to make confident decisions about the ad copy. </li>
+      
+      
+      
+                    <li>International PPC campaign management – We cover the tactics to be adopted for your business to reach an international audience through PPC advertising and create new avenues for revenue.  </li>
+                      <li>Remarketing Advertising – Remarketing advertising allows your business to position your ads in front of your target repeat audience to improve brand awareness and conversions. </li>
+                        <li>Setup and management of rule-based bidding – Through our rule-based bidding services, you have the option to set rules to modify campaigns based on outside events or triggers. </li>
+                          <li>Google Analytics integration and goal tracking – We help you set goals for certain metrics so that they can be tracked through Google Analytics.  </li>
+                            <li>Advanced Keyword research – Our advanced keyword research methodology begins at the granular level using high level research and data analytics tools. </li>
+                              <li>Results Analysis and reporting – Our experts dive deep into analytics and study data about bounce rates, user flow, pages per session and CRM data to create meaningful reports.  </li>
+                                <li>Website conversion analysis implementation- Website conversion analysis and implementation can improve the site’s performance, convert traffic to sales, drive desired results, and generate revenue for business.  </li>
+                                  <li>LinkedIn Ads audience insights – LinkedIn ads help create tailored ads catering to the people you want to engage. Our LinkedIn ad campaigns target specific audience segments.   </li>
+                                    <li>PPC account settings monitoring - Our PPC account monitoring services help identify PPC metrics, monitor them regularly, and tweak ads to help businesses to get closer to their objectives with AdWords. </li>
+                                      <li>Dynamic keyword insertion into ads – We implement the advanced Google Ads feature that can dynamically update the text of your ad to include keywords that match with the customers’ search terms. </li>
+                                        <li>Landing page design and implementation – We prepare landing pages primarily for customers who use Google’s search Ads but they can be customized to work for any kind of inbound traffic source.    </li>
+                                          <li>Monthly performance analysis and reporting - Our performance analytics is the heart of data collection involving continuous monitoring of activities to provide invaluable data insights. Daily trends are viewed and analyzed through our running reports. </li>
+                                            <li>Competitor analysis – We offer competitor analysis services that can collate, analyze, competitors’ information, their products, services, strengths, and weaknesses to assess your position and work on your strategies.    </li>
+      
+                                              <li>YouTube Advertising- People come to YouTube to view the content they love. We leverage on this by creating YouTube ads that work towards getting a deep understanding of the most valuable customers, their habits, interests and purchase plans.  </li>
+      
+        
+                                                <li>Strategic bid management - 	Our strategic bid management techniques are a great way to approach PPC campaigns as they become complex. Our dedicated team ensures that your campaign strategy is optimized and you are driving in the best traffic that can convert.  </li>
+                                                  <li>Account optimization tips- Optimizing your Google Ads account ensures that ads are relevant, visible to the intended audience, keyword matches, and are logically and semantically and appropriately structured. </li>
+    </ul>
+      
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-md-12">
+      <h3>Our Google Ads Campaign Management Process</h3>
+     <p> Below are the steps for Google Ads management process:</p>
+     <ol><li>The first step in our process is the analysis of your Google Ads objective- whether it is generating traffic, brand awareness, downloads, online sales or lead generation.</li>
+      <li>Once the objectives are set, the next step is identification of the landing pages and setting up of tools and techniques to track and measure results.</li>
+      <li>The next step is the understanding and scrutiny of various options such as budgets, location, offers, creatives, campaign types and so on.</li>
+      <li>Based on the results of the above analysis, relevant ad campaigns are formulated, and Google ads accounts are set up.</li>
+      <li>Then the relevant keywords are set up, regular and remarketing ads are created, and conversion techniques are established. These decisions are sent to the client for their perusal and approval.</li>
+      <li>Once the approval is received from the client, the ads are tested and then published live.</li>
+      <li>The ad campaigns are monitored every alternate day, metrics are studied, and results are analyzed.</li>
+      <li>We encourage continuous feedback of the campaign results from the clients so that the highest level of optimization can be achieved.</li>
+      <li>We strive to run the ad campaigns for at least 3 months during which period, we monitor performance, identify flaws and refine strategies accordingly.</li>
+      <li>Through the above iterative steps, campaign performance can improve significantly, and clients can see enhanced results. Satisfied customers work with us for their ad campaigns for several months and even years.</li>
+      <li>The ultimate goal of our Google Ads management process is betterment of marketing results for our customers substantially and in a short period. We adapt performance oriented best marketing practices to work towards our objective.</li>
+</ol>
+
+     </div>
+   </div>
+   <!-- Website Design Services Bangalore -->
+   </div>
+
+<br><br>
+  <div class="container"> 
+    <div class="clients text-center">
+     <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+         <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+       </div>
+     <h3 class="clients-heading-clone">FAQs </h3>
+     <h3 class="clients-heading">QUESTIONS</h3>
+     <br>
+ </div>
+ <div class="faq" itemscope itemtype="http://schema.org/FAQPage">
+   <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">1. What is Paid Marketing Vs Organic  Marketing?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ Organic search traffic comes from individuals looking for business links among search engine results, while paid search traffic is attributed to visitors clicking a link on a sponsored listing or advertisement that a business has paid for in order to appear in the top results.</span></p> 
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">2. What are the types of paid advertising?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ Search Ads and Display Ads are two of the major categories of paid advertisements. Search ads appear when the consumer is already looking for an answer or product, while display ads appear at other times. </span></p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">3. Can you do Paid Advertising for Small Business?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ Paid advertising can be an extremely efficient way to guide more traffic to your website and grow business, no matter the scale of your operations. Paid online advertising is not too expensive, and hence ideal for small businesses. </span></p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">4. Which type of paid advertising that suits my business?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ While this will depend on your individual business circumstances, PPC advertising tends to work for almost every business sector and industry. If you offer services or products that people are likely to search for on the web, then PPC would be ideal for you. </span></p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">5. Can you do video advertising for my business?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ Yes. Advertisements with “thumb stopping” effects can be created, that gets your target audience to watch the videos and buy from you. As per a Facebook study, people spend 5 times longer watching video content in comparison to reading static content.</span></p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">6. Can you do mobile app advertising?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ Yes. There are multiple types of advertisements designed to suit mobile applications, including Banner Ads, Native Ads, Interstitial Ads, Video Ads, Rich Media Ads, and Rewarded Videos Ads. </span></p>
+  </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">7. What are the paid advertising plans available?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ Adwords (Google) and Adcenter (Microsoft) are two of the major platforms for paid advertising plans. Twitter, Linkedin and Facebook also offer pay per click service.</span></p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">8. When will I expect paid results?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ When it comes to PPC, the first three months are the testing period of the campaign and should be seen as an investment. In certain cases results may start showing within this period. Most often, the results can be witnessed after adequate data gathering, extensive testing and optimization.</span></p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">9. How relevant leads or conversion I will get?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ To get superior  Lead Conversion Rates you can use sales and marketing tactics like practicing lead nurturing, setting higher standards for lead quality, using a lead scoring system, as well as connecting your CRM and marketing automation platform. </span></p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">10. Can I get paid advertising report?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ Yes. You can get reports on the success of your paid advertising campaigns executed through Twitter, LinkedIn, Facebook, Instragam and Google. </span></p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">11. What are the benefits of paid advertising?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ Paid advertising provides you with faster results than organic search. It is a measurable and affordable form of advertising, where specific and granular targeting is available. Paid advertising additionally enables you to broadcast your message across multiple platforms.</span></p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">12. What Is Remarketing?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ Remarketing involves showing ads to the users who come to your website, but do not get converted due to any particular reason. Through remarketing you can reach all individuals who have earlier visited your site. </span></p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">13. Can I set budgets for PPC campaigns?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ Major PPC engines allow you to set budgets. You may set daily budgets and budget limits at the campaign level, as well as the account level.  </span></p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">14. What factors determine my PPC costs?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ In case of PPC, what you pay per click depends on a number of factors, including your bid, Ad quality and targeting. Targeting involves elements from keywords to demographics. </span> </p>
+ </span>
+ <span itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+   <h2 itemprop="name">15. What is an ordinal value and how is it used?</h2>
+   <p itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><span itemprop="text">
+ How duplicate conversions are processed is controlled by ordinal values. The ordinal is used to determine if conversions are deduplicated or processed individually when multiple conversions having same conversion date, user identifier and floodlight values are inserted. </span></p>
+  </span>
+  
+   </div>
+ <!-- Website Design Services Bangalore -->
+ </div>
+ <br><br>
+<!-- ROI Strip-->
+
+<div class="container-fluid bg-red p-0">
+    <div class="row"> 
+            <div class="row">
+
+        <div class="col-sm-1 my-auto google-container-image p-0">
+            <img  src="assets/images/wp-content/uploads/2019/icons/seo/gold-medal.png" alt="PPC Services in Bangalore"/>
+        </div>
+
+        <div class="col-sm-11 pl-5">
+        
+        <div class="google-container">
+        <h2 class="mt-5 branding-get-quote-text roi text-white ">ROI Lead Best SEO Company/Agency in Bangalore India</h2>
+        <p class="text-white branding-cont">We are group of passionate digital marketing experts; industry thought leaders and creative designers coming together to produce stunning ROI lead digital marketing campaigns for brands. We are a social media marketing agency based in Bangalore, India providing digital marketing campaign management support to brands across the globe.</p><br><br>
+        </div>
+        
+        </div>
+        </div> 
+    </div>
+  </div>
+   <br><br>
+  
+   
+    
+ 
+
+<div class="container"> 
+    <div class="row">
+      
+        <div class="col" id="main">
+ 
+            <div class="services-card ">
+               
+
+                <div class="title-container mx-auto my-5 ">
+                    <div class="uvc-heading-spacer line_only" style="margin-bottom:12px;height:2px;">
+                        <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(218, 31, 38); width: 30px; margin: 0px auto;"></span>
+                      </div>
+                  <h3 class="casestudies-rear-txt">SERVICES</h3>
+                  <h3 class="need-shadow-txt seo-services">SERVICES</h3>
+                </div>
+                  <br><br>
+
+
+                  <div class="card-deck">
+                    <div class="card border-0 services-card-shadow"> 
+                      <div class="card-body">  
+                        <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/ui-design-company-bangalore/">UI UX Designing</a></h6>
+                        <p class="card-text need-para">
+                            As an user-centric design agency in Bangalore, India, we create functionally beautiful digital experiences that highly engage with your target audience. We tend to create meaningful relationships amidst brands and their consumers through inspiring design…                        
+                        </p> 
+                        <a href="https://brandstory.in/ui-design-company-bangalore/" class="txt-red">READ MORE</a>            
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 services-card-shadow"> 
+                        <div class="card-body ">  
+                          <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/website-development-company-in-bangalore/">Website Development</a></h6>
+                          <p class="card-text need-para"> 
+                              Making sure that your website is universally compatible and user friendly, an exclusive expert team of designers and developers are you assigned to to ensure that not only the plan goes according to a timeline but also that your approval is taken… 
+                          </p>             
+                          <a href="https://brandstory.in/website-development-company-in-bangalore/" class="txt-red">READ MORE</a>      
+                        </div>
+                      </div>
+
+                      <div class="card border-0 services-card-shadow"> 
+                          <div class="card-body "> 
+                            <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/content-marketing/">Content Marketing</a></h6>
+                            <p class="card-text need-para"> 
+                                Simple.We create digital content. It’s the element that helps us to be the company we are and our ever growing client list is an proof to that. Brandstory is one of the leading content marketing communications company in Bangalore, India provides…
+                            </p>             
+                            <a href="https://brandstory.in/content-marketing/" class="txt-red">READ MORE</a>
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+            <div class="services-card mt-3">
+                
+                <div class="card-deck">
+                    <div class="card border-0 services-card-shadow"> 
+                      <div class="card-body">  
+                        <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/seo-company-bangalore/">Search Engine Optimisation</a></h6>
+                        <p class="card-text need-para">
+                            Search Engine Optimization (SEO) program increases overall visibility of your business across all search engine platform. It provides an opportunities for brands to create acquisitions (sales, leads, inquiries etc.), and help consumers to …                        
+                        </p> 
+                        <a href="https://brandstory.in/seo-company-bangalore/" class="txt-red">READ MORE</a>            
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 services-card-shadow"> 
+                        <div class="card-body ">  
+                          <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/pay-per-click-ppc-services-in-bangalore/">Pay Per Click (PPC)</a></h6>
+                          <p class="card-text need-para"> 
+                              We increase your digital footprint with Pay Per Click campaigns or Google Adwords and Bing Adwords. A plan is sketched out and implemented accordingly, with this your campaign has begun. The plan includes specific important keywords … 
+                          </p>             
+                          <a href="https://brandstory.in/pay-per-click-ppc-services-in-bangalore/" class="txt-red">READ MORE</a>      
+                        </div>
+                      </div>
+
+                      <div class="card border-0 services-card-shadow"> 
+                          <div class="card-body "> 
+                            <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/services/social-media-marketing-agency-bangalore/">Social Media Marketing</a></h6>
+                            <p class="card-text need-para"> 
+                                We provide expertise in design implementation providing a full range of social media marketing services(SMM) bounding in popular social media platforms, content generation, creatives ideation, social branding techniques. Holding it all together …
+                            </p>             
+                            <a href="https://brandstory.in/services/social-media-marketing-agency-bangalore/" class="txt-red">READ MORE</a>
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="services-card mt-3">
+                
+                <div class="card-deck">
+                    <div class="card border-0 services-card-shadow"> 
+                      <div class="card-body">  
+                        <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/email-marketing-services-in-bangalore/">Email Marketing</a></h6>
+                        <p class="card-text need-para">
+                            Email Marketing It’s not as easy as it may sound. It’s not just composing an email draft, copying a list of contacts, and clicking the “send” button. Invariably, you will face struggles ranging from privacy issues, permission boundaries, technical glitches …         
+                        </p> 
+                        <a href="https://brandstory.in/email-marketing-services-in-bangalore/" class="txt-red">READ MORE</a>            
+                    
+                      </div>
+                    </div>
+            
+                    <div class="card border-0 services-card-shadow"> 
+                        <div class="card-body ">  
+                          <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/orm-company-bangalore-india/">Online Reputation Management</a></h6>
+                          <p class="card-text need-para"> 
+                              Online reputation management includes managing your business and its brand value across every review and rating forum to every social media platform. It is ideally required for 3 major purposes adding to the growth of your business… 
+                          </p>             
+                          <a href="https://brandstory.in/orm-company-bangalore-india/" class="txt-red">READ MORE</a>      
+                        </div>
+                      </div>
+
+                      <div class="card border-0 services-card-shadow"> 
+                          <div class="card-body "> 
+                            <h6 class="font-weight-bold py-2 need-head"><a href="https://brandstory.in/analytics-and-reporting/">Analytics and Reporting</a></h6>
+                            <p class="card-text need-para"> 
+                                A gripping content, catchy headline, constant updates will mean nothing if you can’t see the returns on it. So after all the hard work is done, we send you a detailed report and statistics on how well you are doing on digital…
+                            </p>             
+                            <a href="https://brandstory.in/analytics-and-reporting/" class="txt-red">READ MORE</a>
+                          </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+
+
+    
+
+        </div>
+      
+    </div>
+</div>
+
+
+<br><br> 
+ 
+ 
+
+
+<!-- Google Partner -->
+<div class="container-fluid bg-red p-0">
+    <div class="row"> 
+        <div class="row">
+        
+        <div class="col-sm-1 my-auto google-container-image p-0">
+                <img  src="assets/images/wp-content/uploads/2019/icons/seo/trophy.png" alt="SEO Company Bangalore"/>
+        </div>
+
+            
+        
+        <div class="col-sm-7">
+        
+        <div class="google-container">
+        <h2 class="mt-5 branding-get-quote-text text-white ">Official Google Partner</h2>
+        <p class="text-white branding-cont">We are official partners with Google, so you know that you are in the hands of a trusted and promising company.</p><br><br>
+        </div>
+        
+        </div>
+        <div class="col-sm-4 my-auto google-container-image">
+          <a href="https://www.google.com/partners/agency?id=1975289574" target="_blank"><img  src="assets/images/wp-content/uploads/2019/icons/seo/gpartner.png" alt="Official Google Partner"/></a>
+        </div>
+        </div> 
+    </div>
+  </div>
+   <br><br>
+    
+   
+
+   
+   <div class="col-sm-8">
+    <ng-template #template >
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Request SEO Free Audit</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+        <form [formGroup]="bannerModalForm" (ngSubmit)="onSubmitBannerModal()"   novalidate>
+            <div class="form-group">                 
+                <input type="text" formControlName="fName" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fName.errors }" placeholder="Enter Name"/>
+                <div *ngIf="submitted && fbannermodal.fName.errors" class="invalid-feedback">
+                    <div *ngIf="fbannermodal.fName.errors.required" class="px-3">Name is required</div>
+                    <div *ngIf="fbannermodal.fName.errors.pattern" class="px-3">Only characters and Minimun 3 characters allowed</div>
+                    <div *ngIf="fbannermodal.fName.errors.minLength" class="px-3">Minimun 3 characters allowed</div>
+                </div>
+              </div>            
+            <div class="form-group"> 
+              <input type="email" formControlName="fEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fEmail.errors }"  placeholder="Enter Email">
+              <div *ngIf="submitted && fbannermodal.fEmail.errors" class="invalid-feedback">
+                  <div *ngIf="fbannermodal.fEmail.errors.required" class="px-3">Email is required</div>
+                  <div *ngIf="fbannermodal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+            </div>
+            </div>
+    
+            <div class="form-group"> 
+              
+              <input type="tel" formControlName="fPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fPhone.errors }" placeholder="Mobile Number"/>
+                <div *ngIf="submitted && fbannermodal.fPhone.errors" class="invalid-feedback">
+                  <div *ngIf="fbannermodal.fPhone.errors.required" class="px-3">Mobile Number is required</div>
+                  <div *ngIf="fbannermodal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+                  <div *ngIf="fbannermodal.fPhone.errors.minLength" class="px-3">Mobile Number format is required</div>
+                  <div *ngIf="fbannermodal.fPhone.errors.maxLeanth" class="px-3">Mobile Number format is required</div>
+                </div>
+            </div> 
+    
+            <div class="form-group"> 
+               
+                <input type="url" formControlName="fService" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fService.errors }" placeholder="Website Link"/>
+                <div *ngIf="submitted && fbannermodal.fService.errors" class="invalid-feedback">
+                    <div *ngIf="fbannermodal.fService.errors.required" class="px-3">Website Link is required</div>
+                    <div *ngIf="fbannermodal.fService.errors.pattern" class="px-3">Website Link is required</div>
+                </div>
+              </div>
+    
+            <div class="form-group"> 
+                
+                <textarea formControlName="fMessage" class="form-control" [ngClass]="{ 'is-invalid': submitted && fbannermodal.fMessage.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+          <div *ngIf="submitted && fbannermodal.fMessage.errors" class="invalid-feedback">
+              <div *ngIf="fbannermodal.fMessage.errors.required" class="px-3">Message is required</div> 
+          </div>
+              </div>
+              <br>
+            <button  type="submit"  class="btn btn-primary text-center bg-red border-0">Submit</button>
+          
+          </form>
+          <br><br>
+      </div>
+    </ng-template>
+  </div>

@@ -1,0 +1,119 @@
+ 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-sm-12 bg-red"> 
+                     <div > 
+                       <h2 class="enquire-left-text text-white text-left">Start your Digital Transformation with us</h2>
+                       <div class="container">
+                       <div class="row text-left px-3">
+                        <!-- <div class="col-md-4 col-sm-12">
+                       <a class="nounderline" href="https://www.google.com/maps/dir//Brandstory+Solutions+Pvt.Ltd,+No+5,1st+Cross,+3rd+floor+Krishna+Reddy+Colony,+Domlur+Layout,+Bengaluru,,+Bengaluru,+Karnataka+560071/@12.9561176,77.6352623,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae16a9d837231b:0xf53f2681224f652!2m2!1d77.637451!2d12.9561124">
+                        <span class="text-white px-3"><i class="fa fa-map-marker"></i></span>
+                          <span class="text-white ">Location</span>
+                       </a></div>-->
+                       <div class="col-md-6 col-sm-12"><a class="nounderline" href="tel:8553131176">
+                          <span class="text-white textmadelo"><i class="fa fa-mobile mobile-phone"></i>&nbsp;&nbsp;8553131176</span>    
+                       </a></div>
+                       <div class="col-md-6 col-sm-12"><a class="nounderline" href="mailto:info@brandstory.in">
+                          <span class="text-white textmadelo"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;info@brandstory.in</span>
+                       </a></div>
+                       </div>
+                      </div>
+                     </div> 
+        </div>
+
+        <div class="col-md-6 col-sm-12 contact-form-block" id="main">
+            <br><br><br><br> <br>
+          <h3 class="px-2">Enquire</h3>
+          <br>
+          <form [formGroup]="enquiryModal" (ngSubmit)="onSubmitEnquiryModal()"   novalidate>
+            <div class="form-group"> 
+                <input type="text" formControlName="fName" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fName.errors }" placeholder="Enter Name"/>
+              <div *ngIf="submitted && fenquiryModal.fName.errors" class="invalid-feedback">
+                  <div *ngIf="fenquiryModal.fName.errors.required" class="px-3">Name is required</div>
+                  <div *ngIf="fenquiryModal.fName.errors.pattern" class="px-3">Only characters allowed</div>
+              </div>
+              </div>             
+            <div class="form-group"> 
+                <input type="email" formControlName="fEmail" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fEmail.errors }"  placeholder="Enter Email">
+                <div *ngIf="submitted && fenquiryModal.fEmail.errors" class="invalid-feedback">
+                    <div *ngIf="fenquiryModal.fEmail.errors.required" class="px-3">Email is required</div>
+                <div *ngIf="fenquiryModal.fEmail.errors.email" class="px-3">Email must be a valid email address</div>
+              </div>
+            </div>
+    
+            <div class="form-group"> 
+                <input type="tel" formControlName="fPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fPhone.errors }" placeholder="Mobile Number"/>
+                <div *ngIf="submitted && fenquiryModal.fPhone.errors" class="invalid-feedback">
+                    <div *ngIf="fenquiryModal.fPhone.errors.required" class="px-3">Mobile Number is required</div>                    
+                    <div *ngIf="fenquiryModal.fPhone.errors.pattern" class="px-3">Only Numbers is required</div>
+                </div>
+            </div> 
+            <div class="form-group"> 
+              <input type="text" formControlName="company" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.company.errors }" placeholder="Enter Company Name"/>
+            <div *ngIf="submitted && fenquiryModal.company.errors" class="invalid-feedback">
+                <div *ngIf="fenquiryModal.company.errors.required" class="px-3">Company Name is required</div>
+            </div>
+            </div> 
+    
+            <div class="form-group"> 
+                <select formControlName="fService" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fService.errors }">
+                    <option disabled selected>Select a service</option>
+                    <option>Design</option>
+                    <option>UI/UX</option>
+                    <option>Development</option>
+                    <option>Digital</option>
+                </select>
+                <div *ngIf="submitted && fenquiryModal.fService.errors" class="invalid-feedback">
+                    <div *ngIf="fenquiryModal.fService.errors.required" class="px-3">Select  service is required</div>
+                </div>
+              </div>
+    
+            <div class="form-group"> 
+                <textarea formControlName="fMessage" class="form-control" [ngClass]="{ 'is-invalid': submitted && fenquiryModal.fMessage.errors }" placeholder="Message"  rows="2" style="height:auto !important;" ></textarea>
+                <div *ngIf="submitted && fenquiryModal.fMessage.errors" class="invalid-feedback">
+                    <div *ngIf="fenquiryModal.fMessage.errors.required" class="px-3">Message is required</div> 
+                </div>
+              </div>
+              <br>
+            <button  type="submit"  class="btn btn-primary text-center bg-red border-0">Submit</button>
+          
+          </form>
+          <!-- <form  (ngSubmit)="onSubmit(f)" #f="ngForm"  required>
+              <div class="form-group"> 
+                  <input type="text"  class="form-control" name="fName" ngModel   aria-describedby="emailHelp" placeholder="Enter Name" pattern="[A-Za-z0-9_]" ngrequired>
+                   
+                </div>            
+              <div class="form-group"> 
+                <input type="email" class="form-control" name="fEmail" ngModel  aria-describedby="emailHelp" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+                 
+              </div>
+
+              <div class="form-group"> 
+                <input type="tel" class="form-control" name="fPhone" ngModel  placeholder="Phone" pattern="[0-9_]{10,11}" maxlength="12" minlength="10" required>
+              </div> 
+
+              <div class="form-group"> 
+                  <select class="form-control" name="fService" ngModel required>
+                      <option>Select a service</option>
+                      <option>Design</option>
+                      <option>UI/UX</option>
+                      <option>Development</option>
+                      <option>Digital</option>
+                  </select>
+                </div>
+
+              <div class="form-group"> 
+                  <textarea class="form-control" placeholder="Message" name="fMessage" ngModel  rows="3"></textarea>
+                </div>
+                <br>
+              <button  type="submit"  class="btn btn-primary text-center bg-red border-0">Submit</button>
+            
+            </form> -->
+            
+       
+ 
+        </div>
+    </div>
+</div>
+ 

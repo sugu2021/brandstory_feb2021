@@ -1,0 +1,106 @@
+
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow fixed-top p-0">
+  <div class="container">
+    <a class="navbar-brand" href="">
+      <img src="assets/images/wp-content/uploads/2017/10/logo.png" alt="SEO Company in Bangalore" title="SEO Company in Bangalore">
+    </a>
+    <div class="{{isVisible}}" ng-class="isVisible">
+      <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="isCollapsed = !isCollapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive" ng-class="isVisible" [collapse]="isCollapsed">
+        <ul class="navbar-nav ml-auto" ng-class="isVisible">
+
+
+
+          <li class="nav-item navi-text btn-group" dropdown>
+            <a href="" class="nav-link" dropdownToggle (click)="false" aria-controls="basic-link-dropdown">DESIGN <i
+                class="fa fa-angle-down mx-1"></i></a>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li>
+                <a class="dropdown-item" href="design/branding">BRANDING</a>
+                <a class="dropdown-item" href="design/marketing-collaterals">MARKETING COLLATERALS</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item navi-text btn-group" dropdown>
+            <a href="" class="nav-link" dropdownToggle (click)="false" aria-controls="basic-link-dropdown">UI/UX <i
+                class="fa fa-angle-down mx-1"></i></a>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li>
+                <a class="dropdown-item" href="/uiux/mobile-app">MOBILE</a>
+                <a class="dropdown-item" href="/uiux/web">WEB</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item navi-text btn-group" dropdown>
+            <a href="" class="nav-link" dropdownToggle (click)="false" aria-controls="basic-link-dropdown">DEVELOPMENT
+              <i class="fa fa-angle-down mx-1"></i></a>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li>
+                <a class="dropdown-item" href="development/website">WEBSITE</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item navi-text btn-group" dropdown>
+            <a href="" class="nav-link" dropdownToggle (click)="false" aria-controls="basic-link-dropdown">DIGITAL <i
+                class="fa fa-angle-down mx-1"></i></a>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li>
+                <a class="dropdown-item" href="digital/seo">SEO</a>
+                <a class="dropdown-item" href="digital/smm">SMM</a>
+                <a class="dropdown-item" href="digital/google-marketing">GOOGLE MARKETING</a>
+                <a class="dropdown-item" href="digital/video-production/">VIDEO PRODUCTION</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item navi-text btn-group" dropdown>
+            <a href="" class="nav-link" dropdownToggle (click)="false" aria-controls="basic-link-dropdown">ENTERPRISE<i
+                class="fa fa-angle-down mx-1"></i></a>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <!-- <li><a class="dropdown-item" href="enterprise/seo/">SEO for Enterprise</a>
+            </li> -->
+              <li><a class="dropdown-item" href="enterprise/enterprise-seo-services/">SEO for Enterprise</a>
+              </li>
+              <li><a class="dropdown-item" href="enterprise/b2b-email-marketing/">Email Marketing</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item navi-text btn-group" dropdown>
+            <a href="" class="nav-link" dropdownToggle (click)="false" aria-controls="basic-link-dropdown">RESOURCES<i
+                class="fa fa-angle-down mx-1"></i></a>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li>
+                <a class="dropdown-item" href="our-portfolio">PORTFOLIO</a>
+                <a class="dropdown-item" routerLink="blogs">BLOGS</a>
+                <a class="dropdown-item" href="resources/casestudies">Case Studies</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- <li class="nav-item navi-text px-2">
+          <a class="nav-link" href="our-portfolio">PORTFOLIO</a>
+        </li>
+        <li class="nav-item navi-text px-2">
+          <a class="nav-link" routerLink="blogs">BLOGS</a>
+        </li>-->
+          <li class="nav-item navi-text px-2">
+            <a class="nav-link contactlink" href="contact-us">GET QUOTE</a>
+          </li>
+          <li class="nav-item navi-text px-2">
+            <a class="nav-link" href="tel:+919008504821">9008504821</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
